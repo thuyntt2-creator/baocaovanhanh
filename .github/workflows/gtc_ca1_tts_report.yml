@@ -2,8 +2,8 @@ name: GTC Ca1 TTS Daily Report
 
 on:
   schedule:
-    # Chạy lúc 00:15 UTC (07:15 giờ VN) mỗi ngày
-    - cron: '15 0 * * *'
+    # Chạy lúc 00:00 UTC (07:00 giờ VN) mỗi ngày
+    - cron: '0 0 * * *'
   workflow_dispatch: # Cho phép chạy bằng tay từ giao diện GitHub
 
 jobs:
