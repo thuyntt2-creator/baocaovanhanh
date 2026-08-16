@@ -1,0 +1,176 @@
+[P] GHN — VÙNG NAM TRUNG BỘ (NTB)
+[P] KẾ HOẠCH HOẠT ĐỘNG NĂM (AOP)
+[P] HÀNG CỒNG KỀNH ≥ 10kg — H2/2026 (Tháng 7 – Tháng 12)
+[Table]
+  Row 0: Vùng | NTB (Nam Trung Bộ)
+  Row 1: Giám đốc Vùng (GĐV) | Trần Ngọc Trung
+  Row 2: Người lập | Trần Ngọc Trung
+  Row 3: Ngày lập | 27/06/2026
+  Row 4: Phạm vi hàng hóa | Hàng cồng kềnh ≥ 10kg (vừa 10–20kg + nặng ≥20kg)
+  Row 5: Khung thời gian | T7 – T12/2026
+  Row 6: Tỉnh/thành phố | Khánh Hòa · Lâm Đồng · Bình Thuận · Ninh Thuận · Đắk Nông
+  Row 7: Nguồn volume | FC Vùng — PSBBA / tool topline (output 19/06/2026)
+  Row 8: Tài liệu kèm theo | AOP_Hang_NTB_T7-T12_2026_.xlsx | AOP_MAU_NTB_.xlsx
+[P] I. BỐI CẢNH & MỤC TIÊU
+[P] 1.1 Bối cảnh
+[P] Hàng cồng kềnh (≥10kg) là phân khúc tăng trưởng nhanh nhất tại NTB, nhưng cũng là điểm nghẽn lớn nhất về mặt vận hành. Trong mô hình cũ, hàng nặng bị giao chung với hàng nhỏ tại các bưu cục thường, dẫn đến 3 vấn đề cốt lõi:
+[P] Năng lực thực tế mỗi bưu cục thường chỉ đạt tối đa 100–200 đơn bulky/ngày do giới hạn mặt bằng và thiếu xe tải chuyên biệt.
+[P] Sản lượng hàng nặng đổ về Nha Trang và Di Linh tạo GAP âm lũy kế lên tới 500–1.500 đơn/ngày, gây tồn đọng hàng loạt.
+[P] Chi phí thuê chành xe tư nhân (đặc biệt tuyến Đơn Dương qua đèo) cao và không kiểm soát được thời gian giao nhận, ảnh hưởng nghiêm trọng đến KPI GTC.
+[P] Vùng NTB đề xuất chuyển dịch toàn bộ hàng cồng kềnh (≥10kg) từ bưu cục thường sang xử lý tập trung tại 4 Bưu cục Cồng kềnh (BCCK) chuyên biệt, theo chuẩn mô hình HCM (đã vận hành 12 BCCK thành công).
+[P] 1.2 Mục tiêu
+[P] Vận hành ổn định 4 BCCK: Nha Trang, Di Linh, Đơn Dương, Đức Linh — triệt tiêu hoàn toàn GAP âm sản lượng bulky.
+[P] II. CHỨNG MINH NĂNG LỰC & PHÂN TÍCH GAP
+[P] 2.1 Cơ sở tính toán
+[P] Để chứng minh năng lực vận hành cần bổ sung, vùng sử dụng mô hình dự báo tích lũy — tính số xe tải 1.9T cần thiết dựa trên Topline Target hàng tháng. Công thức nền:
+[P] Tổng nhu cầu thực tế ngày (T) = Sản lượng mới nhận ngày T + Tồn giao lại lần 1 (ngày T−1 chuyển qua) + Tồn giao lại lần 2 (ngày T−2 chuyển qua).
+[P] Năng lực vận hành thực tế = Số xe xếp × Năng suất GTC/chuyến (ngày thường: 47 đơn/xe, cao điểm: 64 đơn/xe).
+[P] GAP âm (<0): thiếu năng lực, gây nghẽn kho tồn đọng lũy kế. GAP dương (≥0): vận hành an toàn.
+[P] Quy đổi chuyến → đầu xe: mỗi xe tải 1.9T chạy 2 chuyến/ngày (Ca 1 + Ca 2). Số đầu xe thực tế = Số chuyến / 2.
+[P] 2.2 Dự báo GAP và nhu cầu xe tải 1.9T theo BCCK
+[P] Căn cứ sản lượng Topline ≥10kg, nhu cầu xe tải 1.9T tại 4 BCCK được dự báo như sau:
+[Table]
+  Row 0: BCCK | Chỉ số | T7 (Khởi động) | T10 (Mua sắm) | T12 (Đỉnh Tết)
+  Row 1: BCCK Nha Trang | Sản lượng trung bình/ngàyNhu cầu chuyến xe TB/ngàySố đầu xe 1.9T (2 chuyến/ngày) | 1.043 đơn18 chuyến9 xe | 1.208 đơn21 chuyến11 xe | 1.390 đơn24 chuyến12 xe
+  Row 2: BCCK Di Linh | Sản lượng trung bình/ngàyNhu cầu chuyến xe TB/ngàySố đầu xe 1.9T (2 chuyến/ngày) | 624 đơn11 chuyến6 xe | 688 đơn12 chuyến6 xe | 804 đơn14 chuyến7 xe
+  Row 3: BCCK Đơn Dương | Sản lượng trung bình/ngàyNhu cầu chuyến xe TB/ngàySố đầu xe 1.9T (2 chuyến/ngày) | 211 đơn4 chuyến2 xe | 241 đơn4 chuyến2 xe | 278 đơn5 chuyến3 xe
+  Row 4: BCCK Đức Linh | Sản lượng trung bình/ngàyNhu cầu chuyến xe TB/ngàySố đầu xe 1.9T (2 chuyến/ngày) | 166 đơn3 chuyến2 xe | 195 đơn4 chuyến2 xe | 223 đơn4 chuyến2 xe
+[P] *Lưu ý: Benchmark GXT NTB ngày thường dùng 11 đầu xe (22 chuyến), ngày cao điểm tăng lên 15 đầu xe (30 chuyến). BCCK sẽ đạt hiệu quả Scale of Economy khi gom đủ sản lượng vượt ngưỡng 200 đơn/ngày/BC.*
+[P] III. TỔNG QUAN VÙNG NTB & HỆ THỐNG BCCK
+[P] 3.1 Phạm vi địa bàn — 5 tỉnh/thành phố
+[P] Khánh Hòa: trọng điểm — Nha Trang là đô thị lớn nhất vùng, sản lượng cao nhất.
+[P] Lâm Đồng: cao nguyên — Đà Lạt, Bảo Lộc, Di Linh là các cụm đô thị chính, địa hình đèo dốc.
+[P] Bình Thuận: duyên hải — Phan Thiết, La Gi, Đức Linh. Khu vực Đức Linh giáp ranh Đồng Nai.
+[P] Ninh Thuận: Phan Rang – Tháp Chàm, mật độ đơn trung bình.
+[P] Đắk Nông: Tây Nguyên — Gia Nghĩa, địa lý phân tán, cự ly giao xa, dồn về BCCK lân cận.
+[P] 3.2 Lý do lựa chọn 4 BCCK — Phân tích chiến lược vị trí
+[P] BCCK Nha Trang — Kho ven đô, gom 7 bưu cục nội đô
+[P] Vị trí: đặt tại khu vực ven đô (ngoại thành Nha Trang) để tối ưu chi phí mặt bằng.
+[P] Tiết kiệm mặt bằng 50–60% so với kho nội thành (hàng nặng đòi hỏi mật độ 3,3 đơn/m², cần diện tích lớn).
+[P] Khoảng cách di chuyển hợp lý: phạm vi TP. Nha Trang nhỏ, từ kho ven đô vào nội thành chỉ mất 15–25 phút — nằm trong bán kính tối ưu của xe tải 1.9T.
+[P] Giải phóng quá tải 7 bưu cục cũ: hàng bulky chiếm chỗ làm nghẽn luồng hàng nhỏ Ecom — đưa ra kho riêng giúp bưu cục nội đô thông thoáng hơn.
+[P] BCCK Di Linh — Vận hành hỗn hợp, địa bàn rộng
+[P] Vị trí: trung tâm khu vực Di Linh – Lâm Đồng, gom 7 bưu cục (Di Linh, Lâm Hà, Ninh Hòa và vùng phụ cận).
+[P] Khác với Nha Trang, BCCK Di Linh vận hành tích hợp cả hàng nhỏ và hàng lớn để tối ưu chi phí cố định kho trên địa bàn rộng.
+[P] Chia tuyến thông minh: xe tải 1.9T làm nhiệm vụ linehaul từ BCCK → thả hàng tại các điểm tập kết vệ tinh dọc tuyến xa → shipper nội tuyến phát hàng chặng cuối (last-mile). Shipper không phải chạy hàng chục km về kho lấy hàng.
+[P] BCCK Đơn Dương — Khắc phục nút thắt địa hình qua đèo
+[P] Vị trí: Bưu cục TDP Nghĩa Đức – Thạnh Mỹ – Đơn Dương.
+[P] Tuyến Đơn Dương ↔ Đức Trọng (Hiệp Thạnh) bị ngăn cách bởi đoạn đèo dốc hiểm trở, sương mù, trơn trượt.
+[P] Hiện tại phải thuê chành xe tư nhân qua đèo với chi phí cao và không chủ động được thời gian — ảnh hưởng nghiêm trọng đến KPI GTC.
+[P] BCCK Đơn Dương + xe tải 1.9T nội bộ: chủ động 100% thời gian giao nhận, cắt hoàn toàn chi phí chành xe ngoài.
+[P] BCCK Đức Linh – Bình Thuận — Quy hoạch cụm bán sơn địa
+[P] Vị trí: gom bưu cục xã Nam Chính về BCCK Đức Linh.
+[P] Quy hoạch cụm BC vệ tinh khu vực Đức Linh để gom sản lượng đạt điểm hòa vốn vận hành xe tải 1.9T.
+[P] Nâng cao tỷ lệ gán giao hàng nặng tại khu vực giáp ranh Đồng Nai – Bình Thuận.
+[P] IV. PHƯƠNG ÁN VẬN HÀNH CHẶNG CUỐI (HUB-AND-SPOKE)
+[P] 4.1 Trả lời câu hỏi của công ty: "Shipper có cover nổi địa bàn gom quá rộng không?"
+[P] Vùng đề xuất mô hình vận hành chặng cuối kết hợp xe tải 1.9T:
+[P] Hàng bulky ≥10kg gom về BCCK, phân loại sẵn theo tuyến giao (nội thị + tuyến xa).
+[P] Shipper chặng cuối nhận hàng từ xe tải 1.9T giao trực tiếp đến khách hàng.
+[P] 4.2 Lợi ích mô hình chứng minh KPI GTC
+[P] Shipper không bị kiệt sức: shipper tuyến xa không phải đi hàng chục km về BCCK lấy hàng — đoạn dài đã có xe tải 1.9T lo.
+[P] Năng suất giao hàng vượt trội: shipper chuyên bulky đạt 47–64 đơn/ngày, thay vì 10–15 đơn/ngày khi mix với hàng Ecom nhỏ.
+[P] An toàn hàng hóa: tránh vỡ/hỏng hàng cồng kềnh khi chở bằng xe máy chặng xa.
+[P] Chủ động thời gian: xe tải nội bộ thay thế hoàn toàn chành xe thuê ngoài, kiểm soát 100% slot giao nhận.
+[P] V. DỰ BÁO SẢN LƯỢNG (FORECAST)
+[P] 5.1 Nguồn dữ liệu
+[P] Volume được nạp sẵn từ FC Vùng — PSBBA / tool topline (output 19/06/2026), tách 2 chiều Lấy & Giao, gom theo vùng × band cân nặng × tháng. B2B đã tách riêng tại bước định tuyến M4 — KHÔNG cộng vào hàng vừa/nặng.
+[P] 5.2 Volume giao tháng — theo tỉnh và band cân nặng (đơn/tháng)
+[Table]
+  Row 0: Tỉnh | Band cân nặng | T7 | T8 | T9 | T10 | T11 | T12
+  Row 1: Bình Thuận | Hàng vừa (10–20kg) | 26.399 | 24.453 | 25.643 | 28.121 | 29.187 | 32.626
+  Row 2:  | Hàng nặng (≥20kg) | 17.577 | 19.165 | 20.019 | 22.386 | 23.235 | 25.330
+  Row 3: Khánh Hòa | Hàng vừa (10–20kg) | 11.331 | 10.734 | 11.340 | 12.333 | 13.751 | 14.746
+  Row 4:  | Hàng nặng (≥20kg) | 9.992 | 10.951 | 11.462 | 12.763 | 13.958 | 14.982
+  Row 5: Lâm Đồng | Hàng vừa (10–20kg) | 39.691 | 38.139 | 39.860 | 43.614 | 44.025 | 50.492
+  Row 6:  | Hàng nặng (≥20kg) | 20.991 | 22.580 | 23.499 | 25.967 | 25.849 | 29.782
+  Row 7: Ninh Thuận | Hàng vừa (10–20kg) | 41.509 | 38.541 | 39.566 | 43.353 | 46.877 | 50.986
+  Row 8:  | Hàng nặng (≥20kg) | 14.997 | 16.452 | 16.979 | 18.931 | 20.140 | 21.635
+  Row 9: Đắk Nông | Hàng vừa (10–20kg) | 10.710 | 9.718 | 10.291 | 11.452 | 11.561 | 13.526
+  Row 10:  | Hàng nặng (≥20kg) | 5.021 | 5.471 | 5.721 | 6.380 | 6.404 | 7.325
+  Row 11: TỔNG GIAO BULKY/THÁNG | 270.114 | 265.677 | 286.688 | 317.992 | 331.193 | 366.620
+[P] 5.3 Kênh & nhu cầu — chiều giao (đơn/tháng)
+[Table]
+  Row 0: Kênh | T7 | T8 | T9 | T10 | T11 | T12
+  Row 1: Tổng hàng vừa (10–20kg) → BCCK van | 129.641 | 121.584 | 126.699 | 138.871 | 145.401 | 162.376
+  Row 2: Tổng hàng nặng (≥20kg) → GXT / đội tải xe 1.9T | 68.578 | 74.620 | 77.680 | 86.427 | 89.586 | 99.054
+  Row 3: B2B (kênh riêng, đã tách M4) | 61.655 | 67.282 | 70.187 | 78.558 | 81.296 | 88.895
+  Row 4: SL/tháng — Hàng vừa (Bulky Giao) | 198.219 | 196.204 | 204.379 | 225.298 | 234.987 | 261.430
+  Row 5: SL/ngày — Hàng nặng (Giao bình quân) | 2.996 | 3.296 | 3.430 | 3.847 | 3.978 | 4.302
+[P] 5.4 Nhận xét xu hướng
+[P] Tổng volume ≥10kg tăng đều T7→T12, tăng ~32% (từ ~198K lên ~261K đơn/tháng).
+[P] Hàng vừa (10–20kg) chiếm ~65% tổng volume — là kênh trọng tâm của BCCK van.
+[P] T11–T12 là cao điểm cuối năm — xe tải 1.9T cần tăng cường lên 9–12 đầu xe/BCCK tùy địa bàn.
+[P] Khánh Hòa và Lâm Đồng chiếm hơn 60% toàn vùng — BCCK Nha Trang và Di Linh là 2 điểm áp lực nhất.
+[P] VI. ĐÌNH BIÊN NHÂN SỰ & KẾ HOẠCH NGUỒN LỰC
+[P] 6.1 Nguyên tắc định biên
+[P] Nhân sự được định biên theo sản lượng thực tế Topline H2/2026 và số liệu tài xế/shipper thực tế từ báo cáo GTC — không cào bằng 15 người/BCCK như phương án cũ. Hàng vừa (10–20kg) được phân rã về bưu cục thường chặng cuối cho shipper thường (xe máy), tránh quá tải shipper cồng kềnh.
+[P] 6.2 Định biên chi tiết 4 BCCK
+[Table]
+  Row 0: BCCK | SL/ngày | NV Giao | NV Kho | NV QL | Tổng | Ghi chú / Phạm vi
+  Row 1: BCCK Nha Trang | 1.390 đơn/ngày | 13 | 1 | 1 | 15 | Mở rộng BC hiện tại — gom 7 BC nội đô Nha Trang
+  Row 2: BCCK Di Linh | 804 đơn/ngày | 12 | 1 | 1 | 14 | Vận hành hỗn hợp — gom 7 BC Di Linh, Lâm Hà, Ninh Hòa
+  Row 3: BCCK Đơn Dương | 278 đơn/ngày | 8 | 1 | 1 | 10 | Mở rộng BC — gom Hiệp Thạnh + Đơn Dương
+  Row 4: BCCK Đức Linh | 223 đơn/ngày | 5 | 1 | 1 | 7 | Thuê mặt bằng mới — gom BC xã Nam Chính
+  Row 5: TỔNG CỘNG | 2.695 đơn/ngày | 38 | 4 | 4 | 46 | Tiết kiệm 210tr/tháng so với phương án 60 người
+[P] *Tổng 46 nhân sự (giảm từ 60 người phương án cũ) → tiết kiệm 210.000.000 đ/tháng quỹ lương, tương đương 1,26 tỷ đồng trong 6 tháng/2026.*
+[P] 6.3 Kế hoạch xe tải 1.9T theo tháng
+[Table]
+  Row 0: Chỉ tiêu | T7 | T8 | T9 | T10 | T11 | T12
+  Row 1: SL hàng nặng/ngày (BQ) | 2.286 | 2.487 | 2.589 | 2.881 | 2.986 | 3.302
+  Row 2: Tổng đầu xe 1.9T BQ/ngày (4 BCCK) | 39 | 43 | 45 | 50 | 51 | 57
+  Row 3: Tổng đầu xe 1.9T ngày cao điểm | ~43 | ~40 | ~42 | ~36 | ~39 | ~40
+  Row 4: Số người giao (đỉnh × 2 người/xe) | ~86 | ~80 | ~84 | ~72 | ~78 | ~80
+  Row 5: Mặt bằng tổng 4 BCCK cần (m²) | ~905 | ~998 | ~1.039 | ~1.165 | ~1.205 | ~1.303
+[P] 6.4 Kế hoạch mặt bằng
+[P] BCCK Nha Trang: mở rộng BC hiện tại — kho ven đô, tiết kiệm 50–60% so với thuê mặt bằng nội thành.
+[P] BCCK Di Linh: mở rộng BC hiện tại — trung tâm khu vực Di Linh–Lâm Hà–Ninh Hòa.
+[P] BCCK Đơn Dương: mở rộng BC hiện tại tại Nghĩa Đức–Thạnh Mỹ–Đơn Dương.
+[P] BCCK Đức Linh: thuê mặt bằng mới — đơn giá tạm tính 6.500.000 đ/tháng (cần ký hợp đồng trước 10/07).
+[P] VII. KẾ HOẠCH CHI PHÍ
+[P] 7.1 Cấu trúc chi phí
+[P] Chi phí xe tải 1.9T: xe BQ/ngày × 1.200.000 đ × số ngày làm việc/tháng.
+[P] Chi phí nhân sự giao hàng (38 shipper): lương + phụ cấp theo cấu trúc NCC bulky.
+[P] Chi phí nhân sự kho & quản lý (8 người cố định × 4 BCCK): 15.000.000 đ/người/tháng.
+[P] Chi phí thuê mặt bằng: diện tích × 120.000 đ/m²/tháng (ngoại trừ BCCK Đức Linh theo giá thực tế).
+[P] 7.2 Ước tính chi phí theo tháng (triệu đồng)
+[Table]
+  Row 0: Hạng mục | T7 | T8 | T9 | T10 | T11 | T12
+  Row 1: Chi phí xe tải 1.9T | 1.404 | 1.548 | 1.620 | 1.800 | 1.836 | 2.052
+  Row 2: Chi phí NV giao hàng (38 shipper) | 570 | 570 | 570 | 570 | 570 | 570
+  Row 3: Chi phí NV kho & quản lý (8 người) | 120 | 120 | 120 | 120 | 120 | 120
+  Row 4: Chi phí thuê mặt bằng | 83 | 90 | 94 | 105 | 109 | 120
+  Row 5: TỔNG CHI PHÍ | 2.177 | 2.328 | 2.404 | 2.595 | 2.635 | 2.862
+  Row 6: Tiết kiệm so với phương án 60 người | 210 | 210 | 210 | 210 | 210 | 210
+[P] * Số liệu ước tính. Chi phí chính xác cập nhật theo công thức tự động trong file AOP Excel sau khi hoàn thiện ô vàng.*
+[P] VIII. TIMELINE TIẾP NHẬN TỪ GXT
+[P] 8.1 Nguyên tắc bàn giao
+[P] Nhóm 1 — BC tự lo toàn bộ ≥15kg: BCCK đã đủ năng lực, tiếp nhận độc lập hoàn toàn.
+[P] Nhóm 2 — GXT lo 70%, BC lo 30%: giai đoạn chuyển tiếp, BCCK chưa đủ năng lực toàn phần.
+[P] Song song GXT + BCCK: đảm bảo không gián đoạn dịch vụ trong thời gian ramping up.
+[P] 8.2 Phạm vi tiếp nhận theo BCCK
+[Table]
+  Row 0: BCCK | Địa bàn tiếp nhận | Mô hình
+  Row 1: BCCK Nha Trang | TP. Nha Trang, TX Ninh Hòa (các phường/xã đã liệt kê trong Timeline sheet) | BC tự lo toàn bộ ≥15kg / GXT lo 70% + BC 30%
+  Row 2: BCCK Di Linh | H. Di Linh, H. Lâm Hà (Bình Thanh, Đạ Đờn, Phi Tô, Phú Sơn, Mê Linh, Nam Hà...) | BC tự lo toàn bộ ≥15kg (linehaul + last-mile vệ tinh)
+  Row 3: BCCK Đơn Dương | H. Đơn Dương, H. Đức Trọng (khu vực Hiệp Thạnh) — vượt đèo bằng xe tải 1.9T | BC tự lo toàn bộ ≥15kg
+  Row 4: BCCK Đức Linh | H. Đức Linh, H. Tánh Linh (Bình Thuận) — gom BC xã Nam Chính | Tiếp nhận theo mốc — cần xác nhận timeline chi tiết
+[P] IX. RỦI RO & BIỆN PHÁP
+[Table]
+  Row 0: # | Rủi ro | Mức độ | Biện pháp xử lý
+  Row 1: 1 | Mặt bằng BCCK Đức Linh chưa ký được hợp đồng thuê | Cao | Ưu tiên tìm mặt bằng thay thế trước T7. Dự phòng: gom về BCCK Nha Trang hoặc BC thường Đức Linh.
+  Row 2: 2 | Cao điểm T11–T12 vượt dự báo, thiếu xe tải 1.9T | Trung bình | Đặt kế hoạch xe dự phòng NCC. Kích hoạt thêm xe khi SL/ngày vượt 1,4× trung bình tháng.
+  Row 3: 3 | GXT bàn giao trễ lịch, BCCK chưa sẵn sàng tiếp nhận | Trung bình | Vận hành song song (GXT + BCCK) giai đoạn chuyển tiếp. Review timeline mỗi 2 tuần.
+  Row 4: 4 | Shipper không cover được địa bàn gom rộng | Thấp | Áp dụng mô hình Hub-and-Spoke: xe tải 1.9T trung trung chuyển ra điểm vệ tinh, shipper giao chặng cuối nội vùng.
+  Row 5: 5 | Volume thực tế thấp hơn dự báo PSBBA | Thấp | Review forecast cuối T7, điều chỉnh kế hoạch xe/người từ T8 trở đi.
+[P] X. BƯỚC TIẾP THEO & HÀNH ĐỘNG
+[P] Hoàn thiện số tham số thực tế vùng trong file AOP Excel (ô vàng).
+[P] Xác nhận mặt bằng BCCK Đức Linh — ký hợp đồng thuê trước 10/07.
+[P] Tuyển dụng 38 shipper hàng cồng kềnh (ưu tiên Nha Trang & Di Linh).
+[P] Kick-off vận hành thử BCCK Nha Trang & Di Linh.
+[P] Review forecast vs actuals sau T7 — cập nhật kế hoạch T8.
+[P] Chuẩn bị xe tải 1.9T tăng cường cho cao điểm T11–T12 (đặt NCC trước).
+[P] Review toàn bộ AOP giữa kỳ H2 — báo cáo lên COO.
+[P] KẾT LUẬN
+[P] Phương án 4 BCCK tại NTB không chỉ giải quyết bài toán tăng trưởng sản lượng hàng nặng mà còn mang lại hiệu quả tài chính rõ rệt: triệt tiêu GAP âm 500–1.500 đơn/ngày, tiết kiệm 1,26 tỷ đồng quỹ lương H2/2026, cắt hoàn toàn chi phí chành xe thuê ngoài, và nâng năng suất shipper bulky lên 47–64 đơn/ngày. Kính trình Ban giám đốc phê duyệt.
+[P] 

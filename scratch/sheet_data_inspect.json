@@ -1,0 +1,362 @@
+{
+  "ODR - TTS": {
+    "headers": [
+      "vung_giao",
+      "tinh",
+      "id_buu_cuc_giao",
+      "buu_cuc_giao",
+      "nhom_tre",
+      "total_orders",
+      "AM"
+    ],
+    "rows": [
+      [
+        "NTB",
+        "Bình Phước",
+        "20269000",
+        "(DNO) Kiến Đức",
+        "(1) Đã trễ ODR",
+        "1",
+        "Trần Văn Phước"
+      ],
+      [
+        "NTB",
+        "Bình Phước",
+        "20669000",
+        "(LDO) Cát Tiên",
+        "(1) Đã trễ ODR",
+        "7",
+        "Nguyễn Lê Nguyên Vũ"
+      ],
+      [
+        "NTB",
+        "Bình Phước",
+        "20669000",
+        "(LDO) Cát Tiên",
+        "(2) Phải giao trong hôm nay",
+        "4",
+        "Nguyễn Lê Nguyên Vũ"
+      ],
+      [
+        "NTB",
+        "Bình Phước",
+        "20669000",
+        "(LDO) Cát Tiên",
+        "(3) Còn 2 ngày",
+        "6",
+        "Nguyễn Lê Nguyên Vũ"
+      ],
+      [
+        "NTB",
+        "Bình Phước",
+        "20669000",
+        "(LDO) Cát Tiên",
+        "(4) Còn 3 ngày",
+        "1",
+        "Nguyễn Lê Nguyên Vũ"
+      ],
+      [
+        "NTB",
+        "Bình Phước",
+        "20669000",
+        "(LDO) Cát Tiên",
+        "(5) Còn >3 ngày",
+        "5",
+        "Nguyễn Lê Nguyên Vũ"
+      ],
+      [
+        "NTB",
+        "Bình Thuận",
+        "2357",
+        "(BTH) Đồng Kho",
+        "(1) Đã trễ ODR",
+        "24",
+        "Huỳnh Tấn Hiền"
+      ],
+      [
+        "NTB",
+        "Bình Thuận",
+        "2357",
+        "(BTH) Đồng Kho",
+        "(2) Phải giao trong hôm nay",
+        "54",
+        "Huỳnh Tấn Hiền"
+      ],
+      [
+        "NTB",
+        "Bình Thuận",
+        "2357",
+        "(BTH) Đồng Kho",
+        "(3) Còn 2 ngày",
+        "141",
+        "Huỳnh Tấn Hiền"
+      ]
+    ],
+    "total_rows": 449
+  },
+  "ODR": {
+    "headers": [
+      "Quản lý",
+      "Chi tiết",
+      "Time",
+      "GTC",
+      "%Ontime"
+    ],
+    "rows": [
+      [
+        "NTB - Đắk Nông",
+        "Điểm Xử Lý Hàng TDP 8 Quốc Lộ 14-Đông Gia Nghĩa-Lâm Đồng",
+        "2026-06-21 - Chủ Nhật",
+        "1",
+        "100,0%"
+      ],
+      [
+        "NTB - Đắk Nông",
+        "Điểm Xử Lý Hàng TDP 8 Quốc Lộ 14-Đông Gia Nghĩa-Lâm Đồng",
+        "2026-06-08 - Thứ 2",
+        "1",
+        "0,0%"
+      ],
+      [
+        "NTB - Đắk Nông",
+        "Điểm Xử Lý Hàng TDP 8 Quốc Lộ 14-Đông Gia Nghĩa-Lâm Đồng",
+        "2026-06-17 - Thứ 4",
+        "1",
+        "100,0%"
+      ],
+      [
+        "NTB - Đắk Nông",
+        "Điểm Xử Lý Hàng TDP 8 Quốc Lộ 14-Đông Gia Nghĩa-Lâm Đồng",
+        "2026-05-31 - Chủ Nhật",
+        "1",
+        "100,0%"
+      ],
+      [
+        "NTB - Đắk Nông",
+        "(DNO) ĐL Nam Gia Nghĩa",
+        "2026-06-19 - Thứ 6",
+        "2",
+        "100,0%"
+      ],
+      [
+        "NTB - Đắk Nông",
+        "(DNO) ĐL Nam Gia Nghĩa",
+        "2026-06-25 - Thứ 5",
+        "2",
+        "100,0%"
+      ],
+      [
+        "NTB - Đắk Nông",
+        "Điểm Xử Lý Hàng TDP 8 Quốc Lộ 14-Đông Gia Nghĩa-Lâm Đồng",
+        "2026-06-14 - Chủ Nhật",
+        "2",
+        "100,0%"
+      ],
+      [
+        "NTB - Đắk Nông",
+        "(DNO) ĐL Nam Gia Nghĩa",
+        "2026-06-14 - Chủ Nhật",
+        "2",
+        "100,0%"
+      ],
+      [
+        "NTB - Đắk Nông",
+        "(DNO) ĐL Nam Gia Nghĩa",
+        "2026-06-23 - Thứ 3",
+        "2",
+        "100,0%"
+      ]
+    ],
+    "total_rows": 2340
+  },
+  "NTB_don_tre": {
+    "headers": [
+      "vung_giao",
+      "tinh",
+      "id_buu_cuc_giao",
+      "buu_cuc_giao",
+      "ma_don_hang",
+      "end_pick_time",
+      "sla_date",
+      "tg_ve_buu_cuc_giao",
+      "so_lan_giao",
+      "AM"
+    ],
+    "rows": [
+      [
+        "NTB",
+        "Bình Phước",
+        "20269000",
+        "(DNO) Kiến Đức",
+        "VNGH80524137103",
+        "2026-06-22 19:58:50.331000+00:00",
+        "2026-06-26 19:58:50.331000+00:00",
+        "6/27/2026",
+        "0",
+        "Trần Văn Phước"
+      ],
+      [
+        "NTB",
+        "Bình Phước",
+        "20669000",
+        "(LDO) Cát Tiên",
+        "VNGH80099327201",
+        "2026-06-25 18:03:54.230000+00:00",
+        "2026-06-27 18:03:54.230000+00:00",
+        "6/26/2026",
+        "1",
+        "Nguyễn Lê Nguyên Vũ"
+      ],
+      [
+        "NTB",
+        "Bình Phước",
+        "20669000",
+        "(LDO) Cát Tiên",
+        "VNGH80468307001",
+        "2026-06-17 15:19:29.229000+00:00",
+        "2026-06-23 15:19:29.229000+00:00",
+        "6/25/2026",
+        "2",
+        "Nguyễn Lê Nguyên Vũ"
+      ],
+      [
+        "NTB",
+        "Bình Phước",
+        "20669000",
+        "(LDO) Cát Tiên",
+        "VNGH80527027105",
+        "2026-06-23 11:56:58.539000+00:00",
+        "2026-06-25 11:56:58.539000+00:00",
+        "",
+        "0",
+        "Nguyễn Lê Nguyên Vũ"
+      ],
+      [
+        "NTB",
+        "Bình Phước",
+        "20669000",
+        "(LDO) Cát Tiên",
+        "VNGH80644177006",
+        "2026-06-19 17:10:50.800000+00:00",
+        "2026-06-21 17:10:50.800000+00:00",
+        "6/25/2026",
+        "2",
+        "Nguyễn Lê Nguyên Vũ"
+      ],
+      [
+        "NTB",
+        "Bình Phước",
+        "20669000",
+        "(LDO) Cát Tiên",
+        "VNGH80704327101",
+        "2026-06-22 10:30:15.668000+00:00",
+        "2026-06-26 10:30:15.668000+00:00",
+        "",
+        "0",
+        "Nguyễn Lê Nguyên Vũ"
+      ],
+      [
+        "NTB",
+        "Bình Phước",
+        "20669000",
+        "(LDO) Cát Tiên",
+        "VNGH80793037106",
+        "2026-06-23 17:47:49.092000+00:00",
+        "2026-06-25 17:47:49.092000+00:00",
+        "6/24/2026",
+        "3",
+        "Nguyễn Lê Nguyên Vũ"
+      ],
+      [
+        "NTB",
+        "Bình Phước",
+        "20669000",
+        "(LDO) Cát Tiên",
+        "VNGH80850637102",
+        "2026-06-22 16:03:39.576000+00:00",
+        "2026-06-25 16:03:39.576000+00:00",
+        "6/27/2026",
+        "0",
+        "Nguyễn Lê Nguyên Vũ"
+      ],
+      [
+        "NTB",
+        "Bình Thuận",
+        "2357",
+        "(BTH) Đồng Kho",
+        "VNGH80055547107",
+        "2026-06-24 17:01:34.587000+00:00",
+        "2026-06-26 17:01:34.587000+00:00",
+        "6/25/2026",
+        "3",
+        "Huỳnh Tấn Hiền"
+      ]
+    ],
+    "total_rows": 3096
+  },
+  "Cocau": {
+    "headers": [
+      "warehouse_id",
+      "Bưu cục",
+      "Tỉnh",
+      "AM"
+    ],
+    "rows": [
+      [
+        "20797000",
+        "Kho Chuyển Tiếp Đắk Nông",
+        "Đắk Nông",
+        "Trần Văn Phước"
+      ],
+      [
+        "22242000",
+        "(DNO) Bắc Gia Nghĩa",
+        "Đắk Nông",
+        "Trần Văn Phước"
+      ],
+      [
+        "22048000",
+        "(DNO) Đông Gia Nghĩa",
+        "Đắk Nông",
+        "Trần Văn Phước"
+      ],
+      [
+        "20269000",
+        "(DNO) Kiến Đức",
+        "Đắk Nông",
+        "Trần Văn Phước"
+      ],
+      [
+        "22394000",
+        "(DNO) Quảng Tín",
+        "Đắk Nông",
+        "Trần Văn Phước"
+      ],
+      [
+        "20673000",
+        "(DNO) Cư Jút",
+        "Đắk Nông",
+        "Trần Thị Nhung"
+      ],
+      [
+        "21477000",
+        "(DNO) Đức An",
+        "Đắk Nông",
+        "Trần Thị Nhung"
+      ],
+      [
+        "2309",
+        "(DNO) Đức Lập",
+        "Đắk Nông",
+        "Trần Thị Nhung"
+      ],
+      [
+        "20591000",
+        "(DNO) Krông Nô",
+        "Đắk Nông",
+        "Trần Thị Nhung"
+      ]
+    ],
+    "total_rows": 93
+  }
+}

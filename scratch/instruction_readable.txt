@@ -1,0 +1,1061 @@
+HƯỚNG DẪN CHI TIẾT LẬP AOP HÀNG NẶNG (≥10kg) — CẤP VÙNG
+HƯỚNG DẪN CHI TIẾT
+LẬP AOP HÀNG NẶNG (≥10kg) — CẤP VÙNG
+Dành cho người làm lần đầu — đọc từ trên xuống, làm tới đâu chắc tới đó.  ·  Khung thời gian: T7–T12/2026 · Phạm vi nhóm hàng: từ 10kg trở lên.
+GHN — Capacity Planning  ·  Khung T7–T12/2026
+Mục lục
+PHẦN 0 — HIỂU TRƯỚC KHI LÀM (đọc 5 phút, đỡ sai cả buổi)
+0.1. AOP này là gì, làm để làm gì?
+0.2. Ai làm — ai duyệt
+0.3. Bạn sẽ làm việc với MẤY file?
+0.4. Quy ước MÀU Ô — quan trọng nhất, nhớ kỹ
+0.5. Định dạng SỐ kiểu Việt Nam
+0.6. Từ điển thuật ngữ (tra khi gặp từ lạ)
+PHẦN A — FILE CHÍNH (tính theo THÁNG) ⭐ làm phần này trước
+A.0. Bản đồ file — 11 sheet và chúng nối với nhau thế nào
+BƯỚC 1 — Sheet `0. Thông tin vùng` (2 phút)
+BƯỚC 2 — Sheet `1. Thông số` ⭐ QUAN TRỌNG NHẤT (10 phút)
+BƯỚC 3 — Sheet `Volume Giao` & `Volume Lấy` (chỉ KIỂM TRA, 3 phút)
+BƯỚC 4 — Sheet `0.3 Bưu cục Detail` + `Mật độ & phương án` (10 phút)
+BƯỚC 5 — Sheet `Kênh & nhu cầu` (điền 2 dòng, 5 phút)
+BƯỚC 6 — Sheet `Mặt bằng` & `Timeline tiếp nhận` (10 phút)
+BƯỚC 7 — Sheet `Nguồn lực & chi phí` ⭐ ĐỌC KẾT QUẢ (đây là phần trình AOP)
+A.8. CÁCH MÁY TÍNH (đọc để hiểu — không cần sửa công thức)
+PHẦN B — FILE CHI TIẾT theo NGÀY (tùy chọn)
+B.0. Khi nào dùng file này?
+B.1. Bản đồ file MAU
+B.2. `1. Thông số` (khác với file chính một chút)
+B.3. `2. Ngày lễ`
+B.4. `Forecast T7` … `Forecast T12` — DÁN số (việc chính)
+B.5. `Kế hoạch T7` … `T12` — TRÁI TIM của mô hình ngày
+B.6. `Tổng hợp xe` & `Nguồn lực & chi phí` — đọc kết quả
+B.7. Cách máy tính theo ngày (tóm tắt)
+PHẦN C — CHECKLIST & LỖI THƯỜNG GẶP
+C.1. Checklist trước khi nộp ✅
+C.2. Lỗi hay gặp ❌
+C.3. Nguồn số & lưu ý minh bạch
+PHẦN 0 — HIỂU TRƯỚC KHI LÀM (đọc 5 phút, đỡ sai cả buổi)
+0.1. AOP này là gì, làm để làm gì?
+AOP
+= *Annual Operating Plan* =
+Kế hoạch vận hành
+. Ở đây là kế hoạch cho
+riêng nhóm hàng ≥10kg
+(hàng vừa + hàng nặng) của
+vùng bạn
+, cho 6 tháng cuối năm 2026 (T7→T12).
+Mục tiêu cuối cùng: trả lời được
+“6 tháng tới, để giao hết hàng ≥10kg, vùng cần bao nhiêu XE, bao nhiêu NGƯỜI, bao nhiêu m² KHO, tốn bao nhiêu TIỀN mỗi tháng?”
+File sau khi điền xong sẽ được nộp lên
+khối Capacity / COO
+để ghép thành AOP toàn quốc. Vì vậy
+không được đổi tên sheet, không xoá công thức
+— nếu đổi, máy ghép file tự động của Capacity sẽ lỗi.
+0.2. Ai làm — ai duyệt
+Vai trò
+Ai
+Người lập
+GĐV
+(Giám đốc Vùng) cùng đội vận hành vùng
+Phạm vi số liệu
+Toàn bộ hàng
+từ 10kg trở lên
+của vùng
+Nộp về
+Khối
+Capacity / COO
+để tổng hợp toàn quốc
+Sản phẩm
+1 file Excel cho mỗi vùng:
+AOP_Hang_<VÙNG>_T7-T12_2026.xlsx
+0.3. Bạn sẽ làm việc với MẤY file?
+Bạn nhận
+2 file
+Excel:
+File
+Tên
+Vai trò
+Bắt buộc?
+File chính
+AOP_Hang_<VÙNG>_T7-T12_2026.xlsx
+(ví dụ
+AOP_Hang_HNO_...
+)
+Tính theo
+THÁNG
+. Volume đã
+nạp sẵn tự động
+, bạn chỉ chỉnh tham số + điền vài chỗ. Đây là phần
+đa số vùng cần
+.
+✅ Bắt buộc
+File chi tiết
+AOP_Hang_Nang_MAU_Vung_T7-T12_2026.xlsx
+Mô hình xe
+theo từng NGÀY
+cho kênh hàng nặng (xe tải/GXT). Dùng khi cần
+xếp xe từng ngày
+, theo dõi tồn đọng.
+⬜ Tùy chọn
+👉
+Làm theo thứ tự:
+Hoàn thành
+File chính
+trước (Phần A). Chỉ làm
+File chi tiết
+(Phần B) khi sếp/đội xe cần kế hoạch xe theo ngày.
+0.4. Quy ước MÀU Ô — quan trọng nhất, nhớ kỹ
+Mở file ra bạn sẽ thấy các ô có màu khác nhau. Mỗi màu là một “luật chơi”:
+Màu ô
+Ý nghĩa
+Bạn được làm gì
+🟡
+VÀNG
+(
+#FFF2CC
+)
+Ô
+nhập tay
+GÕ / DÁN số
+của vùng vào đây
+⬜
+Trắng / 🩶 Xám
+(
+#E8EEF4
+)
+Ô
+công thức tự tính
+KHÔNG sửa
+— máy tự ra số
+🟧
+CAM
+(
+#FF5200
+)
+Tiêu đề cột
+(header)
+Chỉ đọc, không động vào
+🟦
+XANH nhạt
+(
+#D6EAF8
+)
+Tiêu đề mục / nhóm
+Chỉ đọc
+⭐
+Một câu để nhớ:
+*“Thấy vàng thì gõ, thấy trắng/xám thì để yên.”*
+⚠️
+Một ngoại lệ duy nhất
+(chỉ ở File chi tiết theo ngày — Phần B): dòng *“(7) Xe xếp thực tế ✏”* là ô
+vàng nhưng đã chứa sẵn công thức
+=Xe đề xuất
+. Chỉ gõ đè ô này khi bạn
+cố ý
+xếp khác số xe máy gợi ý. Xem chi tiết ở mục B.5.
+0.5. Định dạng SỐ kiểu Việt Nam
+Trong file dùng định dạng số VN:
+dấu chấm = ngăn cách nghìn
+,
+dấu phẩy = thập phân
+.
+Ví dụ:
+1.200.000
+= một triệu hai trăm nghìn;
+1,2
+= một phẩy hai.
+0.6. Từ điển thuật ngữ (tra khi gặp từ lạ)
+Viết tắt / Từ
+Nghĩa
+GĐV
+Giám đốc Vùng
+KTC
+Kho Trung Chuyển
+BC
+Bưu cục
+BCCK
+Bưu cục Cồng kềnh
+— bưu cục chuyên xử lý hàng to/nặng, có kho riêng + xe van + xe tải
+GXT
+Đội/tuyến
+xe tải
+giao hàng nặng (≥20kg). *(“Giao xe tải” là cách gọi nội bộ trong hướng dẫn này — khi trình chính thức nên xác nhận tên đầy đủ với Ops.)*
+Xe van
+Xe tải nhỏ (van) giao
+hàng vừa
+(10–20kg)
+Hàng vừa
+Hàng
+10–15kg + 15–20kg
+→ giao bằng BCCK / xe van
+Hàng nặng
+Hàng
+≥20kg
+→ giao bằng GXT / đội tải
+Band cân nặng
+Nhóm cân nặng. File chia 3 band:
+10–15kg
+,
+15–20kg
+,
+≥20kg
+GTC
+Giao thành công
+— tỷ lệ % đơn giao được trong ngày (ví dụ 0,82 = 82%)
+Chiều Giao
+Hàng
+đến kho
+để đi giao cho người nhận
+Chiều Lấy
+Hàng
+lấy từ shop
+(pickup)
+B2B
+Hàng doanh nghiệp–doanh nghiệp. Đây là
+kênh RIÊNG, đã tách trước
+ở bước định tuyến M4 → chỉ điền
+tham chiếu
+, KHÔNG cộng vào hàng vừa/nặng
+AhaMove
+Đối tác giao hàng ngoài. Cũng là
+kênh riêng
+→ chỉ tham chiếu
+PSBBA
+Tên tool/nguồn forecast (FC) sản lượng — nơi volume được nạp tự động từ đó
+FC
+Forecast = dự báo sản lượng
+Ngày cao điểm
+Ngày có tổng sản lượng cao bất thường (≥ X lần trung bình tháng). Dùng năng suất & số xe cao hơn
+Tồn giao lại
+Đơn hôm trước giao
+không thành công
+, dồn sang hôm sau giao tiếp
+Gap
+Chênh lệch giữa
+năng lực giao
+và
+nhu cầu
+. Gap âm = thiếu xe/không giao hết
+Mật độ lưu trữ
+Số đơn xếp được trên 1 m² kho (đơn/m²). Dùng để tính diện tích cần thuê
+PHẦN A — FILE CHÍNH (tính theo THÁNG) ⭐ làm phần này trước
+File:
+AOP_Hang_<VÙNG>_T7-T12_2026.xlsx
+A.0. Bản đồ file — 11 sheet và chúng nối với nhau thế nào
+File có 11 sheet. Hiểu
+luồng số chạy
+sẽ thấy việc rất nhẹ.
+`1. Thông số` là gốc
+— mọi sheet khác lấy tham số từ đó:
+[1. Thông số]  (🟡 bạn chỉnh — GỐC của mọi phép tính)
+                  │  cấp tham số (năng suất, đơn giá, ngưỡng…) cho ↓
+   ┌──────────────┼───────────────────────────────┐
+   ▼              ▼                                ▼
+NHÁNH CHÍNH (ra nguồn lực)              NHÁNH PHỤ (phân loại BC)
+[Volume Giao/Lấy] đã nạp sẵn            [0.3 Bưu cục Detail] (🟡 dán SL/BC)
+        │                                        │
+        ▼                                        ▼
+[Kênh & nhu cầu] (🟡 điền B2B/AhaMove)   [Mật độ & phương án] (đếm + gợi ý)
+        │  → ra SL/ngày
+        ▼
+[Nguồn lực & chi phí] ⭐ KẾT QUẢ: xe / người / m² / chi phí  (phần trình AOP)
+[Mặt bằng] [Timeline tiếp nhận]  ← kế hoạch kho & bàn giao chi tiết
+Đọc sơ đồ:
+xe / người / m² / tiền
+đi ra từ nhánh chính (
+Volume → Kênh & nhu cầu → Nguồn lực & chi phí
+). Nhánh
+0.3 Bưu cục Detail → Mật độ & phương án
+chỉ để
+phân loại bưu cục
+(nơi nào mở BCCK), không ảnh hưởng số nguồn lực tổng.
+#
+Sheet
+Bạn cần làm gì
+Loại
+1
+Hướng dẫn
+Đọc
+Chỉ đọc
+2
+0. Thông tin vùng
+Điền GĐV, người lập, ngày lập
+🟡 Nhập
+3
+1. Thông số
+Thay số mẫu bằng số thực vùng
+🟡 Nhập
+4
+Volume Giao
+Kiểm tra
+(đã nạp sẵn)
+Chỉ đọc
+5
+Volume Lấy
+Kiểm tra
+(đã nạp sẵn)
+Chỉ đọc
+6
+0.3 Bưu cục Detail
+Dán sản lượng ≥10kg theo từng BC
+🟡 Nhập
+7
+Mật độ & phương án
+Đọc tóm tắt phân loại BC (nhánh phụ)
+Tự tính
+8
+Kênh & nhu cầu
+Điền dòng
+B2B & AhaMove
+🟡 Nhập (2 dòng)
+9
+Nguồn lực & chi phí
+Đọc kết quả
+(xe/người/m²/tiền)
+Tự tính
+10
+Mặt bằng
+Điền BC + Vol + diện tích hiện tại
+🟡 Nhập
+11
+Timeline tiếp nhận
+Điền lộ trình nhận bàn giao
+🟡 Nhập
+BƯỚC 1 — Sheet
+0. Thông tin vùng
+(2 phút)
+Điền “lý lịch” của bản kế hoạch.
+Ô
+Điền gì
+Ví dụ (HNO)
+B3
+Vùng
+Mã vùng (thường
+có sẵn
+)
+HNO
+B4
+Giám đốc Vùng
+Tên GĐV
+*(điền tay)*
+B5
+Người lập
+Tên bạn
+*(điền tay)*
+B6
+Ngày lập
+Ngày làm file
+22/06/2026
+B7
+Ngưỡng nhóm hàng
+Có sẵn
+>=10kg
+B8
+Khung thời gian
+Có sẵn
+T7 - T12 / 2026
+Chỉ cần điền
+B4, B5, B6
+. Ba ô còn lại đã có sẵn. ⚠️
+Kiểm tra ô B3 đúng mã vùng của BẠN.
+File mẫu đang để
+HNO
+; nếu bạn ở vùng khác mà ô vẫn là
+HNO
+thì phải sửa lại — và
+đổi tên file lưu
+cho khớp (
+AOP_Hang_<VÙNG>_T7-T12_2026.xlsx
+).
+BƯỚC 2 — Sheet
+1. Thông số
+⭐ QUAN TRỌNG NHẤT (10 phút)
+Đây là “bảng điều khiển”.
+Mọi số xe/người/tiền ở các sheet khác đều tính từ đây.
+Tất cả ô số là 🟡 vàng — bạn thay
+SỐ MẪU
+(đang là số của GXT HCM) bằng
+số thực của vùng mình
+.
+Ô
+Tham số
+Số mẫu
+Nghĩa & cách lấy số thực
+B2
+Hệ số ngày cao điểm (X)
+1,2
+Ngày nào tổng SL ≥ 1,2 × trung bình tháng thì coi là
+cao điểm
+. Thường để nguyên.
+KÊNH HÀNG NẶNG (GXT / đội tải)
+B4
+Năng suất GTC/chuyến (ngày thường)
+55
+1 chuyến xe tải giao thành công ~bao nhiêu đơn nặng. Hỏi đội xe vùng.
+B5
+Năng suất GTC/chuyến (cao điểm)
+61
+Như trên, ngày cao điểm chạy được nhiều hơn.
+B6
+Số người/xe (tài xế + phụ)
+2
+Mỗi xe tải cần mấy người.
+B7
+Mật độ lưu trữ hàng nặng (đơn/m²)
+3,3
+1 m² kho chứa ~3,3 đơn nặng. Hàng càng to → số càng nhỏ.
+B8
+Chi phí xe (đ/xe/ngày)
+1.200.000
+Thuê/vận hành 1 xe tải 1 ngày (đã gồm tài xế nếu thuê NCC).
+KÊNH HÀNG VỪA (BCCK van)
+B10
+Năng suất giao/người van/ngày
+50
+1 nhân viên xe van giao ~bao nhiêu đơn vừa/ngày.
+B11
+Mật độ lưu trữ hàng vừa (đơn/m²)
+5
+1 m² kho chứa ~5 đơn vừa.
+B12
+Lương BQ người van (đ/người/tháng)
+11.000.000
+Lương 1 nhân viên van/tháng.
+DÙNG CHUNG
+B14
+Đơn giá thuê (đ/m²/tháng)
+140.000
+Giá thuê kho/m²/tháng tại vùng.
+B15
+Lương BQ nhân sự xử lý (đ/người/tháng)
+10.000.000
+Lương người xử lý kho/tháng.
+B16
+GTC bình quân (giao thành công)
+0,82
+Tỷ lệ giao thành công bình quân = 82%.
+B17
+Số ngày làm việc/tháng
+30
+Dùng để đổi “đơn/tháng → đơn/ngày”.
+B18
+Ngưỡng mở BCCK (đơn ≥10kg/ngày/BC)
+200
+BC đạt ≥ ngưỡng này/ngày thì
+nên mở bưu cục cồng kềnh riêng
+.
+⚠️
+Bắt buộc:
+Số đang có là
+SỐ MẪU của HCM
+. Phải thay bằng số thực của vùng
+trước khi trình
+, nếu không kết quả sai hoàn toàn. 💡 Mẹo: Nếu chưa có số chính xác, hỏi đội xe + đội kho của vùng. Số nào chưa chắc → ghi chú lại để verify sau, đừng để số HCM.
+BƯỚC 3 — Sheet
+Volume Giao
+&
+Volume Lấy
+(chỉ KIỂM TRA, 3 phút)
+Hai sheet này chứa
+volume ≥10kg đã được nạp sẵn tự động
+từ tool topline PSBBA, tách theo
+Tỉnh × Band cân nặng × Tháng
+.
+`Volume Giao`
+= hàng
+đến kho để giao
+cho người nhận.
+`Volume Lấy`
+= hàng
+lấy từ shop
+(pickup).
+3 band/sheet:
+10–15kg (Hàng vừa)
+,
+15–20kg (Hàng vừa)
+,
+≥20kg (Hàng nặng)
+.
+Dòng
+TỔNG
+(hàng 6) tự cộng —
+không sửa
+.
+✋
+KHÔNG gõ lại các số này.
+Việc của bạn chỉ là
+liếc xem có hợp lý không
+(không bị 0, không lệch bất thường so với thực tế vùng). Muốn cập nhật volume → phải
+chạy lại tool topline
+rồi build lại file, không sửa tay.
+Ví dụ HNO –
+Volume Giao
+, band ≥20kg (Hàng nặng): T7 = 132.308 → T12 = 192.059 đơn/tháng.
+Xu hướng chung tăng về cuối năm
+(hợp lý vì cao điểm cuối năm) — nhưng vài tháng lẻ có thể
+giảm nhẹ
+so với tháng trước, đó vẫn là bình thường, không phải lỗi.
+BƯỚC 4 — Sheet
+0.3 Bưu cục Detail
++
+Mật độ & phương án
+(10 phút)
+Vì sao cần bước này?
+Không phải bưu cục nào cũng đủ hàng để mở BCCK riêng. Sheet này giúp
+tự động phân loại
+từng BC: nơi nào đủ mật độ thì mở BCCK, nơi nào ít hàng thì giao gộp.
+Việc của bạn ở `0.3 Bưu cục Detail`:
+Cột
+A
+(STT):
+đã đánh sẵn số 1→25 — đừng động.
+Bắt đầu gõ từ cột B.
+Cột
+B
+(Bưu cục): điền
+tên BC
+.
+Cột
+C
+(Loại BC): điền loại.
+Cột
+D→I
+(T7→T12):
+DÁN sản lượng ≥10kg/tháng
+của từng BC (lấy từ
+bc_fc_engine
+, sheet
+3_KQ_BC_Detail
+).
+Mẫu chứa tối đa
+25 dòng BC
+(dòng 3→27). Nếu vùng có
+trên 25 BC
+, báo khối Capacity để mở rộng — đừng tự chèn dòng vì sẽ lệch công thức đếm ở
+Mật độ & phương án
+.
+Máy tự tính (KHÔNG sửa):
+Cột
+J
+— *SL ≥10kg/ngày (T12)* = SL tháng 12 ÷ số ngày làm việc.
+Cột
+K
+— *Phân loại*: nếu
+J ≥ ngưỡng (B18 = 200)
+→
+“Đủ mật độ — nên mở BCCK”
+, ngược lại
+“Không đủ — giao gộp”
+.
+Cột
+L
+— *m² gợi ý nếu mở* = SL/ngày ÷ mật độ.
+Cột
+M
+— *Phương án* (câu mô tả tự sinh).
+Sheet `Mật độ & phương án`
+sau đó tự đếm: bao nhiêu BC đủ mật độ, bao nhiêu BC giao gộp, và mô tả 2 nhóm phương án:
+A. Nơi ĐỦ mật độ
+→ mở/giữ BCCK: thuê kho riêng, xe van + xe tải, người xử lý tập trung.
+B. Nơi KHÔNG đủ
+→ không mở BCCK: gộp về BCCK gần nhất / BC thường + xe máy gánh hàng vừa nhẹ / van gom tuyến liên xã / hàng ≥20kg dồn về tuyến GXT định kỳ.
+📌 Nếu vùng
+chưa có số liệu theo từng BC
+, có thể tạm để trống — cột phân loại sẽ trống theo. Khi có số thì dán vào, mọi thứ tự chạy.
+BƯỚC 5 — Sheet
+Kênh & nhu cầu
+(điền 2 dòng, 5 phút)
+Sheet này gom volume thành các kênh và tính SL/ngày.
+Máy tự tính (KHÔNG sửa):
+Dòng
+Tổng ≥10kg đến kho
+= Hàng vừa + Hàng nặng.
+— Hàng vừa (10–15 + 15–20kg)
+và
+— Hàng nặng (≥20kg)
+= tự lấy từ Volume.
+SL/ngày — Hàng vừa
+và
+SL/ngày — Hàng nặng
+= volume tháng ÷ số ngày làm việc.
+Việc của bạn — chỉ 2 dòng 🟡 (mỗi cột B→G là 1 tháng T7→T12):
+Dòng
+Gõ vào ô
+Điền gì
+Dòng 6 —
+B2B … ✏
+B6 → G6
+Số B2B từ
+bc_fc_engine
+(T7→T12)
+Dòng 7 —
+AhaMove … ✏
+B7 → G7
+Số AhaMove (T7→T12)
+⚠️
+B2B và AhaMove là kênh RIÊNG, đã được tách ở định tuyến M4.
+Điền chỉ để
+bức tranh đủ
+, máy
+KHÔNG cộng
+chúng vào hàng vừa/nặng. Nếu vùng không có thì để trống.
+BƯỚC 6 — Sheet
+Mặt bằng
+&
+Timeline tiếp nhận
+(10 phút)
+Sheet `Mặt bằng`
+— kế hoạch kho cho từng Bưu cục Cồng kềnh. Điền các cột 🟡:
+Cột
+Điền gì
+B
+Bưu cục Cồng kềnh
+Tên BCCK
+C
+Vol TB T12 (đơn/ngày)
+Sản lượng bình quân/ngày tháng 12 của BC đó
+E
+Giá thuê tạm tính (đ/tháng)
+(nếu có) — cột tham khảo,
+không
+vào công thức tổng chi phí
+F
+Diện tích hiện tại (m²)
+Kho đang có bao nhiêu m²
+H
+Tình trạng
+Ghi chú (đủ / thiếu / cần thuê thêm…)
+Máy tự tính: cột
+D
+*Diện tích cần* = Vol ÷ mật độ; cột
+G
+*Thiếu* = Diện tích cần − Diện tích hiện tại.
+Sheet `Timeline tiếp nhận`
+— lộ trình nhận bàn giao hàng từ GXT theo phường/xã. Điền:
+Phường/Xã
+,
+Quận/Huyện
+,
+Vol hiện tại
+,
+BC Cồng kềnh dự kiến
+,
+Mốc tiếp nhận
+,
+GXT giao song song
+.
+Hai sheet này điền
+theo từng dòng giống cách file HCM đã làm
+. Vùng ít BC thì điền ít dòng, để trống phần thừa.
+BƯỚC 7 — Sheet
+Nguồn lực & chi phí
+⭐ ĐỌC KẾT QUẢ (đây là phần trình AOP)
+Sheet này
+tự tính hết
+— bạn chỉ
+đọc và trình bày
+. Mỗi cột là 1 tháng (T7→T12).
+Dòng
+Là gì
+HÀNG NẶNG
+Xe BQ/ngày
+Số xe tải cần mỗi ngày
+Người giao (tài xế+phụ)
+= Xe × số người/xe
+Mặt bằng hàng nặng (m²)
+Diện tích kho hàng nặng
+HÀNG VỪA
+Người van cần
+Số nhân viên xe van
+Mặt bằng hàng vừa (m²)
+Diện tích kho hàng vừa
+CHI PHÍ (đ/tháng)
+Chi phí xe / người van / thuê mặt bằng
+3 khoản chi
+TỔNG CHI PHÍ
+Cộng 3 khoản
+Chi phí / đơn (đ)
+Tổng chi phí ÷ tổng đơn ≥10kg
+👉 Đây là các con số bạn đưa vào báo cáo AOP: *“T12 cần X xe, Y người van, Z m² kho, tổng chi phí W đồng/tháng, ≈ V đồng/đơn.”*
+A.8. CÁCH MÁY TÍNH (đọc để hiểu — không cần sửa công thức)
+Đại lượng
+Công thức
+SL/ngày
+Volume tháng ÷ số ngày làm việc (
+B17
+)
+Hàng nặng — Xe BQ/ngày
+⌈ SL nặng/ngày × GTC (
+B16
+) ÷ Năng suất GTC/chuyến (
+B4
+) ⌉
+Người giao
+Xe × số người/xe (
+B6
+)
+Hàng vừa — Người van
+⌈ SL vừa/ngày ÷ Năng suất giao/người van (
+B10
+) ⌉
+Mặt bằng (m²)
+SL/ngày ÷ mật độ lưu trữ (riêng từng kênh)
+Chi phí/tháng
+Chi phí xe + lương người van + thuê mặt bằng
+Chi phí/đơn
+Tổng chi phí ÷ tổng đơn ≥10kg
+(⌈ ⌉ =
+làm tròn LÊN
+— vì không thể có 2,3 cái xe, phải có 3 xe.)
+❓
+Vì sao nhân với GTC (0,82)?
+Mỗi chuyến xe chỉ
+giao thành công ~82%
+số đơn mang đi. Năng suất “GTC/chuyến” (B4) đã là số đơn
+giao được
+. Nhân nhu cầu với GTC để quy về phần thực sự giao được rồi mới chia cho năng suất → ra số xe đúng. Đây
+không phải
+tính trùng.
+PHẦN B — FILE CHI TIẾT theo NGÀY (tùy chọn)
+File:
+AOP_Hang_Nang_MAU_Vung_T7-T12_2026.xlsx
+B.0. Khi nào dùng file này?
+Dùng khi cần
+xếp xe tải (GXT) theo TỪNG NGÀY
+cho kênh hàng nặng: ngày nào bao nhiêu xe, có giao kịp không, hàng tồn dồn lại bao nhiêu. Mô hình này
+bám sát file GXT HCM
+(đã kiểm khớp 100% số HCM). File MAU là
+bản mẫu dùng chung
+— mỗi vùng dán số của mình vào.
+B.1. Bản đồ file MAU
+Sheet
+Việc của bạn
+Loại
+Hướng dẫn
+Đọc
+Chỉ đọc
+0. Thông tin vùng
+Điền tên vùng, GĐV, ngày lập
+🟡
+1. Thông số
+Thay số mẫu (xe tối đa, năng suất, GTC theo thứ…)
+🟡
+2. Ngày lễ
+Thêm/bớt ngày lễ + hệ số năng suất
+🟡
+Forecast T7
+…
+T12
+DÁN sản lượng/ngày
+theo từng Kho/BC
+🟡
+Kế hoạch T7
+…
+T12
+Xem xe đề xuất, chỉnh “Xe xếp thực tế”, theo dõi Gap
+🟡 (1 dòng/kho)
+Tổng hợp xe
+Đọc kết quả
+Tự tính
+Nguồn lực & chi phí
+Đọc kết quả
+Tự tính
+B.2.
+1. Thông số
+(khác với file chính một chút)
+Ô
+Tham số
+Số mẫu
+B2
+Hệ số ngày cao điểm (X)
+1,2
+B3
+Xe tối đa / kho (ngày thường)
+60
+B4
+Xe tối đa / kho (cao điểm)
+70
+B5
+Năng suất GTC/chuyến (ngày thường)
+55
+B6
+Năng suất GTC/chuyến (cao điểm)
+61
+B10–B16
+Tỷ lệ GTC theo từng thứ
+(T2→CN)
+T2=0,8318 … CN=0,782
+B19
+Năng suất xử lý kho (đơn/người/ngày)
+250
+B20
+Số người/xe
+2
+B21
+Mật độ lưu trữ (đơn/m²)
+3,3
+B22
+Đơn giá thuê (đ/m²/tháng)
+140.000
+B23
+Chi phí xe (đ/xe/ngày)
+1.200.000
+B24
+Lương BQ nhân sự xử lý (đ/người/tháng)
+10.000.000
+Tỷ lệ GTC theo thứ:
+cuối tuần (T7, CN) giao thành công thấp hơn ngày thường — đó là lý do có bảng riêng cho từng thứ.
+B.3.
+2. Ngày lễ
+Liệt kê ngày lễ +
+hệ số năng suất
+(1 = bình thường; 0,7 = chỉ còn 70%). Mẫu có sẵn Quốc khánh 02/09 (hệ số 0,7). Ngày không có trong bảng → mặc định hệ số 1.
+B.4.
+Forecast T7
+…
+Forecast T12
+— DÁN số (việc chính)
+Dòng 2 (Ngày: 1→31) và dòng 3 (Thứ: T2…CN) đã điền sẵn — KHÔNG sửa.
+Dòng “Thứ” này quyết định tỷ lệ GTC theo thứ ở sheet Kế hoạch, nên số bạn dán phải
+khớp đúng cột của từng ngày
+, đừng dán lệch cột.
+Cột
+A
+, các dòng
+Kho/BC 1
+…
+Kho/BC 8
+:
+đặt tên Kho/BC của vùng
+(tên này tự nhảy sang sheet Kế hoạch).
+Các ô 🟡 dưới mỗi ngày (cột B→AF = ngày 1→31):
+DÁN sản lượng dự báo (đơn/ngày)
+của từng kho.
+Dòng
+TỔNG
+và
+Trung bình ngày
+tự tính.
+Mẫu dựng sẵn
+8 block Kho/BC
+. Vùng ít kho hơn:
+để trống
+block thừa —
+đừng xoá công thức
+.
+B.5.
+Kế hoạch T7
+…
+T12
+— TRÁI TIM của mô hình ngày
+Mở sheet ra bạn sẽ thấy 2 phần:
+① Khối “tham số ngày” ở TRÊN CÙNG (dòng 2→9) — TẤT CẢ tự tính, chỉ đọc, KHÔNG sửa:
+Dòng
+Tên
+Nghĩa
+2
+Ngày
+Ngày 1→31 (tự lấy từ Forecast)
+3
+Thứ
+T2…CN
+4
+TỔNG sản lượng (toàn vùng)
+Tổng đơn của ngày
+5
+Loại ngày
+Tự xác định
+“Cao điểm”
+hay
+“Thường”
+6
+Hệ số ngày lễ
+Lấy từ sheet
+2. Ngày lễ
+7
+Tỷ lệ GTC (theo thứ)
+Lấy từ
+1. Thông số
+8
+Năng suất GTC/chuyến hôm nay
+Tùy ngày thường/cao điểm × hệ số lễ
+9
+Xe tối đa/kho hôm nay
+Trần số xe
+Đừng hoảng khi thấy 8 dòng này — bạn
+không điền gì ở đây
+. Phần điền/đọc nằm
+bên dưới
+, mỗi Kho/BC một khối 9 dòng (bắt đầu từ dòng 11).
+② Các khối Kho/BC ở DƯỚI:
+mỗi Kho/BC có 1 “khối” 9 dòng. Hầu hết tự tính, bạn chỉ động vào
+1 dòng
+(dòng 7 của khối — “Xe xếp thực tế”).
+Dòng
+Tên
+Ý nghĩa
+Sửa?
+(1)
+FC mới nhận
+Hàng mới của ngày (từ Forecast)
+Tự
+(2)
+Tồn giao lại lần 1
+Đơn hôm qua giao trượt = FC hôm qua × (1 − GTC hôm qua)
+Tự
+(3)
+Tồn giao lại lần 2
+Tồn lần 1 hôm qua chưa giao được, dồn tiếp
+Tự
+(4)
+Tổng nhu cầu thực tế
+= (1) + (2) + (3)
+Tự
+(5)
+Tỷ lệ GTC hôm nay
+Theo thứ
+Tự
+(6)
+Xe đề xuất (min)
+= ⌈ Tổng nhu cầu × GTC ÷ Năng suất/chuyến ⌉, tối đa = Xe tối đa/kho
+Tự
+(7)
+Xe xếp thực tế ✏
+🟡
+Ô vàng ĐẶC BIỆT — đã chứa sẵn công thức `=Xe đề xuất`
+(mặc định bằng dòng 6).
+🟡 Có, nhưng cẩn thận
+(8)
+Đơn GTC kỳ vọng
+= Xe xếp thực tế × Năng suất/chuyến
+Tự
+(9)
+Gap (thiếu/thừa)
+= (8) − (4).
+Âm = chưa đủ xe
+, hàng sẽ tồn sang ngày sau
+Tự
+Cách dùng:
+Bình thường
+để nguyên
+(xe xếp thực tế = xe đề xuất). Nếu vùng muốn xếp ít/nhiều xe hơn,
+gõ số tay vào dòng (7)
+rồi
+nhìn dòng (9) Gap
+: gap âm nghĩa là không giao hết, tồn sẽ dồn sang hôm sau.
+⚠️
+Lưu ý ô vàng đặc biệt (7):
+Khác với mọi ô vàng khác (đang trống chờ gõ), ô (7)
+đã có công thức `=` sẵn
+. Khi bạn gõ số tay vào, công thức của riêng ô đó
+bị xoá
+. Muốn quay lại mặc định: gõ lại
+=
+ô “Xe đề xuất (min)” cùng cột (ví dụ ô ngay phía trên trong khối). Vì vậy
+chỉ gõ đè khi thật sự cần xếp khác
+— đừng vô tình gõ đè cả 31 ngày × 8 kho.
+💡 “Tồn giao lại” mô phỏng thực tế: hàng nặng hay giao hụt, phần trượt phải giao lại hôm sau — nên nhu cầu thực mỗi ngày = hàng mới + hàng tồn.
+B.6.
+Tổng hợp xe
+&
+Nguồn lực & chi phí
+— đọc kết quả
+`Tổng hợp xe`
+: xe đỉnh/ngày và xe bình quân/ngày mỗi tháng + xe đỉnh theo từng Kho/BC.
+`Nguồn lực & chi phí`
+: sản lượng tháng, SL bình quân/đỉnh ngày, xe BQ/đỉnh, người giao, người xử lý kho, m² kho, và
+chi phí/tháng + chi phí/đơn
+.
+B.7. Cách máy tính theo ngày (tóm tắt)
+Tổng nhu cầu ngày = FC mới + Tồn lần 1 + Tồn lần 2.
+Ngày cao điểm = ngày có tổng SL ≥ X × trung bình tháng → dùng năng suất & xe tối đa cao điểm.
+Xe đề xuất = ⌈ Tổng nhu cầu × GTC ÷ Năng suất/chuyến ⌉ (trần = xe tối đa/kho).
+Người xử lý kho = ⌈ SL bình quân ngày ÷ năng suất xử lý/người ⌉. Mặt bằng = SL đỉnh ngày ÷ mật độ.
+PHẦN C — CHECKLIST & LỖI THƯỜNG GẶP
+C.1. Checklist trước khi nộp ✅
+Đã điền GĐV / người lập / ngày lập (
+0. Thông tin vùng
+).
+Đã thay TẤT CẢ số mẫu HCM
+bằng số thực vùng ở
+1. Thông số
+.
+Đã kiểm Volume Giao/Lấy hợp lý (không 0, không lệch bất thường).
+Đã dán sản lượng theo BC (
+0.3 Bưu cục Detail
+) nếu có số.
+Đã điền B2B & AhaMove (hoặc để trống có chủ đích).
+Đã điền
+Mặt bằng
++
+Timeline tiếp nhận
+.
+Đọc lại
+Nguồn lực & chi phí
+: số xe/người/m²/tiền
+trông hợp lý
+.
+Không đổi tên sheet, không xoá công thức.
+Lưu đúng tên:
+AOP_Hang_<VÙNG>_T7-T12_2026.xlsx
+.
+Nếu có làm thêm File chi tiết theo ngày (Phần B):
+Đã đặt tên Kho/BC ở cột A sheet
+Forecast
+(tên tự nhảy sang Kế hoạch).
+Đã
+thay số mẫu HCM
+ở
+1. Thông số
+của file MAU (xe tối đa, năng suất, GTC theo thứ).
+Đã cập nhật
+2. Ngày lễ
+đúng lịch nghỉ của vùng.
+Đã dán FC theo đúng cột ngày (không lệch); đã rà dòng
+(9) Gap
+không âm bất thường.
+C.2. Lỗi hay gặp ❌
+Lỗi
+Hậu quả
+Cách tránh
+Quên thay số mẫu HCM
+Toàn bộ xe/người/tiền sai
+Rà lại
+1. Thông số
+, mọi ô vàng
+Gõ đè lên ô trắng/xám
+Hỏng công thức, sai dây chuyền
+“Vàng thì gõ, trắng/xám để yên”
+Cộng B2B/AhaMove vào hàng vừa/nặng
+Đếm trùng, phình số
+Hai dòng đó
+chỉ tham chiếu
+Sửa tay Volume
+Lệch nguồn PSBBA
+Muốn đổi → chạy lại tool, build lại
+Xoá block kho thừa (file MAU)
+Mất công thức
+Để trống, đừng xoá
+Đổi tên sheet
+Máy ghép Capacity lỗi
+Giữ nguyên cấu trúc
+C.3. Nguồn số & lưu ý minh bạch
+Volume ≥10kg
+: nạp tự động từ tool topline
+PSBBA
+(
+output/v3/fc_splitter
+), tách 2 chiều Lấy & Giao, gom theo vùng × band × tháng.
+B2B
+: đã tách riêng ở định tuyến
+M4
+(về kho hàng nặng tỉnh) → chỉ tham chiếu.
+Mọi tham số mặc định = SỐ MẪU GXT HCM
+→ bắt buộc thay bằng số vùng.
+Số nào
+chưa chắc chắn / chưa có nguồn
+→ ghi chú lại để verify với Ops,
+đừng để số ảo
+.
+Cuối báo cáo nên ghi 1 dòng: *nguồn số + ngày lập + số nào tự tính / số nào do Ops cung cấp.*
+*Hết hướng dẫn. Có chỗ chưa rõ trong file thực tế → đối chiếu lại với 2 file mẫu hoặc hỏi khối Capacity.*

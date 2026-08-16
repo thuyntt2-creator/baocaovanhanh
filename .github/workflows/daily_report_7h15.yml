@@ -1,0 +1,48 @@
+name: GHN Daily Report 07h15 (run_report.bat workflow)
+
+on:
+  schedule:
+    # 00:15 UTC = 07:15 giờ Việt Nam (UTC+7) mỗi ngày
+    - cron: '15 0 * * *'
+  workflow_dispatch: # Cho phép bấm chạy thủ công từ giao diện GitHub
+
+jobs:
+  run-report:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+        
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.10'
+          cache: 'pip'
+          
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+          
+      - name: Install Playwright browsers
+        run: playwright install chromium --with-deps
+          
+      - name: Create credentials.json
+        run: |
+          if [ -n "${{ secrets.GOOGLE_CREDENTIALS_JSON }}" ]; then
+            echo '${{ secrets.GOOGLE_CREDENTIALS_JSON }}' > credentials.json
+          fi
+          
+      - name: Step 1: Download GTC Report from GHN Dashboard to Google Sheet
+        env:
+          GHN_COOKIES: ${{ secrets.GHN_COOKIES }}
+        run: python download_report_gtc.py
+          
+      - name: Step 2: Calculate, Render & Broadcast Report to Telegram/GTalk
+        env:
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+          REPORT_GTALK_OA_TOKEN: ${{ secrets.REPORT_GTALK_OA_TOKEN }}
+          REPORT_GTALK_CHANNEL_ID: ${{ secrets.REPORT_GTALK_CHANNEL_ID }}
+        run: python calculate_and_render_report.py

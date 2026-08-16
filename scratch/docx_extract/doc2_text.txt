@@ -1,0 +1,987 @@
+P0: BẢO LỘC - LÂM ĐỒNG
+P1: KẾ HOẠCH QUY HOẠCH BẢO LỘC 2026 
+P4: 15. Phường 1 Bảo Lộc (Tỉnh Lâm Đồng)
+P5: Mã Xã mới: `24823`
+P6: TỔNG SẢN LƯỢNG DỰ KIẾN: 1217.0 đơn/ngày (3634.0 kg/ngày) | *Giao: 618.0 đơn · Lấy: 599.0 đơn*
+P7: Các BC hiện phụ trách (2 BC): (LDO) 1 Bảo Lộc, (LDO) B'Lao
+P8: Các xã cũ sáp nhập: Phường Lộc Phát, Phường 1, Xã Lộc Thanh
+P9: Tỷ lệ phân chia sản lượng thực tế giữa các Bưu cục:
+P10: `(LDO) B'Lao` (ID: 20785000) [AM: Hồng Bích Nga]: 797.0 đơn/ngày (65.5%) (Địa chỉ: 95a Đội Cấn, PhườngLộc Sơn, Thành phố Bảo Lộc, Lâm Đồng)
+P11: `(LDO) 1 Bảo Lộc` (ID: 21688000) [AM: Hồng Bích Nga]: 420.0 đơn/ngày (34.5%) (Địa chỉ: 412 Nguyễn Văn Cừ - Lộc Phát-Bảo Lộc-Lâm Đồng)
+P12: ĐỀ XUẤT PHƯƠNG ÁN: Gộp về 01 Bưu cục chính ( LDO ) B’Lao 
+P15: LÝ DO VÀ BỐ TRÍ NHÂN SỰ: Sản lượng vừa phải (1217 đơn/ngày). Đề xuất gộp về Bưu cục trung tâm (LDO) 1 Bảo Lộc và điều chuyển nhân sự phủ tuyến.
+P17: 17. Phường B'Lao (Tỉnh Lâm Đồng)
+P18: Mã Xã mới: `24829`
+P19: TỔNG SẢN LƯỢNG DỰ KIẾN: 678.0 đơn/ngày (1341.0 kg/ngày) | *Giao: 531.0 đơn · Lấy: 147.0 đơn*
+P20: Các BC hiện phụ trách (3 BC): (LDO) 3 Bảo Lộc, (LDO) B'Lao, (LDO) 1 Bảo Lộc
+P21: Các xã cũ sáp nhập: Phường B'Lao, Phường Lộc Sơn, Xã Lộc Nga
+P22: Tỷ lệ phân chia sản lượng thực tế giữa các Bưu cục:
+P23: `(LDO) B'Lao` (ID: 20785000) [AM: Hồng Bích Nga]: 338.0 đơn/ngày (49.9%) (Địa chỉ: 95a Đội Cấn, PhườngLộc Sơn, Thành phố Bảo Lộc, Lâm Đồng)
+P24: `(LDO) 3 Bảo Lộc` (ID: 21468000) [AM: Nguyễn Lê Nguyên Vũ]: 196.0 đơn/ngày (28.9%) (Địa chỉ: 1479 Trần Phú-Lộc Châu-Bảo Lộc)
+P25: `(LDO) 1 Bảo Lộc` (ID: 21688000) [AM: Hồng Bích Nga]: 144.0 đơn/ngày (21.2%) (Địa chỉ: 412 Nguyễn Văn Cừ - Lộc Phát-Bảo Lộc-Lâm Đồng)
+P26: ĐỀ XUẤT PHƯƠNG ÁN: Gộp về 01 Bưu cục chính( LDO ) 3 Bảo Lộc 
+
+P27: LÝ DO VÀ BỐ TRÍ NHÂN SỰ: Sản lượng vừa phải (678 đơn/ngày). Đề xuất gộp về Bưu cục trung tâm (LDO) 3 Bảo Lộc và điều chuyển nhân sự phủ tuyến.
+P29: 16. Phường 2 Bảo Lộc (Tỉnh Lâm Đồng)
+P30: Mã Xã mới: `24820`
+P31: TỔNG SẢN LƯỢNG DỰ KIẾN: 789.0 đơn/ngày (1438.0 kg/ngày) | *Giao: 454.0 đơn · Lấy: 335.0 đơn*
+P32: Các BC hiện phụ trách (2 BC): (LDO) B'Lao, (LDO) 3 Bảo Lộc
+P33: Các xã cũ sáp nhập: Phường 2, Xã Đạm Bri, Xã Lộc Tân
+P34: Tỷ lệ phân chia sản lượng thực tế giữa các Bưu cục:
+P35: `(LDO) B'Lao` (ID: 20785000) [AM: Hồng Bích Nga]: 444.0 đơn/ngày (56.3%) (Địa chỉ: 95a Đội Cấn, PhườngLộc Sơn, Thành phố Bảo Lộc, Lâm Đồng)
+P36: `(LDO) 3 Bảo Lộc` (ID: 21468000) [AM: Nguyễn Lê Nguyên Vũ]: 345.0 đơn/ngày (43.7%) (Địa chỉ: 1479 Trần Phú-Lộc Châu-Bảo Lộc)
+P37: ĐỀ XUẤT PHƯƠNG ÁN: Gộp về 01 Bưu cục chính ((LDO) B'Lao)
+P38: LÝ DO VÀ BỐ TRÍ NHÂN SỰ: Sản lượng vừa phải (789 đơn/ngày). Đề xuất gộp về Bưu cục trung tâm (LDO) B'Lao và điều chuyển nhân sự phủ tuyế
+P39: Thông tin các tuyến cover của từng bưu cục của khu vực : 
+
+P41: 26. Xã Bảo Lâm 2 (Tỉnh Lâm Đồng)
+P42: Mã Xã mới: `25084`
+P43: TỔNG SẢN LƯỢNG DỰ KIẾN: 324.0 đơn/ngày (770.0 kg/ngày) | *Giao: 274.0 đơn · Lấy: 50.0 đơn*
+P44: Các BC hiện phụ trách (2 BC): (LDO) 1 Bảo Lộc, (LDO) Bảo Lâm 3
+P45: Các xã cũ sáp nhập: Xã Lộc Đức, Xã Lộc An, Xã Tân Lạc
+P46: Tỷ lệ phân chia sản lượng thực tế giữa các Bưu cục:
+P47: `(LDO) 1 Bảo Lộc` (ID: 21688000) [AM: Hồng Bích Nga]: 286.0 đơn/ngày (88.3%) (Địa chỉ: 412 Nguyễn Văn Cừ - Lộc Phát-Bảo Lộc-Lâm Đồng)
+P48: `(LDO) Bảo Lâm 3` (ID: 23015000) [AM: Hồng Bích Nga]: 38.0 đơn/ngày (11.7%) (Địa chỉ: QL55 , Thôn 57 , xã Bảo Lâm 3, Lâm Đồng)
+P49: ĐỀ XUẤT PHƯƠNG ÁN: Gộp về 01 Bưu cục  ( LDO ) Bảo Lâm 3 . 
+
+P50: LÝ DO VÀ BỐ TRÍ NHÂN SỰ: Bưu cục (LDO) 1 Bảo Lộc chiếm ưu thế 88.3% sản lượng (286.0 đơn/ngày). Gộp các phần nhỏ còn lại về (LDO) 1 Bảo Lộc để tối ưu tuyến.
+P52: 
+* Bưu cục ( LDO ) 1 Bảo Lộc : 
+- Sản lượng giao : 750 đơn 
++ Phường 1 : 400 đơn 
++ Phường B’Lao : 100 đơn 
++ Bảo Lâm 2 : 250 đơn 
+- Sản lượng lấy : 250 đơn 
+- Nhân sự hiện tại : 9 nvpttt + 1 nvxl 
+
+* Bưu cục ( LDO ) B’Lao : 
+- Sản lượng giao : 1.000 đơn 
++ Phường 1 : 350 đơn 
++ Phường B’Lao : 350 đơn 
++ Phường 2 : 400 đơn 
+- Sản lượng lấy : 800 đơn 
+- Nhân sự hiện tại : 9 nvpttt + 2 nvxl 
+
+* Bưu cục ( LDO ) 3 Bảo Lộc : 
+- Sản lượng giao : 900 đơn 
++ Phường 2 : 400 đơn ( Lộc Tân , Đam ri ) 
++ Phường B’Lao : 80 đơn 
++ Phường 3  : 600 đơn 
+- Sản lượng lấy : 500 đơn 
+- Nhân sự hiện tại : 10 nvpttt + 1 nvxl 
+
+* Bưu cục ( LDO ) Bảo Lâm 3 : 
+- Sản lượng giao : 400 đơn 
++ Bảo Lâm 2 : 100 đơn ( Tân Lạc ) 
++ Bảo Lâm 3 : 300 đơn ( Lộc Thành , Lộc Nam )
+- Sản lượng lấy : 30 đơn 
+- Nhân sự hiện tại : 5 nvpttt + 1 nvxl  
+
+* Bưu cục ( LDO ) Bảo Lâm 1 : 
+- Sản lượng giao : 550 đơn 
++ Bảo Lâm 1 : 450 đơn ( Lộc Ngãi , Lộc Quảng , Thị Trấn Lộc Thắng ) 
++ Bảo Lâm 4 : 100 đơn ( Lộc Lâm , Lộc Phú , B Lá ) 
+- Sản lượng lấy : 80 đơn 
+- Nhân sự hiện tại : 5 nvpttt + 1 nvxl  
+
+2. Quy hoạch lại các Bưu cục nhỏ/tiêu chuẩn theo từng địa bàn
+
+P53: * Bưu cục ( LDO ) B’Lao Mới : 
+- Sản lượng giao : 1.500 đơn 
++ Phường 1 : 750 đơn ( full )
++ Phường B’Lao : 600  đơn ( full )
+- Sản lượng lấy : 1.000 đơn 
+- Nhân sự hiện tại : 15 nvpttt + 2 nvxl  
+
+* Bưu cục ( LDO ) 3 Bảo Lộc : 
+- Sản lượng giao : 1.400 đơn 
++ Phường 2 : 800 đơn ( full ) 
++ Phường 3  : 600 đơn  ( full )
+- Sản lượng lấy : 500 đơn 
+- Nhân sự hiện tại : 14 nvpttt + 2 nvxl 
+
+* Bưu cục ( LDO ) Bảo Lâm 1 : 
+- Sản lượng giao : 550 đơn 
++ Bảo Lâm 1 : 450 đơn ( full ) 
++ Bảo Lâm 4 : 100 đơn ( full ) 
+- Sản lượng lấy : 80 đơn 
+- Nhân sự hiện tại : 5 nvpttt + 1 nvxl  
+
+* Bưu cục ( LDO ) Bảo Lâm 3 : 
+- Sản lượng giao : 700  đơn 
++ Bảo Lâm 2 : 350  đơn ( full ) 
++ Bảo Lâm 3 : 300 đơn ( full )
+- Sản lượng lấy : 30 đơn 
+- Nhân sự hiện tại : 8 nvpttt + 1 nvxl  
+
+Tức là : 
+- Gộp hết phường 1 và phường B’Lao về bưu cục ( LDO ) B’Lao 
+- Gộp hết phường 2 về bưu cục ( LDO ) 3 Bảo Lộc 
+- Gộp hết Bảo Lâm 2 về bưu cục ( LDO ) Bảo Lâm 3 . 
+=> Theo địa lý hành chính mới 
+P54: 
+
+3. Tóm tắt biến động Mạng lưới Bưu cục : 
+
+Mở mới (01  BC): 
++ bưu cục ( LDO ) B’Lao Mới 
+P55: Di dời / Giữ lại (03 BC):  
++ bưu cục ( LDO )  3 Bảo Lộc 
++ bưu cục ( LDO )  Bảo Lâm 1 
++ bưu cục ( LDO )  Bảo Lâm 3
+P56: Đóng cửa (01 BC) :
++ bưu cục ( LDO ) 1 Bảo Lộc 
+
+
+
+
+P58: LÂM HÀ - ĐAM RÔNG
+P63: KẾ HOẠCH QUY HOẠC KHU VỰC LÂM HÀ - ĐAM RÔNG
+
+P64: 33. Xã Đam Rông 4 (Tỉnh Lâm Đồng)
+P65: Mã Xã mới: `24853`
+P66: TỔNG SẢN LƯỢNG DỰ KIẾN: 59.0 đơn/ngày (188.0 kg/ngày) | *Giao: 56.0 đơn · Lấy: 3.0 đơn*
+P67: Các BC hiện phụ trách (2 BC): (LDO) Lang Biang - Đà Lạt 1, (LDO) Đam Rông 3
+P68: Các xã cũ sáp nhập: Xã Đưng KNớ, Xã Đạ Tông, Xã Đạ Long
+P69: Tỷ lệ phân chia sản lượng thực tế giữa các Bưu cục:
+P70: `(LDO) Đam Rông 3` (ID: 20670000) [AM: Huỳnh Thị Kim Chi]: 49.0 đơn/ngày (83.1%) (Địa chỉ: Đạ Rsal - Đam Rông - Lâm Đồng)
+P71: `(LDO) Lang Biang - Đà Lạt 1` (ID: 22051000) [AM: Lê Minh Đại]: 10.0 đơn/ngày (16.9%) (Địa chỉ: 27 Langbiang, Thị Trấn Lạc Dương, Lâm Đồng)
+P72: ĐỀ XUẤT PHƯƠNG ÁN:
+P73: LÝ DO VÀ BỐ TRÍ NHÂN SỰ: Bưu cục (LDO) Đam Rông 3 chiếm ưu thế 83.1% sản lượng (49.0 đơn/ngày). Gộp các phần nhỏ còn lại về (LDO) Đam Rông 3 để tối ưu tuyến.
+P75: 28. Xã Nam Hà Lâm Hà (Tỉnh Lâm Đồng)
+P76: Mã Xã mới: `24883`
+P77: TỔNG SẢN LƯỢNG DỰ KIẾN: 104.0 đơn/ngày (339.0 kg/ngày) | *Giao: 101.0 đơn · Lấy: 3.0 đơn*
+P78: Các BC hiện phụ trách (2 BC): (LDO) Đinh Văn Lâm Hà, (LDO) Nam Ban Lâm Hà
+P79: Các xã cũ sáp nhập: Xã Phi Tô, Xã Nam Hà
+P80: Tỷ lệ phân chia sản lượng thực tế giữa các Bưu cục:
+P81: `(LDO) Nam Ban Lâm Hà` (ID: 21458000) [AM: Huỳnh Thị Kim Chi]: 60.0 đơn/ngày (57.7%) (Địa chỉ: TDP Ba Đình-Lâm Hà)
+P82: `(LDO) Đinh Văn Lâm Hà` (ID: 21294000) [AM: Huỳnh Thị Kim Chi]: 44.0 đơn/ngày (42.3%) (Địa chỉ: QH4B TT. Đinh Văn - Lâm Hà)
+P83: ĐỀ XUẤT PHƯƠNG ÁN: 
+P84: LÝ DO VÀ BỐ TRÍ NHÂN SỰ: Sản lượng vừa phải (104 đơn/ngày). Đề xuất gộp về Bưu cục trung tâm (LDO) Đinh Văn Lâm Hà và điều chuyển nhân sự phủ tuyến.
+P87: Thông tin các tuyến cover của từng bưu cục của khu vực : 
+
+1. Bưu cục (LDO) Nam Ban Lâm Hà - Lâm Đồng:
+- Địa chỉ: TDP Ba Đình, xã Nam Ban Lâm Hà, Lâm Đồng
+- Tuyến cover: xã Nam Ban Lâm Hà, 1 phần xã Nam Hà Lâm Hà ( xã Nam Hà cũ) 
+- Volume: ~400 đơn 
+- Nhân sự hiện tại: 7/7 + 1 NVXL
+- Nguyên nhân đặt BC tại vị trí hiện tại: Nam Ban là khu trung tâm thuận tiện di chuyển đến các tuyến giao khác.
+ Vị trí hiện tại cách BC Jnt 500m
+
+2. Bưu cục (LDO) Đinh Văn Lâm Hà - Lâm Đồng:
+ Địa chỉ: Đường 4B khu Đô Thị Mới, xã Đinh Văn Lâm Hà, Lâm Đồng 
+Tuyến cover: xã Đinh Văn Lâm Hà, xã Phú Sơn Lâm Hà, 1 phần xã Nam Hà Lâm Hà ( xã Phi Tô cũ) 
+Volume: 700 đơn 
+- Nhân sự hiện tại: 12/12  + 1 NVXL
+- Nguyên nhân đặt BC tại vị trí hiện tại: Đinh Văn  là khu trung tâm thuận tiện di chuyển đến các tuyến giao khác.
+ Vị trí hiện tại cách gần GHTK, Shopee, Viettel, Jnt, đường rộng rãi cho xe tải và xe chở hàng của nhân viên ra vào
+
+3. Bưu cục (LDO) Tân Hà Lâm Hà - Lâm Đồng: 
+Địa chỉ: Đường TL725 thôn Phúc Hưng, xã Tân Hà Lâm Hà, Lâm Đồng Tuyến cover: xã Tân Hà Lâm Hà, xã Phúc Thọ Lâm Hà.
+ Volume: ~500 đơn 
+- Nhân sự hiện tại: 7/8  + 1 NVXL
+- Nguyên nhân đặt BC tại vị trí hiện tại: Tân Hà là khu trung tâm 6 xã cũ là địa điểm phân tuyến đường đi các xã khác nên đặt tại trục đường TL925 di chuyển đến các tuyến giao khác sẽ thuận tiện, Tuy nhiên khu vực gần chợ xe cộ đông đúc, mặt bằng chật không phù hợp mở kho. Vị trí hiện tại cách BC đối thủ ( viettel 200m)
+
+
+4. Bưu cục (LDO) Đam Rông 3: 
+Địa chỉ: Thôn Liên Hương, xã Đam Rông 3, Lâm Đồng 
+Tuyến cover: xã Đam Rông 1, xã Đam Rông 2, xã Đam Rông 3, xã Đam Rông 4, xã Quảng Hòa. 
+Volume: ~ 450 đơn 
+- Nhân sự hiện tại: 9/9  + 1 NVXL
+- Nguyên nhân đặt BC tại vị trí hiện tại: BC đặt điểm cuối khu vực, BC có 2 điểm chành xa xe tải chở hàng thả điểm tại nhà nhân viên. 7/ 9 nhân viên có nhà gần bưu cục ra BC lấy hàng và di chuyển đến điểm giao. Ví trí nằm trên đường trục có tải trục Lâm Đồng Đak Lak thuận tiện sắp xếp lịch tải.
+- Vị trí hiện tại cách BC đối thủ ( viettel 700 m)
+
+P88: Quy hoạch lại các Bưu cục nhỏ/tiêu chuẩn theo từng địa bàn
+
+
+
+P89: 
+Bản đồ quy hoạch khu vực Lâm Hà - Đam Rông theo địa giới hành chính mới 2026
+P90: 
+Trong địa bàn có 2 xã được được cover bởi 2 BC là xã Nam Hà và Đam Rông 4. 
+
+1. Xã Nam Hà Lâm Hà đang được cover bởi 2 BC (LDO) Đinh  Văn Lâm Hà và (LDO) Nam Ban Lâm Hà
+
+ AM đề xuất gộp xã Nam Hà Lâm Hà  về Bưu cục (LDO) Nam Ban Lâm Hà và điều chuyển nhân sự phủ tuyến. Cụ thể như sau:
+- Xã Nam Hà mới bao gồm:
++ xã Phi Tô cũ - hiện BC Đinh Văn cover: volume: 60  đơn
++ xã Nam Hà cũ - hiện BC Nam Ban cover: volume:   60 đơn
+=>  Chuyển phần xã cũ Phi Tô  [60.0 đơn/ngày] từ (LDO) Đinh Văn Lâm Hà sang  (LDO) Nam Ban Lâm Hà.
+- Volume BC (LDO) Đinh Văn Lâm Hà sau khi quy hoạch:  ~ 640 đơn với 11 NVPTTT
+- Volume BC (LDO) Nam Ban Lâm Hà sau khi quy hoạch: ~  510 đơn với 9  NVPTTT
+Về diện tích mặt bằng tiếp nhận gộp là BC LDO Nam Ban Lâm Hà: 96m2 
+Thời hạn hợp dồng đến: 30/04/2027 
+Giá thuê: 6tr500
+AM sẽ tìm kiếm mặt bằng có diện tích rông hơn để đáp ứng đủ sức chứa cho  BC hoạt động ổn định lâu dài.
+
+2. Xã Đam Rông 4 đang được cover với 2 BC  Đam Rông 3 và BC (LDO) Lang Biang - Đà Lạt 1 
+
+ Bưu cục (LDO) Lang Biang - Đà Lạt 1  đang cover thôn Đưng knớ sau sát nhập thuộc xã Đam Rông 4, AM đề xuất giữ nguyên các tuyến cover như hiện tại. Nguyên nhân: 
+- Volume thôn Đưng knớ ~ 10 đơn/ ngày
+- Khoảng cách từ BC đến thôn Đưng knớ: > 50km , phạm vi địa bàn > 30 km, ít đơn mà nhân viên di chuyển xa => không phù hợp
+P92: THÀNH PHỐ ĐÀ LẠT
+P93: KẾ HOẠCH QUY HOẠCH THÀNH PHỐ ĐÀ LẠT 2026 
+
+P94: Thông tin các tuyến cover của từng bưu cục của khu vực : 
+
+* Bưu cục ( LDO ) Lâm Viên - Đà Lạt 1 : 
+- Sản lượng giao : 1900 đơn 
++ Phường 9 : 600 đơn 
++ Phường 10 : 400 đơn 
++ Phường 12 : 400 đơn 
+- Sản lượng lấy : 500 đơn 
+- Nhân sự hiện tại : 12 nvpttt + 1 nvxl 
+
+* Bưu cục ( LDO ) Lâm Viên - Đà Lạt 2 : 
+- Sản lượng giao : 1.000 đơn 
++ Phường 8 : 900 đơn 
+- Sản lượng lấy : 100 đơn 
+- Nhân sự hiện tại : 6 nvpttt + 1 nvxl 
+
+* Bưu cục ( LDO ) Xuân Trường - Đà Lạt : 
+- Sản lượng giao : 900 đơn 
++ Xã Xuân Trường : 150 đơn 
++ Xã Trạm Hành :150
++ Xã Xuân Thọ : 150
++ Phường 11  : 300 đơn 
+- Sản lượng lấy : 150 đơn 
+- Nhân sự hiện tại : 5 nvpttt + 1 nvxl 
+
+* Bưu cục ( LDO ) Xuân Hương - Đà Lạt : 
+- Sản lượng giao : 1500 đơn 
++ Phường 3 : 500 đơn 
++ Phường 4 : 600 đơn
+- Sản lượng lấy : 400 đơn 
+- Nhân sự hiện tại : 13 nvpttt + 1 nvxl  
+
+* Bưu cục ( LDO ) Lang Biang - Đà Lạt 1: 
+- Sản lượng giao : 900 đơn 
++ Lạc Dương: 250 đơn 
++ Xã Lát : 100 đơn
++ Đa Nhim : 150 đơn
++ Phường 7 : 300 đơn 
+- Sản lượng lấy : 100 đơn 
+- Nhân sự hiện tại : 7 nvpttt + 1 nvxl  
+
+* Bưu cục ( LDO ) Lang Biang - Đà Lạt 2: 
+- Sản lượng giao : 2300 đơn 
++ Phường 1 : 400 đơn 
++ Phường 2 : 400 đơn 
++ Phường 5 :400 đơn
++ Phường 6 :500 đơn
++ Xã Tà Tung :100 đơn
+- Sản lượng lấy : 500 đơn 
+- Nhân sự hiện tại : 13 nvpttt + 1 nvxl  
+
+2. Quy hoạch lại các Bưu cục nhỏ/tiêu chuẩn theo từng địa bàn
+ 
+P95: Theo phương án sáp nhập đơn vị hành chính đang áp dụng tại TP. Đà Lạt năm 2026, các phường/xã được quy hoạch lại như sau : 
+
+          1. Phường Lâm Viên : 
+Đề xuất giữ nguyên 02 bưu cục hiện tại
+- địa hình: Khu vực Phường 8 bị ngăn cách với Phường 9 và Phường 12 bởi Hồ Xuân Hương, khiến việc di chuyển giữa các tuyến phải đi vòng qua hồ, làm tăng quãng đường và thời gian giao nhận.
+P96:  Bưu cục Lâm Viên - Đà Lạt 2 nằm ngay trong khu vực Phường 8 giúp nhân viên chỉ tập trung xử lí một phường, giảm thời gian di chuyển, nâng cao năng suất giao hàng và lấy hàng.
+P98: * Bưu cục ( LDO ) Lâm Viên - Đà Lạt 1 : 
+- Sản lượng giao : 1450 đơn 
++ Phường 9 : 600 đơn 
++ Phường 12 : 400 đơn 
+- Sản lượng lấy : 450 đơn 
+- Nhân sự hiện tại : 9 nvpttt + 1 nvxl 
+
+* Bưu cục ( LDO ) Lâm Viên - Đà Lạt 2 : 
+- Sản lượng giao : 1.000 đơn 
++ Phường 8 : 900 đơn 
+- Sản lượng lấy : 100 đơn 
+- Nhân sự hiện tại : 6 nvpttt + 1 nvxl 
+
+—------------------------------------------
+2.Phường Xuân Hương :
+Đề xuất tách thêm 01 bưu cục do sau khi sáp nhập, Phường Xuân Hương bao gồm Phường 1, Phường 2, Phường 3, Phường 4 và Phường 10, là khu vực trung tâm của TP. Đà Lạt với mật độ dân cư, shop online và sản lượng giao nhận lớn
+Việc sử dụng một bưu cục sẽ dẫn đến địa bàn giao rộng và sản lượng hàng nhiều quá tải cho bưu cục , với tình hình thời tiết ở Đà Lạt những tháng cuối năm mưa và lạnh , thiếu nhân sự, áp lực giao nhận cao và ảnh hưởng đến năng suất vận hành. Do đó, đề xuất tách thêm 01 bưu cục để cân đối sản lượng và tối ưu khu vực giao hàng
+P99: 
+
+* Bưu cục ( LDO ) Xuân Hương - Đà Lạt : 
+- Sản lượng giao : 1800 đơn 
++ Phường 1 : 400 đơn 
++ Phường 2 : 400 đơn
++ Phường 4 : 600 đơn
+- Sản lượng lấy : 400 đơn 
+- Nhân sự hiện tại : 13 nvpttt + 1 nvxl 
+—-----------------------------------
+
+* Tách mới : + Bưu Cục ( LDO) Xuân Hương - Đà Lạt 2
+- Sản lượng giao : 1050 đơn 
++ Phường 10 :400 đơn
++ Phường 3 :500 đơn
+- Sản lượng lấy : 150 đơn 
+- Nhân sự hiện tại : 8 nvpttt + 1 nvxl 
+P100: 
+3.Phường Xuân Trường : Giữ nguyên Bưu cục (LDO) Xuân Trường - Đà Lạt do vị trí hiện tại đã tối ưu, phù hợp địa giới hành chính mới và tiếp tục cover hiệu quả Phường 11, Xuân Trường, Xuân Thọ , Trạm Hành
+
+* Bưu cục ( LDO ) Xuân Trường - Đà Lạt : 
+- Sản lượng giao : 900 đơn 
++ Xã Xuân Trường : 150 đơn 
++ Xã Trạm Hành :150
++ Xã Xuân Thọ : 150
++ Phường 11  : 300 đơn 
+- Sản lượng lấy : 150 đơn 
+- Nhân sự hiện tại : 6  nvpttt + 1 nvxl 
+
+
+4.Phường Lang Biang : Giữ nguyên Bưu cục (LDO) Lang Biang - Đà Lạt 1 do vị trí hiện tại đã tối ưu, phù hợp địa giới hành chính mới và tiếp tục cover hiệu quả Phường 7, Lạc Dương, xã Lát và Đa Nhim
+* Bưu cục ( LDO ) Lang Biang - Đà Lạt 1: 
+- Sản lượng giao : 900 đơn 
++ Lạc Dương: 250 đơn 
++ Xã Lát : 100 đơn
++ Đa Nhim : 150 đơn
++ Phường 7 : 300 đơn 
+- Sản lượng lấy : 100 đơn 
+- Nhân sự hiện tại : 7 nvpttt + 1 nvxl  
+
+5.Phường Cam Ly : Giữ nguyên Bưu cục (LDO) Lang Biang - Đà Lạt 2 do vị trí hiện tại đã tối ưu, phù hợp địa giới hành chính mới và tiếp tục cover hiệu quả Phường 5,Phường 6, Tà Nung
+* Bưu cục ( LDO ) Lang Biang - Đà Lạt 2: 
+
+- Sản lượng giao : 1500 đơn 
++ Phường 5 :400 đơn
++ Phường 6 :500 đơn
++ Tà Nung :100 đơn
+- Sản lượng lấy : 500 đơn 
+- Nhân sự hiện tại : 10 nvpttt + 1 nvxl    
+
+
+
+
+Tức là : 
+- Gộp hết Phường 1 + Phường 2 về bưu cục ( LDO ) Xuân Hương-Đà Lạt
+- Gộp hết Phường 3 + Phường 10 về bưu cục Mới nằm ngay Khu vực Phường 10 ( Phường Xuân Hương mới )
+PHƯỜNG XUÂN HƯƠNG ( Mới )Tách thêm 01 bưu cục, nâng tổng số lên 02 bưu cục để đáp ứng sản lượng và tối ưu vận hành.
+PHƯỜNG LÂM VIÊN (Mới ) Giữ nguyên 02 bưu cục do đặc thù địa hình bị chia cắt bởi Hồ Xuân Hương, đảm bảo hiệu quả giao hàng
+=> Theo địa lý hành chính mới 
+P101: 
+
+3. Tóm tắt biến động Mạng lưới Bưu cục : 
+
+Mở mới (01  BC): 
++ Bưu Cục ( LDO) Xuân Hương - Đà Lạt 2
+P102: Giữ lại (06 BC):  
++ Bưu Cục ( LDO) Lang Biang - Đà Lạt 1
++ Bưu Cục ( LDO)  Lang Biang - Đà Lạt 1
++ Bưu Cục ( LDO) Xuân Hương - Đà Lạt
++ Bưu Cục (LDO) Lâm Viên - Đà Lạt 2
++ Bưu Cục (LDO) Lâm Viên - Đà Lạt 1
++ Bưu Cục (LDO) Xuân Trường - Đà Lạt
+P106: THÀNH PHỐ NHA TRANG
+P107: KẾ HOẠCH QUY HOẠCH THÀNH PHỐ NHA TRANG NĂM 2026
+P110: 6. Phường Tây Nha Trang (Tỉnh Khánh Hòa)
+P111: Mã Xã mới: `22390`
+P112: TỔNG SẢN LƯỢNG DỰ KIẾN: 1247.0 đơn/ngày (3173.0 kg/ngày) | *Giao: 989.0 đơn · Lấy: 258.0 đơn*
+P113: Các BC hiện phụ trách (3 BC): (KHO) Tây Nha Trang, (KHO) Nam Nha Trang 2, (KHO) Diên Khánh 1
+P114: Các xã cũ sáp nhập: Phường Ngọc Hiệp, Phường Phương Sài, Xã Vĩnh Ngọc, Xã Vĩnh Thạnh, Xã Vĩnh Trung, Xã Vĩnh Hiệp
+P115: Tỷ lệ phân chia sản lượng thực tế giữa các Bưu cục:
+P116: `(KHO) Tây Nha Trang` (ID: 20320000) [AM: Phan Đình Duy]: 749.0 đơn/ngày (60.1%) (Địa chỉ: 466 Đường 23/10-Nha Trang (đối diện cây xăng cầu dứa))
+P117: `(KHO) Diên Khánh 1` (ID: 22774000) [AM: Nguyễn Hoàng Phi]: 316.0 đơn/ngày (25.3%) (Địa chỉ: Đường 23/10 - Thôn Phú Ân Nam 2 - Diên An - Diên Khánh - Khánh Hoà)
+P118: `(KHO) Nam Nha Trang 2` (ID: 22704000) [AM: Thái Thị Thanh Thư]: 182.0 đơn/ngày (14.6%) (Địa chỉ: 06 Lê Hồng Phong, Phước Hải, Nha Trang, Khánh Hoà)
+P119: ĐỀ XUẤT PHƯƠNG ÁN: Gộp về 01 Bưu cục chính ((KHO) Tây Nha Trang)
+P120: LÝ DO VÀ BỐ TRÍ NHÂN SỰ: Sản lượng vừa phải (1247 đơn/ngày). Đề xuất gộp về Bưu cục trung tâm (KHO) Tây Nha Trang và điều chuyển nhân sự phủ tuyến.
+P122: 2. Phường Nha Trang (Tỉnh Khánh Hòa)
+P123: Mã Xã mới: `22366`
+P124: TỔNG SẢN LƯỢNG DỰ KIẾN: 1592.0 đơn/ngày (4948.0 kg/ngày) | *Giao: 1205.0 đơn · Lấy: 387.0 đơn*
+P125: Các BC hiện phụ trách (3 BC): (KHO) Nha Trang, (KHO) Nam Nha Trang 2, (KHO) Nam Nha Trang 1
+P126: Các xã cũ sáp nhập: Phường Vạn Thạnh, phường Lộc Thọ, phường Tân Tiến, phường Phước Hòa, xã Vĩnh Nguyên
+P127: Tỷ lệ phân chia sản lượng thực tế giữa các Bưu cục:
+P128: `(KHO) Nha Trang` (ID: 20495000) [AM: Phan Đình Duy]: 792.0 đơn/ngày (49.7%) (Địa chỉ: 40A Yết Kiêu, Nha Trang, Khánh Hoà)
+P129: `(KHO) Nam Nha Trang 2` (ID: 22704000) [AM: Thái Thị Thanh Thư]: 588.0 đơn/ngày (36.9%) (Địa chỉ: 06 Lê Hồng Phong, Phước Hải, Nha Trang, Khánh Hoà)
+P130: `(KHO) Nam Nha Trang 1` (ID: 22746000) [AM: Thái Thị Thanh Thư]: 212.0 đơn/ngày (13.3%) (Địa chỉ: 229 Phước Long, phường Nam Nha Trang, Khánh Hòa)
+P131: ĐỀ XUẤT PHƯƠNG ÁN: Gộp về 1 BC (KHO) Nha Trang
+P132: LÝ DO VÀ BỐ TRÍ NHÂN SỰ: Sản lượng quá lớn (1592 đơn/ngày). Giữ nguyên các Bưu cục để chia tải kho bãi và nhân sự, phân ranh giới giao theo từng cụm xã cũ.
+P135: 1. Phường Nam Nha Trang (Tỉnh Khánh Hòa)
+P136: Mã Xã mới: 22402
+P137: TỔNG SẢN LƯỢNG DỰ KIẾN: 2418.0 đơn/ngày (4664.0 kg/ngày) | *Giao: 1340.0 đơn · Lấy: 1078.0 đơn*
+P138: Các BC hiện phụ trách (3 BC): (KHO) Nam Nha Trang 3, (KHO) Nam Nha Trang 1, (KHO) Nam Nha Trang 5
+P139: Các xã cũ sáp nhập: Phường Phước Hải, Phường Phước Long, Phường Vĩnh Trường, Xã Vĩnh Thái, Xã Phước Đồng
+P140: Tỷ lệ phân chia sản lượng thực tế giữa các Bưu cục:
+P141: `(KHO) Nam Nha Trang 3` (ID: 22363000) [AM: Thái Thị Thanh Thư]: 1109.0 đơn/ngày (45.9%) (Địa chỉ: Đường 35 chung cư hà quang 1 căn SSH08.1.10 Nam nha Trang - Khánh Hoà)
+P142: `(KHO) Nam Nha Trang 1` (ID: 22746000) [AM: Thái Thị Thanh Thư]: 842.0 đơn/ngày (34.8%) (Địa chỉ: 229 Phước Long, phường Nam Nha Trang, Khánh Hòa)
+P143: `(KHO) Nam Nha Trang 5` (ID: 2502) [AM: Thái Thị Thanh Thư]: 467.0 đơn/ngày (19.3%) (Địa chỉ: Thôn Phước Trung, xã Phước Đồng (đối diện chợ, cạnh milano))
+P144: ĐỀ XUẤT PHƯƠNG ÁN: Gộp phần còn lại của Bưu cục ( KHO) Nam Nha Trang 1 cũ và Bưu cục (KHO) Nam Nha Trang 3 về Bưu cục (KHO) Nam Nha Trang 1 mới
+P145: - Giữ nguyên Bưu cục (KHO) Nam Nha Trang 5
+P146: - Bỏ Bưu cục (KHO) Nam Nha Trang 2
+- Bỏ Bưu cục (KHO) Nam Nha Trang 3
+
+P147: LÝ DO VÀ BỐ TRÍ NHÂN SỰ: Sản lượng quá lớn (2418 đơn/ngày). Giữ nguyên các Bưu cục để chia tải kho bãi và nhân sự, phân ranh giới giao theo từng cụm xã cũ.
+P151: 1. Thông tin các tuyến cover của từng bưu cục của khu vực : 
+
+* Bưu cục (KHO) Bắc Nha Trang : 
+- Sản lượng giao : 2.100 - 2.200 đơn 
++ Cover toàn bộ Phường Bắc Nha Trang mới( bao gồm phường xã cũ: Phường Vĩnh Thọ, Phường Vĩnh Phước, Phường Vĩnh Hải, Phường Vĩnh Hoà, Xã Vĩnh Phương và  Xã Vĩnh Lương)
+- Sản lượng lấy : 300 - 400 đơn 
+- Nhân sự hiện tại : 18 NVPTTT + 2 NVXL
+
+* Bưu cục (KHO) Tây Nha Trang: 
+- Sản lượng giao : 600 - 700 đơn
++ Cover 1 phần của Phường Tây Nha Trang mới( Bao gồm Phường xã cũ: Xã Vĩnh Hiệp, Xã Vĩnh Ngọc và Phường Ngọc Hiệp
+- Sản lượng lấy : 100 - 200 đơn 
+- Nhân sự hiện tại: 8 NVPTTT + 1 NVXL
+
+* Bưu cục (KHO) Nha Trang : 
+- Sản lượng giao: 600 - 700 đơn 
++ Cover 1 phần của Phường Nha Trang mới( Bao gồm Phường xã cũ: Phường Lộc Thọ, Phường Vạn Thắng, Phường Xương Huân và Phường Vạn Thạnh)
+- Sản lượng lấy : 200 - 300 đơn 
+- Nhân sự hiện tại: 7 NVPTTT + 1 NVXL
+
+* Bưu cục (KHO) Nam Nha Trang 1 : 
+- Sản lượng giao : 900 - 1000 đơn 
++ Cover 1 phần Phường Nam Nha Trang mới( Bao gồm Phường xã cũ: Phường Phước Long và Phường Vĩnh Trường)
++ Cover 1 phần Phường Nha Trang mới(Bao gồm Phường xã cũ: Xã Vĩnh Nguyên)
+- Sản lượng lấy : 300 - 400 đơn 
+- Nhân sự hiện tại : 15 NVPTTT + 1 NVXL 
+
+* Bưu cục (KHO) Nam Nha Trang 2 : 
+- Sản lượng giao : 800- 900 đơn 
++ Cover 1 phần lớn của Phường Nha Trang mới(Bao gồm Phường xã cũ: Phường Tân Tiến. Phường Phước Tiến, Phường Phước Tân, Phường Phước Hoà, Phường Tân Lập)
++ Cover 1 phần của Phường Tây Nha Trang mới( Bao gồm Phường xã cũ: Phường Phương Sơn, Phường Phương Sài)
+- Sản lượng lấy : 200 -250 đơn 
+- Nhân sự hiện tại : 8 NVPTTT + 1 NVXL 
+
+* Bưu cục (KHO) Nam Nha Trang 3 : 
+- Sản lượng giao : 700 - 800 đơn 
++ Cover 1 phần của Phường Nam Nha Trang mới(Bao gồm Phường xã cũ: Phường Phước Hải và xã Vĩnh Thái
+- Sản lượng lấy : 600 đơn 
+- Nhân sự hiện tại : 10 NVPTTT + 1 NVXL
+
+* Bưu cục (KHO) Nam Nha Trang 5 : 
+- Sản lượng giao : 400 - 500 đơn 
++ Cover 1 phần của Phường Nam Nha Trang mới( Bao gồm Phường xã cũ: Xã Phước Đồng)
+- Sản lượng lấy : 200 - 250 đơn 
+- Nhân sự hiện tại : 3 NVPTTT + 1 NVXL 
+
+2. Quy hoạch lại các Bưu cục nhỏ/tiêu chuẩn theo từng địa bàn
+
+P152: * Bưu cục (KHO) Bắc Nha Trang : 
+- Sản lượng giao : 2.100 - 2.200 đơn 
++ Cover toàn bộ Phường Bắc Nha Trang mới( bao gồm phường xã cũ: Phường Vĩnh Thọ, Phường Vĩnh Phước, Phường Vĩnh Hải, Phường Vĩnh Hoà, Xã Vĩnh Phương và  Xã Vĩnh Lương)
+- Sản lượng lấy : 300 - 400 đơn 
+- Nhân sự hiện tại : 18 NVPTTT + 2 NVXL
+
+* Bưu cục (KHO) Tây Nha Trang: 
+- Sản lượng giao : 1.200 - 1.300 đơn 
++ Cover toàn bộ Phường Tây Nha Trang mới( Bao gồm Phường xã cũ: Xã Vĩnh Hiệp, Xã Vĩnh Ngọc, Phường Ngọc Hiệp, Phường Phương Sơn, Phường Phường Sài, Xã Vĩnh Thạnh, Xã Vĩnh Trung)
+- Sản lượng lấy : 200 - 300 đơn 
+- Nhân sự hiện tại: 15 NVPTTT + 1 NVXL
+P153: 
+
+* Bưu cục (KHO) Nha Trang : 
+- Sản lượng giao: 1.600 - 1.700 đơn 
++ Cover toàn bộ Phường Nha Trang mới( Bao gồm Phường xã cũ: Phường Lộc Thọ, Phường Vạn Thắng, Phường Xương Huân, Phường Phước Hoà, Phước Tân, Phước Tiến, Phường Tân Tiến, Phường Tân Lập và Phường Vạn Thạnh)
+- Sản lượng lấy : 400 - 500 đơn 
+- Nhân sự hiện tại: 18 NVPTTT + 1 NVXL
+
+* Bưu cục (KHO) Nam Nha Trang 1 : 
+- Sản lượng giao : 1.800 - 1.900 đơn 
++ Cover 1 phần Phường Nam Nha Trang mới( Bao gồm Phường xã cũ: Phường Phước Long, Phường Vĩnh Trường, Phường Phước Hải và xã Vĩnh Thái)
+- Sản lượng lấy :700 - 800 đơn 
+- Nhân sự hiện tại : 20 NVPTTT + 1 NVXL 
+P155: * Bưu cục (KHO) Nam Nha Trang 2 : 
+- Sản lượng giao : 400 - 500 đơn 
++ Cover 1 phần của Phường Nam Nha Trang mới( Bao gồm Phường xã cũ: Xã Phước Đồng)
+- Sản lượng lấy : 200 - 250 đơn 
+- Nhân sự hiện tại : 3 NVPTTT + 1 NVXL 
+
+Tức là : 
+- Giữ nguyên Bưu cục Bắc Nha Trang không có gì thay đổi
+- Gộp hết Phường Nha Trang về Bưu cục (KHO) Nha Trang 
+- Gộp hết Phường Tây Nha Trang về Bưu cục (KHO) Tây Nha Trang 
+- Gộp phần còn lại của Bưu cục ( KHO) Nam Nha Trang 1 cũ và Bưu cục (KHO) Nam Nha Trang 3 về Bưu cục (KHO) Nam Nha Trang 1 mới
+P156: - Giữ nguyên Bưu cục (KHO) Nam Nha Trang 5
+P157: - Bỏ Bưu cục (KHO) Nam Nha Trang 2
+- Bỏ Bưu cục (KHO) Nam Nha Trang 3
+=> Theo địa lý hành chính mới 
+P158: 
+Lý do chia Phường Nam Nha Trang thành 2 Bưu cục: 
+P159: Bưu cục (KHO) Nam Nha Trang 5 là khu vực xã xa, đường đi hiểm trở, địa bàn nằm biệt lập phía ngoài rìa thành phố cách xa khu trung tâm, giáp ranh với đèo và địa phận xã Cam Lâm. Vì vậy, không thể gộp chung về cụm Nam Nha Trang do sẽ ảnh hưởng đến khoảng cách di chuyển.
+P160: 
+3. Tóm tắt biến động Mạng lưới Bưu cục : 
+P161: Di dời / Giữ lại (05 BC):  
+- Giữ lại:
++ Bưu cục (KHO) Bắc Nha Trang
++ Bưu cục (KHO) Tây Nha Trang
++ Bưu cục (KHO) Nam Nha Trang 5
+- Di dời:
++ Bưu cục (KHO) Nha Trang 
++ Bưu cục (KHO) Nam Nha Trang 1
+Đóng cửa (02 BC) :
++ Bưu cục (KHO) Nam Nha Trang 2
++ Bưu cục (KHO) Nam Nha Trang 3
+
+
+
+P164: DIÊN KHÁNH - KHÁNH HÒA
+P165:           KẾ HOẠCH QUY HOẠCH DIÊN KHÁNH 2026
+
+
+ Thông Tin Tuyến Cover Phường/Xã Của Bưu Cục Theo Khu Vực : 
+
+* Bưu Cục (KHO) - Diên Khánh 1 : 
+Tổng Sản lượng : 400 đơn
+- Xã Vĩnh Thạnh : 170 đơn
+- Xã Vĩnh Trung : 110 đơn
+- Xã Diên An :  120 đơn
+
+P167: 
+* Bưu Cục ( KHO) - Diên Khánh 2 :
+Tổng Sản Lượng : 800 đơn
+- Thị Trấn Diên Khánh : 180 đơn
+- Xã Diên Điền : 100 đơn
+- Xã Diên Phú :  110 đơn
+- Xã Diên Sơn :  100 đơn
+- Xã Diên Toàn : 75 đơn
+- Xã Diên Bình : 15 đơn
+- Xã Bình Lộc : 20 đơn
+- Xã Suối Tiên : 100 đơn
+- Xã Suối Hiệp : 100 đơn
+
+P169: * Bưu Cục ( KHO) - Diên Thọ : 
+Tổng sản lượng : 500 đơn
+- Xã Diên Lạc : 90 đơn
+- Xã Diên Thạnh : 70 đơn
+- Xã Diên Hoà : 60 đơn
+- Xã Diên Phước : 80 đơn
+- Xã Diên Tân : 10 đơn 
+- Xã Diên Thọ : 80 đơn
+- Xã Xuân Đồng : 10 đơn
+- Xã Diên Lâm : 50 đơn
+- Xã Diên Xuân : 50 đơn
+
+2. Quy hoạch lại các Bưu cục nhỏ/tiêu chuẩn theo từng địa bàn : 
+
+Đề xuất : Tách các xã BC Diên Khánh 1 đang cover 
++ Gộp 2 xã Vĩnh Trung + Vĩnh Thạnh từ BC Diên Khánh 1  về BC Tây Nha Trang theo địa giới hành chính mới . 
++ Gộp 1 xã Diên An về Bưu Cục Diên Khánh 2 
+=> * Bưu Cục ( KHO) - Diên Khánh 2 : sẽ Cover thêm Xã Diên An 
+Năng tổng Sản Lượng =>  920 đơn
+- Thị Trấn Diên Khánh : 180 đơn
+- Xã Diên Điền : 100 đơn
+- Xã Diên Phú :  110 đơn
+- Xã Diên Sơn :  100 đơn
+- Xã Diên Toàn : 75 đơn
+- Xã Diên Bình : 15 đơn
+- Xã Bình Lộc : 20 đơn
+- Xã Suối Tiên : 100 đơn
+- Xã Suối Hiệp : 100 đơn
+- Xã Diên An : 120 đơn
+⇒ đóng cửa BC Diên Khánh 1 ( không đủ volume cũng như phạm vị cover)
+Giữ Nguyên 2 Bưu Cục Diên Khánh 2 và Diên Thọ 
+P170: Nguyên nhân : 
+- 2 Bưu cục đang cover số lượng lớn xã, thị trấn 
+- Vị trí BC đặt khớp với địa giới hành chính mới . phù hợp với phạm vi phường xã mà 2 BC đang cover
+- Diện tích BC đủ để đáp ứng vận hành về lâu dài .
+
+P172: ĐẮK NÔNG
+P173: BÁO CÁO TOÀN DIỆN: RÀ SOÁT VÀ QUY HOẠCH BƯU CỤC
+P174: THEO ĐƠN VỊ HÀNH CHÍNH MỚI (VÙNG NTB)
+P175: 
+Phường Bắc Gia Nghĩa (Tỉnh Lâm Đồng)
+P176: Mã Xã mới: `24611`
+P177: TỔNG SẢN LƯỢNG DỰ KIẾN: 734.0 đơn/ngày (1074.0 kg/ngày) | *Giao: 335.0 đơn · Lấy: 399.0 đơn*
+P178: Các BC hiện phụ trách (3 BC): (DNO) Đông Gia Nghĩa, (DNO) Bắc Gia Nghĩa, (DNO) Quảng Sơn
+P179: Các xã cũ sáp nhập: Phường Nghĩa Đức, Phường Nghĩa Thành, Phường Quảng Thành, Xã Đắk Ha
+P180: Tỷ lệ phân chia sản lượng thực tế giữa các Bưu cục:
+P181: `(DNO) Bắc Gia Nghĩa` (ID: 22242000) [AM: Trần Văn Phước]: 559.0 đơn/ngày (76.2%) (Địa chỉ: Số 53 Tôn Đức Thắng-Nghĩa Thành-Gia Nghĩa-Đắk Nông)
+P182: `(DNO) Đông Gia Nghĩa` (ID: 22048000) [AM: Trần Văn Phước]: 94.0 đơn/ngày (12.8%) (Địa chỉ: Số 313,Đường Hùng Vương-Phường Nghĩa Trung-Gia Nghĩa-Đắk Nông)
+P183: `(DNO) Quảng Sơn` (ID: 21150000) [AM: Trần Thị Nhung]: 81.0 đơn/ngày (11.0%) (Địa chỉ: Thôn 3A, xã Quảng Sơn, huyện Đắk Glong, Đắk Nông)
+
+P184: Phường Nam Gia Nghĩa (Tỉnh Lâm Đồng)
+P185: Mã Xã mới: `24615`
+P186: TỔNG SẢN LƯỢNG DỰ KIẾN: 499.0 đơn/ngày (629.0 kg/ngày) | *Giao: 241.0 đơn · Lấy: 258.0 đơn*
+P187: Các BC hiện phụ trách (2 BC): (DNO) Bắc Gia Nghĩa, (DNO) Đông Gia Nghĩa
+P188: Các xã cũ sáp nhập: Phường Nghĩa Phú, Phường Nghĩa Tân, Xã Đắk R'Moan
+P189: Tỷ lệ phân chia sản lượng thực tế giữa các Bưu cục:
+P190: `(DNO) Đông Gia Nghĩa` (ID: 22048000) [AM: Trần Văn Phước]: 277.0 đơn/ngày (55.5%) (Địa chỉ: Số 313,Đường Hùng Vương-Phường Nghĩa Trung-Gia Nghĩa-Đắk Nông)
+P191: `(DNO) Bắc Gia Nghĩa` (ID: 22242000) [AM: Trần Văn Phước]: 222.0 đơn/ngày (44.5%) (Địa chỉ: Số 53 Tôn Đức Thắng-Nghĩa Thành-Gia Nghĩa-Đắk Nông)
+P192: 
+Xã Tà Đùng (Tỉnh Lâm Đồng)
+P193: Mã Xã mới: `24637`
+P194: TỔNG SẢN LƯỢNG DỰ KIẾN: 187.0 đơn/ngày (461.0 kg/ngày) | *Giao: 161.0 đơn · Lấy: 26.0 đơn*
+P195: Các BC hiện phụ trách (2 BC): (DNO) Quảng Sơn, (DNO) Quảng Khê
+P196: Các xã cũ sáp nhập: Xã Đắk R'Măng, Xã Đắk Som
+P197: Tỷ lệ phân chia sản lượng thực tế giữa các Bưu cục:
+P198: `(DNO) Quảng Khê` (ID: 21364000) [AM: Trần Thị Nhung]: 106.0 đơn/ngày (56.7%) (Địa chỉ: QL28, xã Quảng Khê, huyện Đắk Glong, tỉnh Đắk Nông)
+P199: `(DNO) Quảng Sơn` (ID: 21150000) [AM: Trần Thị Nhung]: 81.0 đơn/ngày (43.3%) (Địa chỉ: Thôn 3A, xã Quảng Sơn, huyện Đắk Glong, Đắk Nông)
+
+Xã Đắk Sắk (Tỉnh Lâm Đồng)
+P200: Mã Xã mới: `24678`
+P201: TỔNG SẢN LƯỢNG DỰ KIẾN: 194.0 đơn/ngày (477.0 kg/ngày) | *Giao: 181.0 đơn · Lấy: 13.0 đơn*
+P202: Các BC hiện phụ trách (2 BC): (DNO) Đức Lập, (DNO) Krông Nô
+P203: Các xã cũ sáp nhập: Xã Long Sơn, Xã Đắk Sắk, Xã Nam Xuân
+P204: Tỷ lệ phân chia sản lượng thực tế giữa các Bưu cục:
+P205: `(DNO) Đức Lập` (ID: 2309) [AM: Trần Thị Nhung]: 148.0 đơn/ngày (76.3%) (Địa chỉ: Số 131-133 Nguyễn Tất Thành, xã Đắk Lao, huyện Đắk Mil, tỉnh Đắk Nông)
+P206: `(DNO) Krông Nô` (ID: 20591000) [AM: Trần Thị Nhung]: 46.0 đơn/ngày (23.7%) (Địa chỉ: Số 73 Nguyễn Tất Thành, thị trấn Đắk Mâm, huyện Krông Nô, tỉnh Đắk Nông)
+P208: Xã Đức An (Tỉnh Lâm Đồng)
+P209: Mã Xã mới: `24717`
+P210: TỔNG SẢN LƯỢNG DỰ KIẾN: 327.0 đơn/ngày (927.0 kg/ngày) | *Giao: 285.0 đơn · Lấy: 42.0 đơn*
+P211: Các BC hiện phụ trách (2 BC): (DNO) Đức An, (DNO) Trường Xuân
+P212: Các xã cũ sáp nhập: Thị trấn Đức An, Xã Nam Bình, Xã Đắk N'Drung
+P213: Tỷ lệ phân chia sản lượng thực tế giữa các Bưu cục:
+P214: `(DNO) Đức An` (ID: 21477000) [AM: Trần Thị Nhung]: 222.0 đơn/ngày (67.9%) (Địa chỉ: QL14, thị trấn Đức An, xã Đắk Song, tỉnh Đắk Nông (Đối diện Cafe Thiên Đường - Đắk Song))
+P215: `(DNO) Trường Xuân` (ID: 22086000) [AM: Trần Thị Nhung]: 105.0 đơn/ngày (32.1%) (Địa chỉ: thôn 3 xã Nâm Njang huyện Đăk Song Tỉnh Đăk Nông)
+P216: 
+
+Kính gửi: Ban Lãnh đạo Vùng NTB - Công ty GHN
+P217: 
+Căn cứ yêu cầu từ Công ty về việc rà soát và sáp nhập các Bưu cục theo đơn vị hành chính mới, nhằm tối ưu mạng lưới và tránh chồng chéo.
+P218: Tuy nhiên, sau khi AM trực tiếp rà soát thực tế sản lượng, địa lý và nhân sự tại khu vực DNO, AM  nhận thấy việc sáp nhập BC ngay tại thời điểm này tiềm ẩn nhiều rủi ro ảnh hưởng đến chất lượng dịch vụ.
+P219: Vì vậy, AM xin đề xuất giữ nguyên hiện trạng quản lý Bưu cục như hiện tại trong thời gian 3-6 tháng để đánh giá lại tình hình khu vực dựa trên các yếu tố sau:
+P220: I. CÁC YẾU ĐIỂM VÀ RỦI RO CỤ THỂ
+P221: 1. PHƯỜNG BẮC GIA NGHĨA - Mã 24611 & PHƯỜNG NAM GIA NGHĨA - Mã 24615
+P222: Lịch sử vận hành: Khu vực Gia Nghĩa từng "bể tuyến triền miên" nhiều tháng do không tuyển được nhân sự. Phương án tách 3 BC Bắc - Đông - Nam Gia Nghĩa hiện tại là phương án cuối cùng giúp giữ ổn định SLA.
+P223: Xã Đắk Ha: Nhân sự hiện tại là người xã Quảng Sơn, ưu điểm gần kho Quảng Sơn. Nếu chuyển về kho Gia Nghĩa quản lý sẽ phát sinh di chuyển 30-40km. Nếu sáp nhập, nhân sự hiện tại sẽ KHÔNG đi theo BC mới.
+P224: Đặc thù dân cư: Khu vực có tỷ lệ đồng bào dân tộc thiểu số cao. Việc tuyển nhân sự tại chỗ đã khó, nếu đổi BC mới càng không tuyển được.
+P225: Đề xuất: GIỮ NGUYÊN 3 BC Bắc Gia Nghĩa, Đông Gia Nghĩa, Nam Gia Nghĩa như hiện trạng. Riêng Xã Đắk Ha vẫn do BC (DNO) Quảng Sơn quản lý.
+P226: 2. XÃ TÀ ĐÙNG - Mã 24637
+P227: Địa lý chia cắt: 2 xã cũ Đắk Som và Đắk R'Măng cách rất xa cả 2 BC Quảng Sơn và Quảng Khê. Đường đi qua đèo, 2 bên đều có nguy cơ sạt lở cao vào mùa mưa.
+P228: Nhân sự: Dân cư chủ yếu là đồng bào dân tộc thiểu số, rào cản ngôn ngữ. Nếu sáp nhập về Quảng Sơn hoặc Quảng Khê, nhân sự hiện tại sẽ KHÔNG đi theo BC mới và không thể tuyển mới.
+P229: Rủi ro mùa vụ: Mùa mưa nước ngập, cô lập. Nếu gộp BC chắc chắn bể tuyến.
+P230: Đề xuất: GIỮ NGUYÊN quản lý theo 2 BC cũ là Quảng Sơn và Quảng Khê.
+P231: 3. XÃ ĐẮK SẮK - Mã 24678
+P232: Tình trạng: Xã mới sáp nhập từ Long Sơn, Đắk Sắk, Nam Xuân. Hiện 76.3% sản lượng do BC Đức Lập đảm nhiệm, 23.7% do BC Krông Nô đảm nhiệm phần Nam Xuân.
+P233: Rủi ro: Địa lý chia cắt, phụ thuộc nhân sự BC cũ đã quen tuyến. Nếu sáp nhập gộp BC, nhân sự hiện tại sẽ KHÔNG đi theo BC mới.
+P234: Đề xuất: GIỮ NGUYÊN BC Đức Lập quản lý toàn bộ Xã Đắk Sắk như hiện tại. Riêng phần Xã Nam Xuân vẫn do BC (DNO) Krông Nô quản lý.
+P235: 4. XÃ ĐỨC AN - Mã 24717
+P236: Tình trạng: Xã mới sáp nhập từ TT Đức An, Nam Bình, Đắk N'Drung. Hiện 67.9% sản lượng do BC Đức An đảm nhiệm, 32.1% do BC Trường Xuân đảm nhiệm phần Đắk N'Drung.
+P237: Rủi ro: Địa lý chia cắt. Phần Đắk N'Drung gần BC Trường Xuân hơn. Nếu sáp nhập gộp về 1 BC, nhân sự BC Trường Xuân sẽ KHÔNG đi theo BC mới.
+P238: Đề xuất: GIỮ NGUYÊN BC Đức An quản lý TT Đức An, Nam Bình. GIỮ NGUYÊN BC Trường Xuân quản lý phần Xã Đắk Drung như hiện tại.
+P239: II. TÌNH HÌNH CHUNG
+P240: Rủi ro nhân sự: Nếu sáp nhập BC theo xã mới, 100% nhân sự hiện tại các điểm xã ven đều xác nhận sẽ KHÔNG di chuyển theo BC mới do khoảng cách xa và đặc thù địa bàn.
+P241: Tham khảo đối thủ tại khu vực : Hiện tại trong ngành dịch vụ chuyển phát chưa có đơn vị nào tách tuyến theo phường/xã mới ngay trong giai đoạn đầu sáp nhập do nguy cơ bể tuyến và không tuyển được nhân sự rất cao.
+P242: Đề xuất: Kính đề nghị Ban Lãnh đạo cho phép TẠM THỜI GIỮ NGUYÊN 100% Bưu cục và phạm vi quản lý theo ranh giới Xã/Phường Cũ tại khu vực DNO trong 6 tháng.
+P243: Lộ trình: Sau 6 tháng ổn định, AM sẽ tổng hợp lại sản lượng thực tế và đề xuất phương án gộp BC chính thức, đảm bảo không xáo trộn.
+P244: III. KẾT LUẬN
+P245: Việc giữ nguyên BC theo xã cũ là phương án duy nhất đảm bảo không gián đoạn chất lượng, không bể tuyến, và không phát sinh chi phí tuyển dụng đào tạo lại trong giai đoạn nhạy cảm này.
+P246: Kính mong Ban Lãnh đạo xem xét và phê duyệt.
+P247: Trân trọng!
+P248: Người đề xuất
+P249: Quản lý AM - DNO
+Trần Thị Nhung
+P251: BÌNH THUẬN - đề xuất mới
+P252:     KẾ HOẠCH QUY HOẠCH BÌNH THUẬN 2026
+  
+Mục đích quy hoạch lại nhằm gia tăng năng suất tối ưu các tuyến cover dễ hơn
+1 . Thông tin quy hoạch di dời các BC Hàm Thuận Bắc trong khu vực : 
+
+(BTH) Hàm Thuận ( hiện tại ) 
+Tuyến cover : 
+Hàm Đức : 160 đơn/ngày
+Hồng Sơn : 110 đơn/ngày 
+Hồng Liêm : 90 đơn/ngày 
+Hàm Thuận Bắc : 190đơn/ngày 
+Hàm Phú : 70 đơn/ngày 
+Hàm trí : 70 đơn/ngày 
+Thuận Hoà : 60 đơn/ngày
+Đông Giang : 20 đơn/ngày
+Đông Tiến : 20 đơn/ngày
+La dạ : 30 đơn/ngày 
+Đa Mi : 70 đơn/ngày 
+Giao : 800 - 900 đơn/ngày
+Lấy : 80 - 100 đơn/ngày 
+Nhân viên : 15 
+NVXL : 1 
+
+
+(BTH) Hàm Liêm : ( hiện tại ) 
+Tuyến cover : 
+Hàm Liêm : 90 đơn/ngày 
+Hàm Chính : 70 đơn/ngày 
+Hàm Thắng : 170 đơn/ngày
+Phú Long : 140 đơn/ngày 
+Hàm Hiệp : 100 đơn/ngày 
+Giao 550 - 650 đơn/ngày 
+Lấy : 120 - 130 đơn/ngày 
+Nhân viên : 11
+NVXL : 1 
+
+
+(BTH) Hàm Thuận (Mới) 
+Tuyến cover : 
+Hồng Sơn : 250 đơn/ngày 
+Hàm Thuận Bắc : 170 đơn/ngày 
+Đông Giang : 60 đơn/ngày 
+La Dạ : 120 đơn ngày 
+Giao : 500 - 650 đơn/ngày 
+Lấy : 70 - 80 đơn/ngày 
+Nhân viên : 8 
+NVXL : 1 
+
+
+(BTH) Hàm Liêm (Mới)
+Tuyến cove : 
+Hàm Liêm : 220 đơn/ngày 
+Hàm Thuận : 300 đơn ngày 
+Giao : 500 - 600 đơn/ngày 
+Lấy : 80 - 100 đơn/ngày 
+Nhân viên : 8
+NVXL : 1
+
+
+Bản Đồ Địa Bàn Quy Hoạch Dự Kiến 
+
+
+   
+      
+             
+P254: Phường Hàm Thắng, Phường Phan Thiết
+P255:   KẾ HOẠCH QUY HOẠCH Phan Thiết 2026
+P256: 
+20. Phường Hàm Thắng (Tỉnh Lâm Đồng)
+P257: Mã Xã mới:  22933
+P258: TỔNG SẢN LƯỢNG DỰ KIẾN: 618.0 đơn/ngày (1939.0 kg/ngày) | *Giao: 545.0 đơn · Lấy: 73.0 đơn*
+P259: Các BC hiện phụ trách (2 BC): (BTH) Phú Thủy, (BTH) Hàm Liêm
+P260: Các xã cũ sáp nhập: Phường Xuân An, Thị trấn Phú Long, Xã Hàm Thắng
+P261: Tỷ lệ phân chia sản lượng thực tế giữa các Bưu cục:
+P262: `(BTH) Hàm Liêm` (ID: 21403000) [AM: Nguyễn Ngọc Khánh]: 384.0 đơn/ngày (62.1%) (Địa chỉ: Thôn 2, xã Hàm Liêm, huyện Hàm Thuận Bắc, tỉnh Bình Thuận)
+P263: `(BTH) Phú Thủy` (ID: 21320000) [AM: Nguyễn Ngọc Khánh]: 234.0 đơn/ngày (37.9%) (Địa chỉ: 188 Trương Hán Siêu, phường Phú Thuỷ, Thành phố Phan Thiết, tỉnh Bình Thuận)
+P264: ĐỀ XUẤT PHƯƠNG ÁN: Gộp về 01 Bưu cục chính ((BTH) Phú Thủy)
+P265: LÝ DO VÀ BỐ TRÍ NHÂN SỰ: Sản lượng vừa phải (618 đơn/ngày). Đề xuất gộp về Bưu cục trung tâm (BTH) Phú Thủy và điều chuyển nhân sự phủ tuyến.
+P266: 24. Phường Phan Thiết (Tỉnh Lâm Đồng)
+P267: Mã Xã mới: `22945`
+P268: TỔNG SẢN LƯỢNG DỰ KIẾN: 905.0 đơn/ngày (2112.0 kg/ngày) | *Giao: 777.0 đơn · Lấy: 128.0 đơn*
+P269: Các BC hiện phụ trách (2 BC): (BTH) Hàm Thắng, (BTH) Phú Thủy
+P270: Các xã cũ sáp nhập: Phường Phú Trinh, Phường Lạc Đạo, Phường Bình Hưng
+P271: Tỷ lệ phân chia sản lượng thực tế giữa các Bưu cục:
+P272: `(BTH) Hàm Thắng` (ID: 21396000) [AM: Nguyễn Ngọc Khánh]: 621.0 đơn/ngày (68.6%) (Địa chỉ: 110 Đặng Văn Lãnh, phường Phú Tài, Thành phố Phan Thiết, tỉnh Bình Thuận)
+P273: `(BTH) Phú Thủy` (ID: 21320000) [AM: Nguyễn Ngọc Khánh]: 284.0 đơn/ngày (31.4%) (Địa chỉ: 188 Trương Hán Siêu, phường Phú Thuỷ, Thành phố Phan Thiết, tỉnh Bình Thuận)
+P274: ĐỀ XUẤT PHƯƠNG ÁN: Gộp về 01 Bưu cục chính ((BTH) Hàm Thắng)
+P275: LÝ DO VÀ BỐ TRÍ NHÂN SỰ: Sản lượng vừa phải (905 đơn/ngày). Đề xuất gộp về Bưu cục trung tâm (BTH) Hàm Thắng và điều chuyển nhân sự phủ tuyến.
+P276: 18. Phường Bình Thuận (Tỉnh Lâm Đồng)
+P277: Mã Xã mới: `22960`
+P278: TỔNG SẢN LƯỢNG DỰ KIẾN: 680.0 đơn/ngày (1577.0 kg/ngày) | *Giao: 611.0 đơn · Lấy: 69.0 đơn*
+P279: Các BC hiện phụ trách (2 BC): (BTH) Hàm Thắng, (BTH) Hàm Liêm
+P280: Các xã cũ sáp nhập: Phường Phú Tài, Xã Phong Nẫm, Xã Hàm Hiệp
+P281: Tỷ lệ phân chia sản lượng thực tế giữa các Bưu cục:
+P282: `(BTH) Hàm Thắng` (ID: 21396000) [AM: Nguyễn Ngọc Khánh]: 563.0 đơn/ngày (82.8%) (Địa chỉ: 110 Đặng Văn Lãnh, phường Phú Tài, Thành phố Phan Thiết, tỉnh Bình Thuận)
+P283: `(BTH) Hàm Liêm` (ID: 21403000) [AM: Nguyễn Ngọc Khánh]: 117.0 đơn/ngày (17.2%) (Địa chỉ: Thôn 2, xã Hàm Liêm, huyện Hàm Thuận Bắc, tỉnh Bình Thuận)
+P284: ĐỀ XUẤT PHƯƠNG ÁN: Gộp về 01 Bưu cục ((BTH) Hàm Thắng)
+P285: LÝ DO VÀ BỐ TRÍ NHÂN SỰ: Bưu cục (BTH) Hàm Thắng chiếm ưu thế 82.8% sản lượng (563.0 đơn/ngày). Gộp các phần nhỏ còn lại về (BTH) Hàm Thắng để tối ưu tuyến.
+P294: 
+1. Quy Hoạch Theo Đơn Vị Hành Chính Mới : 
+
+(BTH) Phú Thuỷ ( hiện tại )
+Tuyến cover : 
+Phú Thuỷ : 500 đơn ngày 
+Phú Hài : 140 đơn/ngày 
+Xuân An : 130 đơn/ngày
+Bình Hưng : 100 đơn/ngày 
+Hương Long : 100 đơn/ngày 
+Thanh Hải : 100 đơn/ngày 
+Giao : 1.100 - 1.300 đơn/ngày 
+Lấy : 170 - 200 đơn/ngày
+Nhân viên : 13
+NVXL : 1
+
+
+(BTH) Hàm Thắng ( hiện tại )
+Tuyến cover : 
+Xã Phong Nẫm : 220 đơn/ngày 
+Phường Phú Tài : 200 đơn ngày 
+Phường Phú Trinh : 150 đơn/ngày
+Phường Lạc Đạo : 150 đơn/ngày
+Phường Đức Nghĩa : 120 đơn/ngày 
+Phường Đức Thắng : 120 đơn/ngày 
+Giao : 950 - 1.250 đơn/ngày
+Lấy : 140 - 160 đơn/ngày 
+Nhân viên : 13 
+NVXL : 1
+
+
+
+(BTH) Phú Thuỷ ( Mới )
+Tuyến cover : 
+Phường Phú Thuỷ : 900 đơn/ngày
+Phường Hàm thắng : 600 đơn/ngày
+Nhân viên : 18
+NVXL : 1 
+
+
+
+
+
+
+
+(BTH) Hàm Thắng ( Mới )
+Tuyến cover : 
+Phường Bình Thuận : 600 đơn/ngày
+Phường Phan Thiết : 800 đơn/ngày 
+P295: Nhân viên : 16
+NVXL : 1 
+
+
+
+
+
+Bản Đồ Địa Bàn Quy Hoạch Mới 
+
+
+
+
+
+
+P297: BC Tánh Linh và Đức Linh
+P298: KẾ HOẠCH QUY HOẠCH Tánh - Linh Đức Linh 2026
+
+Mục đích quy hoạch lại nhằm gia tăng năng suất tối ưu các tuyến cover dễ hơn
+
+1 . Thông tin quy hoạch tách thêm 1 BC Tánh Linh và Đức Linh trong khu vực : 
+
+
+(BTH) Nam Thành  ( Mở Mới  )
+Tuyến cover : 
+Nam Thành : 250 đơn/ngày 
+Nghị Đức :  200 đơn/ngày 
+Giao : 450 - 500 đơn/ngày
+Lấy : 50 - 60 đơn/ngày 
+Nhân viên : 7
+NVXL : 1 
+
+
+
+
+
+
+
+
+
+P300: ninh hải, ninh chử
+P301: 11. Xã Ninh Hải (Tỉnh Khánh Hòa)
+P302: Mã Xã mới: `22852`
+P303: TỔNG SẢN LƯỢNG DỰ KIẾN: 185.0 đơn/ngày (376.0 kg/ngày) | *Giao: 178.0 đơn · Lấy: 7.0 đơn*
+P304: Các BC hiện phụ trách (2 BC): (NTH) Ninh Chử, (NTH) Phan Rang
+P305: Các xã cũ sáp nhập: Xã Phương Hải, Xã Tri Hải, Xã Bắc Sơn
+P306: Tỷ lệ phân chia sản lượng thực tế giữa các Bưu cục:
+P307: `(NTH) Ninh Chử` (ID: 20648000) [AM: Nguyễn Duy Long]: 140.0 đơn/ngày (75.7%) (Địa chỉ: Số 51 đường Phạm Ngọc Thạch, thị trấn Khánh Hải, huyện Ninh Hải, tỉnh Ninh Thuận)
+P308: `(NTH) Phan Rang` (ID: 22861000) [AM: Nguyễn Duy Long]: 45.0 đơn/ngày (24.3%) (Địa chỉ: 95 Thống Nhất, Phường Đài Sơn, Tp Phan Rang - Tháp Chàm, Tỉnh Ninh Thuận)
+P309: ĐỀ XUẤT PHƯƠNG ÁN: Gộp về 01 Bưu cục ((NTH) Ninh Chử)
+P310: LÝ DO VÀ BỐ TRÍ NHÂN SỰ: Bưu cục (NTH) Ninh Chử chiếm ưu thế 75.7% sản lượng (140.0 đơn/ngày). Gộp các phần nhỏ còn lại về (NTH) Ninh Chử để tối ưu tuyến.
+P311: KẾ HOẠCH QUY HOẠCH NINH THUẬN 2026
+
+Mục đích quy hoạch lại nhằm gia tăng năng suất tối ưu các tuyến cover dễ hơn
+1 . Thông tin các tuyến cover từng bưu cục của khu vực : 
++ Bưu Cục (NTH) Phan Rang ( hiện tại ) 
+ - Phường Đông Hải : 130 đơn/ngày
+ - Phường Mỹ Đông : 120 đơn/ngày 
+ - Phường Mỹ Bình : 110 đơn/ngày 
+ - Phường Mỹ Hải : 150đơn/ngày 
+ - Phường Phủ Hà : 170 đơn/ngày 
+ - Phường Đài Sơn : 180 đơn/ngày 
+ - Phường Văn Hải : 160 đơn/ngày
+ - Cover Huyện Thuận Bắc : 150 đơn/ngày
+- Sản lượng đơn lấy : 300 - 400đơn/ngày
+ Nhân viên PTTT : 19
+ NVXL : 2
+
++ Bưu Cục (NTH) Bảo An : ( hiện tại ) 
+ - Phường Phước Mỹ  : 150 đơn/ngày 
+ - Phường Bảo An : 120 đơn/ngày 
+ - Phường Đô Vinh : 110 đơn/ngày
+ - Xã Thành Hải : 90 đơn/ngày 
+ - Xã Nhơn Sơn : 90 đơn/ngày 
+ - Phường Kinh Dinh : 100đơn/ngày
+ - Phường Đạo Long : 110đơn/ngày
+ - Sản lượng lấy : 150 - 200 đơn/ngày 
+ Nhân viên PTTT : 12
+ NVXL : 2
+
++ Bưu Cục (NTH) Ninh Chử (hiện tại) 
+ - Thị Trấn Khánh Hải : 170 đơn/ngày 
+ - Xã Nhơn Hải : 110 đơn/ngày 
+ - Xã Thanh Hải : 70 đơn/ngày 
+ - Xã Vĩnh Hải : 100đơn/ngày
+ - Xã Tri Hải  : 50 đơn ngày 
+ - Xã Phương Hải : 50đơn/ngày
+ - Xã Xuân Hải : 100đơn/ngày
+ - Xã Tân Hải : 60đơn/ngày
+ - Xã Hộ Hải : 70đơn/ngày 
+ Sản lượng lấy : 70 - 150 đơn/ngày 
+ Nhân viên PTTT : 13
+ NVXL : 1 
+
++ Bưu Cục (NTH) Thuận Nam (hiện tại)
+ - Xã Phước Nam : 50 đơn/ngày 
+ - Xã Phước Ninh : 40 đơn ngày 
+ - Xã Phước Minh : 30đơn/ngày 
+ - Xã Nhị Hà : 30đơn/ngày
+ - Xã Phuớc Hà : 30đơn/ngày
+ - Xã Cà Ná : 100đơn/ngày
+ - Xã Phước Diêm : 100đơn/ngày
+ - Sản lượng lấy : 80 - 100 đơn/ngày 
+ Nhân viên PTTT : 7
+ NVXL : 1
+
++ Bưu Cục (NTH) Ninh Sơn (hiện tại)
+ - Thị Trấn Tân Sơn : 150 đơn/ngày 
+ - Xã Quảng Sơn : 140 đơn ngày
+ - Xã Mỹ Sơn : 50đơn/ngày
+ - Xã Hòa Sơn : 20đơn/ngày
+ - Xã Ma Nới : 20đơn/ngày
+ - Xã Lương Sơn : 60đơn/ngày
+ - Xã Lâm Sơn : 80đơn/ngày 
+ - Huyện Bác Ái : 100đơn/ngày
+ - Sản lượng lấy : 100 - 200 đơn/ngày 
+ Nhân viên PTTT : 10
+ NVXL : 1
+
+
++ Bưu Cục (NTH) Phước Dinh (hiện tại)
+ - Thị Trấn Phước Dân : 180 đơn/ngày 
+ - Xã An Hải  : 1500 đơn/ngày 
+ - Xã Phước Thuận : 90đơn/ngày
+ - Xã Phước Sơn : 70đơn/ngày
+ - Xã Phước Vinh : 60đơn/ngày
+ - Xã Phước Hải : 80đơn/ngày
+ - Xã Phước Thái : 60đơn/ngày
+ - Xã Phước Hữu : 90đơn/ngày
+ - Xã Phước Hậu : 90đơn/ngày
+ - Xã Phước Dinh : 80đơn/ngày
+ - Sản lượng lấy : 200 - 350 đơn/ngày 
+ Nhân viên PTTT : 12
+ NVXL : 2
+
+P312: 2. Quy hoạch lại các Bưu cục nhỏ/tiêu chuẩn theo từng địa bàn KV sau sáp nhập
+
+ + Bưu Cục (NTH) Ninh Hải cover thêm các xã phường sau sáp nhập và đặt Bưu Cục tại vị trí cũ ( Thị Trấn Khánh Hải )
+ - Xã Ninh Hải bao gồm : Xã Phương Hải, Xã Tri Hải và Xã Bắc Sơn
+ - Phường Ninh Chử bao gồm : Thị Trấn Khánh Hải và Phường Văn Hải
+
++ Bưu Cục Đông Hải ( tách mới ) : bao gồm các Phường Đông Hải, Mỹ Bình, Mỹ Đông, Mỹ Hải, Đạo Long, Kinh Dinh
+ - Sản lượng giao : 600đơn/ngày
+ - Sản lượng lấy : 250đơn/ngày
+ - Nhân sự : 1NVXL - 7NVPTTT
+ - Ưu điểm : rút ngắn khoảng cách , dễ tuyển dụng nhân sự tại địa bàn ( Phường Đông Hải khó tuyển dụng , thường xuyên thiếu người ) .
+P313: 3. Tóm tắt biến động Mạng lưới Bưu cục 
+P314: Mở mới (01 BC): Bưu Cục Đông Hải
+P315: Giữ lại (06 BC): Bưu Cục Phan Rang , Bưu Cục Bảo An , Bưu Cục Ninh Sơn, Bưu Cục Ninh Chử, Bưu Cục Ninh Sơn, Bưu Cục Thuận Nam.
+
+
+
+P316: .
+P319: vạn thắng
+P320: 14. Xã Vạn Thắng (Tỉnh Khánh Hòa)
+P321: Mã Xã mới: `22516`
+P322: TỔNG SẢN LƯỢNG DỰ KIẾN: 211.0 đơn/ngày (475.0 kg/ngày) | *Giao: 205.0 đơn · Lấy: 6.0 đơn*
+P323: Các BC hiện phụ trách (2 BC): (KHO) Vạn Ninh, (KHO) Tu Bông
+P324: Các xã cũ sáp nhập: Xã Vạn Bình, xã Vạn Thắng
+P325: Tỷ lệ phân chia sản lượng thực tế giữa các Bưu cục:
+P326: `(KHO) Tu Bông` (ID: 21722000) [AM: Phạm Bá Thành Công]: 153.0 đơn/ngày (72.5%) (Địa chỉ: Đường Cây Duối, Thôn Long Hòa, xã vạn Long, huyện Vạn Ninh)
+P327: `(KHO) Vạn Ninh` (ID: 21046000) [AM: Phạm Bá Thành Công]: 58.0 đơn/ngày (27.5%) (Địa chỉ: 36 Bà Triệu, thị trấn Vạn Giã, Vạn Ninh, Khánh hòa)
+P328: ĐỀ XUẤT PHƯƠNG ÁN: Gộp về 01 Bưu cục ((KHO) Tu Bông)
+P329: LÝ DO VÀ BỐ TRÍ NHÂN SỰ: Bưu cục (KHO) Tu Bông chiếm ưu thế 72.5% sản lượng (153.0 đơn/ngày). Gộp các phần nhỏ còn lại về (KHO) Tu Bông để tối ưu tuyến.
+P332:  KẾ HOẠCH QUY HOẠCH Vạn Ninh 2026
+
+
+1 . Quy hoạch lại các Bưu cục nhỏ/tiêu chuẩn theo từng địa bàn : 
+
+Đề xuất : không tách - mở 
+P333: + Gộp 2 xã Vạn Thắng + Vạn Bình về BC KHO Tu Bông Trang theo địa giới hành chính mới . 
+
+P334: Nguyên nhân : 
+- Đưa Về Đúng địa giới hành chính mới 
+- Vị trí BC đặt . phù hợp với phạm vi phường xã mà 2 BC đang cover
+- Diện tích BC đủ để đáp ứng vận hành về lâu dài .

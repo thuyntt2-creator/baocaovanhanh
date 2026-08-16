@@ -1,0 +1,901 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>AOP Hang Cong Kenh NTB H2/2026</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    line-height: 1.5;
+    color: #333333;
+    max-width: 850px;
+    margin: 0 auto;
+    padding: 0;
+  }
+  .header-container {
+    width: 100%;
+    margin-bottom: 25px;
+  }
+  .top-orange-bar {
+    background-color: #f26f21;
+    color: #ffffff;
+    padding: 8px 15px;
+    text-align: center;
+    font-size: 9.5pt;
+    font-weight: bold;
+  }
+  .top-blue-bar {
+    background-color: #00509d;
+    color: #ffffff;
+    padding: 6px 15px;
+    text-align: center;
+    font-size: 8.5pt;
+  }
+  .top-blue-bar a {
+    color: #ffffff;
+    text-decoration: none;
+    margin: 0 10px;
+  }
+  .logo-bar {
+    padding: 15px;
+    background-color: #ffffff;
+    border-bottom: 3px solid #00509d;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .logo-text {
+    font-family: Arial, sans-serif;
+  }
+  .logo-main {
+    color: #f26f21;
+    font-size: 20pt;
+    font-weight: bold;
+  }
+  .logo-sub {
+    color: #666666;
+    font-size: 10pt;
+    font-style: italic;
+  }
+  .content-body {
+    padding: 20px;
+  }
+  h1 {
+    font-size: 14pt;
+    color: #000000;
+    margin-top: 28px;
+    margin-bottom: 10px;
+    font-weight: bold;
+    text-align: left;
+  }
+  h2 {
+    font-size: 12pt;
+    color: #00509d; /* GHN Blue */
+    margin-top: 20px;
+    margin-bottom: 8px;
+    font-weight: bold;
+    margin-left: 24px; /* Align subheadings */
+    text-align: left;
+  }
+  h3 {
+    font-size: 11pt;
+    color: #f26f21; /* GHN Orange */
+    margin-top: 16px;
+    margin-bottom: 6px;
+    font-weight: bold;
+    margin-left: 48px; /* Deep alignment */
+    text-align: left;
+  }
+  p {
+    font-size: 11pt;
+    margin: 6px 0;
+    margin-left: 24px; /* Standard indent for body text */
+    text-align: left;
+  }
+  .no-indent {
+    margin-left: 0 !important;
+  }
+  .indent-deep {
+    margin-left: 48px !important;
+  }
+  ul, ol {
+    margin: 6px 0 6px 44px; /* Align bullets with indented paragraphs */
+    padding: 0;
+  }
+  li {
+    font-size: 11pt;
+    margin-bottom: 4px;
+    text-align: left;
+  }
+  .indent-deep-list {
+    margin-left: 68px !important;
+  }
+  table {
+    width: 100%; /* Spans full page width, never indented */
+    border-collapse: collapse;
+    margin: 18px 0;
+    font-size: 9pt; /* Decreased to 9pt to give numbers more horizontal space */
+  }
+  th {
+    background-color: #d9e1f2; /* Light Blue-Gray */
+    color: #000000;
+    font-weight: bold;
+    border: 1px solid #999999;
+    padding: 6px 5px; /* Reduced padding from 8px 10px to fit columns */
+  }
+  td {
+    border: 1px solid #999999;
+    padding: 6px 5px; /* Reduced padding from 8px 10px to fit columns */
+  }
+  .text-left {
+    text-align: left;
+  }
+  .text-center {
+    text-align: center;
+  }
+  .text-right {
+    text-align: right;
+  }
+  .bg-light-gray {
+    background-color: #f2f2f2;
+  }
+  .bg-pastel-green {
+    background-color: #e2efda;
+  }
+  .bg-pastel-blue {
+    background-color: #d9e1f2;
+  }
+  .bg-yellow-header {
+    background-color: #fff2cc;
+  }
+  .text-red-bold {
+    color: #ff0000;
+    font-weight: bold;
+  }
+  .text-orange-bold {
+    color: #e69138;
+    font-weight: bold;
+  }
+  .text-green-bold {
+    color: #38761d;
+    font-weight: bold;
+  }
+</style>
+</head>
+<body>
+<div id="content" contenteditable="true">
+
+<!-- GHN Professional Header Banner -->
+<div class="header-container" style="text-align: left;">
+  <div class="top-orange-bar" style="text-align: center;">
+    CÔNG TY CỔ PHẦN DỊCH VỤ GIAO HÀNG NHANH (GHN)
+    <span style="font-weight: normal; margin-left: 10px;">| Tầng 3, Rivera Park, 7/28 Thành Thái, Phường 14, Quận 10, TP.HCM</span>
+  </div>
+  <div class="top-blue-bar" style="text-align: center;">
+    <span>f /GHNExpress</span> | 
+    <span>groups /tamsugiaohangcungGHN</span> | 
+    <span>t 1900 63 66 77</span> | 
+    <span>e cskh@ghn.vn</span>
+  </div>
+  <div class="logo-bar" style="text-align: left;">
+    <div class="logo-text">
+      <span class="logo-main">GiaoHangNhanh</span><br>
+      <span class="logo-sub">Giao Siêu Nhanh, Giá Siêu Tốt</span>
+    </div>
+    <div style="font-size: 24px; color: #f26f21; font-weight: bold; font-style: italic;">
+      ///
+    </div>
+  </div>
+</div>
+
+<div class="content-body" style="text-align: left;">
+
+<div style="text-align: center; margin-bottom: 30px;" class="no-indent">
+  <p style="font-size: 14pt; font-weight: bold; color: #00509d; margin: 0; text-transform: uppercase;" class="no-indent">GHN — VÙNG NAM TRUNG BỘ (NTB)</p>
+  <p style="font-size: 16pt; font-weight: bold; margin: 5px 0;" class="no-indent">KẾ HOẠCH HOẠT ĐỘNG NĂM (AOP)</p>
+  <p style="font-size: 12pt; font-weight: bold; color: #666666; margin: 0;" class="no-indent">HÀNG CỒNG KỀNH ≥ 10kg — H2/2026 (Tháng 7 – Tháng 12)</p>
+</div>
+
+<table style="margin-bottom: 25px;">
+  <tr>
+    <td style="font-weight: bold; width: 30%; background-color: #f2f4f7; color: #00509d;">Vùng</td>
+    <td>NTB (Nam Trung Bộ)</td>
+  </tr>
+  <tr>
+    <td style="font-weight: bold; background-color: #f2f4f7; color: #00509d;">Giám đốc Vùng (GĐV)</td>
+    <td>Trần Ngọc Trung</td>
+  </tr>
+  <tr>
+    <td style="font-weight: bold; background-color: #f2f4f7; color: #00509d;">Người lập</td>
+    <td>Trần Ngọc Trung</td>
+  </tr>
+  <tr>
+    <td style="font-weight: bold; background-color: #f2f4f7; color: #00509d;">Ngày lập</td>
+    <td>27/06/2026</td>
+  </tr>
+  <tr>
+    <td style="font-weight: bold; background-color: #f2f4f7; color: #00509d;">Phạm vi hàng hóa</td>
+    <td>Hàng cồng kềnh ≥ 10kg (vừa 10–20kg + nặng ≥20kg)</td>
+  </tr>
+  <tr>
+    <td style="font-weight: bold; background-color: #f2f4f7; color: #00509d;">Khung thời gian</td>
+    <td>T7 – T12/2026</td>
+  </tr>
+  <tr>
+    <td style="font-weight: bold; background-color: #f2f4f7; color: #00509d;">Tỉnh/thành phố</td>
+    <td>Khánh Hòa · Lâm Đồng · Bình Thuận · Ninh Thuận · Đắk Nông</td>
+  </tr>
+  <tr>
+    <td style="font-weight: bold; background-color: #f2f4f7; color: #00509d;">Nguồn volume</td>
+    <td>FC Vùng — PSBBA / tool topline (output 19/06/2026)</td>
+  </tr>
+  <tr>
+    <td style="font-weight: bold; background-color: #f2f4f7; color: #00509d;">Tài liệu kèm theo</td>
+    <td>AOP_Hang_NTB_T7-T12_2026_.xlsx | AOP_MAU_NTB_.xlsx</td>
+  </tr>
+</table>
+
+<h1 style="text-align: left;">I. BỐI CẢNH & MỤC TIÊU</h1>
+
+<h2 style="text-align: left;">1.1 Bối cảnh</h2>
+<p>Hàng cồng kềnh (≥10kg) là phân khúc tăng trưởng nhanh nhất tại NTB, nhưng cũng là điểm nghẽn lớn nhất về mặt vận hành. Trong mô hình cũ, hàng nặng bị giao chung với hàng nhỏ tại các bưu cục thường, dẫn đến 3 vấn đề cốt lõi:</p>
+<ul>
+  <li>Năng lực thực tế mỗi bưu cục thường chỉ đạt tối đa 100–200 đơn bulky/ngày do giới hạn mặt bằng và thiếu xe tải chuyên biệt.</li>
+  <li>Sản lượng hàng nặng đổ về Nha Trang và Di Linh tạo GAP âm lũy kế lên tới 500–1.500 đơn/ngày, gây tồn đọng hàng loạt.</li>
+  <li>Chi phí thuê chành xe tư nhân (đặc biệt tuyến Đơn Dương qua đèo) cao và không kiểm soát được thời gian giao nhận, ảnh hưởng nghiêm trọng đến KPI GTC.</li>
+</ul>
+<p>Vùng NTB đề xuất chuyển dịch toàn bộ hàng cồng kềnh (≥10kg) từ bưu cục thường sang xử lý tập trung tại 4 Bưu cục Cồng kềnh (BCCK) chuyên biệt, theo chuẩn mô hình HCM (đã vận hành 12 BCCK thành công).</p>
+
+<h2 style="text-align: left;">1.2 Mục tiêu</h2>
+<ul>
+  <li>Vận hành ổn định 4 BCCK: Nha Trang, Di Linh, Đơn Dương, Đức Linh — triệt tiêu hoàn toàn GAP âm sản lượng bulky.</li>
+</ul>
+
+<h1 style="text-align: left;">II. CHỨNG MINH NĂNG LỰC & PHÂN TÍCH GAP</h1>
+
+<h2 style="text-align: left;">2.1 Cơ sở tính toán</h2>
+<p>Để chứng minh năng lực vận hành cần bổ sung, vùng sử dụng mô hình dự báo tích lũy — tính số xe tải 1.9T cần thiết dựa trên Topline Target hàng tháng. Công thức nền:</p>
+<ul>
+  <li>Tổng nhu cầu thực tế ngày (T) = Sản lượng mới nhận ngày T + Tồn giao lại lần 1 (ngày T−1 chuyển qua) + Tồn giao lại lần 2 (ngày T−2 chuyển qua).</li>
+  <li>Năng lực vận hành thực tế = Số xe xếp × Năng suất GTC/chuyến (ngày thường: 47 đơn/xe, cao điểm: 64 đơn/xe).</li>
+  <li>GAP âm (&lt;0): thiếu năng lực, gây nghẽn kho tồn đọng lũy kế. GAP dương (≥0): vận hành an toàn.</li>
+  <li>Quy đổi chuyến → đầu xe: mỗi xe tải 1.9T chạy 2 chuyến/ngày (Ca 1 + Ca 2). Số đầu xe thực tế = Số chuyến / 2.</li>
+</ul>
+
+<h2 style="text-align: left;">2.2 Dự báo GAP và nhu cầu xe tải 1.9T theo BCCK</h2>
+<p>Căn cứ sản lượng Topline ≥10kg, nhu cầu xe tải 1.9T tại 4 BCCK được dự báo như sau:</p>
+
+<table>
+  <thead>
+    <tr>
+      <th class="text-left" style="width: 20%;">BCCK</th>
+      <th class="text-left" style="width: 35%;">Chỉ số</th>
+      <th class="text-center" nowrap style="width: 15%;">T7 (Khởi động)</th>
+      <th class="text-center" nowrap style="width: 15%;">T10 (Mua sắm)</th>
+      <th class="text-center" nowrap style="width: 15%;">T12 (Đỉnh Tết)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="font-weight: bold;" class="text-left">BCCK Nha Trang</td>
+      <td class="text-left">Sản lượng trung bình/ngày<br>Nhu cầu chuyến xe TB/ngày<br>Số đầu xe 1.9T (2 chuyến/ngày)</td>
+      <td class="text-center bg-pastel-blue" nowrap>1.043 đơn<br>18 chuyến<br><b>9 xe</b></td>
+      <td class="text-center bg-pastel-blue" nowrap>1.208 đơn<br>21 chuyến<br><b>11 xe</b></td>
+      <td class="text-center bg-pastel-blue" nowrap>1.390 đơn<br>24 chuyến<br><b>12 xe</b></td>
+    </tr>
+    <tr>
+      <td style="font-weight: bold;" class="text-left">BCCK Di Linh</td>
+      <td class="text-left">Sản lượng trung bình/ngày<br>Nhu cầu chuyến xe TB/ngày<br>Số đầu xe 1.9T (2 chuyến/ngày)</td>
+      <td class="text-center bg-pastel-blue" nowrap>624 đơn<br>11 chuyến<br><b>6 xe</b></td>
+      <td class="text-center bg-pastel-blue" nowrap>688 đơn<br>12 chuyến<br><b>6 xe</b></td>
+      <td class="text-center bg-pastel-blue" nowrap>804 đơn<br>14 chuyến<br><b>7 xe</b></td>
+    </tr>
+    <tr>
+      <td style="font-weight: bold;" class="text-left">BCCK Đơn Dương</td>
+      <td class="text-left">Sản lượng trung bình/ngày<br>Nhu cầu chuyến xe TB/ngày<br>Số đầu xe 1.9T (2 chuyến/ngày)</td>
+      <td class="text-center bg-pastel-blue" nowrap>211 đơn<br>4 chuyến<br><b>2 xe</b></td>
+      <td class="text-center bg-pastel-blue" nowrap>241 đơn<br>4 chuyến<br><b>2 xe</b></td>
+      <td class="text-center bg-pastel-blue" nowrap>278 đơn<br>5 chuyến<br><b>3 xe</b></td>
+    </tr>
+    <tr>
+      <td style="font-weight: bold;" class="text-left">BCCK Đức Linh</td>
+      <td class="text-left">Sản lượng trung bình/ngày<br>Nhu cầu chuyến xe TB/ngày<br>Số đầu xe 1.9T (2 chuyến/ngày)</td>
+      <td class="text-center bg-pastel-blue" nowrap>166 đơn<br>3 chuyến<br><b>2 xe</b></td>
+      <td class="text-center bg-pastel-blue" nowrap>195 đơn<br>4 chuyến<br><b>2 xe</b></td>
+      <td class="text-center bg-pastel-blue" nowrap>223 đơn<br>4 chuyến<br><b>2 xe</b></td>
+    </tr>
+  </tbody>
+</table>
+<p style="font-style: italic; font-size: 9.5pt; color: #555555;">*Lưu ý: Benchmark GXT NTB ngày thường dùng 11 đầu xe (22 chuyến), ngày cao điểm tăng lên 15 đầu xe (30 chuyến). BCCK sẽ đạt hiệu quả Scale of Economy khi gom đủ sản lượng vượt ngưỡng 200 đơn/ngày/BC.*</p>
+
+<h1 style="text-align: left;">III. TỔNG QUAN VÙNG NTB & HỆ THỐNG BCCK</h1>
+
+<h2 style="text-align: left;">3.1 Phạm vi địa bàn — 5 tỉnh/thành phố</h2>
+<ul>
+  <li><b>Khánh Hòa</b>: trọng điểm — Nha Trang là đô thị lớn nhất vùng, sản lượng cao nhất.</li>
+  <li><b>Lâm Đồng</b>: cao nguyên — Đà Lạt, Bảo Lộc, Di Linh là các cụm đô thị chính, địa hình đèo dốc.</li>
+  <li><b>Bình Thuận</b>: duyên hải — Phan Thiết, La Gi, Đức Linh. Khu vực Đức Linh giáp ranh Đồng Nai.</li>
+  <li><b>Ninh Thuận</b>: Phan Rang – Tháp Chàm, mật độ đơn trung bình.</li>
+  <li><b>Đắk Nông</b>: Tây Nguyên — Gia Nghĩa, địa lý phân tán, cự ly giao xa, dồn về BCCK lân cận.</li>
+</ul>
+
+<h2 style="text-align: left;">3.2 Lý do lựa chọn 4 BCCK — Phân tích chiến lược vị trí</h2>
+
+<h3 class="indent-deep" style="text-align: left;">BCCK Nha Trang — Kho ven đô, gom 7 bưu cục nội đô</h3>
+<ul class="indent-deep-list">
+  <li><b>Vị trí</b>: đặt tại khu vực ven đô (ngoại thành Nha Trang) để tối ưu chi phí mặt bằng.</li>
+  <li>Tiết kiệm mặt bằng 50–60% so với kho nội thành (hàng nặng đòi hỏi mật độ 3,3 đơn/m², cần diện tích lớn).</li>
+  <li><b>Khoảng cách di chuyển hợp lý</b>: phạm vi TP. Nha Trang nhỏ, từ kho ven đô vào nội thành chỉ mất 15–25 phút — nằm trong bán kính tối ưu của xe tải 1.9T.</li>
+  <li><b>Giải phóng quá tải 7 bưu cục cũ</b>: hàng bulky chiếm chỗ làm nghẽn luồng hàng nhỏ Ecom — đưa ra kho riêng giúp bưu cục nội đô thông thoáng hơn.</li>
+</ul>
+
+<h3 class="indent-deep" style="text-align: left;">BCCK Di Linh — Vận hành hỗn hợp, địa bàn rộng</h3>
+<ul class="indent-deep-list">
+  <li><b>Vị trí</b>: trung tâm khu vực Di Linh – Lâm Đồng, gom 7 bưu cục (Di Linh, Lâm Hà, Ninh Hòa và vùng phụ cận).</li>
+  <li>Khác với Nha Trang, BCCK Di Linh vận hành tích hợp cả hàng nhỏ và hàng lớn để tối ưu chi phí cố định kho trên địa bàn rộng.</li>
+  <li><b>Chia tuyến thông minh</b>: xe tải 1.9T làm nhiệm vụ linehaul từ BCCK → thả hàng tại các điểm tập kết vệ tinh dọc tuyến xa → shipper nội tuyến phát hàng chặng cuối (last-mile). Shipper không phải chạy hàng chục km về kho lấy hàng.</li>
+</ul>
+
+<h3 class="indent-deep" style="text-align: left;">BCCK Đơn Dương — Khắc phục nút thắt địa hình qua đèo</h3>
+<ul class="indent-deep-list">
+  <li><b>Vị trí</b>: Bưu cục TDP Nghĩa Đức – Thạnh Mỹ – Đơn Dương.</li>
+  <li>Tuyến Đơn Dương ↔ Đức Trọng (Hiệp Thạnh) bị ngăn cách bởi đoạn đèo dốc hiểm trở, sương mù, trơn trượt.</li>
+  <li>Hiện tại phải thuê chành xe tư nhân qua đèo với chi phí cao và không chủ động được thời gian — ảnh hưởng nghiêm trọng đến KPI GTC.</li>
+  <li><b>BCCK Đơn Dương + xe tải 1.9T nội bộ</b>: chủ động 100% thời gian giao nhận, cắt hoàn toàn chi phí chành xe ngoài.</li>
+</ul>
+
+<h3 class="indent-deep" style="text-align: left;">BCCK Đức Linh – Bình Thuận — Quy hoạch cụm bán sơn địa</h3>
+<ul class="indent-deep-list">
+  <li><b>Vị trí</b>: gom bưu cục xã Nam Chính về BCCK Đức Linh.</li>
+  <li>Quy hoạch cụm BC vệ tinh khu vực Đức Linh để gom sản lượng đạt điểm hòa vốn vận hành xe tải 1.9T.</li>
+  <li>Nâng cao tỷ lệ gán giao hàng nặng tại khu vực giáp ranh Đồng Nai – Bình Thuận.</li>
+</ul>
+
+<h1 style="text-align: left;">IV. PHƯƠNG ÁN VẬN HÀNH CHẶNG CUỐI (HUB-AND-SPOKE)</h1>
+
+<h2 style="text-align: left;">4.1 Trả lời câu hỏi của công ty: "Shipper có cover nổi địa bàn gom quá rộng không?"</h2>
+<p>Vùng đề xuất mô hình vận hành chặng cuối kết hợp xe tải 1.9T:</p>
+<ol>
+  <li>Hàng bulky ≥10kg gom về BCCK, phân loại sẵn theo tuyến giao (nội thị + tuyến xa).</li>
+  <li>Shipper chặng cuối nhận hàng từ xe tải 1.9T giao trực tiếp đến khách hàng.</li>
+</ol>
+
+<h2 style="text-align: left;">4.2 Lợi ích mô hình chứng minh KPI GTC</h2>
+<ul>
+  <li><b>Shipper không bị kiệt sức</b>: shipper tuyến xa không phải đi hàng chục km về BCCK lấy hàng — đoạn dài đã có xe tải 1.9T lo.</li>
+  <li><b>Năng suất giao hàng vượt trội</b>: shipper chuyên bulky đạt 47–64 đơn/ngày, thay vì 10–15 đơn/ngày khi mix với hàng Ecom nhỏ.</li>
+  <li><b>An toàn hàng hóa</b>: tránh vỡ/hỏng hàng cồng kềnh khi chở bằng xe máy chặng xa.</li>
+  <li><b>Chủ động thời gian</b>: xe tải nội bộ thay thế hoàn toàn chành xe thuê ngoài, kiểm soát 100% slot giao nhận.</li>
+</ul>
+
+<h1 style="text-align: left;">V. DỰ BÁO SẢN LƯỢNG (FORECAST)</h1>
+
+<h2 style="text-align: left;">5.1 Nguồn dữ liệu</h2>
+<p>Volume được nạp sẵn từ FC Vùng — PSBBA / tool topline (output 19/06/2026), tách 2 chiều Lấy & Giao, gom theo vùng × band cân nặng × tháng. B2B đã tách riêng tại bước định tuyến M4 — KHÔNG cộng vào hàng vừa/nặng.</p>
+
+<h2 style="text-align: left;">5.2 Volume giao tháng — theo tỉnh và band cân nặng (đơn/tháng)</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th class="text-left" style="width: 15%;">Tỉnh</th>
+      <th class="text-left" style="width: 25%;">Band cân nặng</th>
+      <th class="text-right" nowrap style="width: 10%;">T7</th>
+      <th class="text-right" nowrap style="width: 10%;">T8</th>
+      <th class="text-right" nowrap style="width: 10%;">T9</th>
+      <th class="text-right" nowrap style="width: 10%;">T10</th>
+      <th class="text-right" nowrap style="width: 10%;">T11</th>
+      <th class="text-right" nowrap style="width: 10%;">T12</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="font-weight: bold;" class="text-left" rowspan="2">Bình Thuận</td>
+      <td class="text-left">Hàng vừa (10–20kg)</td>
+      <td class="text-right" nowrap>26.399</td>
+      <td class="text-right" nowrap>24.453</td>
+      <td class="text-right" nowrap>25.643</td>
+      <td class="text-right" nowrap>28.121</td>
+      <td class="text-right" nowrap>29.187</td>
+      <td class="text-right" nowrap>32.626</td>
+    </tr>
+    <tr>
+      <td class="text-left">Hàng nặng (≥20kg)</td>
+      <td class="text-right" nowrap>17.577</td>
+      <td class="text-right" nowrap>19.165</td>
+      <td class="text-right" nowrap>20.019</td>
+      <td class="text-right" nowrap>22.386</td>
+      <td class="text-right" nowrap>23.235</td>
+      <td class="text-right" nowrap>25.330</td>
+    </tr>
+    <tr>
+      <td style="font-weight: bold;" class="text-left" rowspan="2">Khánh Hòa</td>
+      <td class="text-left">Hàng vừa (10–20kg)</td>
+      <td class="text-right" nowrap>11.331</td>
+      <td class="text-right" nowrap>10.734</td>
+      <td class="text-right" nowrap>11.340</td>
+      <td class="text-right" nowrap>12.333</td>
+      <td class="text-right" nowrap>13.751</td>
+      <td class="text-right" nowrap>14.746</td>
+    </tr>
+    <tr>
+      <td class="text-left">Hàng nặng (≥20kg)</td>
+      <td class="text-right" nowrap>9.992</td>
+      <td class="text-right" nowrap>10.951</td>
+      <td class="text-right" nowrap>11.462</td>
+      <td class="text-right" nowrap>12.763</td>
+      <td class="text-right" nowrap>13.958</td>
+      <td class="text-right" nowrap>14.982</td>
+    </tr>
+    <tr>
+      <td style="font-weight: bold;" class="text-left" rowspan="2">Lâm Đồng</td>
+      <td class="text-left bg-pastel-green">Hàng vừa (10–20kg)</td>
+      <td class="text-right bg-pastel-green" nowrap>39.691</td>
+      <td class="text-right bg-pastel-green" nowrap>38.139</td>
+      <td class="text-right bg-pastel-green" nowrap>39.860</td>
+      <td class="text-right bg-pastel-green" nowrap>43.614</td>
+      <td class="text-right bg-pastel-green" nowrap>44.025</td>
+      <td class="text-right bg-pastel-green" nowrap>50.492</td>
+    </tr>
+    <tr>
+      <td class="text-left">Hàng nặng (≥20kg)</td>
+      <td class="text-right" nowrap>20.991</td>
+      <td class="text-right" nowrap>22.580</td>
+      <td class="text-right" nowrap>23.499</td>
+      <td class="text-right" nowrap>25.967</td>
+      <td class="text-right" nowrap>25.849</td>
+      <td class="text-right" nowrap>29.782</td>
+    </tr>
+    <tr>
+      <td style="font-weight: bold;" class="text-left" rowspan="2">Ninh Thuận</td>
+      <td class="text-left">Hàng vừa (10–20kg)</td>
+      <td class="text-right" nowrap>41.509</td>
+      <td style="color: #ff0000; font-weight: bold;" class="text-right" nowrap>38.541</td>
+      <td class="text-right" nowrap>39.566</td>
+      <td class="text-right" nowrap>43.353</td>
+      <td class="text-right" nowrap>46.877</td>
+      <td class="text-right" nowrap>50.986</td>
+    </tr>
+    <tr>
+      <td class="text-left">Hàng nặng (≥20kg)</td>
+      <td class="text-right" nowrap>14.997</td>
+      <td class="text-right" nowrap>16.452</td>
+      <td class="text-right" nowrap>16.979</td>
+      <td class="text-right" nowrap>18.931</td>
+      <td class="text-right" nowrap>20.140</td>
+      <td class="text-right" nowrap>21.635</td>
+    </tr>
+    <tr>
+      <td style="font-weight: bold;" class="text-left" rowspan="2">Đắk Nông</td>
+      <td class="text-left">Hàng vừa (10–20kg)</td>
+      <td class="text-right" nowrap>10.710</td>
+      <td class="text-right" nowrap>9.718</td>
+      <td class="text-right" nowrap>10.291</td>
+      <td class="text-right" nowrap>11.452</td>
+      <td class="text-right" nowrap>11.561</td>
+      <td class="text-right" nowrap>13.526</td>
+    </tr>
+    <tr>
+      <td class="text-left">Hàng nặng (≥20kg)</td>
+      <td class="text-right" nowrap>5.021</td>
+      <td class="text-right" nowrap>5.471</td>
+      <td class="text-right" nowrap>5.721</td>
+      <td class="text-right" nowrap>6.380</td>
+      <td class="text-right" nowrap>6.404</td>
+      <td class="text-right" nowrap>7.325</td>
+    </tr>
+    <tr style="font-weight: bold; background-color: #f2f4f7;">
+      <td colspan="2" class="text-left">TỔNG GIAO BULKY/THÁNG</td>
+      <td class="text-right" nowrap>270.114</td>
+      <td class="text-right" nowrap>265.677</td>
+      <td class="text-right" nowrap>286.688</td>
+      <td class="text-right" nowrap>317.992</td>
+      <td class="text-right" nowrap>331.193</td>
+      <td class="text-right" nowrap>366.620</td>
+    </tr>
+  </tbody>
+</table>
+
+<h2 style="text-align: left;">5.3 Kênh & nhu cầu — chiều giao (đơn/tháng)</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th class="text-left" style="width: 40%;">Kênh</th>
+      <th class="text-right" nowrap style="width: 10%;">T7</th>
+      <th class="text-right" nowrap style="width: 10%;">T8</th>
+      <th class="text-right" nowrap style="width: 10%;">T9</th>
+      <th class="text-right" nowrap style="width: 10%;">T10</th>
+      <th class="text-right" nowrap style="width: 10%;">T11</th>
+      <th class="text-right" nowrap style="width: 10%;">T12</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="font-weight: bold;" class="text-left">Tổng hàng vừa (10–20kg) → BCCK van</td>
+      <td class="text-right" nowrap>129.641</td>
+      <td class="text-right" nowrap>121.584</td>
+      <td class="text-right" nowrap>126.699</td>
+      <td class="text-right" nowrap>138.871</td>
+      <td class="text-right" nowrap>145.401</td>
+      <td class="text-right" nowrap>162.376</td>
+    </tr>
+    <tr>
+      <td style="font-weight: bold;" class="text-left">Tổng hàng nặng (≥20kg) → GXT / đội tải xe 1.9T</td>
+      <td class="text-right" nowrap>68.578</td>
+      <td class="text-right" nowrap>74.620</td>
+      <td class="text-right" nowrap>77.680</td>
+      <td class="text-right" nowrap>86.427</td>
+      <td class="text-right" nowrap>89.586</td>
+      <td class="text-right" nowrap>99.054</td>
+    </tr>
+    <tr>
+      <td style="font-weight: bold;" class="text-left">B2B (kênh riêng, đã tách M4)</td>
+      <td class="text-right" nowrap>61.655</td>
+      <td class="text-right" nowrap>67.282</td>
+      <td class="text-right" nowrap>70.187</td>
+      <td class="text-right" nowrap>78.558</td>
+      <td class="text-right" nowrap>81.296</td>
+      <td class="text-right" nowrap>88.895</td>
+    </tr>
+    <tr style="font-weight: bold; background-color: #f2f4f7;">
+      <td class="text-left">SL/tháng — Hàng vừa (Bulky Giao)</td>
+      <td class="text-right" nowrap>198.219</td>
+      <td class="text-right" nowrap>196.204</td>
+      <td class="text-right" nowrap>204.379</td>
+      <td class="text-right" nowrap>225.298</td>
+      <td class="text-right" nowrap>234.987</td>
+      <td class="text-right" nowrap>261.430</td>
+    </tr>
+    <tr style="font-weight: bold; background-color: #f2f4f7;">
+      <td class="text-left">SL/ngày — Hàng nặng (Giao bình quân)</td>
+      <td class="text-right" nowrap>2.996</td>
+      <td class="text-right" nowrap>3.296</td>
+      <td class="text-right" nowrap>3.430</td>
+      <td class="text-right" nowrap>3.847</td>
+      <td class="text-right" nowrap>3.978</td>
+      <td class="text-right" nowrap>4.302</td>
+    </tr>
+  </tbody>
+</table>
+
+<h2>5.4 Nhận xét xu hướng</h2>
+<ul>
+  <li>Tổng volume ≥10kg tăng đều T7→T12, tăng ~32% (từ ~198K lên ~261K đơn/tháng).</li>
+  <li>Hàng vừa (10–20kg) chiếm ~65% tổng volume — là kênh trọng tâm của BCCK van.</li>
+  <li>T11–T12 là cao điểm cuối năm — xe tải 1.9T cần tăng cường lên 9–12 đầu xe/BCCK tùy địa bàn.</li>
+  <li>Khánh Hòa và Lâm Đồng chiếm hơn 60% toàn vùng — BCCK Nha Trang và Di Linh là 2 điểm áp lực nhất.</li>
+</ul>
+
+<h1 style="text-align: left;">VI. ĐÌNH BIÊN NHÂN SỰ & KẾ HOẠCH NGUỒN LỰC</h1>
+
+<h2 style="text-align: left;">6.1 Nguyên tắc định biên</h2>
+<p>Nhân sự được định biên theo sản lượng thực tế Topline H2/2026 và số liệu tài xế/shipper thực tế từ báo cáo GTC — không cào bằng 15 người/BCCK như phương án cũ. Hàng vừa (10–20kg) được phân rã về bưu cục thường chặng cuối cho shipper thường (xe máy), tránh quá tải shipper cồng kềnh.</p>
+
+<h2 style="text-align: left;">6.2 Định biên chi tiết 4 BCCK</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th class="text-left" style="width: 20%;">BCCK</th>
+      <th class="text-center" nowrap style="width: 15%;">SL/ngày</th>
+      <th class="text-center" nowrap>NV Giao</th>
+      <th class="text-center" nowrap>NV Kho</th>
+      <th class="text-center" nowrap>NV QL</th>
+      <th class="text-center bg-yellow-header" nowrap style="border: 1px solid #999999; width: 10%;">Tổng</th>
+      <th class="text-left" style="width: 35%;">Ghi chú / Phạm vi</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="font-weight: bold;" class="text-left">BCCK Nha Trang</td>
+      <td class="text-center" nowrap>1.390 đơn/ngày</td>
+      <td class="text-center" nowrap>13</td>
+      <td class="text-center" nowrap>1</td>
+      <td class="text-center" nowrap>1</td>
+      <td class="text-center bg-yellow-header" nowrap style="font-weight: bold; border: 1px solid #999999;">15</td>
+      <td class="text-left">Mở rộng BC hiện tại — gom 7 BC nội đô Nha Trang</td>
+    </tr>
+    <tr>
+      <td style="font-weight: bold;" class="text-left">BCCK Di Linh</td>
+      <td class="text-center" nowrap>804 đơn/ngày</td>
+      <td class="text-center" nowrap>12</td>
+      <td class="text-center" nowrap>1</td>
+      <td class="text-center" nowrap>1</td>
+      <td class="text-center bg-yellow-header" nowrap style="font-weight: bold; border: 1px solid #999999;">14</td>
+      <td class="text-left">Vận hành hỗn hợp — gom 7 BC Di Linh, Lâm Hà, Ninh Hòa</td>
+    </tr>
+    <tr>
+      <td style="font-weight: bold;" class="text-left">BCCK Đơn Dương</td>
+      <td class="text-center" nowrap>278 đơn/ngày</td>
+      <td class="text-center" nowrap>8</td>
+      <td class="text-center" nowrap>1</td>
+      <td class="text-center" nowrap>1</td>
+      <td class="text-center bg-yellow-header" nowrap style="font-weight: bold; border: 1px solid #999999;">10</td>
+      <td class="text-left">Mở rộng BC — gom Hiệp Thạnh + Đơn Dương</td>
+    </tr>
+    <tr>
+      <td style="font-weight: bold;" class="text-left">BCCK Đức Linh</td>
+      <td class="text-center" nowrap>223 đơn/ngày</td>
+      <td class="text-center" nowrap>5</td>
+      <td class="text-center" nowrap>1</td>
+      <td class="text-center" nowrap>1</td>
+      <td class="text-center bg-yellow-header" nowrap style="font-weight: bold; border: 1px solid #999999;">7</td>
+      <td class="text-left">Thuê mặt bằng mới — gom BC xã Nam Chính</td>
+    </tr>
+    <tr style="font-weight: bold; background-color: #f2f4f7;">
+      <td class="text-left">TỔNG CỘNG</td>
+      <td class="text-center" nowrap>2.695 đơn/ngày</td>
+      <td class="text-center" nowrap>38</td>
+      <td class="text-center" nowrap>4</td>
+      <td class="text-center" nowrap>4</td>
+      <td class="text-center bg-yellow-header" nowrap style="border: 1px solid #999999;">46</td>
+      <td class="text-left">Tiết kiệm 210tr/tháng so với phương án 60 người</td>
+    </tr>
+  </tbody>
+</table>
+<p style="font-style: italic; font-weight: bold; margin-top: 10px;">*Tổng 46 nhân sự (giảm từ 60 người phương án cũ) → tiết kiệm 210.000.000 đ/tháng quỹ lương, tương đương 1,26 tỷ đồng trong 6 tháng/2026.*</p>
+
+<h2 style="text-align: left;">6.3 Kế hoạch xe tải 1.9T theo tháng</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th class="text-left" style="width: 40%;">Chỉ tiêu</th>
+      <th class="text-center" nowrap style="width: 10%;">T7</th>
+      <th class="text-center" nowrap style="width: 10%;">T8</th>
+      <th class="text-center" nowrap style="width: 10%;">T9</th>
+      <th class="text-center" nowrap style="width: 10%;">T10</th>
+      <th class="text-center" nowrap style="width: 10%;">T11</th>
+      <th class="text-center" nowrap style="width: 10%;">T12</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="font-weight: bold;" class="text-left">SL hàng nặng/ngày (BQ)</td>
+      <td class="text-center" nowrap>2.286</td>
+      <td class="text-center" nowrap>2.487</td>
+      <td class="text-center" nowrap>2.589</td>
+      <td class="text-center" nowrap>2.881</td>
+      <td class="text-center" nowrap>2.986</td>
+      <td class="text-center" nowrap>3.302</td>
+    </tr>
+    <tr>
+      <td style="font-weight: bold;" class="text-left">Tổng đầu xe 1.9T BQ/ngày (4 BCCK)</td>
+      <td class="text-center bg-pastel-blue" nowrap style="font-weight: bold;">39</td>
+      <td class="text-center bg-pastel-blue" nowrap style="font-weight: bold;">43</td>
+      <td class="text-center bg-pastel-blue" nowrap style="font-weight: bold;">45</td>
+      <td class="text-center bg-pastel-blue" nowrap style="font-weight: bold;">50</td>
+      <td class="text-center bg-pastel-blue" nowrap style="font-weight: bold;">51</td>
+      <td class="text-center bg-pastel-blue" nowrap style="font-weight: bold;">57</td>
+    </tr>
+    <tr>
+      <td style="font-weight: bold;" class="text-left">Tổng đầu xe 1.9T ngày cao điểm</td>
+      <td class="text-center" nowrap>~43</td>
+      <td class="text-center" nowrap>~40</td>
+      <td class="text-center" nowrap>~42</td>
+      <td class="text-center" nowrap>~36</td>
+      <td class="text-center" nowrap>~39</td>
+      <td class="text-center" nowrap>~40</td>
+    </tr>
+    <tr>
+      <td style="font-weight: bold;" class="text-left">Số người giao (đỉnh × 2 người/xe)</td>
+      <td class="text-center" nowrap>~86</td>
+      <td class="text-center" nowrap>~80</td>
+      <td class="text-center" nowrap>~84</td>
+      <td class="text-center" nowrap>~72</td>
+      <td class="text-center" nowrap>~78</td>
+      <td class="text-center" nowrap>~80</td>
+    </tr>
+    <tr>
+      <td style="font-weight: bold;" class="text-left">Mặt bằng tổng 4 BCCK cần (m²)</td>
+      <td class="text-center" nowrap>~905</td>
+      <td class="text-center" nowrap>~998</td>
+      <td class="text-center" nowrap>~1.039</td>
+      <td class="text-center" nowrap>~1.165</td>
+      <td class="text-center" nowrap>~1.205</td>
+      <td class="text-center" nowrap>~1.303</td>
+    </tr>
+  </tbody>
+</table>
+
+<h2 style="text-align: left;">6.4 Kế hoạch mặt bằng</h2>
+<ul>
+  <li><b>BCCK Nha Trang</b>: mở rộng BC hiện tại — kho ven đô, tiết kiệm 50–60% so với thuê mặt bằng nội thành.</li>
+  <li><b>BCCK Di Linh</b>: mở rộng BC hiện tại — trung tâm khu vực Di Linh–Lâm Hà–Ninh Hòa.</li>
+  <li><b>BCCK Đơn Dương</b>: mở rộng BC hiện tại tại Nghĩa Đức–Thạnh Mỹ–Đơn Dương.</li>
+  <li><b>BCCK Đức Linh</b>: thuê mặt bằng mới — đơn giá tạm tính 6.500.000 đ/tháng (cần ký hợp đồng trước 10/07).</li>
+</ul>
+
+<h1 style="text-align: left;">VII. KẾ HOẠCH CHI PHÍ</h1>
+
+<h2 style="text-align: left;">7.1 Cấu trúc chi phí</h2>
+<ul>
+  <li>Chi phí xe tải 1.9T: xe BQ/ngày × 1.200.000 đ × số ngày làm việc/tháng.</li>
+  <li>Chi phí nhân sự giao hàng (38 shipper): lương + phụ cấp theo cấu trúc NCC bulky.</li>
+  <li>Chi phí nhân sự kho & quản lý (8 người cố định × 4 BCCK): 15.000.000 đ/người/tháng.</li>
+  <li>Chi phí thuê mặt bằng: diện tích × 120.000 đ/m²/tháng (ngoại trừ BCCK Đức Linh theo giá thực tế).</li>
+</ul>
+
+<h2 style="text-align: left;">7.2 Ước tính chi phí theo tháng (triệu đồng)</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th class="text-left" style="width: 40%;">Hạng mục</th>
+      <th class="text-right" nowrap style="width: 10%;">T7</th>
+      <th class="text-right" nowrap style="width: 10%;">T8</th>
+      <th class="text-right" nowrap style="width: 10%;">T9</th>
+      <th class="text-right" nowrap style="width: 10%;">T10</th>
+      <th class="text-right" nowrap style="width: 10%;">T11</th>
+      <th class="text-right" nowrap style="width: 10%;">T12</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="font-weight: bold;" class="text-left">Chi phí xe tải 1.9T</td>
+      <td class="text-right" nowrap>1.404</td>
+      <td class="text-right" nowrap>1.548</td>
+      <td class="text-right" nowrap>1.620</td>
+      <td class="text-right" nowrap>1.800</td>
+      <td class="text-right" nowrap>1.836</td>
+      <td class="text-right" nowrap>2.052</td>
+    </tr>
+    <tr>
+      <td style="font-weight: bold;" class="text-left">Chi phí NV giao hàng (38 shipper)</td>
+      <td class="text-right" nowrap>570</td>
+      <td class="text-right" nowrap>570</td>
+      <td class="text-right" nowrap>570</td>
+      <td class="text-right" nowrap>570</td>
+      <td class="text-right" nowrap>570</td>
+      <td class="text-right" nowrap>570</td>
+    </tr>
+    <tr>
+      <td style="font-weight: bold;" class="text-left">Chi phí NV kho & quản lý (8 người)</td>
+      <td class="text-right" nowrap>120</td>
+      <td class="text-right" nowrap>120</td>
+      <td class="text-right" nowrap>120</td>
+      <td class="text-right" nowrap>120</td>
+      <td class="text-right" nowrap>120</td>
+      <td class="text-right" nowrap>120</td>
+    </tr>
+    <tr>
+      <td style="font-weight: bold;" class="text-left">Chi phí thuê mặt bằng</td>
+      <td class="text-right" nowrap>83</td>
+      <td class="text-right" nowrap>90</td>
+      <td class="text-right" nowrap>94</td>
+      <td class="text-right" nowrap>105</td>
+      <td class="text-right" nowrap>109</td>
+      <td class="text-right" nowrap>120</td>
+    </tr>
+    <tr style="font-weight: bold; background-color: #f2f4f7;">
+      <td class="text-left">TỔNG CHI PHÍ</td>
+      <td class="text-right" nowrap>2.177</td>
+      <td class="text-right" nowrap>2.328</td>
+      <td class="text-right" nowrap>2.404</td>
+      <td class="text-right" nowrap>2.595</td>
+      <td class="text-right" nowrap>2.635</td>
+      <td class="text-right" nowrap>2.862</td>
+    </tr>
+    <tr style="font-weight: bold; background-color: #fce4d6; color: #b45f06;">
+      <td class="text-left">Tiết kiệm so với phương án 60 người</td>
+      <td class="text-right" nowrap>210</td>
+      <td class="text-right" nowrap>210</td>
+      <td class="text-right" nowrap>210</td>
+      <td class="text-right" nowrap>210</td>
+      <td class="text-right" nowrap>210</td>
+      <td class="text-right" nowrap>210</td>
+    </tr>
+  </tbody>
+</table>
+<p style="font-style: italic; font-size: 9.5pt; color: #555555; margin-top: 5px;">* Số liệu ước tính. Chi phí chính xác cập nhật theo công thức tự động trong file AOP Excel sau khi hoàn thiện ô vàng.*</p>
+</div>
+
+<h1>VIII. TIMELINE TIẾP NHẬN TỪ GXT</h1>
+
+<div class="indent-1">
+  <h2>8.1 Nguyên tắc bàn giao</h2>
+  <ul>
+    <li><b>Nhóm 1 — BC tự lo toàn bộ ≥15kg</b>: BCCK đã đủ năng lực, tiếp nhận độc lập hoàn toàn.</li>
+    <li><b>Nhóm 2 — GXT lo 70%, BC lo 30%</b>: giai đoạn chuyển tiếp, BCCK chưa đủ năng lực toàn phần.</li>
+    <li><b>Song song GXT + BCCK</b>: đảm bảo không gián đoạn dịch vụ trong thời gian ramping up.</li>
+  </ul>
+
+  <h2>8.2 Phạm vi tiếp nhận theo BCCK</h2>
+
+  <table>
+    <thead>
+      <tr>
+        <th class="text-left" style="width: 25%;">BCCK</th>
+        <th class="text-left" style="width: 45%;">Địa bàn tiếp nhận</th>
+        <th class="text-left">Mô hình</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td style="font-weight: bold;" class="text-left">BCCK Nha Trang</td>
+        <td class="text-left">TP. Nha Trang, TX Ninh Hòa (các phường/xã đã liệt kê trong Timeline sheet)</td>
+        <td class="text-left">BC tự lo toàn bộ ≥15kg / GXT lo 70% + BC 30%</td>
+      </tr>
+      <tr>
+        <td style="font-weight: bold;" class="text-left">BCCK Di Linh</td>
+        <td class="text-left">H. Di Linh, H. Lâm Hà (Bình Thanh, Đạ Đờn, Phi Tô, Phú Sơn, Mê Linh, Nam Hà...)</td>
+        <td class="text-left">BC tự lo toàn bộ ≥15kg (linehaul + last-mile vệ tinh)</td>
+      </tr>
+      <tr>
+        <td style="font-weight: bold;" class="text-left">BCCK Đơn Dương</td>
+        <td class="text-left">H. Đơn Dương, H. Đức Trọng (khu vực Hiệp Thạnh) — vượt đèo bằng xe tải 1.9T</td>
+        <td class="text-left">BC tự lo toàn bộ ≥15kg</td>
+      </tr>
+      <tr>
+        <td style="font-weight: bold;" class="text-left">BCCK Đức Linh</td>
+        <td class="text-left">H. Đức Linh, H. Tánh Linh (Bình Thuận) — gom BC xã Nam Chính</td>
+        <td class="text-left">Tiếp nhận theo mốc — cần xác nhận timeline chi tiết</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<h1>IX. RỦI RO & BIỆN PHÁP</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th class="text-center" style="width: 5%;">#</th>
+      <th class="text-left" style="width: 40%;">Rủi ro</th>
+      <th class="text-center" style="width: 15%;">Mức độ</th>
+      <th class="text-left">Biện pháp xử lý</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td class="text-center">1</td>
+      <td style="font-weight: bold;" class="text-left">Mặt bằng BCCK Đức Linh chưa ký được hợp đồng thuê</td>
+      <td class="text-center text-red-bold">Cao</td>
+      <td class="text-left">Ưu tiên tìm mặt bằng thay thế trước T7. Dự phòng: gom về BCCK Nha Trang hoặc BC thường Đức Linh.</td>
+    </tr>
+    <tr>
+      <td class="text-center">2</td>
+      <td style="font-weight: bold;" class="text-left">Cao điểm T11–T12 vượt dự báo, thiếu xe tải 1.9T</td>
+      <td class="text-center text-orange-bold">Trung bình</td>
+      <td class="text-left">Đặt kế hoạch xe dự phòng NCC. Kích hoạt thêm xe khi SL/ngày vượt 1,4× trung bình tháng.</td>
+    </tr>
+    <tr>
+      <td class="text-center">3</td>
+      <td style="font-weight: bold;" class="text-left">GXT bàn giao trễ lịch, BCCK chưa sẵn sàng tiếp nhận</td>
+      <td class="text-center text-orange-bold">Trung bình</td>
+      <td class="text-left">Vận hành song song (GXT + BCCK) giai đoạn chuyển tiếp. Review timeline mỗi 2 tuần.</td>
+    </tr>
+    <tr>
+      <td class="text-center">4</td>
+      <td style="font-weight: bold;" class="text-left">Shipper không cover được địa bàn gom rộng</td>
+      <td class="text-center text-green-bold">Thấp</td>
+      <td class="text-left">Áp dụng mô hình Hub-and-Spoke: xe tải 1.9T trung trung chuyển ra điểm vệ tinh, shipper giao chặng cuối nội vùng.</td>
+    </tr>
+    <tr>
+      <td class="text-center">5</td>
+      <td style="font-weight: bold;" class="text-left">Volume thực tế thấp hơn dự báo PSBBA</td>
+      <td class="text-center text-green-bold">Thấp</td>
+      <td class="text-left">Review forecast cuối T7, điều chỉnh kế hoạch xe/người từ T8 trở đi.</td>
+    </tr>
+  </tbody>
+</table>
+
+<h1>X. BƯỚC TIẾP THEO & HÀNH ĐỘNG</h1>
+<ol>
+  <li>Hoàn thiện số tham số thực tế vùng trong file AOP Excel (ô vàng).</li>
+  <li>Xác nhận mặt bằng BCCK Đức Linh — ký hợp đồng thuê trước 10/07.</li>
+  <li>Tuyển dụng 38 shipper hàng cồng kềnh (ưu tiên Nha Trang & Di Linh).</li>
+  <li>Kick-off vận hành thử BCCK Nha Trang & Di Linh.</li>
+  <li>Review forecast vs actuals sau T7 — cập nhật kế hoạch T8.</li>
+  <li>Chuẩn bị xe tải 1.9T tăng cường cho cao điểm T11–T12 (đặt NCC trước).</li>
+  <li>Review toàn bộ AOP giữa kỳ H2 — báo cáo lên COO.</li>
+</ol>
+
+<h1>KẾ LUẬN</h1>
+<p style="font-weight: bold; text-align: left;">Phương án 4 BCCK tại NTB không chỉ giải quyết bài toán tăng trưởng sản lượng hàng nặng mà còn mang lại hiệu quả tài chính rõ rệt: triệt tiêu GAP âm 500–1.500 đơn/ngày, tiết kiệm 1,26 tỷ đồng quỹ lương H2/2026, cắt hoàn toàn chi phí chành xe thuê ngoài, và nâng năng suất shipper bulky lên 47–64 đơn/ngày. Kính trình Ban giám đốc phê duyệt.</p>
+
+</div>
+</div>
+</body>
+</html>

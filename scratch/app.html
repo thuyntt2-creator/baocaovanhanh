@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Quy hoạch Bưu Cục Express — GHN</title>
+<link href="vendor/maplibre-gl.css" rel="stylesheet" />
+<link href="vendor/bevietnampro.css" rel="stylesheet" />
+<link href="style.css?v=1785502248" rel="stylesheet" />
+</head>
+<body>
+  <!-- Sprite icon (SVG inline, self-host) -->
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+    <symbol id="ic-map" viewBox="0 0 24 24"><path d="m3 6 6-3 6 3 6-3v15l-6 3-6-3-6 3z"/><path d="M9 3v15"/><path d="M15 6v15"/></symbol>
+    <symbol id="ic-chart" viewBox="0 0 24 24"><line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/></symbol>
+    <symbol id="ic-gear" viewBox="0 0 24 24"><line x1="4" y1="21" x2="4" y2="14"/><line x1="4" y1="10" x2="4" y2="3"/><line x1="12" y1="21" x2="12" y2="12"/><line x1="12" y1="8" x2="12" y2="3"/><line x1="20" y1="21" x2="20" y2="16"/><line x1="20" y1="12" x2="20" y2="3"/><line x1="1" y1="14" x2="7" y2="14"/><line x1="9" y1="8" x2="15" y2="8"/><line x1="17" y1="16" x2="23" y2="16"/></symbol>
+    <symbol id="ic-compass" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><polygon points="16.24 7.76 14.12 14.12 7.76 16.24 9.88 9.88"/></symbol>
+    <symbol id="ic-history" viewBox="0 0 24 24"><path d="M3 3v5h5"/><path d="M3.05 13A9 9 0 1 0 6 5.3L3 8"/><path d="M12 7v5l4 2"/></symbol>
+    <symbol id="ic-help" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"/><line x1="12" y1="17" x2="12.01" y2="17"/></symbol>
+    <symbol id="ic-chat" viewBox="0 0 24 24"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></symbol>
+    <symbol id="ic-menu" viewBox="0 0 24 24"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></symbol>
+    <symbol id="ic-close" viewBox="0 0 24 24"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></symbol>
+    <symbol id="ic-check" viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></symbol>
+    <symbol id="ic-alert" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></symbol>
+    <symbol id="ic-infoc" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></symbol>
+  </svg>
+
+  <div id="map"></div>
+
+  <!-- Màn tải: hiện tiến độ thật + lỗi kèm nút Thử lại. Không có màn này thì một request treo
+       (extension chặn / mạng rớt giữa mẻ tải) = trang trắng xoay vĩnh viễn, người dùng mù thông tin. -->
+  <div id="boot-ov" role="status" aria-live="polite">
+    <div class="bo-card">
+      <div class="bo-spin" aria-hidden="true"></div>
+      <div class="bo-tx" id="bo-tx">Đang tải dữ liệu…</div>
+      <div class="bo-sub" id="bo-sub"></div>
+      <div class="bo-err hidden" id="bo-err">
+        <div class="bo-err-hd"><svg class="ic"><use href="#ic-alert"/></svg><b id="bo-err-tx"></b></div>
+        <div class="bo-err-hint">Nếu lặp lại: mở cửa sổ ẩn danh (<b>Cmd/Ctrl+Shift+N</b>) — vào được ở ẩn danh
+          nghĩa là một extension của trình duyệt đang chặn request, hãy tắt extension đó.</div>
+        <button id="bo-retry">Thử lại</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- vùng chứa toast -->
+  <div id="toast-wrap" aria-live="polite" aria-atomic="false"></div>
+
+  <!-- Banner trên cùng: meta + diff + cảnh báo -->
+  <div id="topbar">
+    <div id="title">GHN · Quy hoạch Bưu Cục</div>
+    <div id="rf-wrap"><label for="regionfilter">Vùng:</label> <select id="regionfilter"></select></div>
+    <div class="tabs" role="tablist">
+      <button class="tab active" data-tab="map" aria-label="Bản đồ"><svg class="ic"><use href="#ic-map"/></svg><span class="lbl">Bản đồ</span></button>
+      <button class="tab" data-tab="scorecard" aria-label="Scorecard theo vùng"><svg class="ic"><use href="#ic-chart"/></svg><span class="lbl">Scorecard</span></button>
+      <button class="tab" data-tab="optimizer" aria-label="Network Optimizer"><svg class="ic"><use href="#ic-gear"/></svg><span class="lbl">Optimizer</span></button>
+      <button class="tab" data-tab="rezone" aria-label="Re-zone phường mới"><svg class="ic"><use href="#ic-compass"/></svg><span class="lbl">Re-zone</span></button>
+    </div>
+    <div id="meta">đang tải…</div>
+    <div id="diff"></div>
+    <button id="clog-btn" title="Lịch sử chat" aria-label="Lịch sử chat" style="display:none"><svg class="ic"><use href="#ic-history"/></svg></button>
+    <div id="userbox"></div>
+  </div>
+
+  <!-- Tab Scorecard: tổng hợp theo 14 vùng -->
+  <div id="scorecard" class="hidden" role="tabpanel" aria-label="Scorecard theo vùng">
+    <div class="sc-head">
+      <h2>Scorecard theo vùng</h2>
+      <span class="info" tabindex="0">i<span class="tip">Volume = đơn/ngày (lấy+giao) · Khối lượng = kg/ngày · Đồng/đơn &amp; Đồng/kg = tiền thuê tháng ÷ (lượng/ngày × 30) · Đơn/m² &amp; Kg/m² = lượng/ngày ÷ m² sử dụng · NV = nhân viên (lấy+giao) · Đơn/NV = năng suất. ▲ cao ≥P75 · ▼ thấp ≤P25.</span></span>
+    </div>
+    <div class="sc-note">▲ cao (≥P75) · ▼ thấp (≤P25) · Click một vùng để lọc bản đồ.</div>
+    <div id="sc-table"></div>
+
+    <div class="sc-sub"><h3>Sắp hết hạn <small>(hợp đồng ≤ 90 ngày)</small></h3><div id="sc-expire"></div></div>
+    <div class="sc-sub"><h3>Sắp quá tải <span class="info" tabindex="0">i<span class="tip">Điểm/m² ≥ P75 — tải đơn + kg quy đổi trên diện tích mặt bằng.</span></span></h3><div id="sc-overload"></div></div>
+    <div class="sc-sub"><h3>Dư thừa <span class="info" tabindex="0">i<span class="tip">Điểm/m² ≤ P25.</span></span></h3><div id="sc-surplus"></div></div>
+  </div>
+
+  <!-- Tab Lịch sử chat (admin) -->
+  <div id="chatlog" class="hidden" role="tabpanel" aria-label="Lịch sử chat"></div>
+
+  <!-- Tab Network Optimizer -->
+  <div id="optimizer" class="hidden" role="tabpanel" aria-label="Network Optimizer">
+    <div class="sc-head"><h2>Network Optimizer</h2><div class="sc-note" id="opt-stats"></div></div>
+    <div class="sc-sub"><h3>Phường nên đổi BC giao <span class="info" tabindex="0">i<span class="tip">Đối chiếu: BC gần nhất vs BC gần nhất còn tải.</span></span></h3><div id="opt-reassign"></div></div>
+    <div class="sc-sub"><h3>Kém hiệu quả → rà soát / đóng <span class="info" tabindex="0">i<span class="tip">LÝ DO: đắt đồng/điểm + dư điểm/m² (tải đơn+kg quy đổi). Hạn HĐ chỉ quyết định hành động: hết → không gia hạn/gộp; còn dài → đàm phán/thu hẹp.</span></span></h3><div id="opt-close"></div></div>
+    <div class="sc-sub"><h3>Quá tải → tách / mở rộng <span class="info" tabindex="0">i<span class="tip">Điểm/m² ≥ P75 hoặc ôm nhiều phường — ≥2 phường: tách địa bàn; chỉ 1 phường: mở rộng mặt bằng.</span></span></h3><div id="opt-split"></div></div>
+    <div class="sc-sub"><h3>Whitespace × J&amp;T <span class="info" tabindex="0">i<span class="tip">Phường cầu cao, phân 4 nhóm theo GHN vắng/gần × J&amp;T có/không.</span></span></h3><div id="opt-white"></div></div>
+    <div class="sc-sub"><h3>Định biên nhân sự <span class="info" tabindex="0">i<span class="tip">Năng suất đơn/NV/ngày: ▲ ≥P75 thiếu người · ▼ ≤P25 thừa người; gợi ý điều chuyển từ BC dư gần nhất.</span></span></h3><div id="opt-staff"></div></div>
+    <div class="sc-sub"><h3>Bảng điểm hiệu suất <span class="info" tabindex="0">i<span class="tip">Điểm/NV = năng suất tuyệt đối: đơn lấy &amp; kg lấy ×0.4, kg quy ra đơn; ▲ ≥P75 quá tải · ▼ ≤P25 dư theo vùng.</span></span></h3><div id="opt-score"></div></div>
+  </div>
+
+  <!-- Tab Re-zone -->
+  <div id="rezone" class="hidden" role="tabpanel" aria-label="Re-zone phường mới">
+    <div class="sc-head"><h2>Re-zone — gán BC cho phường mới</h2><div class="sc-note" id="rz-stats"></div></div>
+    <div class="sc-sub"><h3>Phường mới bị xé <span class="info" tabindex="0">i<span class="tip">≥2 BC — auto gán theo đa số CẦU; click một dòng để xem thành phần phường cũ.</span></span></h3><div id="rz-split"></div></div>
+  </div>
+
+  <!-- Nút thu/mở panel điều khiển -->
+  <button id="ctrl-toggle" title="Ẩn/hiện bảng điều khiển" aria-label="Ẩn/hiện bảng điều khiển"><svg class="ic"><use href="#ic-menu"/></svg></button>
+
+  <!-- Nút Hướng dẫn (góc dưới-trái) -->
+  <button id="help-btn" title="Hướng dẫn sử dụng"><svg class="ic"><use href="#ic-help"/></svg> Hướng dẫn</button>
+
+  <!-- Dialog xem lại Đề xuất quy hoạch -->
+  <div id="prop-modal" class="hidden" role="dialog" aria-modal="true" aria-labelledby="prop-title-lbl">
+    <div id="prop-box">
+      <div id="prop-head">
+        <span id="prop-title-lbl">Xem trước đề xuất quy hoạch</span>
+        <button id="prop-close" onclick="modalClose(document.getElementById('prop-modal'))" title="Đóng" aria-label="Đóng"><svg class="ic"><use href="#ic-close"/></svg></button>
+      </div>
+      <iframe id="prop-frame" title="Đề xuất"></iframe>
+      <div id="prop-foot">
+        <input id="prop-name" maxlength="100" placeholder="Tên đề xuất (≤100 ký tự) — dùng làm tên file…" aria-label="Tên đề xuất">
+        <button id="prop-review" onclick="reviewProposal()">AI đánh giá đề xuất</button>
+        <span id="prop-status" role="status"></span>
+        <button id="prop-confirm" onclick="confirmProposal()">Xác nhận đề xuất (gửi OA)</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Popup hướng dẫn -->
+  <div id="help-modal" class="hidden" role="dialog" aria-modal="true" aria-label="Hướng dẫn sử dụng">
+    <div id="help-box">
+      <button id="help-close" title="Đóng" aria-label="Đóng"><svg class="ic"><use href="#ic-close"/></svg></button>
+      <div id="help-content">Đang tải…</div>
+    </div>
+  </div>
+
+  <!-- Panel trái: điều khiển + legend -->
+  <div id="controls" aria-label="Bảng điều khiển bản đồ">
+    <div class="grp">
+      <label>Tô màu<br><span style="font-weight:400;color:var(--muted)">(Thu nhỏ → Vùng, Phóng to → Bưu cục)</span></label>
+      <select id="colormode" aria-label="Chế độ tô màu">
+        <option value="auto">Tự động theo zoom</option>
+        <option value="region">Theo vùng (14)</option>
+        <option value="demand">Theo cầu (heatmap)</option>
+        <option value="hub">Theo lãnh thổ BC</option>
+      </select>
+    </div>
+    <div class="grp">
+      <label>Lớp hiển thị</label>
+      <label class="ck"><input type="checkbox" id="ly-terr" checked> Bưu cục</label>
+      <label class="ck"><input type="checkbox" id="ly-orphan" checked> Bưu cục chuyên dụng</label>
+      <label class="ck"><input type="checkbox" id="ly-b2b"> Kho Hàng Nặng (B2B)</label>
+      <label class="ck"><input type="checkbox" id="ly-transit"> Kho Trung Chuyển / Chuyển Tiếp</label>
+      <label class="ck"><input type="checkbox" id="ly-wards" checked> Phủ màu phường cũ (coverage)</label>
+      <label class="ck"><input type="checkbox" id="ly-newwards" checked> Ranh giới phường mới (xé = đỏ)</label>
+      <label class="ck"><input type="checkbox" id="ly-jt"> BC đối thủ J&amp;T (tham khảo)</label>
+    </div>
+    <div class="grp">
+      <label class="ck" style="font-weight:600"><input type="checkbox" id="ov-on"> Lớp Optimizer</label>
+      <div id="ov-sub" style="margin-left:16px;opacity:.45;pointer-events:none">
+        <label class="ck"><input type="checkbox" id="ov-markers" checked> Đóng / Tách (markers BC)</label>
+        <label class="ck"><input type="checkbox" id="ov-reassign"> Phường nên đổi BC (mũi tên)</label>
+        <label class="ck" style="margin-left:18px;font-weight:400">
+          <select id="ov-target" style="font-size:11px" aria-label="Kiểu đổi BC"><option value="pure">→ gần nhất</option><option value="cap">→ gần nhất còn tải</option></select>
+        </label>
+        <label class="ck"><input type="checkbox" id="ov-merge"> Gộp khi đóng BC (line đỏ)</label>
+        <label class="ck"><input type="checkbox" id="ov-ws4"> Whitespace × J&amp;T (chấm)</label>
+      </div>
+    </div>
+    <div class="grp">
+      <label>Đơn vị tô tay (quy hoạch)</label>
+      <select id="planunit" aria-label="Đơn vị tô tay">
+        <option value="new">Phường mới (mặc định)</option>
+        <option value="old">Phường cũ</option>
+      </select>
+      <button id="planmode" style="margin-top:6px">Bật chế độ Quy hoạch (tô tay)</button>
+      <label style="margin-top:8px;display:block">Gán cụm cho</label>
+      <div id="pt-box">
+        <input id="pt-input" placeholder="— BC mới — (gõ tên/mã để tìm)" autocomplete="off" aria-label="Gán cụm cho bưu cục">
+        <div id="pt-list"></div>
+      </div>
+      <button id="planclear" style="margin-top:6px">Xoá hết lựa chọn</button>
+      <div id="plan-note" class="note"></div>
+    </div>
+    <div class="grp">
+      <input id="search" placeholder="Tìm BC theo tên/mã…" aria-label="Tìm bưu cục" />
+      <div id="search-results"></div>
+    </div>
+    <div id="legend"></div>
+    <div id="dq" class="dq"></div>
+  </div>
+
+  <!-- Panel phải: chi tiết khi click + bảng what-if -->
+  <div id="detail" class="hidden" role="dialog" aria-label="Chi tiết bưu cục">
+    <button id="detail-close" title="Đóng" aria-label="Đóng"><svg class="ic"><use href="#ic-close"/></svg></button>
+    <div id="detail-body"></div>
+  </div>
+
+<script>
+window.addEventListener("error", e => {
+  var msg = "Lỗi giao diện: " + (e.message || e) + " @ " + (e.filename||"").split("/").pop() + ":" + e.lineno;
+  if (window.toast) toast(msg, "err"); else { var m=document.getElementById("meta"); if(m) m.textContent = msg; }
+});
+window.addEventListener("unhandledrejection", e => {
+  var msg = "Lỗi xử lý: " + (e.reason && (e.reason.message||e.reason));
+  if (window.toast) toast(msg, "err"); else { var m=document.getElementById("meta"); if(m) m.textContent = msg; }
+});
+// Watchdog: trường hợp nặng nhất là chính app.js / vendor libs bị extension chặn hoặc tải lỗi.
+// Lúc đó không có toast(), không có bootOv -> màn tải sẽ xoay vĩnh viễn. Script inline này luôn
+// chạy được (cùng file HTML) nên nó dựng thông báo lỗi bằng DOM thuần.
+setTimeout(function(){
+  if (window.__bootStarted) return;                   // app.js đã chạy -> nó tự lo báo lỗi
+  var ov = document.getElementById("boot-ov"); if (!ov || ov.classList.contains("hidden")) return;
+  ov.classList.add("err");
+  document.getElementById("bo-tx").textContent = "Không tải được ứng dụng";
+  document.getElementById("bo-sub").textContent = "";
+  document.getElementById("bo-err").classList.remove("hidden");
+  document.getElementById("bo-err-tx").textContent =
+    "Mã nguồn giao diện (app.js hoặc thư viện bản đồ) không tải được — thường do extension trình duyệt chặn.";
+  document.getElementById("bo-retry").onclick = function(){ location.reload(); };
+}, 25000);
+</script>
+  <button id="chat-fab" title="Hỏi AI về vùng của bạn"><svg class="ic"><use href="#ic-chat"/></svg> Hỏi AI</button>
+  <div id="chat" class="hidden" role="dialog" aria-label="Trợ lý quy hoạch">
+    <div id="chat-head">Trợ lý quy hoạch <span id="chat-scope"></span><button id="chat-close" title="Đóng" aria-label="Đóng"><svg class="ic"><use href="#ic-close"/></svg></button></div>
+    <div id="chat-msgs"></div>
+    <div id="chat-input">
+      <textarea id="chat-q" rows="1" placeholder="Hỏi về vùng / bưu cục / phường / đề xuất…" aria-label="Câu hỏi cho trợ lý"></textarea>
+      <button id="chat-send">Gửi</button>
+    </div>
+  </div>
+
+<script src="vendor/marked.min.js"></script>
+<script src="vendor/purify.min.js"></script>
+<script src="vendor/maplibre-gl.js"></script>
+<script src="vendor/deck.gl.min.js"></script>
+<script src="app.js?v=1785502319"></script>
+</body>
+</html>

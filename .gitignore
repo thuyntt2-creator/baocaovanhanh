@@ -1,0 +1,9 @@
+credentials.json
+credentials.jon
+credentials_oauth.json
+authorized_user.json
+cookies_ghn.json
+playwright_profile/
+__pycache__/
+*.png
+.env

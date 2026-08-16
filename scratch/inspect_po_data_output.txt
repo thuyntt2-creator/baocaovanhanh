@@ -1,0 +1,95 @@
+Post Office Names Alignment & Sample Data for 2026-06-23
+
+--- CoCauVung Sample ---
+  warehouse_id                   Bưu cục      Tỉnh              AM
+0     20797000  Kho Chuyển Tiếp Đắk Nông  Đắk Nông  Trần Văn Phước
+1     22242000       (DNO) Bắc Gia Nghĩa  Đắk Nông  Trần Văn Phước
+2     22048000      (DNO) Đông Gia Nghĩa  Đắk Nông  Trần Văn Phước
+3     20269000            (DNO) Kiến Đức  Đắk Nông  Trần Văn Phước
+4     22394000           (DNO) Quảng Tín  Đắk Nông  Trần Văn Phước
+5     20673000              (DNO) Cư Jút  Đắk Nông  Trần Thị Nhung
+6     21477000              (DNO) Đức An  Đắk Nông  Trần Thị Nhung
+7         2309             (DNO) Đức Lập  Đắk Nông  Trần Thị Nhung
+8     20591000            (DNO) Krông Nô  Đắk Nông  Trần Thị Nhung
+9     21364000           (DNO) Quảng Khê  Đắk Nông  Trần Thị Nhung
+
+--- Data Sheet on 2026-06-23 (227 rows) ---
+        Cấp Quản Lý                                    Chi tiết      Loại Hàng                Time Volume    % Gán    % GTC % Chuyển trả Leadtime Sản Lượng Giao Thành Công Sản Lượng Chuyển Trả Sản Lượng Gán Sản Lượng Trả Sản Lượng Tồn Sản Lượng Chưa Gán % Chưa Gán     %Tồn Hàng Mới Về Trong Ngày      Tỉnh Vùng              AM
+6    NTB - Đắk Nông  Điểm Xử Lý Hàng Thôn 2-Xã Nhân Cơ-Đắk Nông  Hàng Mới Ca 1  2026-06-23 - Thứ 3    104  100.00%   81.73%        0.00%     6.92                        85                    0           104             0            19                  0      0.00%   18.27%                    104  Đắk Nông  NTB  Trần Văn Phước
+35   NTB - Đắk Nông  Điểm Xử Lý Hàng Thôn 2-Xã Nhân Cơ-Đắk Nông  Hàng Mới Ca 2  2026-06-23 - Thứ 3    137    0.00%    0.00%        0.00%                                  0                    0             0             0           137                137    100.00%  100.00%                    137  Đắk Nông  NTB  Trần Văn Phước
+83   NTB - Đắk Nông  Điểm Xử Lý Hàng Thôn 2-Xã Nhân Cơ-Đắk Nông       Hàng Tồn  2026-06-23 - Thứ 3    199   98.49%   63.82%        2.01%    37.15                       127                    4           196             4            68                  3      1.51%   34.17%                      0  Đắk Nông  NTB  Trần Văn Phước
+95   NTB - Đắk Nông                               (DNO) Đức Lập  Hàng Mới Ca 1  2026-06-23 - Thứ 3    967   96.28%   77.04%        0.62%    12.94                       745                    6           931             6           216                 36      3.72%   22.34%                    967  Đắk Nông  NTB  Trần Thị Nhung
+121  NTB - Đắk Nông                               (DNO) Đức Lập  Hàng Mới Ca 2  2026-06-23 - Thứ 3      3    0.00%    0.00%        0.00%                                  0                    0             0             0             3                  3    100.00%  100.00%                      3  Đắk Nông  NTB  Trần Thị Nhung
+130  NTB - Đắk Nông                               (DNO) Đức Lập       Hàng Tồn  2026-06-23 - Thứ 3    400   94.00%   43.50%        7.00%    49.05                       174                   28           376            28           198                 24      6.00%   49.50%                      0  Đắk Nông  NTB  Trần Thị Nhung
+157  NTB - Đắk Nông                                (DNO) Đức An  Hàng Mới Ca 1  2026-06-23 - Thứ 3    427   99.30%   80.09%        1.64%    12.67                       342                    7           424             7            78                  3      0.70%   18.27%                    427  Đắk Nông  NTB  Trần Thị Nhung
+178  NTB - Đắk Nông                                (DNO) Đức An  Hàng Mới Ca 2  2026-06-23 - Thứ 3      1  100.00%  100.00%        0.00%        8                         1                    0             1             0             0                  0      0.00%    0.00%                      1  Đắk Nông  NTB  Trần Thị Nhung
+191  NTB - Đắk Nông                                (DNO) Đức An       Hàng Tồn  2026-06-23 - Thứ 3    215   97.21%   46.98%        9.30%    49.62                       101                   20           209            20            94                  6      2.79%   43.72%                      0  Đắk Nông  NTB  Trần Thị Nhung
+217  NTB - Đắk Nông                        (DNO) Đông Gia Nghĩa  Hàng Mới Ca 1  2026-06-23 - Thứ 3    224   97.32%   66.96%        0.45%    17.07                       150                    1           218             1            73                  6      2.68%   32.59%                    224  Đắk Nông  NTB  Trần Văn Phước
+
+--- TTS Sheet on 2026-06-23 (219 rows) ---
+        Cấp Quản Lý                                    Chi tiết      Loại Hàng                Time Volume    % Gán   % GTC % Chuyển trả Leadtime Sản Lượng Giao Thành Công Sản Lượng Chuyển Trả Sản Lượng Gán Sản Lượng Trả Sản Lượng Tồn Sản Lượng Chưa Gán % Chưa Gán     %Tồn Hàng Mới Về Trong Ngày      Tỉnh Vùng              AM
+2    NTB - Đắk Nông  Điểm Xử Lý Hàng Thôn 2-Xã Nhân Cơ-Đắk Nông  Hàng Mới Ca 1  2026-06-23 - Thứ 3     27  100.00%  77.78%        0.00%     6.33                        21                    0            27             0             6                  0      0.00%   22.22%                     27  Đắk Nông  NTB  Trần Văn Phước
+28   NTB - Đắk Nông  Điểm Xử Lý Hàng Thôn 2-Xã Nhân Cơ-Đắk Nông  Hàng Mới Ca 2  2026-06-23 - Thứ 3     30    0.00%   0.00%        0.00%                                  0                    0             0             0            30                 30    100.00%  100.00%                     30  Đắk Nông  NTB  Trần Văn Phước
+62   NTB - Đắk Nông  Điểm Xử Lý Hàng Thôn 2-Xã Nhân Cơ-Đắk Nông       Hàng Tồn  2026-06-23 - Thứ 3     55  100.00%  50.91%        5.45%    28.79                        28                    3            55             3            24                  0      0.00%   43.64%                      0  Đắk Nông  NTB  Trần Văn Phước
+87   NTB - Đắk Nông                               (DNO) Đức Lập  Hàng Mới Ca 1  2026-06-23 - Thứ 3    203   96.55%  79.80%        0.00%    11.62                       162                    0           196             0            41                  7      3.45%   20.20%                    203  Đắk Nông  NTB  Trần Thị Nhung
+136  NTB - Đắk Nông                               (DNO) Đức Lập       Hàng Tồn  2026-06-23 - Thứ 3     94   95.74%  40.43%        5.32%    48.39                        38                    5            90             5            51                  4      4.26%   54.25%                      0  Đắk Nông  NTB  Trần Thị Nhung
+143  NTB - Đắk Nông                                (DNO) Đức An  Hàng Mới Ca 1  2026-06-23 - Thứ 3    119   98.32%  84.87%        0.00%    11.38                       101                    0           117             0            18                  2      1.68%   15.13%                    119  Đắk Nông  NTB  Trần Thị Nhung
+189  NTB - Đắk Nông                                (DNO) Đức An       Hàng Tồn  2026-06-23 - Thứ 3     60   98.33%  41.67%        3.33%     58.2                        25                    2            59             2            33                  1      1.67%   55.00%                      0  Đắk Nông  NTB  Trần Thị Nhung
+209  NTB - Đắk Nông                        (DNO) Đông Gia Nghĩa  Hàng Mới Ca 1  2026-06-23 - Thứ 3     71  100.00%  73.24%        0.00%    14.19                        52                    0            71             0            19                  0      0.00%   26.76%                     71  Đắk Nông  NTB  Trần Văn Phước
+238  NTB - Đắk Nông                        (DNO) Đông Gia Nghĩa       Hàng Tồn  2026-06-23 - Thứ 3     56   98.21%  39.29%       10.71%    57.23                        22                    6            55             6            28                  1      1.79%   50.00%                      0  Đắk Nông  NTB  Trần Văn Phước
+262  NTB - Đắk Nông                               (DNO) Tuy Đức  Hàng Mới Ca 1  2026-06-23 - Thứ 3     68   98.53%  69.12%        0.00%    13.64                        47                    0            67             0            21                  1      1.47%   30.88%                     68  Đắk Nông  NTB  Trần Thị Nhung
+
+--- FD Sheet (109 rows) ---
+                Bưu Cục                  AM %FD (N) %FD (N-1) vs N-1 %FD (N-7)  vs N-7 Vol giao Vol trả Tỷ trọng trả
+0  (DNO) Đông Gia Nghĩa      Trần Văn Phước   17.2%     13.2%  ▲4.0%     16.4%   ▲0.8%      224    38.5         1.1%
+1   (LDO) Tân Hà Lâm Hà   Huỳnh Thị Kim Chi   16.5%      8.6%  ▲7.9%     18.1%   ▼1.6%      333    54.9         1.6%
+2     (DNO) Trường Xuân      Trần Thị Nhung   16.2%     12.3%  ▲3.9%     11.0%   ▲5.2%      316    51.2         1.5%
+3         (LDO) Di Linh       Trầm Hữu Tiến   15.9%     11.4%  ▲4.5%      4.7%  ▲11.2%      687   109.2         3.2%
+4       (KHO) Cam Lâm 1    Nguyễn Hoàng Phi   13.1%      7.5%  ▲5.6%      7.4%   ▲5.7%      237    31.0         0.9%
+5       (KHO) Cam Lâm 2  Nguyễn Thanh Long   11.8%      8.4%  ▲3.4%      7.7%   ▲4.1%      473    55.8         1.7%
+6      (NTH) Phước Dinh     Nguyễn Duy Long   11.6%      9.8%  ▲1.8%      8.1%   ▲3.5%      791    91.8         2.7%
+7        (KHO) Cam Linh  Thái Thị Thanh Thư   11.4%     18.7%  ▼7.3%     26.0%  ▼14.6%      703    80.1         2.4%
+8       (DNO) Quảng Khê      Trần Thị Nhung   11.2%      6.1%  ▲5.1%      8.5%   ▲2.7%      186    20.8         0.6%
+9      (LDO) Đam Rông 3   Huỳnh Thị Kim Chi   10.8%      4.7%  ▲6.1%      8.3%   ▲2.5%      390    42.1         1.3%
+
+--- Aging Sheet Sample (2069 rows) ---
+  vung       tinh     id_bc                   bc order_code Nhóm khách                 thoi_gian_nhap_bc        Aging                      updated_time num_deliver        Nhóm BL
+0  NTB   Đắk Nông  22242000  (DNO) Bắc Gia Nghĩa   GYW8REL3        SME  2026-05-10 05:02:12.676000+00:00  45.11353009  2026-06-24 07:45:41.529000+00:00           0  (k) > 15 ngày
+1  NTB   Lâm Đồng  20670000     (LDO) Đam Rông 3   GYTLUC9G        SME  2026-05-12 09:01:38.353000+00:00  42.94725694  2026-06-24 07:45:41.529000+00:00           0  (k) > 15 ngày
+2  NTB   Lâm Đồng  22425000  (LDO) Tân Hà Lâm Hà   GYT4PHWK        SME  2026-05-24 14:49:24.982000+00:00  30.70575231  2026-06-24 07:45:41.529000+00:00           0  (k) > 15 ngày
+3  NTB   Lâm Đồng  22425000  (LDO) Tân Hà Lâm Hà   GYTKTMN7        SME  2026-05-25 14:49:53.241000+00:00  29.70541667  2026-06-24 07:45:41.529000+00:00           0  (k) > 15 ngày
+4  NTB  Khánh Hòa  22830000       (KHO) Cam Linh   GYTHLLAP        SME  2026-05-27 15:03:30.015000+00:00  27.69596065  2026-06-24 07:45:41.529000+00:00           1  (k) > 15 ngày
+
+--- Treo LC Sheet Sample (7225 rows) ---
+  Mã bưu cục Mã đơn hàng          Loại đơn Khách hàng      Trạng thái Thời gian tồn đọng warehouse_name
+0       2309    GYXL4HPM  Luân chuyển giao      OTHER  Chưa đóng kiện                0_6  (DNO) Đức Lập
+1       2309    GYXL4VA3  Luân chuyển giao      OTHER  Chưa đóng kiện                0_6  (DNO) Đức Lập
+2       2309    GYXLDRVH  Luân chuyển giao      OTHER  Chưa đóng kiện                0_6  (DNO) Đức Lập
+3       2309    GYXLB7PY  Luân chuyển giao      OTHER  Chưa đóng kiện                0_6  (DNO) Đức Lập
+4       2309    GYXLP77A  Luân chuyển giao      OTHER  Chưa đóng kiện                0_6  (DNO) Đức Lập
+
+--- OPR Sheet on 2026-06-23 (351 rows) ---
+       tutinh                       kholay     NgayLTC khung_gio_tao_don ly_do_tre_12h                           sellername vol_ltc tuan vung  ot Tuần                  AM    Khung giờ tạo Đơn trễ
+0    Lâm Đồng  (LDO) Lang Biang - Đà Lạt 2  2026-06-23   2.Tạo từ 9h-19h  0.Ontime OPR        Ăn Vặt Nhà Thủy Đà Lạt       1   26  NTB   1  W26         Lê Minh Đại  1.Tạo từ 9h-19h       0
+1  Ninh Thuận                 (NTH) Bảo An  2026-06-23    1.Tạo trước 9h  0.Ontime OPR  Cửa hàng đặc sản Ninh Thuận       2   26  NTB   2  W26     Nguyễn Duy Long  2.Tạo từ 19h-9h       0
+2  Bình Thuận               (BTH) Hàm Liêm  2026-06-23   2.Tạo từ 9h-19h  0.Ontime OPR                      VTNN THANH LONG       1   26  NTB   1  W26   Nguyễn Ngọc Khánh  1.Tạo từ 9h-19h       0
+3  Bình Thuận            (BTH) Tuyên Quang  2026-06-23   2.Tạo từ 9h-19h  0.Ontime OPR                           BachLê PT       2   26  NTB   2  W26       Lê Thanh Nhựt  1.Tạo từ 9h-19h       0
+4    Đắk Nông          (DNO) Bắc Gia Nghĩa  2026-06-23     3.Tạo sau 19h        4.Khác                       Zozo Shop 1339       1   26  NTB   0  W26      Trần Văn Phước  2.Tạo từ 19h-9h       1
+5   Khánh Hòa          (KHO) Bắc Nha Trang  2026-06-23   2.Tạo từ 9h-19h  0.Ontime OPR                   Áo Thun Oh Là La       1   26  NTB   1  W26  Phạm Bá Thành Công  1.Tạo từ 9h-19h       0
+6  Bình Thuận              (BTH) Hàm Thắng  2026-06-23   2.Tạo từ 9h-19h  0.Ontime OPR                     GIA ĐÌNH BEAUTY       1   26  NTB   1  W26   Nguyễn Ngọc Khánh  1.Tạo từ 9h-19h       0
+7   Khánh Hòa          (KHO) Bắc Nha Trang  2026-06-23   2.Tạo từ 9h-19h  0.Ontime OPR                    Hamy Trendy Store      10   26  NTB  10  W26  Phạm Bá Thành Công  1.Tạo từ 9h-19h       0
+8  Bình Thuận              (BTH) Phước Hội  2026-06-23    1.Tạo trước 9h        4.Khác                        Phúc Store's       2   26  NTB   0  W26      Huỳnh Tấn Hiền  2.Tạo từ 19h-9h       2
+9   Khánh Hòa          (KHO) Bắc Nha Trang  2026-06-23   2.Tạo từ 9h-19h  0.Ontime OPR                    Street Vibe Store       9   26  NTB   9  W26  Phạm Bá Thành Công  1.Tạo từ 9h-19h       0
+
+--- Rot LC Data TTS on 2026-06-23 (61 rows) ---
+       Quản lý                                    Chi tiết   Loại ngày Vol cần LC      %_rot_lc
+1     Đắk Nông                        (DNO) Đông Gia Nghĩa  2026-06-23         76             0
+3     Đắk Nông  Điểm Xử Lý Hàng Thôn 2-Xã Nhân Cơ-Đắk Nông  2026-06-23         17             0
+4     Đắk Nông                         (DNO) Bắc Gia Nghĩa  2026-06-23         16             0
+7     Đắk Nông                                (DNO) Cư Jút  2026-06-23         12             0
+10    Đắk Nông                               (DNO) Đức Lập  2026-06-23          2             0
+12    Đắk Nông                              (DNO) Krông Nô  2026-06-23          1             0
+14  Ninh Thuận                              (NTH) Ninh Sơn  2026-06-23        203  0.0197044335
+17  Ninh Thuận                             (NTH) Phan Rang  2026-06-23         84             0
+19  Ninh Thuận                            (NTH) Phước Dinh  2026-06-23         57             0
+20  Ninh Thuận                             (NTH) Thuận Nam  2026-06-23         57  0.5438596491

@@ -1,0 +1,81 @@
+import asyncio
+import json
+import os
+import sys
+
+sys.stdout.reconfigure(encoding='utf-8')
+
+async def main():
+    from playwright.async_api import async_playwright
+    out_dir = r"C:\Users\lap4all\.gemini\antigravity-ide\brain\5935f00b-cd19-4de8-83bb-03170a8c8606\web_maps"
+    os.makedirs(out_dir, exist_ok=True)
+
+    targets = [
+        ("map_whatif_nha_trang", "Nha Trang", "Nha Trang", 13.2, "Bản đồ & Bảng Quy hoạch (What-If) Phường Nha Trang"),
+        ("map_whatif_tay_nha_trang", "Tây Nha Trang", "Tây Nha Trang", 13.0, "Bản đồ & Bảng Quy hoạch (What-If) Phường Tây Nha Trang"),
+        ("map_whatif_cam_linh", "Cam Linh", "Cam Linh", 12.8, "Bản đồ & Bảng Quy hoạch (What-If) Cụm Cam Linh & Nam Cam Ranh"),
+        ("map_whatif_ninh_hoa", "Ninh Hòa", "Ninh Hòa", 13.0, "Bản đồ & Bảng Quy hoạch (What-If) Cụm Ninh Hòa 2"),
+        ("map_whatif_don_duong", "Nghĩa Đức", "Đơn Dương", 12.2, "Bản đồ & Bảng Quy hoạch (What-If) Cụm Đơn Dương - Lạc Xuân"),
+        ("map_whatif_da_lat", "Xuân Hương", "Xuân Hương", 13.0, "Bản đồ & Bảng Quy hoạch (What-If) TP. Đà Lạt - BC Xuân Hương 2"),
+        ("map_whatif_bao_loc", "Lao", "Lộc", 13.0, "Bản đồ & Bảng Quy hoạch (What-If) TP. Bảo Lộc - BC B'Lao Mới"),
+        ("map_whatif_phan_rang", "Phan Rang", "Phan Rang", 13.0, "Bản đồ & Bảng Quy hoạch (What-If) TP. Phan Rang - BC Đông Hải"),
+        ("map_whatif_phan_thiet", "Hàm Thắng", "Thuận", 13.0, "Bản đồ & Bảng Quy hoạch (What-If) TP. Phan Thiết - BC Hàm Thắng"),
+        ("map_whatif_nam_thanh", "Đồng Kho", "Thành", 12.0, "Bản đồ & Bảng Quy hoạch (What-If) Cụm Nam Thành - Tánh Linh"),
+        ("map_whatif_gia_nghia", "Gia Nghĩa", "Gia Nghĩa", 12.5, "Bản đồ & Bảng Quy hoạch (What-If) TP. Gia Nghĩa - Đắc Nông")
+    ]
+
+    async with async_playwright() as p:
+        browser = await p.chromium.launch(headless=False)
+        context = await browser.new_context(viewport={"width": 1920, "height": 1080})
+        page = await context.new_page()
+        
+        print("Navigating to https://www.quyhoachbuucuc.info/web/index.html ...")
+        await page.goto("https://www.quyhoachbuucuc.info/web/index.html", wait_until="networkidle")
+        
+        inputs = await page.query_selector_all("input")
+        if len(inputs) >= 2:
+            await inputs[0].fill("ntb")
+            await inputs[1].fill("taghjnxorjvq")
+            await inputs[1].press("Enter")
+            
+        await page.wait_for_timeout(5000)
+        
+        for fname, hub_term, ward_term, zoom_lvl, desc in targets:
+            print(f"Generating what-if map for: {desc}...")
+            
+            js_code = f"""
+            () => {{
+                if (window.setRegionFilter) setRegionFilter('NTB');
+                ui.colormode = 'Theo lãnh thổ BC';
+                ui.planMode = true;
+                
+                let hterm = {json.dumps(hub_term.lower())};
+                let wterm = {json.dumps(ward_term.lower())};
+                
+                let targetHub = DATA.hubs.find(h => h.name.toLowerCase().includes(hterm) && h.assigned);
+                if (!targetHub) targetHub = DATA.hubs.find(h => h.name.toLowerCase().includes(hterm));
+                
+                if (targetHub) {{
+                    plan.target = targetHub.code;
+                    let wards = DATA.wards.filter(w => w.name.toLowerCase().includes(wterm) || w.delivery_hub === targetHub.code).slice(0, 3);
+                    for (let w of wards) {{
+                        plan.selected.set(w.ward_code, true);
+                    }}
+                    renderPlan();
+                    if (window.map) map.flyTo({{ center: [targetHub.lng, targetHub.lat], zoom: {zoom_lvl} }});
+                    draw();
+                }}
+            }}
+            """
+            await page.evaluate(js_code)
+            await page.wait_for_timeout(3000)
+            
+            shot_path = os.path.join(out_dir, f"{fname}.png")
+            await page.screenshot(path=shot_path)
+            print(f"  ✓ Saved: {fname}.png")
+            
+        await browser.close()
+        print("\nAll 11 what-if official maps generated successfully!")
+
+if __name__ == "__main__":
+    asyncio.run(main())

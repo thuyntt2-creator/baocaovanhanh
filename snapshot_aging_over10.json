@@ -1,0 +1,124 @@
+{
+  "last_updated_date": "2026-08-12",
+  "history": [
+    {
+      "time": "08:43",
+      "totals": {
+        "Huỳnh Thị Kim Chi": 0,
+        "Hồng Bích Nga": 0,
+        "Lê Hồng Minh Tâm": 0,
+        "Lê Minh Đại": 0,
+        "Lê Thanh Nhựt": 0,
+        "Lê Văn Trường": 0,
+        "Nguyễn Duy Long": 0,
+        "Nguyễn Ngọc Khánh": 0,
+        "Nguyễn Thanh Long": 0,
+        "Phan Thị Ngọc Diễm": 0,
+        "Thái Thị Thanh Thư": 0,
+        "Trầm Hữu Tiến": 0,
+        "Trần Văn Phước": 0
+      },
+      "bcTotals": {
+        "(DNO) Kiến Đức": 0,
+        "(DNO) Quảng Tín": 0,
+        "(LDO) Đơn Dương": 0,
+        "(DNO) Nhân Cơ": 0,
+        "(LDO) Đức Trọng 1": 0,
+        "(LDO) Lang Biang - Đà Lạt 1": 0,
+        "(LDO) Hòa Ninh": 0,
+        "(KHO) Nam Nha Trang 1": 0,
+        "(LDO) Đam Rông 3": 0,
+        "(BTH) Đồng Kho": 0,
+        "(LDO) Đức Trọng 2": 0,
+        "(BTH) Phú Quý": 0,
+        "(LDO) Tân Hà Lâm Hà": 0,
+        "(LDO) Lâm Viên - Đà Lạt 2": 0,
+        "(BTH) Hàm Thắng": 0,
+        "(KHO) Cam Linh": 0,
+        "(LDO) Lâm Viên - Đà Lạt 1": 0,
+        "(NTH) Ninh Chử": 0,
+        "(KHO) Bắc Cam Ranh": 0,
+        "(LDO) Xuân Trường - Đà Lạt": 0,
+        "(LDO) Bảo Lâm 1": 0
+      }
+    }
+  ],
+  "daily_snapshots": {
+    "20260624": {
+      "totals": {
+        "Huỳnh Thị Kim Chi": 47,
+        "Hồng Bích Nga": 7,
+        "Lê Minh Đại": 44,
+        "Lê Văn Trường": 2,
+        "Nguyễn Lê Nguyên Vũ": 1,
+        "Nguyễn Ngọc Khánh": 1,
+        "Thái Thị Thanh Thư": 36,
+        "Trầm Hữu Tiến": 24,
+        "Trần Văn Phước": 27
+      },
+      "grandTotal": 189
+    },
+    "20260626": {
+      "totals": {
+        "Huỳnh Thị Kim Chi": 41,
+        "Huỳnh Tấn Hiền": 1,
+        "Hồng Bích Nga": 4,
+        "Lê Minh Đại": 48,
+        "Lê Văn Trường": 2,
+        "Phan Đình Duy": 1,
+        "Thái Thị Thanh Thư": 30,
+        "Trầm Hữu Tiến": 17,
+        "Trần Văn Phước": 17
+      },
+      "grandTotal": 161
+    },
+    "20260627": {
+      "totals": {
+        "Huỳnh Thị Kim Chi": 34,
+        "Huỳnh Tấn Hiền": 2,
+        "Hồng Bích Nga": 12,
+        "Lê Minh Đại": 33,
+        "Lê Văn Trường": 3,
+        "Phan Đình Duy": 1,
+        "Thái Thị Thanh Thư": 46,
+        "Trầm Hữu Tiến": 7,
+        "Trần Văn Phước": 17
+      },
+      "grandTotal": 155
+    },
+    "20260630": {
+      "totals": {
+        "Huỳnh Thị Kim Chi": 40,
+        "Hồng Bích Nga": 15,
+        "Lê Minh Đại": 30,
+        "Lê Văn Trường": 1,
+        "Nguyễn Lê Nguyên Vũ": 1,
+        "Nguyễn Thanh Long": 1,
+        "Phan Đình Duy": 1,
+        "Thái Thị Thanh Thư": 58,
+        "Trầm Hữu Tiến": 15,
+        "Trần Thị Nhung": 1,
+        "Trần Văn Phước": 34
+      },
+      "grandTotal": 197
+    },
+    "20260812": {
+      "totals": {
+        "Huỳnh Thị Kim Chi": 0,
+        "Hồng Bích Nga": 0,
+        "Lê Hồng Minh Tâm": 0,
+        "Lê Minh Đại": 0,
+        "Lê Thanh Nhựt": 0,
+        "Lê Văn Trường": 0,
+        "Nguyễn Duy Long": 0,
+        "Nguyễn Ngọc Khánh": 0,
+        "Nguyễn Thanh Long": 0,
+        "Phan Thị Ngọc Diễm": 0,
+        "Thái Thị Thanh Thư": 0,
+        "Trầm Hữu Tiến": 0,
+        "Trần Văn Phước": 0
+      },
+      "grandTotal": 0
+    }
+  }
+}

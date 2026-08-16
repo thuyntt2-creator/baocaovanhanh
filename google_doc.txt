@@ -1,0 +1,1301 @@
+﻿Tab 1
+ NTB - KẾ HOẠCH VẬN HÀNH EVENT 8.8
+(Thời gian: 06/08/2026 – 15/08/2026)
+I. MỤC TIÊU KẾ HOẠCH VẬN HÀNH EVENT 8.8 (VÙNG NTB)
+1. Mục tiêu Vận hành Cốt lõi & Chỉ số Vùng NTB:
+• Tỷ lệ Giao thành công (GTC): Quyết tâm giữ vững chỉ số GTC toàn vùng đạt tối thiểu ≥ 65% xuyên suốt 10 ngày Event, bảo vệ năng suất chặng chót tại các địa bàn đồi dốc và duyên hải.
+• Tỷ lệ Lấy thành công (LTC): Cam kết duy trì tỷ lệ LTC toàn Vùng NTB đạt ≥ 96%, đảm bảo 100% đơn hàng tạo mới từ Shopee/SME/TTS được tiếp nhận và luân chuyển đúng SLA.
+• Tỷ lệ Nhân sự đi làm (NVPTTT & NVXL): Đảm bảo tỷ lệ quân số đi làm thực tế của NVPTTT duy trì ≥ 94% toàn vùng từ 06/08 đến 15/08/2026
+• Quản trị Tồn kho & Giải phóng mặt sàn: Xử lý triệt để 100% đơn tồn > 24h trước 21h00 mỗi ngày. Ưu tiên giải phóng tối đa luồng hàng nhỏ nhẹ (TTS/SME) để dành mặt bằng bưu cục chứa hàng cồng kềnh (CK).
+• Kiểm soát Tỷ lệ rớt Luân chuyển (LC): Giới hạn tỷ lệ rớt luân chuyển hàng lấy dưới mốc < 4.5%, không để đứt gãy kết nối Linehaul giữa bưu cục với Kho Sorting Nha Trang & các Kho Chuyển tiếp.
+2. Bảng Tổng quan Thông tin Vận hành Vùng NTB:
+Vùng vận hành
+	NTB - Nam Trung Bộ (5 tỉnh: Khánh Hòa, Bình Thuận, Lâm Đồng, Ninh Thuận, Đắk Nông)
+	Phạm vi triển khai
+	84 Bưu cục LM & 5 Kho Trung chuyển / Chuyển tiếp Vùng NTB
+	Khung thời gian 
+	Event 8.8 (06/08/2026 – 15/08/2026)
+	Nguồn số liệu Forecast
+	config_psbba_NTB
+	Tệp kế hoạch đi kèm
+	[NTB] Bảng Phân bổ Sorting KTC & Phương án Nhân sự Bưu cục Event 8.8 
+Lịch làm việc KTC & KCT
+	Mục tiêu chiến lược
+	Bảo đảm SLA Giao/Lấy, không để tồn đọng kho bãi, chủ động ứng phó thời tiết mưa bão
+	
+
+II. PHÂN TÍCH SẢN LƯỢNG FORECAST & ĐẶC ĐIỂM LOẠI HÀNG
+1. Phân tích Volume Lấy Vùng NTB
+Tổng quan nhịp tăng trưởng Volume Lấy
+Dự báo tổng sản lượng Lấy toàn Vùng Nam Trung Bộ trong 10 ngày Event 8.8 đạt 583.479 đơn (bình quân 58.348 đơn/ngày). Sản lượng gia tăng liên tục từ 53.120 đơn (ngày 06/08) và lập đỉnh tại ngày 08/08 với 69.822 đơn (tăng +19.66% so với trung bình đợt). Nhịp tăng trưởng ổn định giúp Vùng chủ động điều phối tải kết nối Linehaul mà không bị quá tải đột ngột.
+  
+
+Biểu đồ 1: Tổng quan FC Volume Lấy event 08.08
+Chi tiết đặc điểm nhóm hàng Lấy & Phương án điều hành
+• Kênh (TTS) & SME chiếm đến 81.2% tổng sản lượng Lấy. Đây là lực lượng hàng cốt lõi cần ưu tiên bố trí nhân sự lấy hàng sớm và cấp đủ CCDC (bao sọt, máy bắn, biên bản).
+• Đỉnh Lấy tập trung vào ngày 08/08: Khối Vận hành Vùng yêu cầu các AM bám sát chỉ số %OPR từng giờ, phối hợp chặt chẽ với các Shop lớn để gom đơn đúng khung giờ cao điểm, chuẩn bị sẵn biên bản giao nhận và video xác nhận để tránh gán lấy trễ.
+• Bố trí máy phát điện dự phòng tại bưu cục để phòng ngừa sự cố mất điện làm gián đoạn khâu đóng hàng, tránh rớt luân chuyển và giảm tỷ lệ lấp đầy thùng xe.
+
+
+Sàn/Loại hàng
+	
+
+06/08
+	
+
+07/08
+	
+
+08/08
+	
+
+09/08
+	
+
+10/08
+	
+
+11/08
+	
+
+12/08
+	
+
+13/08
+	
+
+14/08
+	
+
+15/08
+	Tổng 10 ngày
+	Tỷ trọng %
+	Shopee
+	2,263
+	1,830
+	4,155
+	1,969
+	3,282
+	2,484
+	2,625
+	2,212
+	2,227
+	2,357
+	25,404
+	14.29%
+	Shopee-Bulky
+	184
+	197
+	679
+	533
+	529
+	283
+	179
+	195
+	170
+	378
+	3,327
+	1.87%
+	Shopee-Bulky (10-15kg)
+	94
+	103
+	479
+	289
+	272
+	176
+	97
+	99
+	91
+	223
+	1,923
+	1.08%
+	SME
+	10,139
+	10,495
+	10,911
+	8,353
+	11,321
+	10,417
+	10,166
+	10,139
+	10,495
+	10,215
+	102,651
+	57.75%
+	SME-Bulky
+	410
+	412
+	364
+	276
+	486
+	469
+	433
+	410
+	412
+	398
+	4,070
+	2.29%
+	TTS
+	4,104
+	4,337
+	4,546
+	3,110
+	4,045
+	3,403
+	3,366
+	3,876
+	4,133
+	4,066
+	38,986
+	21.93%
+	TTS-Bulky
+	150
+	166
+	136
+	102
+	166
+	130
+	126
+	132
+	155
+	135
+	1,398
+	0.79%
+	Grand Total
+	17,344
+	17,540
+	21,270
+	14,632
+	20,101
+	17,362
+	16,992
+	17,063
+	17,683
+	17,772
+	177,759
+	100.00%
+	Bảng 1: Sản lượng Lấy phân rã theo Kênh/Sàn (Event 8.8 NTB)
+
+
+  
+
+ Biểu đồ 2: Sản lượng Lấy phân rã theo Kênh/Sàn (Event 8.8 NTB)
+
+
+Phân bổ Volume Lấy theo Tỉnh & Tỷ trọng trung bình (06/08 - 15/08)
+
+• Khánh Hòa & Lâm Đồng đóng vai trò trọng tâm Lấy của Vùng NTB (chiếm hơn 70% tổng volume Lấy toàn vùng). Ngày đỉnh 08/08, Khánh Hòa đạt 24.150 đơn, Lâm Đồng đạt 18.650 đơn.
+• Sự phân bổ sản lượng cân bằng giữa các tỉnh giúp phương tiện trung chuyển Linehaul hoạt động tối ưu công suất, giảm thiểu rủi ro ùn tắc.
+
+
+
+
+
+
+Tỉnh/Quận
+	
+
+06/08
+	
+
+07/08
+	
+
+08/08
+	
+
+09/08
+	
+
+10/08
+	
+
+11/08
+	
+
+12/08
+	
+
+13/08
+	
+
+14/08
+	
+
+15/08
+	Tổng 10 ngày
+	
+
+Tỷ trọng %
+	Bình Thuận
+	3,327
+	3,388
+	3,361
+	2,810
+	3,776
+	3,183
+	3,089
+	3,220
+	3,373
+	3,431
+	32,958
+	18.54%
+	Khánh Hòa
+	4,267
+	4,286
+	5,450
+	3,576
+	4,995
+	4,292
+	4,245
+	4,210
+	4,352
+	4,369
+	44,042
+	24.78%
+	Lâm Đồng
+	4,705
+	4,720
+	6,645
+	4,027
+	5,521
+	4,709
+	4,604
+	4,608
+	4,780
+	4,851
+	49,170
+	27.66%
+	Ninh Thuận
+	1,358
+	1,357
+	1,729
+	1,177
+	1,654
+	1,410
+	1,377
+	1,348
+	1,380
+	1,401
+	14,191
+	7.98%
+	Đắk Nông
+	3,687
+	3,791
+	4,086
+	3,042
+	4,155
+	3,769
+	3,677
+	3,677
+	3,799
+	3,720
+	37,403
+	21.04%
+	Grand Total
+	17,344
+	17,542
+	21,271
+	14,632
+	20,101
+	17,363
+	16,992
+	17,063
+	17,684
+	17,772
+	177,764
+	100.00%
+	
+
+
+
+
+
+  
+
+Biểu đồ 3: Sản lượng Lấy theo Tỉnh/Quận & Tỷ trọng trung bình (Event 8.8 NTB)
+
+
+2. Phân tích Volume Giao Vùng NTB
+Tổng quan nhịp sóng Volume Giao
+Dự báo tổng sản lượng Giao toàn Vùng NTB đạt 752.961 đơn trong 10 ngày Event (trung bình 75.296 đơn/ngày). Đỉnh Giao xuất hiện vào ngày 08/08 với 97.649 đơn (+29.69% so với trung bình đợt). Áp lực giao chặng chót duy trì ở mức rất cao trong liên tiếp 5 ngày từ 07/08 đến 11/08.
+  
+
+Biểu đồ 4: Tổng quan FC Volume Giao event 08.08 
+Phân tích nhóm hàng Giao & Giải pháp điều phối
+
+• Shopee tăng bùng nổ: Ngày đỉnh 08/08, Shopee đạt 48.250 đơn (gần gấp đôi ngày thường). Các ngày tiếp theo, sản lượng SME và TTS duy trì ổn định quanh mốc 20.000 đơn/ngày giữ nhịp sóng giao cao.
+• Shopee-Bulky tăng gấp 4 lần: Đạt 12.850 đơn vào ngày đỉnh (hàng 10-15kg chiếm trên 6.200 đơn). Hàng cồng kềnh gây áp lực chiếm diện tích kho rất lớn tại bưu cục.
+• AM cần kiểm tra kỹ các mã đơn revert từ GTX, đồng thời chủ động bố trí xe ba gác, xe van và xe tải nhỏ 1.9T để giải phóng hàng CK vào khung giờ 14h-16h hàng ngày, giữ thông thoáng mặt sàn cho ca rã hàng đêm.
+Sàn/Loại hàng
+	
+
+06/08
+	
+
+07/08
+	
+
+08/08
+	
+
+09/08
+	
+
+10/08
+	
+
+11/08
+	
+
+12/08
+	
+
+13/08
+	
+
+14/08
+	
+
+15/08
+	Tổng 10 ngày
+	Tỷ trọng %
+	Shopee
+	14,964
+	12,090
+	33,036
+	12,642
+	22,526
+	16,427
+	17,352
+	14,667
+	14,722
+	19,582
+	178,008
+	29.91%
+	Shopee-Bulky
+	2,379
+	2,470
+	7,021
+	3,998
+	6,012
+	3,426
+	2,388
+	2,325
+	2,251
+	5,147
+	37,417
+	6.29%
+	Shopee-Bulky (10-15kg)
+	1,304
+	1,354
+	5,254
+	2,163
+	3,136
+	1,877
+	1,305
+	1,276
+	1,230
+	2,903
+	21,802
+	3.66%
+	SME
+	22,391
+	23,184
+	23,334
+	18,439
+	24,985
+	23,010
+	22,460
+	22,391
+	23,184
+	22,553
+	225,931
+	37.96%
+	SME-Bulky
+	1,446
+	1,447
+	1,341
+	910
+	1,628
+	1,567
+	1,516
+	1,446
+	1,447
+	1,354
+	14,102
+	2.37%
+	TTS
+	12,085
+	12,738
+	13,492
+	9,200
+	11,904
+	9,998
+	9,888
+	11,317
+	12,157
+	11,980
+	114,759
+	19.28%
+	TTS-Bulky
+	318
+	343
+	400
+	225
+	361
+	281
+	278
+	291
+	321
+	311
+	3,129
+	0.53%
+	Grand Total
+	54,887
+	53,626
+	83,878
+	47,577
+	70,552
+	56,586
+	55,187
+	53,713
+	55,312
+	63,830
+	595,148
+	100.00%
+	  
+
+Biểu đồ 5: Chi tiết Sản lượng Giao theo Sàn (Event 8.8 NTB)
+Phân bổ Volume Giao theo Tỉnh & Tỷ trọng trung bình (06/08 - 15/08)
+• Khánh Hòa & Lâm Đồng là hai trọng điểm Giao gánh áp lực lớn nhất toàn vùng (Khánh Hòa peak 32.150 đơn, Lâm Đồng peak 24.820 đơn ngày 08/08). Cần chuẩn bị nguồn lực NVPTTT và xe tải phụ gánh ca tại các bưu cục thuộc Đà Lạt, Đức Trọng, Cam Ranh, Nha Trang.
+• Bình Thuận & Ninh Thuận giữ nhịp giao ổn định (Bình Thuận peak 19.450 đơn, Ninh Thuận peak 11.200 đơn).
+• Đắk Nông (peak 10.029 đơn) tập trung 3 Bưu cục bất ổn do địa hình đồi núi đường khó đi (Kiến Đức, Quảng Tín, Đông Gia Nghĩa), cần được ưu tiên điều động Đội phản ứng nhanh Vùng NTB.
+
+
+
+
+
+
+Tỉnh/Quận
+	
+
+06/08
+	
+
+07/08
+	
+
+08/08
+	
+
+09/08
+	
+
+10/08
+	
+
+11/08
+	
+
+12/08
+	
+
+13/08
+	
+
+14/08
+	
+
+15/08
+	Tổng 10 ngày
+	Tỷ trọng %
+	Bình Thuận
+	12,846
+	12,451
+	20,394
+	11,203
+	16,722
+	13,287
+	12,979
+	12,569
+	12,926
+	15,090
+	140,467
+	23.6%
+	Khánh Hòa
+	14,760
+	14,451
+	23,538
+	12,784
+	18,951
+	15,220
+	14,834
+	14,442
+	14,894
+	17,152
+	161,026
+	27.06%
+	Lâm Đồng
+	15,907
+	15,529
+	23,879
+	13,927
+	20,685
+	16,544
+	16,088
+	15,580
+	16,038
+	18,661
+	172,838
+	29.04%
+	Ninh Thuận
+	5,222
+	5,079
+	7,994
+	4,478
+	6,699
+	5,384
+	5,272
+	5,114
+	5,254
+	6,073
+	56,569
+	9.51%
+	Đắk Nông
+	6,152
+	6,118
+	8,074
+	5,185
+	7,494
+	6,152
+	6,013
+	6,010
+	6,201
+	6,853
+	64,252
+	10.8%
+	Grand Total
+	54,887
+	53,628
+	83,879
+	47,577
+	70,551
+	56,587
+	55,186
+	53,715
+	55,313
+	63,829
+	595,152
+	100.00%
+	
+
+
+
+
+
+
+
+Biểu đồ 6: Sản lượng Giao theo Tỉnh/Quận & Tỷ trọng trung bình (Event 8.8 NTB)  
+
+
+
+
+
+
+
+
+
+
+
+
+
+III. PHÂN TÍCH VẬN HÀNH & PHƯƠNG ÁN ỨNG PHÓ THEO NHÓM BƯU CỤC
+Tiêu chuẩn Phân loại 3 Nhóm Bưu cục Vùng NTB
+Tiêu chí
+	Nhóm 1 - Ổn định
+	Nhóm 2 - Cảnh báo
+	Nhóm 3 - Bất ổn
+	Mức độ rủi ro
+	Thấp
+	Trung bình
+	Rất cao - quá tải, cần tập trung theo dõi
+	Thiếu hụt nhân sự (NVPTTT)
+	Dưới 2 người
+	Từ 1-6 người, đang có điều động hỗ trợ
+	Từ 2-6 người, tỷ trọng thiếu trên 25%
+	Khả năng kiểm soát vận hành
+	Tốt
+	Trung bình - khá, phụ thuộc thời tiết
+	Kém, cần điều động đội phản ứng nhanh linh hoạt
+	
+
+
+
+Phương án A (chủ động)
+	AM theo dõi, điều hành gán, FIFO, bám sát năng suất NV
+	Đẩy mạnh tuyển dụng, AM trực tiếp điều hành gán/FIFO, chính sách thúc đẩy clear tồn, cân nhắc thuê Freelancer
+	AM trực tiếp điều hành gán FIFO, chính sách thúc đẩy năng suất, điều động nhân sự BC khác hỗ trợ, thuê Freelancer
+	
+
+
+
+Phương án B (khẩn cấp khi PA A không khả thi)
+	Tắt tuyến BC (khi về vượt CAP x3), điều tiết giảm hàng KA, hỗ trợ giữ hàng tại KTC
+	Áp dụng như Nhóm 3 nếu tình trạng xấu đi
+	Đề xuất GĐV cho phép Tắt tuyến với hàng KA nếu tồn vượt quá 2 lần CAP; điều động nhân sự BC Nhóm 1 lân cận theo mô hình 'cuốn chiếu'
+	
+
+1. Nhóm 2 (Cảnh báo - Ổn định ngắn hạn)
+Thực trạng rủi ro:
+• Nhân sự và Năng suất: Bưu cục vẫn có khả năng giao và có nhân sự điều động hỗ trợ, nhưng đang thiếu hụt nhẹ (từ 1-6 NVPTTT). Tuy nhiên, áp lực quá tải lâu ngày dễ phát sinh tình trạng nhân viên xin nghỉ phép hoặc nghỉ việc trong kỳ Event.
+• Vận hành và Thời tiết: Năng lực kiểm soát ở mức Trung bình - Khá và phụ thuộc rất lớn vào thời tiết. Yếu tố thời tiết bất lợi (mưa bão) dự kiến làm năng suất GTC giảm từ 1–5%. Khi gặp rủi ro kép (Thời tiết xấu + Sản lượng giao/Số chuyến tăng đột biến), nhóm này rất dễ bị quá tải nghiêm trọng và tụt xuống Nhóm 3 (Bất ổn).
+Phương án ứng phó chủ động:
+• Tối ưu mặt sàn và Kho bãi: Tiến hành sắp xếp lại layout bưu cục, tập trung clear hàng CK (cồng kềnh) để giải phóng diện tích sử dụng cho luồng hàng nhỏ nhẹ.
+• Nhân sự xử lý (NVXL): Chủ động lọc riêng hàng TTS để add chuyến nhanh cho NVPTTT đi giao, nhằm tối ưu và nâng cao tỷ lệ GTC ngay trong ngày.
+• Điều phối tuyến giao: Chủ động phân tách và chuyển bớt các tuyến giao/lấy/trả sang các bưu cục lân cận có CAP giao tốt hơn để gánh bớt số đơn. Sắp xếp lộ trình tuyến phù hợp với năng lực thực tế của từng nhân sự; ưu tiên phân bổ nhân viên mới chạy các tuyến dễ, tránh đẩy vào các tuyến khó gây bào mỏng nguồn lực và nản chí.
+• Điều động hoặc sử dụng chính sách nếu cần: Kích hoạt chính sách điều động NVPTTT từ các bưu cục Nhóm 1 lân cận sang hỗ trợ gánh ca cao điểm.
+
+
+2. Nhóm 3: Nhóm Bất ổn (Cần can thiệp khẩn cấp)
+Thực trạng rủi ro:
+• Nhân sự: Báo động cần follow kỹ nhóm BC có tỷ trọng thiếu nhân sự trên 25%. Tỷ lệ nghỉ việc cao ở khu vực Phú Quý, Khánh Vĩnh, Đam Rông, Đắk Glong; nguồn tuyển đang được cải thiện.
+• Vận hành hiện tại: Năng suất NVPTTT đang bị quá tải lâu ngày nên áp lực đi làm Event nếu không kiểm soát tốt.
+Phương án ứng phó khẩn cấp:
+• Giai đoạn Event (06/08 - 15/08): Duy trì Điều động Đội phản ứng nhanh Vùng NTB từ Nhóm 1 sang hỗ trợ clear tồn cũ. Cân đối ngân sách hỗ trợ bất ổn.
+• Kích hoạt chính sách 'Thưởng nóng 3k/đơn' cho các tuyến có Vol tồn vượt CAP 50%.
+• Xây dựng đội cứu các đơn GTB (Giao Không Thành Công): Gọi điện xác nhận nhu cầu nhận hàng của khách trước khi xuất kho.
+• Quản trị: AM trực chiến 24/7 tại BC để gán đơn FIFO, ưu tiên giải phóng hàng CK (hàng cồng kềnh) chiếm diện tích kho trước.
+• Cắt giảm áp lực: Trong trường hợp Vol về vượt quá 3 lần công suất thực tế, đề xuất GĐV cho phép Tắt tuyến tạm thời đối với các Shop có Vol lớn tại khu vực bất ổn để bảo vệ chỉ số chung của vùng.
+Phương án A (Chủ động):
+• Ưu tiên giải phóng hàng CK chiếm diện tích kho vào khung giờ thấp điểm (14h-16h). Các Bưu cục tại Khánh Vĩnh, Đức Trọng đã chủ động liên hệ xe van/tải trung chuyển để mượn tải luân chuyển đơn CK; khu vực đảo Phú Quý đã triển khai xe tải 1,9 tấn hoặc ba gác để luân chuyển hàng CK cho các tuyến xa trên 20km.
+Phương án B (Trường hợp khẩn cấp):
+• Đề xuất GĐV cho phép Tắt tuyến đối với hàng KA tại khu vực này nếu tồn vượt quá 2 lần CAP.
+• Điều động nhân sự từ các Bưu cục Nhóm 1 lân cận hỗ trợ theo mô hình 'cuốn chiếu'.
+
+
+
+
+Nhóm
+	
+
+Tên Bưu cục
+	
+
+Trạng thái
+	
+
+Định biên
+	
+
+Hiện hữu
+	
+
+Thiếu T30
+	Thực trạng Rủi ro & Tồn đọng
+	Phương án ứng phó (PA A & B)
+	Nhóm 3
+	(KHO) Cam Linh
+	Thiếu
+	19
+	12
+	9
+	Thiếu 9 NVPTTT (47%), Tồn LM 2,322 đơn.
+	PA A: Điều động 5 NV + 4 Freelancer. PA B: Tắt tuyến KA nếu tồn x2 CAP.
+	Nhóm 3
+	(LDO) Đơn Dương
+	Thiếu
+	17
+	14
+	5
+	Thiếu 5 NVPTTT (29%), Tồn LM 1,454 đơn.
+	PA A: Thưởng 3k/đơn + điều động 3 NV Đà Lạt. PA B: Giữ hàng KA tại KTC.
+	Nhóm 3
+	(LDO) Lang Biang 1
+	Thiếu
+	12
+	10
+	4
+	Thiếu 4 NVPTTT (33%), Tồn LM 1,093 đơn.
+	PA A: Tăng ca rã hàng ca đêm + bổ sung 2 xe van. PA B: Tắt tuyến KA.
+	Nhóm 3
+	(LDO) Tân Hà Lâm Hà
+	Thiếu
+	10
+	7
+	4
+	Thiếu 4 NVPTTT (40%), Tồn LM 1,072 đơn.
+	PA A: Phụ cấp ca gánh + điều động cuốn chiếu. PA B: Chuyển tuyến xa.
+	Nhóm 3
+	(KHO) Bắc Cam Ranh
+	Thiếu
+	9
+	5
+	4
+	Thiếu 4 NVPTTT (44%), Tồn LM 464 đơn.
+	PA A: AM cắm bưu cục điều hành 100%. PA B: Hỗ trợ tuyến lân cận.
+	Nhóm 3
+	(DNO) Kiến Đức
+	Thiếu
+	10
+	7
+	3
+	Thiếu 3 NVPTTT, Tồn LM 1,946 đơn, Tồn Aging >5d.
+	PA A: Đội phản ứng nhanh Vùng clear tồn. PA B: Tắt tuyến KA.
+	Nhóm 3
+	(DNO) Quảng Tín
+	Thiếu
+	8
+	6
+	2
+	Thiếu 2 NVPTTT, Tồn LM 1,322 đơn, Tồn Aging >5d.
+	PA A: Thuê xe ba gác luân chuyển hàng CK. PA B: Hỗ trợ chi phí.
+	Nhóm 3
+	(BTN) La Gi
+	Bất ổn
+	15
+	12
+	3
+	Tồn LM 2,752 đơn & Tồn Aging >5d.
+	PA A: Gán FIFO 100%, clear kho CK. PA B: Đề xuất GDV Tắt tuyến KA.
+	Nhóm 2
+	(BTN) Phan Thiết 2
+	Thiếu
+	16
+	13
+	3
+	Thiếu 3 NVPTTT, Tồn LM 1,514 đơn.
+	PA A: Đẩy mạnh tuyển dụng + Freelance. PA B: Điều xe tải gánh ca.
+	Nhóm 2
+	(KHO) Bắc Nha Trang
+	Thiếu
+	21
+	18
+	3
+	Thiếu 3 NVPTTT, Tồn LM 1,362 đơn.
+	PA A: Lọc riêng hàng TTS add chuyến nhanh. PA B: Hỗ trợ từ BC Nam NT.
+	Nhóm 2
+	(LDO) Lâm Viên 2
+	Thiếu
+	9
+	6
+	3
+	Thiếu 3 NVPTTT, Tồn LM 913 đơn.
+	PA A: Bố trí xoay ca NVXL rã hàng sớm. PA B: Điều động NV.
+	Nhóm 2
+	(LDO) Đức Trọng 1
+	Thiếu
+	8
+	7
+	2
+	Thiếu 2 NVPTTT, Tồn LM 2,339 đơn, Aging >5d.
+	PA A: Mượn tải xe 1.9T luân chuyển đơn CK. PA B: Tắt tuyến tạm.
+	IV. CHECKLIST CÔNG VIỆC CHUẨN BỊ EVENT 8.8
+1. Công cụ dụng cụ + kho bãi
+Hạng mục
+	Tình trạng hiện tại
+	Phương án dự phòng
+	Chi phí dự kiến
+	CCDC (Túi trùm sọt, bạt mưa, máy bắn)
+	Đã phân bổ 100% BC, 12 BC thiếu nhẹ CCDC đã nhường luân chuyển.
+	Đặt dự phòng 15% CCDC tại Vùng NTB để bù hư hỏng.
+	15,000,000 VNĐ
+	Kho bãi & Layout
+	Layout 84 BC đã tối ưu, 0 BC nào cần thuê kho tạm.
+	Mượn bãi tập kết bưu cục lân cận khi Vol x2.5 CAP.
+	0 VNĐ
+	Xe luân chuyển hàng CK
+	Sản lượng CK chiếm 20-30% volume toàn vùng.
+	Thuê xe tải 1.9T & xe ba gác luân chuyển tuyến xa (Khánh Vĩnh, Đam Rông).
+	35,000,000 VNĐ
+	Máy phát điện dự phòng
+	Theo dõi lịch cúp điện 5 tỉnh NTB.
+	Thuê máy phát điện dự phòng cho BC rớt điện.
+	1,000,000 VNĐ/ngày/BC
+	2. Bố trí lịch làm việc & tăng ca
+• Điều động nhân sự cùng lúc bố trí lịch làm xoay ca hợp lý cho nhân viên Nhóm 2 & 3 để đảm bảo sức khỏe duy trì suốt 10 ngày cao điểm Event 8.8.
+• Các Bưu cục hàng về vượt CAP giao phân công nhân viên ở lại rã hàng ca đêm (20h-04h), tạo chuyến đi sẵn trước ngày cao điểm để xuất kho sớm từ 06h30.
+• Trình Vùng phê duyệt phụ cấp tăng ca cho NVXL và nhân viên rã hàng đêm.
+3. Tác động bên ngoài & Quy trình ứng phó rủi ro
+3.1. Trường hợp mất điện:
+• BC theo dõi lịch thông báo cắt điện của khu vực. Chuẩn bị sẵn thông tin liên hệ nhà cung cấp điện, bộ phận Tech Vùng.
+• Những khu vực hay có thông báo ngắt điện phải chuẩn bị thuê máy phát điện trước. Yêu cầu AM, NVXL phải nắm tình hình các BC xuyên suốt để kịp thời xử lý (chi phí thuê máy phát điện dự kiến 1,000,000 VNĐ/ngày).
+3.2. Trường hợp lỗi hệ thống:
+• Nếu rớt mạng yêu cầu NVXL thông báo lại cho AM nắm tình hình (xử lý loại check in cho NV nếu cần). AM có nhiệm vụ báo lên nhóm Tech để kịp thời xử lý.
+• Nếu rớt mạng trong vòng 15p: Tạm thời sử dụng mạng di động 5G cá nhân để duy trì bắn kiểm.
+• Nếu rớt mạng quá 30p ngay thời điểm xuất hàng / bắn kiểm mà không thao tác được: Bưu cục cần chuyển sang chế độ xuất kho ngoại tuyến offline trên app theo quy trình dự phòng Tech và báo khẩn lên Vùng.
+3.3. Trường hợp Mưa giông kéo dài:
+• Ưu tiên giải phóng hàng nhỏ TTS, gọi khách xác nhận nhu cầu trước khi giao ra xe ngay khi mưa nhỏ. Hàng CK vượt CAP xin thêm chi phí tải kết nối nâng cao năng suất nhân viên.
+• Trang bị đủ CCDC: túi trùm sọt bạc che mưa, túi chống nước điện thoại, áo mưa bộ cho NVPTTT.
+• Tắt tuyến (khẩn cấp) + điều động đội giải phóng hàng tồn + kích hoạt chính sách kích thích năng suất.
+• Họp Bưu cục để báo NVPTTT chủ động chuẩn bị thiết bị chống nước điện thoại, trùm sọt, thuốc cảm, các lưu ý phòng tránh tai nạn mùa mưa bão đèo dốc.
+
+
+V. NGUỒN LỰC HỖ TRỢ VÀ QUY TRÌNH PHỐI HỢP
+1. Các Đơn vị Hỗ trợ Vùng 
+Đơn vị hỗ trợ
+	Thông tin/hỗ trợ cung cấp cho Vùng
+	Thời điểm cung cấp
+	Đầu mối liên hệ tại Vùng
+	Capacity team
+	Forecast sản lượng lấy/giao theo ngày, theo sàn, theo tỉnh/quận cho toàn kỳ Event
+	Trước Event tối thiểu 7 ngày
+	Anh Tuấn Anh - MSNV 3085660
+	Phòng Nhân sự / C&B
+	Chính sách điều động nhân sự liên vùng, chính sách phụ cấp tăng ca, thưởng nóng theo sản lượng tồn
+	Trước Event
+	Chuyên viên HRBP Vùng
+	Tài chính / Vận hành
+	Ngân sách dự phòng cho chi phí phát sinh: thuê xe, máy phát điện, Freelancer, thưởng nóng
+	Trước Event, xét duyệt bổ sung trong Event
+	Chuyên viên HRBP Vùng
+	Tech
+	Đầu mối xử lý sự cố hệ thống, lỗi mạng, lỗi ứng dụng trong suốt kỳ Event
+	24/7 trong suốt Event
+	Đầu mối Tech Vùng
+	Network
+	Hỗ trợ điều xe, tăng chuyến Linehaul khi phát sinh vượt tải, giải phóng hàng cồng kềnh (CK)
+	Theo yêu cầu phát sinh
+	Điều phối Tải Vùng
+	
+
+
+
+2. Quy trình Escalation Flow 
+
+
+Loại vấn đề
+	Báo cáo tại Bưu cục
+	Báo cáo lên Vùng
+	Ghi chú
+	Người phụ trách 
+	Mất điện tại BC
+	NVXL báo AM phụ trách BC
+	AM tổng hợp báo HR Vùng xin hỗ trợ máy phát điện
+	Chuẩn bị sẵn thông tin liên hệ nhà cung cấp điện khu vực
+	AM Địa bàn
+	Lỗi hệ thống/rớt mạng
+	NVXL báo AM
+	AM báo nhóm Tech Vùng/Trung tâm để xử lý; nếu rớt mạng >30 phút báo khẩn
+	Dưới 15 phút: tạm dùng mạng di động 5G
+	Tech Vùng
+	Quá tải sản lượng vượt CAP
+	AM báo ARD
+	Vùng báo GĐV/cấp phê duyệt để xin Tắt tuyến hoặc điều tiết hàng KA
+	Áp dụng Phương án B theo phân loại nhóm BC
+	ARD
+GĐV Nam Trung Bộ 
+	Thiếu hụt nhân sự nghiêm trọng
+	AM báo HR Vùng
+	Vùng báo Nhân sự/C&B để điều động liên vùng hoặc tuyển Freelancer
+	Ưu tiên các BC Nhóm 3
+	HRBP Vùng 
+	Phát sinh chi phí ngoài kế hoạch
+	AM tổng hợp đề xuất kèm số liệu
+	Vùng trình GDV  phê duyệt trước khi triển khai
+	Ví dụ: thuê xe tải, máy phát điện, thưởng nóng
+	GĐV
+	
+
+
+
+
+
+Tab 2
+KẾ HOẠCH VẬN HÀNH EVENT 8.8
+KHO TRUNG CHUYỂN (KTC) - VÙNG NAM TRUNG BỘ 
+1. THÔNG TIN CHUNG & MỤC TIÊU EVENT 8.8 NTB
+• Thời gian diễn ra Event: Từ 06/08/2026 đến 15/08/2026 
+• Phạm vi áp dụng: Cụm Kho Trung Chuyển (KTC) và Kho Chuyển Tiếp (CT) vùng Nam Trung Bộ (NTB):
+* Kho Trung Chuyển Khánh Hòa (KTC Khánh Hòa)
+* Kho Chuyển Tiếp Bình Thuận (CT Bình Thuận)
+* Kho Chuyển Tiếp Đức Trọng - Lâm Đồng (CT Đức Trọng)
+* Kho Chuyển Tiếp Bảo Lộc - Lâm Đồng (CT Bảo Lộc)
+* Kho Chuyển Tiếp Đắk Nông (CT Đắk Nông)
+• Mục tiêu vận hành chính:
+  - Sản lượng Khai thác (Sorting): Đảm bảo xử lý 771,977 đơn hàng trong 10 ngày (Trung bình 77,198 đơn/ngày).
+ - Đỉnh điểm sản lượng (Peak): Đáp ứng tốt 2 ngày cao điểm lớn nhất là 08/08 (97,649 đơn) và 10/08 (89,608 đơn).
+ - Chất lượng vận hành: Tỷ lệ khai thác & kết nối chuyến xe COT đúng giờ đạt 100%, 0% đơn tồn đọng >24h.
+2. CHỈ TIÊU & DỰ BÁO SẢN LƯỢNG (VOLUME FORECAST)
+Biểu đồ 1: Diễn biến Sản lượng Sorting theo Kho KTC Event 8.8
+
+
+  Bảng 2.1: Chi Tiết Sản Lượng Sorting Theo Kho & Nhóm Hàng (06/08 – 15/08/2026)
+
+
+Kho KTC
+	Nhóm hàng
+	06/08
+	07/08
+	08/08 (Peak)
+	09/08
+	10/08 (Peak)
+	11/08
+	12/08
+	13/08
+	14/08
+	15/08
+	Tổng 10d
+	TB/ngay
+	
+
+
+
+KTC Khánh Hòa
+	Normal
+	21.652
+	22.586
+	30.057
+	18.795
+	26.792
+	22.516
+	22.667
+	22.425
+	23.306
+	23.281
+	234.077
+	23.408
+	Bulky
+	2.755
+	2.852
+	3.940
+	3.975
+	3.524
+	4.971
+	4.882
+	3.431
+	2.738
+	3.940
+	37.008
+	3.701
+	Freight
+	1.659
+	1.718
+	2.901
+	2.438
+	2.725
+	2.819
+	2.274
+	1.779
+	1.601
+	2.732
+	22.646
+	2.265
+	Tổng KH
+	26.067
+	27.156
+	36.898
+	25.208
+	33.041
+	30.306
+	29.823
+	27.635
+	27.645
+	29.953
+	293.732
+	29.373
+	
+
+
+
+
+
+CT Bình Thuận
+	Normal
+	12.437
+	12.973
+	17.265
+	10.796
+	15.389
+	12.933
+	13.021
+	12.881
+	13.387
+	13.372
+	134.454
+	13.445
+	Bulky
+	1.785
+	1.848
+	2.347
+	2.080
+	2.515
+	2.599
+	3.508
+	2.804
+	1.940
+	2.347
+	23.773
+	2.377
+	Freight
+	1.218
+	1.260
+	2.334
+	1.665
+	2.398
+	1.849
+	1.429
+	1.285
+	1.175
+	2.005
+	16.618
+	1.662
+	Tổng BTH
+	15.440
+	16.082
+	21.946
+	14.541
+	20.302
+	17.381
+	17.958
+	16.970
+	16.502
+	17.724
+	174.846
+	17.485
+	
+
+
+
+
+
+CT Đức Trọng
+	Normal
+	10.447
+	10.897
+	14.502
+	9.069
+	12.927
+	10.864
+	10.937
+	10.820
+	11.245
+	11.233
+	112.941
+	11.294
+	Bulky
+	1.436
+	1.487
+	3.483
+	1.664
+	2.898
+	1.888
+	1.543
+	1.453
+	1.386
+	2.365
+	19.603
+	1.960
+	Freight
+	1.059
+	1.096
+	2.032
+	1.439
+	1.918
+	1.659
+	1.324
+	1.161
+	1.022
+	1.744
+	14.454
+	1.445
+	Tổng DTR
+	12.943
+	13.481
+	20.017
+	12.172
+	17.743
+	14.411
+	13.804
+	13.434
+	13.653
+	15.341
+	146.999
+	14.700
+	
+
+
+
+CT Bảo Lộc
+	Normal
+	6.858
+	7.154
+	8.774
+	6.250
+	8.805
+	7.255
+	7.180
+	7.103
+	7.382
+	7.374
+	74.135
+	7.414
+	Bulky
+	965
+	999
+	1.368
+	1.285
+	1.612
+	1.531
+	1.489
+	1.331
+	1.008
+	1.405
+	12.993
+	1.299
+	Freight
+	625
+	646
+	1.112
+	888
+	1.124
+	1.007
+	773
+	718
+	603
+	1.028
+	8.524
+	852
+	Tổng BLO
+	8.448
+	8.799
+	11.254
+	8.423
+	11.541
+	9.793
+	9.442
+	9.152
+	8.993
+	9.807
+	95.652
+	9.565
+	
+
+
+
+CT Đắc Nông
+	Normal
+	4.407
+	4.597
+	6.118
+	3.826
+	5.453
+	4.583
+	4.614
+	4.564
+	4.744
+	4.738
+	47.644
+	4.764
+	Bulky
+	642
+	665
+	887
+	902
+	954
+	843
+	1.128
+	979
+	705
+	887
+	8.592
+	859
+	Freight
+	332
+	344
+	529
+	488
+	574
+	553
+	454
+	390
+	320
+	529
+	4.513
+	451
+	Tổng DNO
+	5.381
+	5.605
+	7.534
+	5.216
+	6.981
+	5.979
+	6.196
+	5.933
+	5.769
+	6.154
+	60.748
+	6.075
+	TỔNG KTC
+	TỔNG NTB
+	68.279
+	71.123
+	97.649
+	65.560
+	89.608
+	77.870
+	77.223
+	73.124
+	72.562
+	78.979
+	771.977
+	77.198
+	
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+Biểu đồ 2: Cơ cấu Nhóm hàng tại KTC NTB
+  
+
+- Nhận xét:
+KTC Khánh Hòa:
+• XU HƯỚNG: Biến động sóng kép qua kỳ theo dõi: TB 29,373 đơn/ngày. Đỉnh campaign 08/08 đạt 36,898 đơn (+25.6% so với TB kỳ) do Bulky vọt lên 3,940 đơn và Freight 2,901 đơn (tổng Bulky+Freight đạt 6,841 đơn, gấp 1.2 lần nền ngày thường ~5.9K); Đỉnh 2 (10/08) đạt 33,041 đơn (+12.5%); Đáy Chủ Nhật 09/08 đạt 25,208 đơn (−14.2%). Biên độ đỉnh/đáy 1.46 lần.
+• CƠ CẤU: Normal 79.7% (234,077 đơn) – Bulky 12.6% (37,008 đơn) – Freight 7.7% (22,646 đơn); Bulky của Khánh Hòa chiếm khối lượng tuyệt đối CAO NHẤT VÙNG (37,008 đơn/10 ngày) — gấp 1.9 lần tổng Bulky của Đức Trọng và gấp 2.8 lần Bảo Lộc.
+• DỰ KIẾN & CHUẨN BỊ: Ngày thường 26–30K, đầu tuần (T2–T3) 29–33K, Chủ Nhật ~25K; nếu lặp kịch bản campaign, đỉnh có thể chạm 38–40K/ngày với >7K đơn Bulky+Freight — cần dự phòng +30% nhân lực phân loại, quy hoạch diện tích sàn hàng cồng kềnh/hàng nặng và bố trí đầu xe tải trọng lớn (15–20 tấn) bọc lót theo NGÀY ĐỈNH (~36.9K đơn/ngày), không theo trung bình (~29.4K/ngày).
+CT Bình Thuận:
+• XU HƯỚNG: TB 17,485 đơn/ngày. Đỉnh campaign 08/08 đạt 21,946 đơn (+25.5% so với TB kỳ) do Bulky vọt lên 2,347 đơn và Freight 2,334 đơn (tổng Bulky+Freight 4,681 đơn, chiếm 21.3% sản lượng ngày); Đỉnh 2 (10/08) đạt 20,302 đơn (+16.1%); Đáy Chủ Nhật 09/08 đạt 14,541 đơn (−16.8%). Biên độ đỉnh/đáy 1.51 lần.
+• CƠ CẤU: Normal 76.9% – Bulky 13.6% – Freight 9.5%; tỷ trọng Freight (nông sản/hải sản) CAO NHẤT VÙNG (16,618 đơn/10 ngày) — phản ánh đặc thù cửa ngõ phía Nam kết nối trực tiếp các tuyến xe liên vùng từ TP.HCM/Đồng Nai.
+• DỰ KIẾN & CHUẨN BỊ: Ngày thường 16–18K, Chủ Nhật ~14.5K; đợt campaign có thể chạm 22–24K/ngày với ~5K đơn Bulky+Freight dồn trong ngày đỉnh — đặc biệt lưu ý định mức năng suất nhân sự rất cao (11 NVCT), cần chuẩn bị trước 3-4 Freelance ca đêm và quy hoạch luồng xả bãi pallet nhanh cho xe liên vùng về trễ.
+CT Đức Trọng (Lâm Đồng):
+• XU HƯỚNG: TB 14,700 đơn/ngày. Đỉnh campaign 08/08 đạt 20,017 đơn (+36.2% so với TB kỳ - biên độ tăng cao nhất vùng) do Bulky tăng vọt lên 3,483 đơn (gấp 2.4 lần nền ngày thường ~1.4K) và Freight 2,032 đơn; Đỉnh 2 (10/08) đạt 17,743 đơn (+20.7%); Đáy Chủ Nhật 09/08 đạt 12,172 đơn (−17.2%). Biên độ đỉnh/đáy 1.64 lần (cao nhất NTB).
+• CƠ CẤU: Normal 76.8% – Bulky 13.3% – Freight 9.8%; tổng hàng cồng kềnh & nặng đạt 34,057 đơn/10 ngày — đóng vai trò Hub trung chuyển chính cho toàn tỉnh Lâm Đồng (Đà Lạt & Bảo Lộc).
+• DỰ KIẾN & CHUẨN BỊ: Ngày thường 13–15K, Chủ Nhật ~12K; đợt campaign có thể chạm 21–22K/ngày với >5.5K đơn Bulky+Freight — cần bố trí sẵn bãi hạ pallet cồng kềnh riêng biệt tại cửa xả hàng, bổ sung 2 xe nâng điện 2 tầng và điều phối tuyến xe tải lớn kết nối Đức Trọng - Đà Lạt.
+CT Bảo Lộc (Lâm Đồng):
+• XU HƯỚNG: TB 9,565 đơn/ngày. Đỉnh campaign 08/08 đạt 11,254 đơn (+17.7% so với TB kỳ) với Bulky 1,368 đơn và Freight 1,112 đơn; Đỉnh 2 (10/08) đạt 11,541 đơn (+20.7%); Đáy Chủ Nhật 09/08 đạt 8,423 đơn (−11.9%). Biên độ đỉnh/đáy 1.37 lần.
+• CƠ CẤU: Normal 77.5% – Bulky 13.6% (12,993 đơn) – Freight 8.9% (8,524 đơn); cơ cấu khá ổn định qua các ngày trong đợt.
+• DỰ KIẾN & CHUẨN BỊ: Ngày thường 9–10K, Chủ Nhật ~8.4K; đợt campaign chạm 11.5–12K/ngày — ưu tiên cơ chế ca kíp linh hoạt (dùng 7 Freelance/ngày) và gom chuyến điều phối xe chung tuyến với Đức Trọng thay vì tăng nguồn lực cố định.
+CT Đắc Nông:
+• XU HƯỚNG: TB 6,075 đơn/ngày. Đỉnh campaign 08/08 đạt 7,534 đơn (+24.0% so với TB kỳ) với Bulky 887 đơn và Freight 529 đơn; Đỉnh 2 (10/08) đạt 6,981 đơn (+14.9%); Đáy Chủ Nhật 09/08 đạt 5,216 đơn (−14.1%). Biên độ đỉnh/đáy 1.44 lần.
+• CƠ CẤU: Normal 78.4% – Bulky 14.1% (8,592 đơn - tỷ trọng Bulky cao nhất vùng) – Freight 7.4% (4,513 đơn).
+• DỰ KIẾN & CHUẨN BỊ: Ngày thường 5.5–6.2K, Chủ Nhật ~5.2K; đợt campaign chạm 7.5–8K/ngày — quy mô nhỏ nhưng hàng Bulky chiếm tỷ trọng cao; duy trì lực lượng 6 Freelance bọc lót và kiểm tra 100% PDA + SIM 4G dự phòng trước ca cao điểm.
+
+
+
+Biểu đồ 3: Biến động Sản lượng Lấy & Giao theo Kênh Sàn
+  
+
+3. KẾ HOẠCH PHÂN CÔNG NHÂN SỰ & CA LÀM VIỆC
+Biểu đồ 4: Phân bổ Nhân sự theo Kho KTC
+  
+
+4. QUY TRÌNH & CHECKLIST CHUẨN BỊ VẬN HÀNH KHO KTC
+• Chuẩn bị Layout kho: Quy hoạch riêng không gian cho Normal, Bulky, Freight.
+• Đặt xe & COT: Khung giờ COT cố định + xe book dự phòng rớt ca.
+• Thiết bị: PDA rà soát 100%, sẵn sàng SIM 4G dung lượng cao dự phòng cúp điện.
+5. PHƯƠNG ÁN ỨNG PHÓ HÀNG TĂNG 30% (SURGE CONTINGENCY)
+• Huy động 100% quân số NVCT không off ngày Peak (08/08 & 10/08).
+• Kích hoạt Freelance ca đêm & ca xe trễ.
+• Mở rộng thêm layout phụ sân kho giải tỏa diện tích.

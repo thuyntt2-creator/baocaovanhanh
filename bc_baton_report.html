@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<style>
+  * {
+    box-sizing: border-box;
+    font-family: 'Segoe UI', 'Helvetica Neue', Arial, sans-serif;
+  }
+  body {
+    margin: 0;
+    padding: 0;
+    background: #ffffff;
+  }
+  .container {
+    width: 900px;
+    padding: 36px 40px 44px;
+    color: #1a1a1a;
+  }
+  .header {
+    margin-bottom: 28px;
+  }
+  .header h1 {
+    font-size: 26px;
+    font-weight: 600;
+    margin: 0 0 6px 0;
+    color: #1a1a1a;
+  }
+  .header .subtitle {
+    color: #8a8a8a;
+    font-size: 15px;
+  }
+
+  .summary-bar {
+    display: flex;
+    gap: 14px;
+    margin-bottom: 32px;
+  }
+  .summary-pill {
+    flex: 1;
+    border-radius: 10px;
+    padding: 16px 18px;
+  }
+  .summary-pill .label {
+    font-size: 14px;
+    margin-bottom: 8px;
+    font-weight: 500;
+  }
+  .summary-pill .value {
+    font-size: 32px;
+    font-weight: 700;
+  }
+  .summary-pill.red { background: #FCEBEB; }
+  .summary-pill.red .label { color: #A32D2D; }
+  .summary-pill.red .value { color: #A32D2D; }
+  .summary-pill.orange { background: #FAEEDA; }
+  .summary-pill.orange .label { color: #854F0B; }
+  .summary-pill.orange .value { color: #854F0B; }
+  .summary-pill.yellow { background: #FAEEDA; }
+  .summary-pill.yellow .label { color: #854F0B; }
+  .summary-pill.yellow .value { color: #854F0B; }
+
+  .section {
+    margin-bottom: 30px;
+  }
+  .section-title {
+    font-size: 17px;
+    font-weight: 600;
+    margin-bottom: 12px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: #1a1a1a;
+  }
+  .section-title .badge {
+    font-size: 13px;
+    font-weight: 600;
+    padding: 4px 10px;
+    border-radius: 6px;
+  }
+  .section-title.red .badge { background: #A32D2D; color: #ffffff; }
+  .section-title.orange .badge { background: #D9822B; color: #ffffff; }
+  .section-title.yellow .badge { background: #C79A1E; color: #ffffff; }
+
+  .data-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 17px;
+    border: 1px solid #c8c8c8;
+    margin-bottom: 4px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.06);
+  }
+  .data-table th {
+    background: #404040;
+    color: #ffffff;
+    text-align: left;
+    font-weight: 600;
+    padding: 11px 16px;
+    font-size: 14px;
+    border: 1px solid #595959;
+  }
+  .data-table th.center { text-align: center; }
+  .data-table td {
+    padding: 9px 14px;
+    border: 1px solid #e0e0e0;
+    color: #2a2a2a;
+  }
+  .data-table tr:nth-child(even) td {
+    background: #FAF6F0;
+  }
+
+  /* Màu phân nhóm theo AM */
+  .data-table tr.am-color-0 td { background: #FDECEC; }
+  .data-table tr.am-color-1 td { background: #FFF4E0; }
+  .data-table tr.am-color-2 td { background: #FFF9E0; }
+  .data-table tr.am-color-3 td { background: #E8F5E9; }
+  .data-table tr.am-color-4 td { background: #E3F2FD; }
+  .data-table tr.am-color-5 td { background: #F3E5F5; }
+  .data-table tr.am-color-6 td { background: #FCE4EC; }
+  .data-table td.center {
+    text-align: center;
+  }
+  .data-table td.num {
+    font-weight: 700;
+    text-align: center;
+    font-size: 18px;
+    color: #c4c4c4;
+  }
+  .data-table td.red { color: #A32D2D; }
+  .data-table td.num.orange { color: #D9822B; }
+  .inline-clear {
+    color: #D9822B;
+    font-weight: 600;
+    font-size: 14px;
+  }
+  .data-table td.idx {
+    color: #999999;
+    width: 32px;
+    text-align: center;
+  }
+  .data-table td.left-text {
+    text-align: left;
+    line-height: 1.7;
+  }
+  .data-table td[rowspan] {
+    vertical-align: middle;
+    border-bottom: 2px solid #c8c8c8;
+  }
+
+  .footer {
+    margin-top: 24px;
+    padding-top: 16px;
+    border-top: 1px solid #ececec;
+    font-size: 13px;
+    color: #8a8a8a;
+    text-align: center;
+  }
+</style>
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <h1>Danh sách bưu cục cảnh báo</h1>
+      <div class="subtitle">23/06/2026 10:47 · Tổng 13 bưu cục</div>
+    </div>
+
+    <div class="summary-bar">
+      <div class="summary-pill red">
+        <div class="label">Bất ổn</div>
+        <div class="value">10</div>
+      </div>
+      <div class="summary-pill orange">
+        <div class="label">Sắp nhảy nhóm</div>
+        <div class="value">1</div>
+      </div>
+      <div class="summary-pill yellow">
+        <div class="label">Cấp cảnh báo</div>
+        <div class="value">2</div>
+      </div>
+    </div>
+
+    
+    
+        <div class="section">
+          <div class="section-title red"><span class="badge">2 AM</span>Nhóm bưu cục bất ổn theo AM</div>
+          <table class="data-table">
+            <tr><th class="center"></th><th>AM</th><th class="center">Số BC</th><th>Bưu cục</th><th class="center">Cần xử lý</th></tr>
+            <tr class='am-color-0'>
+                      <td class='idx'>1</td>
+                      <td rowspan='9'>Không rõ AM</td>
+                      <td rowspan='9' class='num red'>9</td>
+                      <td>(KHO) Cam Linh</td>
+                      <td class='num orange'>2773</td>
+                    </tr><tr class='am-color-0'>
+                      <td class='idx'>2</td>
+                      <td>(LDO) Di Linh</td>
+                      <td class='num orange'>1972</td>
+                    </tr><tr class='am-color-0'>
+                      <td class='idx'>3</td>
+                      <td>(LDO) Tân Hà Lâm Hà</td>
+                      <td class='num orange'>867</td>
+                    </tr><tr class='am-color-0'>
+                      <td class='idx'>4</td>
+                      <td>(LDO) Bảo Lâm 1</td>
+                      <td class='num orange'>588</td>
+                    </tr><tr class='am-color-0'>
+                      <td class='idx'>5</td>
+                      <td>(LDO) Lâm Viên - Đà Lạt 1</td>
+                      <td class='num orange'>1605</td>
+                    </tr><tr class='am-color-0'>
+                      <td class='idx'>6</td>
+                      <td>(LDO) Lang Biang - Đà Lạt 1</td>
+                      <td class='num orange'>730</td>
+                    </tr><tr class='am-color-0'>
+                      <td class='idx'>7</td>
+                      <td>(LDO) Hòa Ninh</td>
+                      <td class='num orange'>433</td>
+                    </tr><tr class='am-color-0'>
+                      <td class='idx'>8</td>
+                      <td>(LDO) Đơn Dương</td>
+                      <td class='num orange'>923</td>
+                    </tr><tr class='am-color-0'>
+                      <td class='idx'>9</td>
+                      <td>(DNO) Quảng Tín</td>
+                      <td class='num orange'>192</td>
+                    </tr><tr class='am-color-1'>
+                      <td class='idx'>10</td>
+                      <td rowspan='1'>Trần Văn Phước</td>
+                      <td rowspan='1' class='num red'>1</td>
+                      <td>Điểm Xử Lý Hàng TDP 8 Quốc Lộ 14-Đông Gia Nghĩa-Lâm Đồng</td>
+                      <td class='num orange'>5</td>
+                    </tr>
+          </table>
+        </div>
+    
+        <div class="section">
+          <div class="section-title orange"><span class="badge">1 BC</span>Nhóm sắp nhảy nhóm bất ổn - AM cần lưu ý</div>
+          <table class="data-table">
+            <tr><th class="center"></th><th>AM</th><th>Bưu cục</th></tr>
+            <tr><td class='idx'>1</td><td>Không rõ AM</td><td>(LDO) Đức Trọng 1</td></tr>
+          </table>
+        </div>
+    
+    
+    
+        <div class="section">
+          <div class="section-title yellow"><span class="badge">2 BC</span>Nhóm cảnh báo - có nguy cơ bất ổn</div>
+          <table class="data-table">
+            <tr><th class="center"></th><th>Tên bưu cục</th></tr>
+            <tr><td class='idx'>1</td><td>(DNO) Đông Gia Nghĩa</td></tr><tr><td class='idx'>2</td><td>(DNO) Kiến Đức</td></tr>
+          </table>
+        </div>
+
+    <div class="footer">NTB - Bưu cục bất ổn · Cập nhật 23/06/2026 10:47</div>
+  </div>
+</body>
+</html>
