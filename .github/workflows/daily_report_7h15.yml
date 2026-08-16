@@ -1,9 +1,9 @@
-name: GHN Daily & Ca1 TTS Report 07h15
+name: GHN Daily & Ca1 TTS Report 07h00
 
 on:
   schedule:
-    # 00:15 UTC = 07:15 giờ Việt Nam (UTC+7) mỗi ngày
-    - cron: '15 0 * * *'
+    # 00:00 UTC = 07:00 giờ Việt Nam (UTC+7) mỗi ngày
+    - cron: '0 0 * * *'
   workflow_dispatch: # Cho phép bấm chạy thủ công từ giao diện GitHub
 
 jobs:
@@ -34,7 +34,7 @@ jobs:
             echo '${{ secrets.GOOGLE_CREDENTIALS_JSON }}' > credentials.json
           fi
 
-      # ==================== PHẦN 1: BÁO CÁO HÀNG NGÀY (7H15) ====================
+      # ==================== PHẦN 1: BÁO CÁO HÀNG NGÀY (7H00 SÁNG) ====================
       - name: Step 1.1: Download GTC Report from GHN Dashboard
         env:
           GHN_COOKIES: ${{ secrets.GHN_COOKIES }}
@@ -48,7 +48,7 @@ jobs:
           REPORT_GTALK_CHANNEL_ID: ${{ secrets.REPORT_GTALK_CHANNEL_ID }}
         run: python calculate_and_render_report.py
 
-      # ==================== PHẦN 2: BÁO CÁO CA 1 TTS (CHẠY NGAY SAU ĐÓ) ====================
+      # ==================== PHẦN 2: BÁO CÁO CA 1 TTS (CHẠY NGAY SAU BÁO CÁO 1) ====================
       - name: Step 2.1: Download GTC Ca1 TTS Report
         env:
           GHN_COOKIES: ${{ secrets.GHN_COOKIES }}
