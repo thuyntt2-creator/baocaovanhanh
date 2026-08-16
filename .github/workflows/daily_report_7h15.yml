@@ -1,4 +1,4 @@
-name: GHN Daily & Ca1 TTS Report 07h00
+name: GHN Daily, Ca1 TTS & Năng Suất NVPTT Report 07h00
 
 on:
   schedule:
@@ -34,7 +34,7 @@ jobs:
             echo '${{ secrets.GOOGLE_CREDENTIALS_JSON }}' > credentials.json
           fi
 
-      # ==================== PHẦN 1: BÁO CÁO HÀNG NGÀY (7H00 SÁNG) ====================
+      # ==================== PHẦN 1: BÁO CÁO HÀNG NGÀY ====================
       - name: Step 1.1: Download GTC Report from GHN Dashboard
         env:
           GHN_COOKIES: ${{ secrets.GHN_COOKIES }}
@@ -48,7 +48,7 @@ jobs:
           REPORT_GTALK_CHANNEL_ID: ${{ secrets.REPORT_GTALK_CHANNEL_ID }}
         run: python calculate_and_render_report.py
 
-      # ==================== PHẦN 2: BÁO CÁO CA 1 TTS (CHẠY NGAY SAU BÁO CÁO 1) ====================
+      # ==================== PHẦN 2: BÁO CÁO CA 1 TTS ====================
       - name: Step 2.1: Download GTC Ca1 TTS Report
         env:
           GHN_COOKIES: ${{ secrets.GHN_COOKIES }}
@@ -59,3 +59,15 @@ jobs:
           GTALK_OA_TOKEN: ${{ secrets.GTALK_OA_TOKEN }}
           GTALK_CHANNEL_ID: ${{ secrets.GTALK_CHANNEL_ID }}
         run: python calculate_gtc_ca1_tts.py
+
+      # ==================== PHẦN 3: BÁO CÁO NĂNG SUẤT NVPTT ====================
+      - name: Step 3.1: Download Năng Suất 3. Giao Hàng from GHN Dashboard
+        env:
+          GHN_COOKIES: ${{ secrets.GHN_COOKIES }}
+        run: python nangsuatauto.py
+
+      - name: Step 3.2: Calculate & Send Năng Suất NVPTT Images to GTalk
+        env:
+          NVPTT_GTALK_OA_TOKEN: ${{ secrets.NVPTT_GTALK_OA_TOKEN }}
+          GTALK_OA_TOKEN: ${{ secrets.GTALK_OA_TOKEN }}
+        run: python send_nangsuat_gtalk.py
