@@ -832,13 +832,13 @@ def run_job():
         context = None
         ghn_page = None
         
-        # Check for cookies (for GitHub Actions headless mode)
+        # Check for cookies (dùng cho GitHub Actions headless mode)
         cookie_file = os.path.join(SCRIPT_DIR, "cookies_ghn.json")
         cookie_env = os.environ.get("GHN_COOKIES")
         
-        has_cookies = cookie_env is not None or os.path.exists(cookie_file)
+        is_github_actions = os.environ.get("GITHUB_ACTIONS") == "true" or cookie_env is not None
         
-        if has_cookies:
+        if is_github_actions:
             print("🍪 Đang chạy ở chế độ Headless với Cookies (GitHub Actions mode)...", flush=True)
             is_cdp = False
             browser = p.chromium.launch(headless=True)
@@ -850,7 +850,7 @@ def run_job():
                     import json
                     storage_state = json.loads(cookie_env)
                     context.add_cookies(storage_state.get("cookies", []))
-                else:
+                elif os.path.exists(cookie_file):
                     import json
                     with open(cookie_file, 'r', encoding='utf-8') as f:
                         storage_state = json.load(f)
