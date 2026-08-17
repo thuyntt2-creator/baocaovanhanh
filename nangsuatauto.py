@@ -946,38 +946,63 @@ def run_job():
         context = None
         ghn_page = None
 
-        try:
-            browser = p.chromium.connect_over_cdp("http://127.0.0.1:9222")
-            print("✅ Đã kết nối với Chrome debug thành công!", flush=True)
-            if len(browser.contexts) == 0:
-                print("❌ Không tìm thấy Chrome context.", flush=True)
-                browser.close()
-                return
-            context = browser.contexts[0]
+        is_github_actions = os.environ.get("GITHUB_ACTIONS") == "true"
+        cookie_file = os.path.join(SCRIPT_DIR, "cookies_ghn.json")
+        cookie_env = os.environ.get("GHN_COOKIES")
 
-            for pg in context.pages:
-                if "baocao.ghn.vn" in pg.url:
-                    ghn_page = pg
-                    break
-
-            if not ghn_page:
-                print("ℹ️ Không tìm thấy tab baocao.ghn.vn, mở tab mới trên Chrome debug...", flush=True)
-                ghn_page = context.new_page()
-                ghn_page.goto(DASHBOARD_URL)
-        except Exception as e:
-            print(f"⚠️ Không kết nối được Chrome debug. Lỗi: {e}", flush=True)
-            print("🌐 Tự động mở trình duyệt độc lập mới (Persistent Browser)...", flush=True)
+        if is_github_actions:
+            print("🍪 Đang chạy ở chế độ Headless với Cookies (GitHub Actions mode)...", flush=True)
             is_cdp = False
-            profile_dir = os.path.join(SCRIPT_DIR, "playwright_profile")
-            os.makedirs(profile_dir, exist_ok=True)
-            context = p.chromium.launch_persistent_context(
-                user_data_dir=profile_dir,
-                channel="msedge",
-                headless=False,
-                args=["--start-maximized"],
-            )
+            browser = p.chromium.launch(headless=True)
+            context = browser.new_context()
+            try:
+                if cookie_env:
+                    import json
+                    storage_state = json.loads(cookie_env)
+                    context.add_cookies(storage_state.get("cookies", []))
+                elif os.path.exists(cookie_file):
+                    import json
+                    with open(cookie_file, 'r', encoding='utf-8') as f:
+                        storage_state = json.load(f)
+                    context.add_cookies(storage_state.get("cookies", []))
+                print("✅ Đã load cookies thành công.", flush=True)
+            except Exception as e:
+                print(f"❌ Lỗi khi load cookies: {e}", flush=True)
             ghn_page = context.new_page()
-            print(f"👉 Mở trang báo cáo: {DASHBOARD_URL}", flush=True)
+            ghn_page.goto(DASHBOARD_URL)
+        else:
+            try:
+                browser = p.chromium.connect_over_cdp("http://127.0.0.1:9222")
+                print("✅ Đã kết nối với Chrome debug thành công!", flush=True)
+                if len(browser.contexts) == 0:
+                    print("❌ Không tìm thấy Chrome context.", flush=True)
+                    browser.close()
+                    return
+                context = browser.contexts[0]
+
+                for pg in context.pages:
+                    if "baocao.ghn.vn" in pg.url:
+                        ghn_page = pg
+                        break
+
+                if not ghn_page:
+                    print("ℹ️ Không tìm thấy tab baocao.ghn.vn, mở tab mới trên Chrome debug...", flush=True)
+                    ghn_page = context.new_page()
+                    ghn_page.goto(DASHBOARD_URL)
+            except Exception as e:
+                print(f"⚠️ Không kết nối được Chrome debug. Lỗi: {e}", flush=True)
+                print("🌐 Tự động mở trình duyệt độc lập mới (Persistent Browser)...", flush=True)
+                is_cdp = False
+                profile_dir = os.path.join(SCRIPT_DIR, "playwright_profile")
+                os.makedirs(profile_dir, exist_ok=True)
+                context = p.chromium.launch_persistent_context(
+                    user_data_dir=profile_dir,
+                    channel="msedge",
+                    headless=False,
+                    args=["--start-maximized"],
+                )
+                ghn_page = context.new_page()
+                print(f"👉 Mở trang báo cáo: {DASHBOARD_URL}", flush=True)
             ghn_page.goto(DASHBOARD_URL)
 
         print(f"✅ Đã tìm thấy tab: '{ghn_page.title()}'", flush=True)
