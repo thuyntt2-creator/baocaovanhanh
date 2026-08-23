@@ -41,16 +41,6 @@ SERVICE_ACCOUNT_CANDIDATES = [
 
 def get_gspread_client(spreadsheet_id=SHEET_ID):
     scopes = ['https://www.googleapis.com/auth/spreadsheets', 'https://www.googleapis.com/auth/drive']
-    for cred_path in SERVICE_ACCOUNT_CANDIDATES:
-        if os.path.isfile(cred_path):
-            try:
-                creds = Credentials.from_service_account_file(cred_path, scopes=scopes)
-                gc = gspread.authorize(creds)
-                if spreadsheet_id:
-                    gc.open_by_key(spreadsheet_id)
-                return gc
-            except Exception as e:
-                print(f"⚠️ Service account ({cred_path}) không có quyền: {e}. Đang chuyển sang authorized_user.json...")
 
     auth_user_candidates = [
         os.path.join(BASE_DIR, 'authorized_user.json'),
@@ -58,6 +48,8 @@ def get_gspread_client(spreadsheet_id=SHEET_ID):
         r'C:\Users\lap4all\Desktop\Backlog_Automation\authorized_user.json',
         'authorized_user.json'
     ]
+
+    # 1. Thử dùng token OAuth hiện tại trong authorized_user.json
     for auth_user_file in auth_user_candidates:
         if os.path.exists(auth_user_file):
             try:
@@ -68,9 +60,49 @@ def get_gspread_client(spreadsheet_id=SHEET_ID):
                     gc.open_by_key(spreadsheet_id)
                 return gc
             except Exception as e:
+                print(f"⚠️ OAuth token ({auth_user_file}) bị hết hạn/lỗi: {e}")
+
+    # 2. Nếu token hết hạn, kích hoạt luồng đăng nhập trình duyệt bằng OAuth
+    oauth_candidates = [
+        os.path.join(BASE_DIR, 'credentials_oauth.json'),
+        r'C:\Users\lap4all\Documents\Auto report\credentials_oauth.json',
+        r'C:\Users\lap4all\Desktop\Backlog_Automation\credentials_oauth.json',
+        'credentials_oauth.json'
+    ]
+    for oauth_file in oauth_candidates:
+        if os.path.exists(oauth_file):
+            auth_out = os.path.join(os.path.dirname(oauth_file), 'authorized_user.json')
+            print(f"🔄 Đang kích hoạt trình duyệt để xác thực lại tài khoản GHN của bạn...")
+            try:
+                if os.path.exists(auth_out):
+                    try:
+                        os.remove(auth_out)
+                    except Exception:
+                        pass
+                gc = gspread.oauth(
+                    credentials_filename=oauth_file,
+                    authorized_user_filename=auth_out,
+                    scopes=scopes
+                )
+                if spreadsheet_id:
+                    gc.open_by_key(spreadsheet_id)
+                return gc
+            except Exception as e:
+                print(f"⚠️ Không thể hoàn tất xác thực trình duyệt: {e}")
+
+    # 3. Phương án dự phòng Service Account
+    for cred_path in SERVICE_ACCOUNT_CANDIDATES:
+        if os.path.isfile(cred_path):
+            try:
+                creds = Credentials.from_service_account_file(cred_path, scopes=scopes)
+                gc = gspread.authorize(creds)
+                if spreadsheet_id:
+                    gc.open_by_key(spreadsheet_id)
+                return gc
+            except Exception:
                 pass
 
-    raise PermissionError("Không thể xác thực Google Sheets bằng credentials.json hoặc authorized_user.json")
+    raise PermissionError("❌ Không thể xác thực Google Sheets. Vui lòng chạy đăng nhập lại OAuth qua trình duyệt.")
 
 
 def clean_num(val):
@@ -134,19 +166,27 @@ def load_all_data():
 
     support_emp_codes = set()
     support_emp_names = set()
+    support_details = []
     if ws_hotro:
         vals_hotro = ws_hotro.get_all_values()
-        for row in vals_hotro:
-            if row and row[0].strip():
-                raw_val = row[0].strip()
-                if raw_val.lower() in ['nhân viên', 'nhan vien', 'stt', 'mã nv', 'mã nhân viên']:
-                    continue
-                code = raw_val.split('_')[0].split('-')[0].strip()
-                if code.isdigit():
-                    support_emp_codes.add(code)
-                name = raw_val.split('_')[-1].split('-')[-1].strip()
-                if name and not name.isdigit():
-                    support_emp_names.add(name.lower())
+        if len(vals_hotro) > 1:
+            for row in vals_hotro[1:]:
+                if row and row[0].strip():
+                    raw_val = row[0].strip()
+                    code = raw_val.split('_')[0].split('-')[0].strip()
+                    if code.isdigit():
+                        support_emp_codes.add(code)
+                    name = row[1].strip() if len(row) > 1 else ""
+                    if name:
+                        support_emp_names.add(name.lower())
+                    support_details.append({
+                        "id": code,
+                        "name": name,
+                        "am_nhan": row[2].strip() if len(row) > 2 else "",
+                        "nguon_am": row[3].strip() if len(row) > 3 else "",
+                        "bc_chinh": row[4].strip() if len(row) > 4 else "",
+                        "bc_nhan_ho_tro": row[5].strip() if len(row) > 5 else ""
+                    })
 
     return {
         "client": client,
@@ -158,7 +198,8 @@ def load_all_data():
         "tn": spreadsheet.worksheet("thu nhập").get_all_values(),
         "ns": spreadsheet.worksheet("năng suất").get_all_values(),
         "support_emp_codes": support_emp_codes,
-        "support_emp_names": support_emp_names
+        "support_emp_names": support_emp_names,
+        "support_details": support_details
     }
 
 
@@ -208,6 +249,7 @@ def generate_report():
     target_hubs = data_dict["target_hubs"]
     support_emp_codes = data_dict["support_emp_codes"]
     support_emp_names = data_dict["support_emp_names"]
+    support_details = data_dict.get("support_details", [])
 
     df_rec = pd.DataFrame(data_dict["rec"])
     
@@ -250,10 +292,24 @@ def generate_report():
         
         main_name = bc_short_name.split(')')[-1].strip() if ')' in bc_short_name else query_clean
 
-        stt_pttt = rec_row[7] if rec_row is not None else "N/A"
-        thieu_pttt = rec_row[8] if rec_row is not None else "0"
-        hientai_pttt = rec_row[9] if rec_row is not None else "0"
-        dinhbien_pttt = rec_row[10] if rec_row is not None else "0"
+        stt_pttt = rec_row[7] if (rec_row is not None and len(rec_row) > 7) else "N/A"
+        raw_thieu = rec_row[8] if (rec_row is not None and len(rec_row) > 8) else "0"
+        raw_hientai = rec_row[9] if (rec_row is not None and len(rec_row) > 9) else "0"
+        raw_dinhbien = rec_row[10] if (rec_row is not None and len(rec_row) > 10) else "0"
+
+        dinhbien_val = int(clean_num(raw_dinhbien))
+        hientai_val = int(clean_num(raw_hientai))
+        thieu_val = int(clean_num(raw_thieu))
+
+        if dinhbien_val > 0 and hientai_val > 0:
+            hientai_display = hientai_val
+            thieu_display = max(0, dinhbien_val - hientai_val)
+        elif dinhbien_val > 0 and thieu_val > 0:
+            hientai_display = max(0, dinhbien_val - thieu_val)
+            thieu_display = thieu_val
+        else:
+            hientai_display = hientai_val
+            thieu_display = thieu_val
 
         # 2. Khớp thông tin Vận hành Data (Tính tổng tất cả Ca 1, Ca 2, Tồn cho ngày mới nhất)
         sub_d = df_data[
@@ -341,17 +397,6 @@ def generate_report():
         low_moi_cnt = len(low_df[low_df['Thâm niên'].str.contains('Dưới 6 tháng', regex=False, na=False)]) if len(low_df) > 0 else 0
         low_ratio = (low_moi_cnt / len(low_df) * 100) if len(low_df) > 0 else 0
 
-        # Tính toán chuẩn số NV Hiện tại thực tế (Định biên - Thiếu để tránh lỗi Nhân sự gõ nhầm)
-        dinhbien_val = int(clean_num(dinhbien_pttt))
-        thieu_val = int(clean_num(thieu_pttt))
-        
-        if dinhbien_val > 0 and thieu_val > 0:
-            hientai_display = max(0, dinhbien_val - thieu_val)
-            thieu_display = thieu_val
-        else:
-            hientai_display = len(sub_tn) if len(sub_tn) > 0 else int(clean_num(hientai_pttt))
-            thieu_display = thieu_val
-
         # Đảm bảo tổng phân rã (NV mới + NV cũ) luôn luôn khớp chính xác với hientai_display
         raw_moi = len(sub_tn[sub_tn['Thâm niên'].str.contains('Dưới 6 tháng', regex=False, na=False)])
         raw_cu = len(sub_tn) - raw_moi
@@ -384,13 +429,24 @@ def generate_report():
         reg_ns_cnt = total_ns_all - sup_ns_cnt
 
         route_data = get_dynamic_route_notes(code, date_display)
-        if route_data and "thuc_te_di_lam" in route_data and route_data["thuc_te_di_lam"]:
-            txt += f"- Thực tế đi làm: {route_data['thuc_te_di_lam']}\n"
-        elif total_ns_all > 0:
+        if total_ns_all > 0:
             if sup_ns_cnt > 0:
                 txt += f"- Thực tế đi làm: {total_ns_all} NV ({reg_ns_cnt} PTTT + {sup_ns_cnt} NV hỗ trợ).\n"
             else:
                 txt += f"- Thực tế đi làm: {total_ns_all} NVPTTT.\n"
+        elif route_data and "thuc_te_di_lam" in route_data and route_data["thuc_te_di_lam"]:
+            txt += f"- Thực tế đi làm: {route_data['thuc_te_di_lam']}\n"
+
+        # Khớp danh sách Nhân viên hỗ trợ từ sheet NV HỖ TRỢ
+        in_sup = [s for s in support_details if main_name.lower() in s['bc_nhan_ho_tro'].lower()]
+        out_sup = [s for s in support_details if main_name.lower() in s['bc_chinh'].lower()]
+
+        if in_sup:
+            items = [f"{s['name']} (từ {s['bc_chinh']})" for s in in_sup]
+            txt += f"- NV từ bưu cục khác đến hỗ trợ ({len(in_sup)} NV): {', '.join(items)}.\n"
+        if out_sup:
+            items = [f"{s['name']} (hỗ trợ {s['bc_nhan_ho_tro']})" for s in out_sup]
+            txt += f"- NV bưu cục đi hỗ trợ bưu cục khác ({len(out_sup)} NV): {', '.join(items)}.\n"
 
         if route_data and "lech_tuyen" in route_data and route_data["lech_tuyen"]:
             txt += f"- Lệch tuyến / Quá tải thực tế:\n{route_data['lech_tuyen']}\n"
@@ -421,8 +477,8 @@ def generate_report():
                     txt += f"    * {item}\n"
 
         txt += f"{hub_idx}.4. Phương án:\n"
-        if clean_num(thieu_pttt) > 0:
-            txt += f"- Đẩy mạnh tuyển bổ sung {int(clean_num(thieu_pttt))} NVPTTT lấp tuyến thiếu.\n"
+        if thieu_display > 0:
+            txt += f"- Đẩy mạnh tuyển bổ sung {thieu_display} NVPTTT lấp tuyến thiếu.\n"
         if cnt_low > 0:
             txt += f"- Phân công kèm cặp 1:1 cho nhóm {cnt_low} NV năng suất thấp (chủ yếu là NV mới) để nâng tỷ lệ GTC.\n"
         if nv_moi_cnt > 0 and nv_moi_cnt >= nv_cu_cnt:

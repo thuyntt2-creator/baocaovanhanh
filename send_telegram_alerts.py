@@ -75,12 +75,25 @@ def main():
     unstable_hubs = set() # Set of normalized names
     baton_vung = {} # bc_norm -> vung
     for row in baton_data[1:]:
-        # Cột U (index 20) là cột 'Trạng thái'
-        if len(row) > 20 and row[20].strip() == "Bất ổn":
-            if row[4].strip():
-                unstable_hubs.add(normalize_name(row[4].strip()))
-        if len(row) > 4 and row[4].strip():
-            baton_vung[normalize_name(row[4].strip())] = row[1].strip()
+        # Cột S (index 18) hoặc Cột U (index 20) là cột 'Trạng thái / Cảnh báo'
+        status = ""
+        if len(row) > 18 and row[18].strip():
+            status = row[18].strip()
+        elif len(row) > 20 and row[20].strip():
+            status = row[20].strip()
+
+        bc_name = ""
+        if len(row) > 3 and row[3].strip():
+            bc_name = row[3].strip()
+        elif len(row) > 4 and row[4].strip():
+            bc_name = row[4].strip()
+
+        if status and ("cảnh báo" in status.lower() or "bất ổn" in status.lower() or status == "Bất ổn"):
+            if bc_name:
+                unstable_hubs.add(normalize_name(bc_name))
+
+        if len(row) > 1 and row[1].strip() and bc_name:
+            baton_vung[normalize_name(bc_name)] = row[1].strip()
             
     # 2. Đọc tab 'cơ cấu' để lấy danh sách tuyến thuộc bưu cục bất ổn
     print("🗺️ Tra cứu danh sách các tuyến thuộc bưu cục bất ổn...")

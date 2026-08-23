@@ -95,11 +95,12 @@ def main():
         if not hub_id:
             continue
             
-        # Nếu bất ổn, ghi nhận vào lịch sử
-        if status == "Bất ổn":
+        # Nếu có cảnh báo (Cảnh báo GTC < 45%, Cảnh báo GTC < 70%, Bất ổn...), ghi nhận vào lịch sử
+        if status and ("cảnh báo" in status.lower() or "bất ổn" in status.lower() or status == "Bất ổn"):
             unstable_hubs[hub_id] = {
                 "name": hub_name,
-                "vung": vung
+                "vung": vung,
+                "status": status
             }
             if hub_id not in history:
                 history[hub_id] = {"name": hub_name, "warning_dates": []}

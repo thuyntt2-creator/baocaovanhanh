@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bưu cục bất ổn — Web App NTB (31 Cột)</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <style>
+        :root {
+            --bg-primary: #f8fafc;
+            --bg-secondary: #ffffff;
+            --bg-card: rgba(255, 255, 255, 0.95);
+            --border-color: #e2e8f0;
+            --text-primary: #0f172a;
+            --text-secondary: #475569;
+            --text-muted: #64748b;
+            --color-indigo: #ff5f00;
+            --color-indigo-gradient: linear-gradient(135deg, #ff5f00, #ff8533);
+            --color-success: #10b981;
+            --color-warning: #f59e0b;
+            --color-danger: #ef4444;
+            --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+            --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+            --shadow-lg: 0 10px 15px -3px rgba(15, 23, 42, 0.08);
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: var(--bg-primary);
+            color: var(--text-primary);
+            padding: 24px;
+        }
+        h1, h2, h3, h4 { font-family: 'Outfit', sans-serif; }
+
+        .container { max-width: 1600px; margin: 0 auto; }
+
+        .header-panel {
+            background: var(--bg-secondary);
+            border-radius: 12px;
+            padding: 20px 24px;
+            box-shadow: var(--shadow-md);
+            margin-bottom: 24px;
+            border-left: 5px solid var(--color-indigo);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 16px;
+        }
+
+        .header-title h2 {
+            font-size: 22px;
+            font-weight: 700;
+            color: var(--text-primary);
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .badge-warning-count {
+            background: rgba(239, 68, 68, 0.12);
+            color: #ef4444;
+            border: 1px solid rgba(239, 68, 68, 0.3);
+            padding: 6px 14px;
+            border-radius: 20px;
+            font-size: 14px;
+            font-weight: 700;
+        }
+
+        .logic-card {
+            background: #fff8f5;
+            border: 1px dashed #ffb899;
+            border-radius: 8px;
+            padding: 12px 16px;
+            font-size: 12.5px;
+            color: var(--text-secondary);
+            margin-bottom: 20px;
+            line-height: 1.5;
+        }
+        .logic-card strong { color: var(--color-indigo); }
+
+        .search-bar-row {
+            display: flex;
+            gap: 16px;
+            align-items: center;
+            margin-bottom: 16px;
+            flex-wrap: wrap;
+        }
+        .search-input {
+            flex: 1;
+            min-width: 280px;
+            padding: 10px 14px 10px 38px;
+            border-radius: 8px;
+            border: 1px solid var(--border-color);
+            font-size: 14px;
+            outline: none;
+        }
+        .search-wrap { position: relative; flex: 1; min-width: 280px; }
+        .search-wrap i {
+            position: absolute; left: 12px; top: 50%; transform: translateY(-50%);
+            color: var(--text-muted); font-size: 15px;
+        }
+
+        .table-wrapper {
+            overflow-x: auto;
+            background: var(--bg-secondary);
+            border-radius: 12px;
+            box-shadow: var(--shadow-md);
+            border: 1px solid var(--border-color);
+            max-height: 75vh;
+        }
+
+        table.unstable-table {
+            width: 100%;
+            border-collapse: separate;
+            border-spacing: 0;
+            font-size: 12.5px;
+            white-space: nowrap;
+        }
+
+        table.unstable-table th, table.unstable-table td {
+            padding: 10px 12px;
+            border-bottom: 1px solid var(--border-color);
+            border-right: 1px solid #f1f5f9;
+            text-align: center;
+            vertical-align: middle;
+        }
+
+        /* Group Header Styles */
+        .gh-info { background: #e0f2fe; color: #0369a1; font-weight: 700; }
+        .gh-gtc { background: #fef3c7; color: #b45309; font-weight: 700; }
+        .gh-vol { background: #dcfce7; color: #15803d; font-weight: 700; }
+        .gh-alert { background: #fee2e2; color: #b91c1c; font-weight: 700; }
+        .gh-staff { background: #f3e8ff; color: #6b21a8; font-weight: 700; }
+        .gh-sla { background: #f1f5f9; color: #334155; font-weight: 700; }
+
+        table.unstable-table th.sub-header {
+            background: #f8fafc;
+            color: var(--text-secondary);
+            font-size: 11.5px;
+            font-weight: 600;
+            position: sticky;
+            top: 36px;
+            z-index: 5;
+            border-bottom: 2px solid var(--border-color);
+        }
+
+        table.unstable-table th.group-header {
+            position: sticky;
+            top: 0;
+            z-index: 6;
+            font-size: 12px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        table.unstable-table tbody tr:hover {
+            background-color: #f8fafc;
+        }
+
+        /* Sticky Left Columns */
+        .sticky-col-1 { position: sticky; left: 0; background: #fff; z-index: 4; }
+        .sticky-col-2 { position: sticky; left: 60px; background: #fff; z-index: 4; }
+        .sticky-col-3 { position: sticky; left: 140px; background: #fff; z-index: 4; box-shadow: 2px 0 4px rgba(0,0,0,0.04); }
+
+        th.sticky-col-1, th.sticky-col-2, th.sticky-col-3 { z-index: 7 !important; }
+
+        .badge-danger {
+            background: rgba(239, 68, 68, 0.12);
+            color: #ef4444;
+            border: 1px solid rgba(239, 68, 68, 0.25);
+            padding: 3px 8px;
+            border-radius: 6px;
+            font-weight: 600;
+            font-size: 11.5px;
+        }
+        .badge-warning {
+            background: rgba(245, 158, 11, 0.12);
+            color: #d97706;
+            border: 1px solid rgba(245, 158, 11, 0.25);
+            padding: 3px 8px;
+            border-radius: 6px;
+            font-weight: 600;
+            font-size: 11.5px;
+        }
+        .text-danger-bold { color: #ef4444; font-weight: 700; }
+        .text-success-bold { color: #10b981; font-weight: 700; }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <!-- Header -->
+    <div class="header-panel">
+        <div class="header-title">
+            <h2><i class="fa-solid fa-triangle-exclamation" style="color: var(--color-indigo);"></i> Danh Sách Bưu Cục Bất Ổn (NTB)</h2>
+            <div style="font-size: 13px; color: var(--text-muted); margin-top: 4px;">
+                <i class="fa-regular fa-clock"></i> Thời gian cập nhật 23/08/2026 13:05:48
+            </div>
+        </div>
+        <div>
+            <span class="badge-warning-count"><i class="fa-solid fa-bell"></i> 11 Bưu Cục Cảnh Báo</span>
+        </div>
+    </div>
+
+    <!-- Logic Rules Card -->
+    <div class="logic-card">
+        <strong><i class="fa-solid fa-circle-info"></i> Quy tắc xác định Bưu Cục Cảnh Báo (Logic mới 31 Cột):</strong><br>
+        • <strong>%GTC TB 7 ngày</strong>: HCM & HN (Full hàng mới + hàng tồn); Các tỉnh khác (Hàng mới Ca 1 + hàng tồn).<br>
+        • <strong>Mốc Cảnh Báo</strong>: <code>HCM & HN &lt; 50%</code> | <code>Các Tỉnh &lt; 45%</code> | <code>%GTC 7d &lt; 70% so với Mốc %GTC Đỉnh 6 tháng</code>.
+    </div>
+
+    <!-- Search & Filter Bar -->
+    <div class="search-bar-row">
+        <div class="search-wrap">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <input type="text" id="searchInput" class="search-input" placeholder="Tìm tên Bưu cục, ID, Tỉnh..." onkeyup="filterTable()">
+        </div>
+        <label style="display: flex; align-items: center; gap: 8px; font-size: 13.5px; font-weight: 600; cursor: pointer;">
+            <input type="checkbox" id="unstableOnlyCheck" checked onchange="filterTable()" style="width: 16px; height: 16px; accent-color: var(--color-indigo);">
+            Chỉ hiển thị Bưu cục có cảnh báo
+        </label>
+    </div>
+
+    <!-- 31 Columns Table -->
+    <div class="table-wrapper">
+        <table class="unstable-table" id="unstableTable">
+            <thead>
+                <!-- Row 1: Group Headers -->
+                <tr>
+                    <th colspan="4" class="group-header gh-info">🏢 1. Thông Tin Bưu Cục</th>
+                    <th colspan="11" class="group-header gh-gtc">📈 2. Hiệu Suất GTC 7 Ngày &amp; Lịch Sử</th>
+                    <th colspan="3" class="group-header gh-vol">📦 3. Sản Lượng Giao Hàng</th>
+                    <th colspan="3" class="group-header gh-alert">⚠️ 4. Cảnh Báo &amp; Clearance</th>
+                    <th colspan="5" class="group-header gh-staff">👥 5. Nhân Sự &amp; Backlog</th>
+                    <th colspan="5" class="group-header gh-sla">🎯 6. KPI Vận Hành &amp; SLA (N-1)</th>
+                </tr>
+                <!-- Row 2: Sub Headers (31 Cols) -->
+                <tr>
+                    <th class="sub-header sticky-col-1">Vùng</th>
+                    <th class="sub-header sticky-col-2">Tỉnh</th>
+                    <th class="sub-header sticky-col-3">ID BC</th>
+                    <th class="sub-header" style="text-align: left;">Tên Bưu Cục</th>
+
+                    <th class="sub-header">%GTC 7d</th>
+                    <th class="sub-header">%GTC Đỉnh 6T</th>
+                    <th class="sub-header">%Tỷ Trọng (7d/Đỉnh)</th>
+                    <th class="sub-header">%GTC N-1</th>
+                    <th class="sub-header">Vol GTC N-1</th>
+                    <th class="sub-header">%GTC N-2</th>
+                    <th class="sub-header">Vol GTC N-2</th>
+                    <th class="sub-header">%GTC N-3</th>
+                    <th class="sub-header">Vol GTC N-3</th>
+                    <th class="sub-header">%Vol TQ N-1</th>
+                    <th class="sub-header">VolGTC TB 7d</th>
+
+                    <th class="sub-header">Tổng Vol Cần Giao</th>
+                    <th class="sub-header">Vol Tồn</th>
+                    <th class="sub-header">Vol Mới</th>
+
+                    <th class="sub-header">Trạng Thái Cảnh Báo</th>
+                    <th class="sub-header">Số Ngày CB (3T)</th>
+                    <th class="sub-header">Dự Kiến Clear (Ngày)</th>
+
+                    <th class="sub-header">NV Gán N-1</th>
+                    <th class="sub-header">Điều Tiết Hàng</th>
+                    <th class="sub-header">Backlog Tồn Đọng</th>
+                    <th class="sub-header">%Backlog Đã Gán</th>
+                    <th class="sub-header">Backlog &gt; 5 Ngày</th>
+
+                    <th class="sub-header">%FD N-1</th>
+                    <th class="sub-header">%Ontime SLA N-1</th>
+                    <th class="sub-header">%OPR N-1</th>
+                    <th class="sub-header">%Vol GTC &lt;24h</th>
+                    <th class="sub-header">Vol Tạo Mới N-1</th>
+                </tr>
+            </thead>
+            <tbody id="tableBody">
+            </tbody>
+        </table>
+    </div>
+</div>
+
+<script>
+    const rawRecords = [{"vung": "NTB", "province": "Đắk Nông", "po_id": "22394000", "name": "(DNO) Quảng Tín", "gtc_tb_7d": "7.52%", "gtc_best_6m": "59.86%", "pct_gtc_vs_best": "12.56%", "gtc_n1": "8.11%", "vol_gtc_n1": "19400.00%", "gtc_n2": "2.13%", "vol_gtc_n2": "46", "gtc_n3": "0.08", "vol_gtc_n3": "158", "pct_vol_national_n1": "0", "vol_gtc_tb_7d": "146", "vol_can_giao_total": "2392", "vol_ton": "2010", "vol_moi": "382", "status": "Cảnh báo GTC < 45%", "days_unstable": 76, "days_est_clear": 16, "staff_assigned_n1": 4, "dieu_tiet_hang": "", "backlog_ton_dong": "2385", "pct_backlog_assigned": "9.77%", "backlog_over_5d": "1097", "pct_fd_n1": "5.83%", "pct_ontime_sla_n1": "65.38%", "pct_opr_n1": "", "pct_vol_gtc_under_24h": "36.54%", "vol_created_new_n1": "301"}, {"vung": "NTB", "province": "Đắk Nông", "po_id": "20269000", "name": "(DNO) Kiến Đức", "gtc_tb_7d": "12.62%", "gtc_best_6m": "63.28%", "pct_gtc_vs_best": "19.94%", "gtc_n1": "8.51%", "vol_gtc_n1": "19700.00%", "gtc_n2": "8.79%", "vol_gtc_n2": "186", "gtc_n3": "0.12", "vol_gtc_n3": "241", "pct_vol_national_n1": "0", "vol_gtc_tb_7d": "252", "vol_can_giao_total": "2315", "vol_ton": "1852", "vol_moi": "463", "status": "Cảnh báo GTC < 45%", "days_unstable": 56, "days_est_clear": 9, "staff_assigned_n1": 4, "dieu_tiet_hang": "", "backlog_ton_dong": "2380", "pct_backlog_assigned": "9.03%", "backlog_over_5d": "1084", "pct_fd_n1": "9.63%", "pct_ontime_sla_n1": "74.58%", "pct_opr_n1": "", "pct_vol_gtc_under_24h": "61.02%", "vol_created_new_n1": "318"}, {"vung": "NTB", "province": "Lâm Đồng", "po_id": "22051000", "name": "(LDO) Lang Biang - Đà Lạt 1", "gtc_tb_7d": "24.24%", "gtc_best_6m": "63.95%", "pct_gtc_vs_best": "37.90%", "gtc_n1": "21.85%", "vol_gtc_n1": "37000.00%", "gtc_n2": "22.58%", "vol_gtc_n2": "348", "gtc_n3": "0.26", "vol_gtc_n3": "396", "pct_vol_national_n1": "0", "vol_gtc_tb_7d": "384", "vol_can_giao_total": "1693", "vol_ton": "1133", "vol_moi": "560", "status": "Cảnh báo GTC < 45%", "days_unstable": 80, "days_est_clear": 4, "staff_assigned_n1": 9, "dieu_tiet_hang": "", "backlog_ton_dong": "1661", "pct_backlog_assigned": "39.55%", "backlog_over_5d": "201", "pct_fd_n1": "15.14%", "pct_ontime_sla_n1": "41.75%", "pct_opr_n1": "", "pct_vol_gtc_under_24h": "25.24%", "vol_created_new_n1": "492"}, {"vung": "NTB", "province": "Lâm Đồng", "po_id": "22389000", "name": "(LDO) Đức Trọng 1", "gtc_tb_7d": "26.42%", "gtc_best_6m": "60.42%", "pct_gtc_vs_best": "43.72%", "gtc_n1": "35.24%", "vol_gtc_n1": "36300.00%", "gtc_n2": "29.31%", "vol_gtc_n2": "333", "gtc_n3": "0.25", "vol_gtc_n3": "284", "pct_vol_national_n1": "0", "vol_gtc_tb_7d": "274", "vol_can_giao_total": "1030", "vol_ton": "740", "vol_moi": "290", "status": "Cảnh báo GTC < 45%", "days_unstable": 56, "days_est_clear": 4, "staff_assigned_n1": 7, "dieu_tiet_hang": "", "backlog_ton_dong": "880", "pct_backlog_assigned": "57.61%", "backlog_over_5d": "119", "pct_fd_n1": "7.89%", "pct_ontime_sla_n1": "47.29%", "pct_opr_n1": "", "pct_vol_gtc_under_24h": "25.58%", "vol_created_new_n1": "310"}, {"vung": "NTB", "province": "Bình Thuận", "po_id": "22452000", "name": "(BTH) Phú Quý", "gtc_tb_7d": "33.33%", "gtc_best_6m": "88.55%", "pct_gtc_vs_best": "37.65%", "gtc_n1": "42.31%", "vol_gtc_n1": "1100.00%", "gtc_n2": "33.33%", "vol_gtc_n2": "10", "gtc_n3": "0.29", "vol_gtc_n3": "9", "pct_vol_national_n1": "0", "vol_gtc_tb_7d": "10", "vol_can_giao_total": "26", "vol_ton": "26", "vol_moi": "0", "status": "Cảnh báo GTC < 45%", "days_unstable": 28, "days_est_clear": 3, "staff_assigned_n1": 7, "dieu_tiet_hang": "", "backlog_ton_dong": "288", "pct_backlog_assigned": "98.96%", "backlog_over_5d": "2", "pct_fd_n1": "2.51%", "pct_ontime_sla_n1": "100.00%", "pct_opr_n1": "", "pct_vol_gtc_under_24h": "98.36%", "vol_created_new_n1": "420"}, {"vung": "NTB", "province": "Khánh Hòa", "po_id": "22830000", "name": "(KHO) Cam Linh", "gtc_tb_7d": "36.64%", "gtc_best_6m": "45.42%", "pct_gtc_vs_best": "80.67%", "gtc_n1": "28.70%", "vol_gtc_n1": "58400.00%", "gtc_n2": "34.18%", "vol_gtc_n2": "631", "gtc_n3": "0.37", "vol_gtc_n3": "690", "pct_vol_national_n1": "0", "vol_gtc_tb_7d": "638", "vol_can_giao_total": "2035", "vol_ton": "1087", "vol_moi": "948", "status": "Cảnh báo GTC < 45%", "days_unstable": 86, "days_est_clear": 3, "staff_assigned_n1": 13, "dieu_tiet_hang": "", "backlog_ton_dong": "2157", "pct_backlog_assigned": "62.96%", "backlog_over_5d": "45", "pct_fd_n1": "18.02%", "pct_ontime_sla_n1": "46.76%", "pct_opr_n1": "100.00%", "pct_vol_gtc_under_24h": "30.22%", "vol_created_new_n1": "821"}, {"vung": "NTB", "province": "Đắk Nông", "po_id": "20590000", "name": "(DNO) Tuy Đức", "gtc_tb_7d": "42.22%", "gtc_best_6m": "64.66%", "pct_gtc_vs_best": "65.29%", "gtc_n1": "28.57%", "vol_gtc_n1": "17200.00%", "gtc_n2": "56.44%", "vol_gtc_n2": "346", "gtc_n3": "0.52", "vol_gtc_n3": "390", "pct_vol_national_n1": "0", "vol_gtc_tb_7d": "258", "vol_can_giao_total": "602", "vol_ton": "231", "vol_moi": "371", "status": "Cảnh báo GTC < 45%", "days_unstable": 3, "days_est_clear": 2, "staff_assigned_n1": 6, "dieu_tiet_hang": "", "backlog_ton_dong": "596", "pct_backlog_assigned": "50.67%", "backlog_over_5d": "28", "pct_fd_n1": "12.24%", "pct_ontime_sla_n1": "65.91%", "pct_opr_n1": "", "pct_vol_gtc_under_24h": "63.64%", "vol_created_new_n1": "313"}, {"vung": "NTB", "province": "Lâm Đồng", "po_id": "21537000", "name": "(LDO) Lâm Viên - Đà Lạt 2", "gtc_tb_7d": "42.84%", "gtc_best_6m": "71.47%", "pct_gtc_vs_best": "59.95%", "gtc_n1": "29.93%", "vol_gtc_n1": "32000.00%", "gtc_n2": "35.91%", "vol_gtc_n2": "334", "gtc_n3": "0.48", "vol_gtc_n3": "480", "pct_vol_national_n1": "0", "vol_gtc_tb_7d": "434", "vol_can_giao_total": "1069", "vol_ton": "565", "vol_moi": "504", "status": "Cảnh báo GTC < 45%", "days_unstable": 50, "days_est_clear": 2, "staff_assigned_n1": 4, "dieu_tiet_hang": "", "backlog_ton_dong": "956", "pct_backlog_assigned": "77.09%", "backlog_over_5d": "24", "pct_fd_n1": "11.81%", "pct_ontime_sla_n1": "62.50%", "pct_opr_n1": "", "pct_vol_gtc_under_24h": "23.21%", "vol_created_new_n1": "316"}, {"vung": "NTB", "province": "Lâm Đồng", "po_id": "22425000", "name": "(LDO) Tân Hà Lâm Hà", "gtc_tb_7d": "43.48%", "gtc_best_6m": "59.88%", "pct_gtc_vs_best": "72.61%", "gtc_n1": "49.90%", "vol_gtc_n1": "50200.00%", "gtc_n2": "36.47%", "vol_gtc_n2": "353", "gtc_n3": "0.42", "vol_gtc_n3": "398", "pct_vol_national_n1": "0", "vol_gtc_tb_7d": "390", "vol_can_giao_total": "1006", "vol_ton": "574", "vol_moi": "432", "status": "Cảnh báo GTC < 45%", "days_unstable": 88, "days_est_clear": 3, "staff_assigned_n1": 7, "dieu_tiet_hang": "", "backlog_ton_dong": "900", "pct_backlog_assigned": "63.00%", "backlog_over_5d": "112", "pct_fd_n1": "7.37%", "pct_ontime_sla_n1": "58.96%", "pct_opr_n1": "", "pct_vol_gtc_under_24h": "26.87%", "vol_created_new_n1": "436"}, {"vung": "NTB", "province": "Lâm Đồng", "po_id": "21377000", "name": "(LDO) Đơn Dương", "gtc_tb_7d": "45.54%", "gtc_best_6m": "65.83%", "pct_gtc_vs_best": "69.18%", "gtc_n1": "30.77%", "vol_gtc_n1": "59500.00%", "gtc_n2": "46.42%", "vol_gtc_n2": "933", "gtc_n3": "0.48", "vol_gtc_n3": "944", "pct_vol_national_n1": "0", "vol_gtc_tb_7d": "793", "vol_can_giao_total": "1934", "vol_ton": "1149", "vol_moi": "785", "status": "Cảnh báo GTC < 70% lịch sử tốt nhất", "days_unstable": 43, "days_est_clear": 2, "staff_assigned_n1": 11, "dieu_tiet_hang": "", "backlog_ton_dong": "2062", "pct_backlog_assigned": "33.32%", "backlog_over_5d": "161", "pct_fd_n1": "11.18%", "pct_ontime_sla_n1": "82.24%", "pct_opr_n1": "", "pct_vol_gtc_under_24h": "54.21%", "vol_created_new_n1": "1,002"}, {"vung": "NTB", "province": "Khánh Hòa", "po_id": "21479000", "name": "(KHO) Bắc Cam Ranh", "gtc_tb_7d": "46.08%", "gtc_best_6m": "67.58%", "pct_gtc_vs_best": "68.18%", "gtc_n1": "52.24%", "vol_gtc_n1": "23300.00%", "gtc_n2": "59.59%", "vol_gtc_n2": "292", "gtc_n3": "0.58", "vol_gtc_n3": "357", "pct_vol_national_n1": "0", "vol_gtc_tb_7d": "405", "vol_can_giao_total": "446", "vol_ton": "160", "vol_moi": "286", "status": "Cảnh báo GTC < 70% lịch sử tốt nhất", "days_unstable": 24, "days_est_clear": 1, "staff_assigned_n1": 7, "dieu_tiet_hang": "", "backlog_ton_dong": "334", "pct_backlog_assigned": "79.04%", "backlog_over_5d": "5", "pct_fd_n1": "16.17%", "pct_ontime_sla_n1": "84.91%", "pct_opr_n1": "", "pct_vol_gtc_under_24h": "71.70%", "vol_created_new_n1": "300"}];
+
+    function renderTable(records) {
+        const tbody = document.getElementById('tableBody');
+        tbody.innerHTML = '';
+
+        if (!records || records.length === 0) {
+            tbody.innerHTML = `<tr><td colspan="31" style="padding: 30px; text-align: center; color: var(--text-muted);">Không tìm thấy bưu cục nào phù hợp.</td></tr>`;
+            return;
+        }
+
+        records.forEach(r => {
+            const tr = document.createElement('tr');
+
+            // Format alert badge
+            let alertHtml = `<span class="badge-danger">${r.status || 'Cảnh báo'}</span>`;
+            if (!r.status || r.status.includes('Bình thường')) {
+                alertHtml = `<span style="color: var(--color-success); font-weight: 600;">Bình thường</span>`;
+            }
+
+            // Format days badge
+            let daysBadgeClass = r.days_unstable >= 30 ? 'text-danger-bold' : 'badge-warning';
+
+            tr.innerHTML = `
+                <td class="sticky-col-1" style="font-weight: 600; color: var(--text-muted);">${r.vung || 'NTB'}</td>
+                <td class="sticky-col-2" style="font-weight: 600;">${r.province || ''}</td>
+                <td class="sticky-col-3" style="font-family: monospace; font-weight: 700; color: var(--color-indigo);">${r.po_id || ''}</td>
+                <td style="text-align: left; font-weight: 700; color: var(--text-primary);">${r.name || ''}</td>
+
+                <td class="text-danger-bold" style="background: #fffbeb;">${r.gtc_tb_7d || '-'}</td>
+                <td style="color: var(--text-secondary);">${r.gtc_best_6m || '-'}</td>
+                <td style="font-weight: 600;">${r.pct_gtc_vs_best || '-'}</td>
+                <td>${r.gtc_n1 || '-'}</td>
+                <td>${r.vol_gtc_n1 || '-'}</td>
+                <td>${r.gtc_n2 || '-'}</td>
+                <td>${r.vol_gtc_n2 || '-'}</td>
+                <td>${r.gtc_n3 || '-'}</td>
+                <td>${r.vol_gtc_n3 || '-'}</td>
+                <td>${r.pct_vol_national_n1 || '-'}</td>
+                <td style="font-weight: 600;">${r.vol_gtc_tb_7d || '-'}</td>
+
+                <td style="font-weight: 700; color: #1e293b;">${r.vol_can_giao_total || '-'}</td>
+                <td style="color: #d97706; font-weight: 600;">${r.vol_ton || '-'}</td>
+                <td style="color: #2563eb; font-weight: 600;">${r.vol_moi || '-'}</td>
+
+                <td style="text-align: left;">${alertHtml}</td>
+                <td><span class="${daysBadgeClass}">${r.days_unstable} ngày</span></td>
+                <td style="font-weight: 700; color: ${r.days_est_clear > 5 ? '#ef4444' : '#059669'};">${r.days_est_clear} ngày</td>
+
+                <td style="font-weight: 600;">${r.staff_assigned_n1} NV</td>
+                <td>${r.dieu_tiet_hang || '-'}</td>
+                <td style="font-weight: 700; color: #dc2626;">${r.backlog_ton_dong || '-'}</td>
+                <td>${r.pct_backlog_assigned || '-'}</td>
+                <td style="font-weight: 700; color: ${parseInt(r.backlog_over_5d) > 100 ? '#ef4444' : '#475569'};">${r.backlog_over_5d || '0'}</td>
+
+                <td>${r.pct_fd_n1 || '-'}</td>
+                <td>${r.pct_ontime_sla_n1 || '-'}</td>
+                <td>${r.pct_opr_n1 || '-'}</td>
+                <td>${r.pct_vol_gtc_under_24h || '-'}</td>
+                <td>${r.vol_created_new_n1 || '-'}</td>
+            `;
+
+            tbody.appendChild(tr);
+        });
+    }
+
+    function filterTable() {
+        const q = document.getElementById('searchInput').value.toLowerCase().trim();
+        const unstableOnly = document.getElementById('unstableOnlyCheck').checked;
+
+        const filtered = rawRecords.filter(r => {
+            const matchesSearch = !q || (r.name && r.name.toLowerCase().includes(q)) ||
+                                        (r.po_id && r.po_id.toLowerCase().includes(q)) ||
+                                        (r.province && r.province.toLowerCase().includes(q));
+
+            const isUnstable = !r.status || !r.status.includes('Bình thường');
+            const matchesUnstable = !unstableOnly || isUnstable;
+
+            return matchesSearch && matchesUnstable;
+        });
+
+        renderTable(filtered);
+    }
+
+    // Initial render
+    renderTable(rawRecords);
+</script>
+
+</body>
+</html>
