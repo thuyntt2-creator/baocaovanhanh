@@ -34,6 +34,10 @@ jobs:
         run: |
           if [ -n "${{ secrets.GOOGLE_CREDENTIALS_JSON }}" ]; then
             echo '${{ secrets.GOOGLE_CREDENTIALS_JSON }}' > credentials.json
+            echo "✅ credentials.json created successfully"
+          else
+            echo "❌ ERROR: secret GOOGLE_CREDENTIALS_JSON is missing or empty!"
+            exit 1
           fi
 
       # ==================== PHẦN 1: BÁO CÁO HÀNG NGÀY ====================
