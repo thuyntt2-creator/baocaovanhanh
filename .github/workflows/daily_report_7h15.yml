@@ -2,8 +2,8 @@ name: GHN Daily, Ca1 TTS & Năng Suất NVPTT Report 07h00
 
 on:
   schedule:
-    # 00:00 UTC = 07:00 giờ Việt Nam (UTC+7) mỗi ngày
-    - cron: '0 0 * * *'
+    # 00:15 UTC = 07:15 giờ Việt Nam (UTC+7) mỗi ngày (tránh trùng giờ chẵn 00:00 UTC bị GitHub delay)
+    - cron: '15 0 * * *'
   workflow_dispatch: # Cho phép bấm chạy thủ công từ giao diện GitHub
 
 jobs:
