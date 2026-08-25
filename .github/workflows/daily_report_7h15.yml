@@ -1,5 +1,4 @@
 name: GHN Daily, Ca1 TTS & Năng Suất NVPTT Report 07h15
-# Trigger test run
 
 on:
   push:
@@ -32,9 +31,11 @@ jobs:
         run: playwright install chromium --with-deps
           
       - name: 'Create credentials.json'
+        env:
+          CREDS_JSON: ${{ secrets.GOOGLE_CREDENTIALS_JSON }}
         run: |
-          if [ -n "${{ secrets.GOOGLE_CREDENTIALS_JSON }}" ]; then
-            echo '${{ secrets.GOOGLE_CREDENTIALS_JSON }}' > credentials.json
+          if [ -n "$CREDS_JSON" ]; then
+            printf '%s\n' "$CREDS_JSON" > credentials.json
             echo "✅ credentials.json created successfully"
           else
             echo "❌ ERROR: secret GOOGLE_CREDENTIALS_JSON is missing or empty!"
