@@ -1,8 +1,8 @@
-name: GHN Daily, Ca1 TTS & Năng Suất NVPTT Report 07h00
+name: GHN Daily, Ca1 TTS & Năng Suất NVPTT Report 07h15
 
 on:
   schedule:
-    # 00:15 UTC = 07:15 giờ Việt Nam (UTC+7) mỗi ngày (tránh trùng giờ chẵn 00:00 UTC bị GitHub delay)
+    # 00:15 UTC = 07:15 giờ Việt Nam (UTC+7) mỗi ngày
     - cron: '15 0 * * *'
   workflow_dispatch: # Cho phép bấm chạy thủ công từ giao diện GitHub
 
@@ -11,36 +11,36 @@ jobs:
     runs-on: ubuntu-latest
     
     steps:
-      - name: Checkout Repository
+      - name: 'Checkout Repository'
         uses: actions/checkout@v4
         
-      - name: Set up Python
+      - name: 'Set up Python'
         uses: actions/setup-python@v5
         with:
           python-version: '3.10'
           cache: 'pip'
           
-      - name: Install dependencies
+      - name: 'Install dependencies'
         run: |
           python -m pip install --upgrade pip
           pip install -r requirements.txt
           
-      - name: Install Playwright browsers
+      - name: 'Install Playwright browsers'
         run: playwright install chromium --with-deps
           
-      - name: Create credentials.json
+      - name: 'Create credentials.json'
         run: |
           if [ -n "${{ secrets.GOOGLE_CREDENTIALS_JSON }}" ]; then
             echo '${{ secrets.GOOGLE_CREDENTIALS_JSON }}' > credentials.json
           fi
 
       # ==================== PHẦN 1: BÁO CÁO HÀNG NGÀY ====================
-      - name: Step 1.1: Download GTC Report from GHN Dashboard
+      - name: 'Step 1.1: Download GTC Report from GHN Dashboard'
         env:
           GHN_COOKIES: ${{ secrets.GHN_COOKIES }}
         run: python download_report_gtc.py
           
-      - name: Step 1.2: Calculate, Render & Broadcast Report to Telegram/GTalk
+      - name: 'Step 1.2: Calculate, Render & Broadcast Report to Telegram/GTalk'
         env:
           TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
           TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
@@ -49,24 +49,24 @@ jobs:
         run: python calculate_and_render_report.py
 
       # ==================== PHẦN 2: BÁO CÁO CA 1 TTS ====================
-      - name: Step 2.1: Download GTC Ca1 TTS Report
+      - name: 'Step 2.1: Download GTC Ca1 TTS Report'
         env:
           GHN_COOKIES: ${{ secrets.GHN_COOKIES }}
         run: python download_report_gtc_ca1_tts.py
 
-      - name: Step 2.2: Calculate & Broadcast GTC Ca1 TTS Report to GTalk
+      - name: 'Step 2.2: Calculate & Broadcast GTC Ca1 TTS Report to GTalk'
         env:
           GTALK_OA_TOKEN: ${{ secrets.GTALK_OA_TOKEN }}
           GTALK_CHANNEL_ID: ${{ secrets.GTALK_CHANNEL_ID }}
         run: python calculate_gtc_ca1_tts.py
 
       # ==================== PHẦN 3: BÁO CÁO NĂNG SUẤT NVPTT ====================
-      - name: Step 3.1: Download Năng Suất 3. Giao Hàng from GHN Dashboard
+      - name: 'Step 3.1: Download Năng Suất 3. Giao Hàng from GHN Dashboard'
         env:
           GHN_COOKIES: ${{ secrets.GHN_COOKIES }}
         run: python nangsuatauto.py
 
-      - name: Step 3.2: Calculate & Send Năng Suất NVPTT Images to GTalk
+      - name: 'Step 3.2: Calculate & Send Năng Suất NVPTT Images to GTalk'
         env:
           NVPTT_GTALK_OA_TOKEN: ${{ secrets.NVPTT_GTALK_OA_TOKEN }}
           GTALK_OA_TOKEN: ${{ secrets.GTALK_OA_TOKEN }}
