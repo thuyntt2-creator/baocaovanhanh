@@ -30,13 +30,14 @@ jobs:
       - name: 'Install Playwright browsers'
         run: playwright install chromium --with-deps
           
-      - name: 'Create credentials.json'
+      - name: 'Create credentials.json & authorized_user.json'
         env:
           CREDS_JSON: ${{ secrets.GOOGLE_CREDENTIALS_JSON }}
         run: |
           if [ -n "$CREDS_JSON" ]; then
             printf '%s\n' "$CREDS_JSON" > credentials.json
-            echo "✅ credentials.json created successfully"
+            printf '%s\n' "$CREDS_JSON" > authorized_user.json
+            echo "✅ Google credentials & authorized_user.json created successfully"
           else
             echo "❌ ERROR: secret GOOGLE_CREDENTIALS_JSON is missing or empty!"
             exit 1
