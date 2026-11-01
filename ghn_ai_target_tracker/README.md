@@ -1,6 +1,6 @@
 # 🏆 GHN AI REVOLUTION 2.0 — DỰ ÁN DỰ THI CHECKPOINT 2
 ## TÊN SẢN PHẨM: TRỢ LÝ ĐUA TARGET % GTC, NĂNG SUẤT REAL-TIME & TARGET THOÁT BỂ BƯU CỤC BẤT ỔN
-> **Phân hệ Tác Chiến Vận Hành Tự Động (Auto-Ops & Target Tracker NTB)**  
+> **Phân hệ Tác Chiến Vận Hành Tự Động Qua Tin Nhắn GTalk (Auto-Ops & Target Tracker NTB)**  
 > **Tác giả:** Trần Ngọc Trung – Ban Vận Hành Vùng Nam Trung Bộ (NTB)  
 > **Kết quả Checkpoint 1:** ĐẠT (8.1/10 Điểm)  
 > **Mục tiêu Vòng Showcase (17/11/2026):** Tuyển chọn Top 4 Sản phẩm xuất sắc nhất toàn quốc
@@ -30,10 +30,10 @@
 ## 🚀 III. CÁC TÍNH NĂNG MỚI ĐỘT PHÁ TẠI CHECKPOINT 2
 
 ### 1. Thuật toán AI: "Target Đếm Ngược Thoát Bể & Năng Suất Real-time Qua Tin Nhắn GTalk"
-- **Nhịp thở tác chiến theo chuỗi khung giờ vàng (14h, 16h, 19h, 20h, 21h):**
+- **Nhịp thở tác chiến theo chuỗi 5 khung giờ vàng (14h, 16h, 18h, 20h, 21h):**
   - `14h00`: Đầu ca chiều — Bắn Năng suất NVPTT & Target đếm ngược để AM phân bổ đơn giao ca 2.
   - `16h00`: Khung giờ vàng nước rút — Đếm ngược chính xác số đơn còn thiếu để bưu cục thoát bể trước khi hết ca chính.
-  - `19h00`: Chốt ca chiều, đôn đốc ca tối — Cảnh báo các bưu cục đang mấp mé bờ vực bể.
+  - `18h00`: Chốt ca chiều, đôn đốc ca tối — Cảnh báo các bưu cục đang mấp mé bờ vực bể.
   - `20h00`: Tác chiến ca tối — Nhắm đích danh các đơn hàng cuối cùng nhân viên đang giữ.
   - `21h00`: Tổng kết chốt ngày, bàn kiểm & nhắc phiếu thu nộp tiền COD.
 - **Tối ưu UX theo phản hồi thực tế của 14+ AM:** Chuyển đổi định dạng gửi từ thẻ ảnh nặng nề sang **Tin Nhắn Tương Tác Trực Tiếp (Direct Interactive Message)**. Giúp AM:
@@ -45,17 +45,8 @@
 
 ---
 
-### 2. Thẻ Card Target 5 Mốc & Năng Suất Bưu Cục
-Tự động tính 5 mốc target động (40% - 45% - 50% - 55% - 60%) dựa theo Volume hôm nay và ngày N-1; bóc tách chi tiết số đơn đã giao / đang giữ của từng nhân viên giao hàng trong ca.
-
-| Card Target Quảng Khê | Card Target Trường Xuân (Đã thoát bể) |
-| :---: | :---: |
-| ![Quảng Khê](target_quang_khe.png) | ![Trường Xuân](target_truong_xuan.png) |
-
----
-
 ## 🔒 IV. HẠ TẦNG CLOUD & BẢO MẬT NHÂN SỰ (DATA ISOLATION)
-1. **Cloud CI/CD 24/7:** Chuyển giao toàn bộ lên máy chủ Cloud GitHub Actions, chạy tự động theo các khung giờ tác chiến (14h, 16h, 19h, 20h, 21h). Không phụ thuộc máy cá nhân.
+1. **Cloud CI/CD 24/7:** Chuyển giao toàn bộ lên máy chủ Cloud GitHub Actions, chạy tự động theo các khung giờ tác chiến (14h, 16h, 18h, 20h, 21h). Không phụ thuộc máy cá nhân.
 2. **Cào dữ liệu trực tiếp:** Headless browser lấy số trực tiếp từ Dashboard GHN nội bộ, triệt tiêu độ trễ dữ liệu.
 3. **Phân quyền tuyệt đối theo AM (Data Isolation):**
    - Bảng năng suất chi tiết từng nhân viên (Mã NV, Họ tên NV) **tuyệt đối không gửi vào kênh chat chung**.
