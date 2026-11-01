@@ -45,7 +45,9 @@ Hệ thống vận hành thực tế bằng định dạng **Tin Nhắn Tương 
 - `21h00`: Tổng kết chốt ngày, bàn kiểm & kích hoạt phân hệ nhắc nộp phiếu thu COD.
 - **Ưu điểm vượt trội:** AM copy số liệu đếm ngược dán ngay vào nhóm bưu cục tag tên bưu tá đôn đốc trong 2 giây; load tức thì không tốn dung lượng 4G khi đi thị sát ngoài đường.
 
-![Ra-đa Bưu Cục Bất Ổn](bc_canh_bao_report.png)
+![Ra-đa Bưu Cục Bất Ổn & Target Thoát Bể](bc_canh_bao_report.png)
+
+![Báo Cáo Năng Suất NVPTT Mức Thấp Theo AM](sample_nvptt_report.png)
 
 ---
 
