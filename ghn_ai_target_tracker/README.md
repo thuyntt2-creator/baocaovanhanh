@@ -45,9 +45,10 @@ Hệ thống vận hành thực tế bằng định dạng **Tin Nhắn Tương 
 - `21h00`: Tổng kết chốt ngày, bàn kiểm & kích hoạt phân hệ nhắc nộp phiếu thu COD.
 - **Ưu điểm vượt trội:** AM copy số liệu đếm ngược dán ngay vào nhóm bưu cục tag tên bưu tá đôn đốc trong 2 giây; load tức thì không tốn dung lượng 4G khi đi thị sát ngoài đường.
 
-![Ra-đa Bưu Cục Bất Ổn & Target Thoát Bể](bc_canh_bao_report.png)
+![Minh Chứng Thực Tế Tin Nhắn GTalk Real-time](realtime_gtalk_message_0111.png)
+*Hình ảnh thực chiến lúc 21:08 ngày 01/11/2026: Bot GTalk tự động bắn Năng suất Real-time bưu cục Nhân Cơ 1 (4 nhân viên) và tin nhắn đếm ngược "Đông Gia Nghĩa: Còn thiếu 46 đơn GTC để thoát nhóm (Đã giao: 176/222 đơn) (Đạt 52% là Thoát Bể)" tag đích danh @Lê Hồng Phong.*
 
-![Báo Cáo Năng Suất NVPTT Mức Thấp Theo AM](sample_nvptt_report.png)
+![Ra-đa Bưu Cục Bất Ổn & Target Thoát Bể Toàn Vùng](bc_canh_bao_report.png)
 
 ---
 
