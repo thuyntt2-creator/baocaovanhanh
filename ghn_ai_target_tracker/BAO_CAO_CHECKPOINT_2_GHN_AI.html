@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<title>BÁO CÁO CHECKPOINT 2 - GHN AI REVOLUTION 2.0 - TRẦN NGỌC TRUNG</title>
+<style>
+  @page {
+    size: A4;
+    margin: 12mm 15mm 15mm 15mm;
+  }
+  * {
+    box-sizing: border-box;
+    font-family: 'Segoe UI', -apple-system, BlinkMacSystemFont, Roboto, sans-serif;
+  }
+  body {
+    margin: 0;
+    padding: 0;
+    color: #1e293b;
+    background: #ffffff;
+    font-size: 13px;
+    line-height: 1.5;
+  }
+  .page-break {
+    page-break-after: always;
+  }
+  
+  /* Header & Banner */
+  .header-card {
+    border-radius: 12px;
+    background: linear-gradient(135deg, #FF5200 0%, #D84300 60%, #006FAD 100%);
+    color: #ffffff;
+    padding: 22px 26px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 15px rgba(255, 82, 0, 0.2);
+  }
+  .badge-tag {
+    display: inline-block;
+    background: rgba(255, 255, 255, 0.25);
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    padding: 3px 10px;
+    border-radius: 14px;
+    font-size: 11px;
+    font-weight: 800;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    margin-bottom: 8px;
+  }
+  .header-card h1 {
+    margin: 0 0 6px 0;
+    font-size: 20px;
+    font-weight: 900;
+    letter-spacing: -0.3px;
+    line-height: 1.25;
+  }
+  .header-meta {
+    display: flex;
+    justify-content: space-between;
+    font-size: 12px;
+    font-weight: 600;
+    opacity: 0.95;
+    margin-top: 10px;
+    border-top: 1px solid rgba(255, 255, 255, 0.25);
+    padding-top: 8px;
+  }
+  
+  /* Sections */
+  h2.sec-title {
+    font-size: 15px;
+    font-weight: 900;
+    color: #0f172a;
+    border-left: 4.5px solid #FF5200;
+    padding-left: 10px;
+    margin: 18px 0 10px 0;
+    text-transform: uppercase;
+    letter-spacing: 0.2px;
+  }
+  h3.sub-title {
+    font-size: 13.5px;
+    font-weight: 800;
+    color: #006FAD;
+    margin: 14px 0 6px 0;
+  }
+  p {
+    margin: 0 0 8px 0;
+    text-align: justify;
+  }
+  
+  /* Table styling */
+  table.data-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 10px 0 14px 0;
+    font-size: 12px;
+  }
+  table.data-table th {
+    background: #0f172a;
+    color: #ffffff;
+    font-weight: 800;
+    padding: 8px 10px;
+    text-align: left;
+    border: 1px solid #334155;
+    font-size: 11.5px;
+    text-transform: uppercase;
+  }
+  table.data-table td {
+    padding: 7px 10px;
+    border: 1px solid #cbd5e1;
+    vertical-align: middle;
+  }
+  table.data-table tr:nth-child(even) {
+    background-color: #f8fafc;
+  }
+  .highlight-cell {
+    font-weight: 800;
+    color: #047857;
+    background-color: #f0fdf4 !important;
+  }
+  .alert-cell {
+    font-weight: 800;
+    color: #b91c1c;
+    background-color: #fef2f2 !important;
+  }
+  
+  /* Callout Boxes */
+  .callout {
+    border-radius: 8px;
+    padding: 10px 14px;
+    margin: 10px 0;
+    border-left: 4px solid;
+    font-size: 12.5px;
+  }
+  .callout-success {
+    background: #f0fdf4;
+    border-color: #16a34a;
+    color: #166534;
+  }
+  .callout-orange {
+    background: #fff7ed;
+    border-color: #ea580c;
+    color: #9a3412;
+  }
+  .callout-blue {
+    background: #f0f9ff;
+    border-color: #0284c7;
+    color: #075985;
+  }
+  
+  /* Image containers */
+  .img-box {
+    margin: 12px 0;
+    text-align: center;
+    border: 1.5px solid #e2e8f0;
+    border-radius: 8px;
+    padding: 6px;
+    background: #f8fafc;
+  }
+  .img-box img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 6px;
+    display: block;
+    margin: 0 auto;
+  }
+  .img-caption {
+    font-size: 11px;
+    font-weight: 700;
+    color: #64748b;
+    margin-top: 5px;
+  }
+  
+  /* Two col layout */
+  .two-cols {
+    display: flex;
+    gap: 14px;
+    margin: 10px 0;
+  }
+  .col {
+    flex: 1;
+  }
+  
+  /* Footer */
+  .doc-footer {
+    border-top: 1.5px solid #cbd5e1;
+    padding-top: 8px;
+    margin-top: 25px;
+    font-size: 11px;
+    color: #64748b;
+    display: flex;
+    justify-content: space-between;
+    font-weight: 600;
+  }
+</style>
+</head>
+<body>
+
+  <!-- HEADER -->
+  <div class="header-card">
+    <div class="badge-tag">🏆 GHN AI REVOLUTION 2.0 — BÁO CÁO CHECKPOINT 2 (CATCH UP)</div>
+    <h1>TRỢ LÝ ĐUA TARGET % GTC, NĂNG SUẤT REAL-TIME & TARGET THOÁT BỂ BƯU CỤC BẤT ỔN</h1>
+    <div style="font-size: 13.5px; font-weight: 700; margin-top: 4px; opacity: 0.95;">
+      Hệ sinh thái Trợ lý Tác chiến Vận hành Vùng Nam Trung Bộ (Auto-Ops & Target Tracker NTB)
+    </div>
+    <div class="header-meta">
+      <div><strong>Tác giả:</strong> Trần Ngọc Trung (Vận hành Vùng Nam Trung Bộ)</div>
+      <div><strong>Kết quả Checkpoint 1:</strong> ĐẠT (8.1/10 Điểm)</div>
+      <div><strong>Thời điểm cập nhật:</strong> 01/11/2026</div>
+    </div>
+  </div>
+
+  <!-- PHẦN I -->
+  <h2 class="sec-title">I. GIẢI QUYẾT TRIỆT ĐỂ 4 GÓP Ý CỦA BAN GIÁM KHẢO TẠI CHECKPOINT 1</h2>
+  
+  <h3 class="sub-title">1. Đo lường tác động thật bằng số liệu định lượng (Before vs. After)</h3>
+  <p>
+    Không dừng lại ở việc tiết kiệm thời gian làm báo cáo (từ <strong>45 phút → 0 phút</strong>), sau hơn 2 tháng vận hành thực chiến hàng ngày trên 150+ bưu cục NTB (từ tháng 8 đến nay), hệ thống đã tạo ra bước nhảy vọt định lượng rõ rệt:
+  </p>
+
+  <table class="data-table">
+    <thead>
+      <tr>
+        <th style="width: 32%;">Chỉ số vận hành cốt lõi</th>
+        <th style="width: 20%; text-align: center;">Trước khi có Tool</th>
+        <th style="width: 22%; text-align: center;">Sau khi triển khai Tool</th>
+        <th style="width: 26%;">Tác động cải thiện thực tế</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><strong>Tỷ lệ bưu cục đạt Target %GTC ngày</strong></td>
+        <td style="text-align: center;">~68.0%</td>
+        <td style="text-align: center;" class="highlight-cell">84.5%</td>
+        <td><strong>Tăng +16.5%</strong> số bưu cục toàn vùng về đích.</td>
+      </tr>
+      <tr>
+        <td><strong>Số ca trượt target sát nút (&lt; 5 đơn)</strong></td>
+        <td style="text-align: center;">6 - 8 bưu cục/ngày</td>
+        <td style="text-align: center;" class="highlight-cell">1 - 2 bưu cục/ngày</td>
+        <td><strong>Giảm ~75%</strong> số bưu cục bị lỡ mốc thưởng đáng tiếc.</td>
+      </tr>
+      <tr>
+        <td><strong>Số ca "thoát bể" khung vàng (16h - 18h)</strong></td>
+        <td style="text-align: center;">Hiếm khi kịp cứu</td>
+        <td style="text-align: center;" class="highlight-cell">4 - 6 bưu cục/ngày</td>
+        <td>Nhờ tin nhắn đếm ngược số đơn thiếu, AM kịp dồn lực.</td>
+      </tr>
+      <tr>
+        <td><strong>Quy mô bưu cục bất ổn toàn vùng</strong></td>
+        <td style="text-align: center;" class="alert-cell">Đỉnh điểm 13 bưu cục</td>
+        <td style="text-align: center;" class="highlight-cell">2 - 3 bưu cục</td>
+        <td><strong>Kéo giảm ~80%</strong> số bưu cục rơi vào khủng hoảng.</td>
+      </tr>
+      <tr>
+        <td><strong>Phát hiện nhân viên giao chậm trong ca</strong></td>
+        <td style="text-align: center;">Cuối ngày mới biết</td>
+        <td style="text-align: center;" class="highlight-cell">Ngay trong ca (11h30, 15h)</td>
+        <td>Trưởng bưu cục lập tức san đơn, triệt tiêu tồn đọng.</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <h3 class="sub-title">2. Hạ tầng thực thi Cloud CI/CD 24/7 & Cào dữ liệu trực tiếp</h3>
+  <p>
+    Khắc phục triệt để hạn chế chạy script máy cá nhân và đọc qua Sheet trung gian ở Checkpoint 1:
+  </p>
+  <ul>
+    <li><strong>Chuyển giao 100% lên Cloud GitHub Actions:</strong> Đóng gói toàn bộ workflow chạy tự động trên máy chủ Cloud Ubuntu Runner 24/7. Hoạt động độc lập không phụ thuộc máy cá nhân.</li>
+    <li><strong>Lấy số trực tiếp từ Dashboard GHN:</strong> Headless browser tự động cào số liệu chuẩn từ hệ thống Dashboard vận hành của GHN, triệt tiêu độ trễ dữ liệu.</li>
+    <li><strong>Lập lịch phát sóng chuẩn xác theo ca:</strong> <code>07:15</code> (Ra-đa bất ổn & Năng suất NVPTT đầu ca) → <code>11:30 & 15:00</code> (Target GTC & Năng suất ca chiều) → <code>16:30 & 18:00</code> (Recap cam kết nước rút) → <code>21:00 & 22:00</code> (Nhắc phiếu thu & bàn kiểm chốt ngày).</li>
+  </ul>
+
+  <h3 class="sub-title">3. Bảo mật tuyệt đối & Phân quyền dữ liệu nhân sự (Data Isolation)</h3>
+  <div class="callout callout-success">
+    <strong>Tuân thủ nghiêm ngặt 8 Quy Tắc Vàng An Toàn Thông Tin GHN:</strong>
+    <ul style="margin: 4px 0 0 0; padding-left: 18px;">
+      <li><strong>Không gửi năng suất nhân sự vào kênh chung:</strong> Dữ liệu chứa Mã NV, Tên NV, Số đơn đã giao/còn giữ được lọc tách biệt theo từng AM (<code>df_am = df[df['AM'] == am_name]</code>).</li>
+      <li><strong>Routing chuẩn qua AM_CHANNEL_MAP:</strong> Hệ thống tự động phân tách và gửi thẻ báo cáo vào đúng kênh chat riêng của 14+ AM tương ứng. Tuyệt đối không rò rỉ chéo thông tin.</li>
+      <li><strong>Quản lý Secret qua Cloud Vault:</strong> Mã token Bot GTalk và Cookie xác thực được mã hóa bằng GitHub Secrets, không commit bất kỳ mã bí mật nào vào repository.</li>
+    </ul>
+  </div>
+
+  <div class="page-break"></div>
+
+  <!-- PHẦN II -->
+  <h2 class="sec-title">II. TÍNH NĂNG ĐỘT PHÁ MỚI: TARGET ĐẾM NGƯỢC THOÁT BỂ BƯU CỤC BẤT ỔN</h2>
+  
+  <p>
+    Đây là tính năng chiến lược được phát triển bổ sung từ nỗi đau bỏng rát ngoài hiện trường:
+  </p>
+  <ul>
+    <li><strong>Nỗi đau thực tế:</strong> Nếu dùng logic cũ tĩnh, hệ thống chỉ báo mông lung khoảng 2 bưu cục. Tuy nhiên trong giai đoạn cao điểm, toàn vùng NTB từng có ngày bùng phát đỉnh điểm tới <strong>13 bưu cục đồng loạt lọt vào nhóm bất ổn</strong> (%GTC 7 ngày &lt; 45% hoặc tụt &gt; 30% so với phong độ đỉnh). Khi đó, AM hoàn toàn bế tắc vì không biết phải giao bao nhiêu đơn mới kéo được bưu cục ra khỏi nhóm đỏ.</li>
+    <li><strong>Giải pháp thuật toán AI:</strong> Hệ thống tự động tính ngược từ Volume hôm nay (Ca 1 + Tồn) và kết quả 6 ngày trước đó để đưa ra chỉ số: <strong>"Target Thoát Bể Hôm Nay (Giao đúng bao nhiêu đơn là thoát bể?)"</strong>.</li>
+  </ul>
+
+  <div class="img-box">
+    <img src="bc_canh_bao_report.png" alt="Báo cáo Bưu Cục Bất Ổn & Target Thoát Bể Ngày 01/11/2026" style="max-height: 290px;">
+    <div class="img-caption">
+      Hình 1: Báo cáo Ra-đa Bưu Cục Bất Ổn ngày 01/11/2026 với cột "Target Thoát Bể Hôm Nay" và badge vinh danh bưu cục (DNO) Trường Xuân đã thoát cảnh báo thành công.
+    </div>
+  </div>
+
+  <div class="callout callout-orange">
+    <strong>MINH CHỨNG SỐ HỌC TỪ BÁO CÁO NGÀY 01/11/2026:</strong>
+    <p style="margin: 4px 0 0 0;">
+      • Bưu cục <strong>(DNO) Đông Gia Nghĩa:</strong> Cần giao đúng <strong>222 đơn</strong> (đạt 52% là thoát bể hôm nay).<br>
+      • Bưu cục <strong>(DNO) Quảng Khê:</strong> Cần giao đúng <strong>330 đơn</strong> (đạt 71% là thoát bể hôm nay).<br>
+      • Bưu cục <strong>(LDO) Tân Hà Lâm Hà:</strong> Cần giao đúng <strong>458 đơn</strong> (đạt 85% là thoát bể hôm nay).<br>
+      • Bưu cục <strong>(DNO) Trường Xuân:</strong> Sau khi hoàn thành target hôm qua, hôm nay chính thức nhận huy hiệu <strong>`🎉 ĐÃ THOÁT CẢNH BÁO THÀNH CÔNG`</strong>!
+    </p>
+  </div>
+
+  <div class="two-cols">
+    <div class="col img-box">
+      <img src="target_quang_khe.png" alt="Card Target GTC Quảng Khê" style="max-height: 190px;">
+      <div class="img-caption">Hình 2: Card theo dõi 5 mốc Target GTC bưu cục Quảng Khê</div>
+    </div>
+    <div class="col img-box">
+      <img src="target_truong_xuan.png" alt="Card Target GTC Trường Xuân" style="max-height: 190px;">
+      <div class="img-caption">Hình 3: Card Target GTC bưu cục Trường Xuân (đã thoát bể)</div>
+    </div>
+  </div>
+
+  <!-- PHẦN III -->
+  <h2 class="sec-title">III. LỘ TRÌNH CHUYỂN DỊCH LÊN GTALK MINIAPP FRAMEWORK CỦA GHN</h2>
+  
+  <p>
+    Bám sát tài liệu chỉ đạo của Khối Công Nghệ GHN về việc <em>"Chuyển dịch các ứng dụng nội bộ từ hosting cá nhân bên ngoài về nền tảng GTalk Miniapp Framework"</em>:
+  </p>
+  
+  <div class="two-cols" style="align-items: center;">
+    <div class="col">
+      <ul style="padding-left: 18px; margin: 0;">
+        <li><strong>Đăng ký cổng chính thức:</strong> Nhóm tác giả đã đăng nhập và khởi tạo hồ sơ ứng dụng trên <strong>GTalk Back Office Tool</strong> (mục Miniapp Market & MCP).</li>
+        <li><strong>Tên ứng dụng:</strong> <code>Target Tracker & Auto-Ops NTB</code>.</li>
+        <li><strong>Chuẩn hóa Design System:</strong> Giao diện responsive tối ưu theo chuẩn Brand Identity GHN (Cam <code>#FF5200</code> và Xanh <code>#006FAD</code>).</li>
+        <li><strong>Sẵn sàng cho Showcase 17/11:</strong> Đóng gói MCP Server, nâng cấp từ thông báo 1 chiều thành <strong>GTalk Miniapp tương tác 2 chiều</strong>, cho phép AM click tra cứu số đơn còn thiếu ngay trên ứng dụng GTalk.</li>
+      </ul>
+    </div>
+    <div class="col img-box">
+      <img src="gtalk_backoffice_miniapp.png" alt="Giao diện GTalk Back Office" style="max-height: 165px;">
+      <div class="img-caption">Hình 4: Đăng ký ứng dụng trên GTalk Back Office Tool (Miniapp Market)</div>
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <div class="doc-footer">
+    <div>Dự án: GHN AI Revolution 2.0 · Báo cáo Checkpoint 2</div>
+    <div>Tác giả: Trần Ngọc Trung · Vận hành Vùng Nam Trung Bộ</div>
+    <div>Trang 2/2</div>
+  </div>
+
+</body>
+</html>
+
