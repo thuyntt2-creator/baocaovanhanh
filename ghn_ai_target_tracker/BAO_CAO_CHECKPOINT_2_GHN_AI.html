@@ -212,24 +212,30 @@
   
   <h3 class="sub-title">1. Đo lường tác động thật bằng số liệu định lượng (Before vs. After)</h3>
   <p>
-    Không dừng lại ở việc tiết kiệm thời gian làm báo cáo (từ <strong>45 phút → 0 phút</strong>), sau hơn 2 tháng vận hành thực chiến hàng ngày trên 150+ bưu cục NTB (từ tháng 8 đến nay), hệ thống đã tạo ra bước nhảy vọt định lượng rõ rệt:
+    Không dừng lại ở việc tiết kiệm thời gian làm báo cáo (từ <strong>45 phút → 0 phút</strong>), sau hơn 2 tháng vận hành thực chiến hàng ngày trên 85 bưu cục NTB (từ tháng 8 đến nay), hệ thống đã tạo ra bước nhảy vọt định lượng rõ rệt:
   </p>
 
   <table class="data-table">
     <thead>
       <tr>
-        <th style="width: 32%;">Chỉ số vận hành cốt lõi</th>
-        <th style="width: 20%; text-align: center;">Trước khi có Tool</th>
-        <th style="width: 22%; text-align: center;">Sau khi triển khai Tool</th>
-        <th style="width: 26%;">Tác động cải thiện thực tế</th>
+        <th style="width: 30%;">Chỉ số vận hành cốt lõi</th>
+        <th style="width: 20%; text-align: center;">Trước khi có Tool (Đỉnh T9)</th>
+        <th style="width: 22%; text-align: center;">Sau khi triển khai Tool (Hiện tại)</th>
+        <th style="width: 28%;">Tác động cải thiện thực tế</th>
       </tr>
     </thead>
     <tbody>
       <tr>
+        <td><strong>Quy mô bưu cục bất ổn toàn vùng</strong></td>
+        <td style="text-align: center;" class="alert-cell">Đỉnh điểm 17 bưu cục</td>
+        <td style="text-align: center;" class="highlight-cell">2 bưu cục</td>
+        <td><strong>Kéo giảm -88.2%</strong> bưu cục khủng hoảng, ổn định toàn vùng.</td>
+      </tr>
+      <tr>
         <td><strong>Tỷ lệ bưu cục đạt Target %GTC ngày</strong></td>
         <td style="text-align: center;">~68.0%</td>
         <td style="text-align: center;" class="highlight-cell">84.5%</td>
-        <td><strong>Tăng +16.5%</strong> số bưu cục toàn vùng về đích.</td>
+        <td><strong>Tăng +16.5%</strong> số bưu cục toàn vùng về đích thành công.</td>
       </tr>
       <tr>
         <td><strong>Số ca trượt target sát nút (&lt; 5 đơn)</strong></td>
@@ -238,22 +244,16 @@
         <td><strong>Giảm ~75%</strong> số bưu cục bị lỡ mốc thưởng đáng tiếc.</td>
       </tr>
       <tr>
-        <td><strong>Số ca "thoát bể" khung vàng (16h - 18h)</strong></td>
+        <td><strong>Cứu "thoát bể" khung giờ vàng (16h - 20h)</strong></td>
         <td style="text-align: center;">Hiếm khi kịp cứu</td>
         <td style="text-align: center;" class="highlight-cell">4 - 6 bưu cục/ngày</td>
         <td>Nhờ tin nhắn đếm ngược số đơn thiếu, AM kịp dồn lực.</td>
       </tr>
       <tr>
-        <td><strong>Quy mô bưu cục bất ổn toàn vùng</strong></td>
-        <td style="text-align: center;" class="alert-cell">Đỉnh điểm 13 bưu cục</td>
-        <td style="text-align: center;" class="highlight-cell">2 - 3 bưu cục</td>
-        <td><strong>Kéo giảm ~80%</strong> số bưu cục rơi vào khủng hoảng.</td>
-      </tr>
-      <tr>
-        <td><strong>Phát hiện nhân viên giao chậm trong ca</strong></td>
-        <td style="text-align: center;">Cuối ngày mới biết</td>
-        <td style="text-align: center;" class="highlight-cell">Ngay trong ca (11h30, 15h)</td>
-        <td>Trưởng bưu cục lập tức san đơn, triệt tiêu tồn đọng.</td>
+        <td><strong>Tỷ lệ hoàn tất Phiếu thu & Bắn kiểm COD 22h</strong></td>
+        <td style="text-align: center;">~78.0% (sót nhiều)</td>
+        <td style="text-align: center;" class="highlight-cell">&gt; 98.5%</td>
+        <td><strong>Triệt tiêu gần như 100%</strong> tình trạng đọng nộp COD qua đêm.</td>
       </tr>
     </tbody>
   </table>
@@ -265,7 +265,7 @@
   <ul>
     <li><strong>Chuyển giao 100% lên Cloud GitHub Actions:</strong> Đóng gói toàn bộ workflow chạy tự động trên máy chủ Cloud Ubuntu Runner 24/7. Hoạt động độc lập không phụ thuộc máy cá nhân.</li>
     <li><strong>Lấy số trực tiếp từ Dashboard GHN:</strong> Headless browser tự động cào số liệu chuẩn từ hệ thống Dashboard vận hành của GHN, triệt tiêu độ trễ dữ liệu.</li>
-    <li><strong>Lập lịch phát sóng chuẩn xác theo ca:</strong> <code>07:15</code> (Ra-đa bất ổn & Năng suất NVPTT đầu ca) → <code>11:30 & 15:00</code> (Target GTC & Năng suất ca chiều) → <code>16:30 & 18:00</code> (Recap cam kết nước rút) → <code>21:00 & 22:00</code> (Nhắc phiếu thu & bàn kiểm chốt ngày).</li>
+    <li><strong>Lập lịch phát sóng chuẩn xác theo 5 khung giờ vàng:</strong> <code>14:00</code> (Năng suất & Target ca 2) → <code>16:00</code> (Target đếm ngược thoát bể nước rút chiều) → <code>18:00</code> (Chốt ca chiều & kích hoạt ca tối) → <code>20:00</code> (Tác chiến ca tối bóc tách đơn đang giữ) → <code>21:00</code> (Tổng kết chốt ngày) → <code>21:00 & 22:00</code> (Quét API Lastmile nhắc Phiếu thu & Bàn kiểm COD).</li>
   </ul>
 
   <h3 class="sub-title">3. Bảo mật tuyệt đối & Phân quyền dữ liệu nhân sự (Data Isolation)</h3>
@@ -273,7 +273,7 @@
     <strong>Tuân thủ nghiêm ngặt 8 Quy Tắc Vàng An Toàn Thông Tin GHN:</strong>
     <ul style="margin: 4px 0 0 0; padding-left: 18px;">
       <li><strong>Không gửi năng suất nhân sự vào kênh chung:</strong> Dữ liệu chứa Mã NV, Tên NV, Số đơn đã giao/còn giữ được lọc tách biệt theo từng AM (<code>df_am = df[df['AM'] == am_name]</code>).</li>
-      <li><strong>Routing chuẩn qua AM_CHANNEL_MAP:</strong> Hệ thống tự động phân tách và gửi thẻ báo cáo vào đúng kênh chat riêng của 14+ AM tương ứng. Tuyệt đối không rò rỉ chéo thông tin.</li>
+      <li><strong>Routing chuẩn qua AM_CHANNEL_MAP:</strong> Hệ thống tự động phân luồng và gửi tin nhắn vào đúng kênh chat riêng của <strong>19 AM (19 ID Group tác chiến riêng biệt)</strong>. Tuyệt đối không rò rỉ chéo thông tin.</li>
       <li><strong>Quản lý Secret qua Cloud Vault:</strong> Mã token Bot GTalk và Cookie xác thực được mã hóa bằng GitHub Secrets, không commit bất kỳ mã bí mật nào vào repository.</li>
     </ul>
   </div>
@@ -281,18 +281,19 @@
   <div class="page-break"></div>
 
   <!-- PHẦN II -->
-  <h2 class="sec-title">II. TÍNH NĂNG ĐỘT PHÁ MỚI: TARGET ĐẾM NGƯỢC THOÁT BỂ BƯU CỤC BẤT ỔN</h2>
+  <h2 class="sec-title">II. TÍNH NĂNG ĐỘT PHÁ MỚI: TARGET ĐẾM NGƯỢC THOÁT BỂ & CẢNH BÁO PHIẾU THU COD</h2>
   
   <p>
     Đây là tính năng chiến lược được phát triển bổ sung từ nỗi đau bỏng rát ngoài hiện trường:
   </p>
   <ul>
-    <li><strong>Nỗi đau thực tế:</strong> Nếu dùng logic cũ tĩnh, hệ thống chỉ báo mông lung khoảng 2 bưu cục. Tuy nhiên trong giai đoạn cao điểm, toàn vùng NTB từng có ngày bùng phát đỉnh điểm tới <strong>13 bưu cục đồng loạt lọt vào nhóm bất ổn</strong> (%GTC 7 ngày &lt; 45% hoặc tụt &gt; 30% so với phong độ đỉnh). Khi đó, AM hoàn toàn bế tắc vì không biết phải giao bao nhiêu đơn mới kéo được bưu cục ra khỏi nhóm đỏ.</li>
-    <li><strong>Giải pháp thuật toán AI:</strong> Hệ thống tự động tính ngược từ Volume hôm nay (Ca 1 + Tồn) và kết quả 6 ngày trước đó để đưa ra chỉ số: <strong>"Target Thoát Bể Hôm Nay (Giao đúng bao nhiêu đơn là thoát bể?)"</strong>.</li>
+    <li><strong>Nỗi đau bưu cục bất ổn:</strong> Giai đoạn cao điểm tháng 9, toàn vùng NTB từng có ngày bùng phát đỉnh điểm tới <strong>17 bưu cục đồng loạt rơi vào nhóm bất ổn</strong> (%GTC 7 ngày &lt; 45% hoặc tụt &gt; 30% so với phong độ đỉnh). Khi đó AM rất lúng túng vì không biết phải giao thêm bao nhiêu đơn thì bưu cục mới thoát khỏi báo động đỏ.</li>
+    <li><strong>Giải pháp thuật toán AI:</strong> Tự động tính ngược từ Volume hôm nay (Ca 1 + Tồn) và 6 ngày trước đó để đưa ra chỉ số: <strong>"Target Thoát Bể Hôm Nay (Giao đúng bao nhiêu đơn là thoát bể?)"</strong>.</li>
+    <li><strong>Hình thức gửi thực tế:</strong> Bắn trực tiếp qua <strong>Tin nhắn tương tác GTalk</strong> bóc tách chi tiết từng nhân viên theo 5 mốc giờ vàng, giúp AM copy paste tag tên bưu tá đôn đốc trong 2 giây.</li>
   </ul>
 
   <div class="img-box">
-    <img src="bc_canh_bao_report.png" alt="Báo cáo Bưu Cục Bất Ổn & Target Thoát Bể Ngày 01/11/2026" style="max-height: 290px;">
+    <img src="bc_canh_bao_report.png" alt="Báo cáo Bưu Cục Bất Ổn & Target Thoát Bể Ngày 01/11/2026" style="max-height: 270px;">
     <div class="img-caption">
       Hình 1: Báo cáo Ra-đa Bưu Cục Bất Ổn ngày 01/11/2026 với cột "Target Thoát Bể Hôm Nay" và badge vinh danh bưu cục (DNO) Trường Xuân đã thoát cảnh báo thành công.
     </div>
@@ -308,14 +309,15 @@
     </p>
   </div>
 
-  <div class="two-cols">
+  <div class="two-cols" style="align-items: center;">
     <div class="col img-box">
-      <img src="target_quang_khe.png" alt="Card Target GTC Quảng Khê" style="max-height: 190px;">
-      <div class="img-caption">Hình 2: Card theo dõi 5 mốc Target GTC bưu cục Quảng Khê</div>
+      <img src="sample_phieu_thu_quang_khe.png" alt="Cảnh báo Phiếu thu & Bắn kiểm COD" style="max-height: 190px;">
+      <div class="img-caption">Hình 2: Phân hệ quét API Lastmile cảnh báo chưa tạo Phiếu thu COD & Bàn kiểm lúc 21h-22h</div>
     </div>
-    <div class="col img-box">
-      <img src="target_truong_xuan.png" alt="Card Target GTC Trường Xuân" style="max-height: 190px;">
-      <div class="img-caption">Hình 3: Card Target GTC bưu cục Trường Xuân (đã thoát bể)</div>
+    <div class="col" style="font-size: 11.5px;">
+      <strong>🛡️ NÂNG CẤP BẢO VỆ DÒNG TIỀN COD:</strong><br>
+      Tự động quét API Lastmile GHN vào <strong>21:00 & 22:00</strong>. Nếu bưu cục chưa tạo phiếu thu hoặc chưa hoàn tất bàn kiểm tiền mặt, hệ thống tự động phát cảnh báo đích danh bưu cục vào kênh AM chung.<br>
+      👉 Giúp tỷ lệ hoàn tất nộp tiền COD đúng hạn toàn vùng NTB đạt kỷ lục <strong>&gt; 98.5%</strong>.
     </div>
   </div>
 
@@ -328,17 +330,24 @@
   
   <div class="two-cols" style="align-items: center;">
     <div class="col">
-      <ul style="padding-left: 18px; margin: 0;">
-        <li><strong>Đăng ký cổng chính thức:</strong> Nhóm tác giả đã đăng nhập và khởi tạo hồ sơ ứng dụng trên <strong>GTalk Back Office Tool</strong> (mục Miniapp Market & MCP).</li>
-        <li><strong>Tên ứng dụng:</strong> <code>Target Tracker & Auto-Ops NTB</code>.</li>
-        <li><strong>Chuẩn hóa Design System:</strong> Giao diện responsive tối ưu theo chuẩn Brand Identity GHN (Cam <code>#FF5200</code> và Xanh <code>#006FAD</code>).</li>
-        <li><strong>Sẵn sàng cho Showcase 17/11:</strong> Đóng gói MCP Server, nâng cấp từ thông báo 1 chiều thành <strong>GTalk Miniapp tương tác 2 chiều</strong>, cho phép AM click tra cứu số đơn còn thiếu ngay trên ứng dụng GTalk.</li>
+      <ul style="padding-left: 18px; margin: 0; font-size: 11.5px;">
+        <li><strong>Đăng ký cổng chính thức:</strong> Đã tạo hồ sơ ứng dụng trên <strong>GTalk Back Office Tool</strong> (mục Miniapp Market & MCP) với tên: <code>Target Tracker & Auto-Ops NTB</code>.</li>
+        <li><strong>Chuẩn hóa Design System:</strong> Thiết kế UI responsive theo chuẩn Brand Identity GHN (Cam <code>#FF5200</code> và Xanh <code>#006FAD</code>).</li>
+        <li><strong>Sẵn sàng cho Vòng Showcase (17/11):</strong> Nâng cấp từ thông báo tin nhắn sang <strong>GTalk Miniapp tương tác 2 chiều</strong>. Đưa toàn bộ module tra cứu 5 mốc Target động (40% - 60%) lên giao diện App để AM tra cứu on-demand.</li>
       </ul>
     </div>
     <div class="col img-box">
-      <img src="gtalk_backoffice_miniapp.png" alt="Giao diện GTalk Back Office" style="max-height: 165px;">
-      <div class="img-caption">Hình 4: Đăng ký ứng dụng trên GTalk Back Office Tool (Miniapp Market)</div>
+      <img src="gtalk_backoffice_miniapp.png" alt="Giao diện GTalk Back Office" style="max-height: 160px;">
+      <div class="img-caption">Hình 3: Đăng ký ứng dụng trên GTalk Back Office Tool</div>
     </div>
+  </div>
+
+  <div class="img-box" style="margin-top: 8px;">
+    <div class="two-cols" style="margin: 0;">
+      <div class="col"><img src="target_quang_khe.png" alt="Card Target GTC Quảng Khê" style="max-height: 155px;"></div>
+      <div class="col"><img src="target_truong_xuan.png" alt="Card Target GTC Trường Xuân" style="max-height: 155px;"></div>
+    </div>
+    <div class="img-caption">Hình 4: Thiết kế Mockup 5 mốc Target động (40% - 60%) chuẩn bị tích hợp vào GTalk Miniapp tại Showcase 17/11</div>
   </div>
 
   <!-- FOOTER -->

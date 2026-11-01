@@ -3,7 +3,7 @@
 > **Phân hệ Tác Chiến Vận Hành Tự Động Qua Tin Nhắn GTalk & Ra-đa COD (Auto-Ops & Target Tracker NTB)**  
 > **Tác giả:** Trần Ngọc Trung – Ban Vận Hành Vùng Nam Trung Bộ (NTB)  
 > **Kết quả Checkpoint 1:** ĐẠT (8.1/10 Điểm)  
-> **Quy mô thụ hưởng:** 19 AM (19 ID Group GTalk tác chiến riêng biệt), 150+ Bưu cục Vùng Nam Trung Bộ
+> **Quy mô thụ hưởng:** 19 AM (19 ID Group GTalk tác chiến riêng biệt), 85 Bưu cục Vùng Nam Trung Bộ
 
 ---
 
